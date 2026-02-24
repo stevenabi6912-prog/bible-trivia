@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Play • Bible Trivia</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a class="badge" href="index.html">← Home</a>
+      <a class="badge" href="leaderboard.html">Leaderboard</a>
+    </div>
+
+    <div class="card">
+      <div class="pillRow">
+        <div class="kv">
+          <span class="pill" id="pillName"></span>
+          <span class="pill" id="pillCat"></span>
+          <span class="pill">Q <span id="qNum">1</span>/<span id="qTotal">10</span></span>
+        </div>
+        <div class="kv">
+          <span class="pill">Score: <span id="score">0</span></span>
+          <span class="pill">Streak: <span id="streak">0</span></span>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="progressWrap" aria-label="timer">
+        <div class="progress" id="bar"></div>
+      </div>
+
+      <div class="qPrompt" id="prompt">Loading…</div>
+      <div class="small" id="ref"></div>
+
+      <div class="choices" id="choices"></div>
+
+      <div class="hr"></div>
+
+      <div class="pillRow">
+        <button class="secondary" id="quit">Quit</button>
+        <div class="small" id="status"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="play.js"></script>
+</body>
+</html>

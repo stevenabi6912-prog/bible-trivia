@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Results • Bible Trivia</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a class="badge" href="index.html">← Home</a>
+      <a class="badge" href="leaderboard.html">Leaderboard</a>
+    </div>
+
+    <div class="card">
+      <div class="qPrompt" id="title">Nice run!</div>
+      <div class="kv" style="margin-top:10px">
+        <span class="pill">Player: <span id="name"></span></span>
+        <span class="pill">Category: <span id="cat"></span></span>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="kv">
+        <span class="pill">Score: <span id="score"></span></span>
+        <span class="pill">Correct: <span id="correct"></span>/<span id="total"></span></span>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="pillRow">
+        <button id="share" class="secondary">Share</button>
+        <button id="playAgain">Play Again</button>
+      </div>
+
+      <footer class="small">
+        Sharing uses your phone’s share menu when available.
+      </footer>
+    </div>
+  </div>
+
+  <script type="module" src="result.js"></script>
+</body>
+</html>

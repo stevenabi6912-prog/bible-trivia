@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Bible Trivia</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">📖 Bible Trivia Challenge</div>
+      <a class="badge" href="leaderboard.html">View Leaderboard</a>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="col">
+          <label>Player name</label>
+          <input id="name" maxlength="18" placeholder="e.g., Luke W."/>
+          <div class="small">Tip: first name + last initial works great.</div>
+        </div>
+        <div class="col">
+          <label>Category</label>
+          <select id="category"></select>
+          <div class="small">Each game pulls random questions from your chosen category.</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="row">
+        <div class="col">
+          <label>Questions per round</label>
+          <select id="count">
+            <option>10</option>
+            <option>15</option>
+            <option>20</option>
+          </select>
+        </div>
+        <div class="col">
+          <label>Seconds per question</label>
+          <select id="seconds">
+            <option>10</option>
+            <option>12</option>
+            <option>15</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="pillRow">
+        <div class="kv">
+          <span class="pill">✅ +100 correct</span>
+          <span class="pill">⚡ speed bonus</span>
+          <span class="pill">🔥 streak bonus</span>
+        </div>
+        <button id="start">Start Game</button>
+      </div>
+
+      <footer>
+        Runs entirely in your browser. Scores are saved to the leaderboard.
+      </footer>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
