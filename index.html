@@ -17,6 +17,7 @@
         <span class="brandText">Bible Battle</span>
       </div>
       <nav class="topnav">
+        <button class="btn btn-ghost" id="settingsBtn" type="button">⚙️ Settings</button>
         <a class="btn btn-ghost" href="leaderboard-daily.html">🏆 Daily</a>
         <a class="btn btn-ghost" href="leaderboard-practice.html">🎯 Practice</a>
       </nav>
@@ -87,5 +88,40 @@
   </div>
 
   <script type="module" src="main.js"></script>
+  <div id="settingsOverlay" class="modalOverlay"></div>
+  <div id="settingsModal" class="modal">
+    <div class="modalHeader">
+      <div class="modalTitle">Settings</div>
+      <button id="settingsClose" class="iconBtn" type="button" aria-label="Close">✕</button>
+    </div>
+
+    <div class="modalBody">
+      <div class="settingRow">
+        <div class="settingLabel">Music</div>
+        <div class="settingControl">
+          <input id="musicVol" type="range" min="0" max="100" value="18" />
+          <div class="settingVal" id="musicVal">18%</div>
+        </div>
+      </div>
+
+      <div class="settingRow">
+        <div class="settingLabel">Sound effects</div>
+        <div class="settingControl">
+          <input id="sfxVol" type="range" min="0" max="100" value="60" />
+          <div class="settingVal" id="sfxVal">60%</div>
+        </div>
+      </div>
+
+      <label class="toggleRow">
+        <input id="muteToggle" type="checkbox" />
+        <span>Mute all audio</span>
+      </label>
+
+      <div class="fineprint">
+        Audio starts after your first click (browser rule). Placeholder sounds included.
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

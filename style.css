@@ -519,3 +519,109 @@ input, select{ font-size: 1.05rem; }
 #question{
   margin-top:6px;
 }
+
+
+/* ===== Audio Settings Modal ===== */
+.modalOverlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  display:none;
+  z-index:50;
+}
+.modalOverlay.open{ display:block; }
+
+.modal{
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:min(520px, calc(100vw - 28px));
+  background:rgba(20,24,40,0.92);
+  border:1px solid rgba(255,255,255,0.14);
+  border-radius:18px;
+  box-shadow:0 20px 70px rgba(0,0,0,0.45);
+  display:none;
+  z-index:60;
+  color:#fff;
+}
+.modal.open{ display:block; }
+
+.modalHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 18px 10px 18px;
+}
+.modalTitle{
+  font-weight:800;
+  letter-spacing:0.2px;
+}
+.iconBtn{
+  border:1px solid rgba(255,255,255,0.18);
+  background:rgba(255,255,255,0.08);
+  color:#fff;
+  border-radius:12px;
+  padding:6px 10px;
+  cursor:pointer;
+}
+.modalBody{ padding:10px 18px 18px 18px; }
+
+.settingRow{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:10px 0;
+}
+.settingLabel{ font-weight:700; opacity:0.95; }
+.settingControl{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  width:min(320px, 62vw);
+}
+.settingControl input[type="range"]{ width:100%; }
+.settingVal{ width:52px; text-align:right; opacity:0.9; font-variant-numeric: tabular-nums; }
+
+.toggleRow{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 0 0 0;
+  cursor:pointer;
+  user-select:none;
+}
+.toggleRow input{ transform:scale(1.1); }
+
+/* ===== Play header spacing + settings button ===== */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:22px; /* More space before question card */
+}
+.header .nav{
+  display:flex;
+  align-items:center;
+  gap:14px; /* Space between Daily/Practice/Settings */
+}
+.badge-btn{
+  cursor:pointer;
+}
+
+/* More breathing room between pills and question */
+.pillRow{
+  margin-bottom:14px;
+}
+#question{
+  margin-top:10px;
+}
+
+/* Make brand title readable everywhere (keep fun, but legible) */
+.brandText{
+  font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.2px;
+}

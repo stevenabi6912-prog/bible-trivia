@@ -1,9 +1,12 @@
+import { initAudioUI, unlockAudio, startMusic, sfx } from './audio.js';
 import { loadCategories } from './trivia.js';
 import { hasDailyAttempt, normalizePlayerKey } from './scores.js';
 
 const nameEl = document.getElementById('name');
 const catEl = document.getElementById('category');
 const startBtn = document.getElementById('start');
+
+initAudioUI();
 
 const modeDaily = document.getElementById('modeDaily');
 const modePractice = document.getElementById('modePractice');
@@ -15,6 +18,7 @@ const catHelp = document.getElementById('catHelp');
 let mode = 'daily'; // default
 
 function setMode(next) {
+  try { sfx.click(); } catch (_) {}
   mode = next;
   const daily = mode === 'daily';
 
@@ -65,6 +69,9 @@ function seasonIdFor(d) {
 }
 
 startBtn.addEventListener('click', async () => {
+  await unlockAudio();
+  try { await sfx.click(); } catch (_) {}
+  startMusic();
   const name = (nameEl.value || '').trim();
   if (!name) { alert('Enter a player name (first name + last initial works great).'); return; }
 

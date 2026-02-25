@@ -1,7 +1,9 @@
+import { initAudioUI, unlockAudio, startMusic, sfx } from './audio.js';
 import { loadCategories, buildRound, buildDailyRound, makeChoicesForQuestion, answerMatches, pickCanonicalAnswer } from './trivia.js';
 import { saveScore, hasDailyAttempt, normalizePlayerKey } from './scores.js';
 
 const qs = new URLSearchParams(location.search);
+initAudioUI();
 const playerName = qs.get('name') || 'Player';
 const categoryIdParam = qs.get('category') || '__ALL__';
 const mode = (qs.get('mode') || 'daily').toLowerCase() === 'practice' ? 'practice' : 'daily';
@@ -112,7 +114,11 @@ function renderQuestion() {
     const btn = document.createElement('button');
     btn.className = 'choice';
     btn.textContent = choice;
-    btn.addEventListener('click', () => handleAnswer(choice, btn));
+    btn.addEventListener('click', async () => {
+      await ensureAudioStarted();
+      try { await sfx.click(); } catch (_) {}
+      handleAnswer(choice, btn);
+    });
     box.appendChild(btn);
   });
 
@@ -181,6 +187,14 @@ async function finish(totalMs) {
 
 let roundStart = performance.now();
 
+let __audioStarted = false;
+async function ensureAudioStarted() {
+  if (__audioStarted) return;
+  __audioStarted = true;
+  await unlockAudio();
+  startMusic();
+}
+
 function handleAnswer(choice, btnEl) {
   if (locked) return;
   locked = true;
@@ -189,6 +203,13 @@ function handleAnswer(choice, btnEl) {
   const q = round[idx];
   const ok = choice !== null && answerMatches(q.answer, choice);
   q.__correct = ok;
+
+  // Sounds
+  try {
+    if (choice === null) { sfx.wrong(); }
+    else if (ok) { sfx.correct(); }
+    else { sfx.wrong(); }
+  } catch (_) {}
 
   // Visual feedback
   const buttons = Array.from(el('choices').querySelectorAll('button.choice'));

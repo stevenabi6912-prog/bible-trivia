@@ -1,5 +1,18 @@
+import { initAudioUI, unlockAudio, startMusic, sfx } from './audio.js';
 import { fetchLeaderboardOnce } from './scores.js';
 const qs = new URLSearchParams(location.search);
+initAudioUI();
+
+let __resultAudioInit = false;
+(async () => {
+  if (__resultAudioInit) return;
+  __resultAudioInit = true;
+  try {
+    await unlockAudio();
+    startMusic();
+    await sfx.finish();
+  } catch (_) {}
+})();
 const name = qs.get('name') || 'Player';
 const category = qs.get('category') || 'All Categories';
 const score = qs.get('score') || '0';

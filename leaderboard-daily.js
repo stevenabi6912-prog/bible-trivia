@@ -1,5 +1,8 @@
+import { initAudioUI } from './audio.js';
 import { loadCategories } from './trivia.js';
 import { subscribeLeaderboard } from './scores.js';
+
+initAudioUI();
 
 const catEl = document.getElementById('cat');
 const viewEl = document.getElementById('view');
