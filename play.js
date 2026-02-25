@@ -141,8 +141,10 @@ async function finish(totalMs) {
 
   const correct = round.filter(q => q.__correct).length;
 
+  let docId = ''
+
   try {
-    await saveScore({
+    docId = await saveScore({
       name: playerName,
       playerKey,
       dailyKey: mode === 'daily' ? dailyKey : '',
