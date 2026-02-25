@@ -1,10 +1,8 @@
 import { initAudioUI } from './audio.js';
-import { loadCategories } from './trivia.js';
 import { subscribeLeaderboard } from './scores.js';
 
 initAudioUI();
 
-const catEl = document.getElementById('cat');
 const viewEl = document.getElementById('view');
 const limitEl = document.getElementById('limit');
 const rowsEl = document.getElementById('rows');
@@ -27,11 +25,8 @@ try {
 } catch (e) {
   console.error('Failed to load categories:', e);
 }
-catEl.innerHTML = '';
-catEl.append(new Option('All Categories', '__ALL__'));
 if (data?.categories) {
-  for (const c of data.categories) catEl.append(new Option(c.title, c.title));
-} // filter uses stored title
+  for (const c of data.categories) } // filter uses stored title
 
 let unsub = null;
 
@@ -49,9 +44,7 @@ function render(list) {
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${i + 1}</td>
-      <td>${escapeHtml(s.name || '')}</td>
-      <td>${escapeHtml(s.category || '')}</td>
-      <td><b>${Number(s.score || 0)}</b></td>
+      <td>${escapeHtml(s.name || '')}</td>      <td><b>${Number(s.score || 0)}</b></td>
       <td>${Number(s.correct || 0)}/${Number(s.total || 0)}</td>
       <td>${fmtDate(s.createdAt)}</td>
     `;
@@ -71,8 +64,7 @@ function resub() {
 
   if (unsub) unsub();
 
-  const category = catEl.value;
-  const view = viewEl.value;
+  const category =   const view = viewEl.value;
   const limit = Number(limitEl.value) || 20;
 
   const opts = {
