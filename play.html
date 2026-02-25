@@ -1,60 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Bible Battle</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bible Battle - Play</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="theme-bible-battle">
-  <div class="container">
-    <div class="header">
-      <a class="badge" href="index.html">← Home</a>
-      <div class="nav">
-        <a class="badge" href="leaderboard-daily.html">🏆 Daily</a>
-        <a class="badge" href="leaderboard-practice.html">📚 Practice</a>
-      </div>
-    </div>
+<body class="play-page">
 
-    <div class="card">
-      <div class="pillRow" style="justify-content:space-between;">
-        <div class="kv">
-          <span class="pill" id="pillName"></span>
-          <span class="pill" id="pillCat"></span>
-          <span class="pill" id="pillMode"></span>
-          <span class="pill" id="pillQ">Q 1/10</span>
-        </div>
-
-        <div class="kv">
-          <span class="pill" id="pillScore">Score: 0</span>
-          <span class="pill" id="pillStreak">Streak: 0</span>
-          <span class="pill">⏱️ <span id="timerNum">15</span>s</span>
-        </div>
-      </div>
-
-      <div class="hr"></div>
-
-      <div class="progressWrap" aria-label="progress">
-        <div class="progress" id="progress"></div>
-      </div>
-
-      <div class="qPrompt" id="question">Loading…</div>
-      <div class="small" id="ref"></div>
-
-      <div class="choices" id="choices"></div>
-
-      <div class="hr"></div>
-
-      <div class="pillRow" style="justify-content:space-between; align-items:center;">
-        <button class="secondary" id="quit">Quit</button>
-        <div class="small" id="status"></div>
-      </div>
-    </div>
+  <div class="top-nav">
+    <button onclick="window.location.href='index.html'">← Home</button>
+    <button id="dailyBtn">🏆 Daily</button>
+    <button id="practiceBtn">📚 Practice</button>
   </div>
 
-  <script type="module" src="play.js"></script>
+  <div class="game-card">
+    <div class="game-header">
+      <div class="left-info">
+        <span id="playerName"></span>
+        <span id="categoryName"></span>
+        <span id="modeName"></span>
+        <span id="questionCounter"></span>
+      </div>
+
+      <div class="right-info">
+        <span>Score: <span id="score">0</span></span>
+        <span>Streak: <span id="streak">0</span></span>
+        <span>⏱ <span id="timer">10</span>s</span>
+      </div>
+    </div>
+
+    <h2 id="questionText"></h2>
+
+    <div id="choicesContainer" class="choices-grid"></div>
+
+    <div id="feedback"></div>
+  </div>
+
+  <script src="play.js"></script>
 </body>
 </html>
