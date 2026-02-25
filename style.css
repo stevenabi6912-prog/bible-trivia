@@ -499,3 +499,23 @@ input, select{ font-size: 1.05rem; }
 /* ===== v5 play spacing tweaks ===== */
 .pillRow{margin-bottom:14px;}
 .qPrompt{margin-top:10px;}
+
+
+/* ====== v6 tweaks: header spacing + question breathing room ====== */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:22px;
+}
+.header .nav{
+  display:flex;
+  gap:18px;
+}
+.pillRow{
+  margin-bottom:16px;
+}
+#question{
+  margin-top:6px;
+}
