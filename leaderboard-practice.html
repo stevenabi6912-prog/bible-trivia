@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Daily Leaderboard • Bible Trivia</title>
+  <title>Practice Leaderboard • Bible Trivia</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -11,11 +11,11 @@
     <header class="topbar">
       <a class="btn btn-ghost" href="index.html">← Home</a>
       <div class="brand">
-        <span class="brandIcon">🏆</span>
-        <span class="brandText">Daily Leaderboard</span>
+        <span class="brandIcon">🎯</span>
+        <span class="brandText">Practice Leaderboard</span>
       </div>
       <nav class="topnav">
-        <a class="btn btn-ghost" href="leaderboard-practice.html">🎯 Practice</a>
+        <a class="btn btn-ghost" href="leaderboard-daily.html">🏆 Daily</a>
       </nav>
     </header>
 
@@ -27,12 +27,9 @@
         </div>
 
         <div>
-          <label for="view">View</label>
-          <select id="view" class="input-lg">
-            <option value="today">Today</option>
-            <option value="season">This Season</option>
-          </select>
-          <div class="helper" id="seasonLabel"></div>
+          <label>Season</label>
+          <div class="seasonChip" id="seasonLabel"></div>
+          <div class="helper">Resets every 3 months.</div>
         </div>
 
         <div>
@@ -60,6 +57,6 @@
     </main>
   </div>
 
-  <script type="module" src="leaderboard-daily.js"></script>
+  <script type="module" src="leaderboard-practice.js"></script>
 </body>
 </html>

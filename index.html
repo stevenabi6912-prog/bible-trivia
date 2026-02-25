@@ -8,83 +8,77 @@
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <div class="brand">📖 Bible Trivia Challenge</div>
-      <div class="nav">
-        <a class="badge" href="leaderboard-daily.html">🏆 Daily Leaderboard</a>
-        <a class="badge" href="leaderboard-practice.html">📚 Practice Leaderboard</a>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brandIcon">📖</span>
+        <span class="brandText">Bible Trivia Challenge</span>
       </div>
-    </div>
+      <nav class="topnav">
+        <a class="btn btn-ghost" href="leaderboard-daily.html">🏆 Daily</a>
+        <a class="btn btn-ghost" href="leaderboard-practice.html">🎯 Practice</a>
+      </nav>
+    </header>
 
-    <div class="card">
-      <div class="row">
-        <div class="col" style="flex: 1.3;">
+    <main class="card card-hero">
+      <div class="grid2">
+        <div>
           <label for="name">Player name</label>
-          <input id="name" placeholder="First name + last initial (ex: Steven W)"/>
-          <div class="small">Tip: use the same spelling each time.</div>
+          <input id="name" class="input-lg" placeholder="First name + last initial (ex: Steven W)"/>
+          <div class="helper">Tip: use the same spelling each time.</div>
         </div>
 
-        <div class="col">
+        <div>
           <label for="category">Category</label>
-          <select id="category"></select>
-          <div class="small" id="catHelp">Pick a category (or All Categories).</div>
+          <select id="category" class="input-lg"></select>
+          <div class="helper" id="catHelp">Choose a category (or All Categories).</div>
         </div>
       </div>
 
-      <div style="margin-top:14px;">
-        <label>Choose your mode</label>
+      <h2 class="sectionTitle">Choose your challenge</h2>
 
-        <div class="modeGrid" role="radiogroup" aria-label="Mode selection">
-          <div class="modeCard selected" id="modeDaily" role="radio" aria-checked="true" tabindex="0">
-            <div class="modeTitle">🏆 Daily Challenge</div>
-            <div class="modeDesc">
-              Same 10 questions for everyone today (per category).<br/>
-              <b>One attempt per day.</b> Counts toward the Daily Leaderboard.
-            </div>
-          </div>
+      <div class="modeGrid" role="radiogroup" aria-label="Mode selection">
+        <button type="button" class="modeCard selected" id="modeDaily" role="radio" aria-checked="true">
+          <div class="modeBadge">🏆 Competitive</div>
+          <div class="modeTitle">Daily Challenge</div>
+          <div class="modeDesc">Same 10 questions for everyone today (per category).</div>
+          <ul class="modeBullets">
+            <li><b>One attempt per day</b></li>
+            <li>Counts toward the Daily Leaderboard</li>
+          </ul>
+        </button>
 
-          <div class="modeCard" id="modePractice" role="radio" aria-checked="false" tabindex="0">
-            <div class="modeTitle">🎯 Practice</div>
-            <div class="modeDesc">
-              Random questions. Great for training up.<br/>
-              Saved to the Practice Leaderboard (season resets every 3 months).
-            </div>
-          </div>
-        </div>
-
-        <div class="pillRow" aria-label="Locked settings">
-          <div class="pill">🧩 10 questions</div>
-          <div class="pill">⏱️ 15 seconds each</div>
-          <div class="pill">⚡ speed bonus</div>
-          <div class="pill">🔥 streak bonus</div>
-        </div>
-
-        <div class="disclaimer" id="dailyDisclaimer">
-          <label>
-            <input type="checkbox" id="agreeDaily"/>
-            <span>
-              <b>Daily Challenge is one attempt per day.</b> When you press Start, your attempt counts.
-              Make sure your name spelling is correct before starting.
-            </span>
-          </label>
-        </div>
-
-        <div class="row" style="margin-top:14px; align-items:center;">
-          <div class="col">
-            <div class="small" id="modeHint">
-              Daily Challenge is selected. One attempt per day.
-            </div>
-          </div>
-          <div class="col" style="text-align:right;">
-            <button class="btn btn-primary" id="start">Start Game</button>
-          </div>
-        </div>
+        <button type="button" class="modeCard" id="modePractice" role="radio" aria-checked="false">
+          <div class="modeBadge alt">🎯 Training</div>
+          <div class="modeTitle">Practice Mode</div>
+          <div class="modeDesc">Random questions to level up your Bible knowledge.</div>
+          <ul class="modeBullets">
+            <li>Unlimited plays</li>
+            <li>Saves to the Practice Leaderboard</li>
+          </ul>
+        </button>
       </div>
-    </div>
 
-    <div class="small" style="margin-top:12px;">
-      Runs in your browser. Scores save automatically.
-    </div>
+      <div class="rulesStrip" aria-label="Game rules">
+        <div class="rulePill">🧩 10 questions</div>
+        <div class="rulePill">⏱️ 15 seconds each</div>
+        <div class="rulePill">⚡ Speed bonus</div>
+        <div class="rulePill">🔥 Streak bonus</div>
+      </div>
+
+      <div class="disclaimer" id="dailyDisclaimer">
+        <label class="checkRow">
+          <input type="checkbox" id="agreeDaily"/>
+          <span><b>Daily Challenge is one attempt per day.</b> When you press Start, your attempt counts.</span>
+        </label>
+      </div>
+
+      <div class="footerRow">
+        <div class="statusText" id="modeHint">Daily Challenge selected. One attempt per day.</div>
+        <button class="btn btn-primary btn-big" id="start">Start Game</button>
+      </div>
+
+      <div class="fineprint">Runs in your browser. Scores save automatically.</div>
+    </main>
   </div>
 
   <script type="module" src="main.js"></script>
