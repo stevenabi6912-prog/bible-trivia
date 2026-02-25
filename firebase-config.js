@@ -12,4 +12,4 @@ const cfg = {
 
 // Export BOTH names so whichever one the app imports will exist.
 export const firebaseConfig = cfg;
-export const firebaseConfig = cfg;
+
