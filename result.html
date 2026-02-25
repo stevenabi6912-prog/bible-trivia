@@ -10,36 +10,44 @@
   <div class="container">
     <div class="header">
       <a class="badge" href="index.html">← Home</a>
-      <a class="badge" href="leaderboard.html">Leaderboard</a>
+      <div class="brand">🎉 Results</div>
     </div>
 
     <div class="card">
-      <div class="qPrompt" id="title">Nice run!</div>
-      <div class="kv" style="margin-top:10px">
-        <span class="pill">Player: <span id="name"></span></span>
-        <span class="pill">Category: <span id="cat"></span></span>
-      </div>
-
-      <div class="hr"></div>
-
-      <div class="kv">
-        <span class="pill">Score: <span id="score"></span></span>
-        <span class="pill">Correct: <span id="correct"></span>/<span id="total"></span></span>
-      </div>
-
-      <div class="hr"></div>
-
       <div class="pillRow">
-        <button id="share" class="secondary">Share</button>
-        <button id="playAgain">Play Again</button>
+        <span class="pill" id="name"></span>
+        <span class="pill" id="mode"></span>
+        <span class="pill" id="cat"></span>
       </div>
 
-      <footer class="small">
-        Sharing uses your phone’s share menu when available.
-      </footer>
+      <div class="hr"></div>
+
+      <div class="row">
+        <div class="col">
+          <div class="small">Score</div>
+          <div style="font-size:2.2rem; font-weight:900;" id="score"></div>
+        </div>
+        <div class="col">
+          <div class="small">Correct</div>
+          <div style="font-size:2.2rem; font-weight:900;">
+            <span id="correct"></span>/<span id="total"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="row" style="align-items:center;">
+        <div class="col">
+          <a class="badge" id="lbLink" href="leaderboard-daily.html">View Leaderboard</a>
+        </div>
+        <div class="col" style="text-align:right;">
+          <a class="btn btn-primary" href="index.html">Play Again</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <script type="module" src="result.js"></script>
+  <script src="result.js"></script>
 </body>
 </html>

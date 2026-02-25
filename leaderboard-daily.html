@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Daily Leaderboard • Bible Trivia</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a class="badge" href="index.html">← Home</a>
+      <div class="brand">🏆 Daily Leaderboard</div>
+      <a class="badge" href="leaderboard-practice.html">📚 Practice</a>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="col">
+          <label>Category</label>
+          <select id="cat"></select>
+          <div class="small">Daily Challenge is the same set for everyone (per category).</div>
+        </div>
+
+        <div class="col">
+          <label>View</label>
+          <select id="view">
+            <option value="today" selected>Today</option>
+            <option value="season">This season (3 months)</option>
+          </select>
+          <div class="small" id="seasonLabel"></div>
+        </div>
+
+        <div class="col">
+          <label>Show</label>
+          <select id="limit">
+            <option value="10">Top 10</option>
+            <option value="20" selected>Top 20</option>
+            <option value="50">Top 50</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="small" id="status"></div>
+
+      <table>
+        <thead>
+          <tr><th>#</th><th>Name</th><th>Category</th><th>Score</th><th>Correct</th><th>Date</th></tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+
+      <div class="small">Tie-breakers: score → correct → fastest time.</div>
+    </div>
+  </div>
+
+  <script type="module" src="leaderboard-daily.js"></script>
+</body>
+</html>
