@@ -1,5 +1,7 @@
+import { loadCategories } from './trivia.js';
 import { subscribeLeaderboard } from './scores.js';
 
+const catEl = document.getElementById('cat');
 const viewEl = document.getElementById('view');
 const limitEl = document.getElementById('limit');
 const rowsEl = document.getElementById('rows');
@@ -16,10 +18,17 @@ const dayId = now.toISOString().slice(0, 10);
 const seasonId = seasonIdFor(now);
 seasonLabel.textContent = `Season: ${seasonId}`;
 
-const data = await loadCategories();
+let data = null;
+try {
+  data = await loadCategories();
+} catch (e) {
+  console.error('Failed to load categories:', e);
+}
 catEl.innerHTML = '';
 catEl.append(new Option('All Categories', '__ALL__'));
-for (const c of data.categories) catEl.append(new Option(c.title, c.title)); // filter uses stored title
+if (data?.categories) {
+  for (const c of data.categories) catEl.append(new Option(c.title, c.title));
+} // filter uses stored title
 
 let unsub = null;
 

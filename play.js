@@ -219,8 +219,11 @@ function handleAnswer(choice, btnEl) {
   }, 650);
 }
 
-document.getElementById('quit').addEventListener('click', () => {
-  if (confirm('Quit this round?')) location.href = 'index.html';
-});
-
+(function(){
+  const quitEl = document.getElementById('quit');
+  if (!quitEl) return;
+  quitEl.addEventListener('click', () => {
+    if (confirm('Quit and return to Home?')) location.href = 'index.html';
+  });
+})();
 renderQuestion();

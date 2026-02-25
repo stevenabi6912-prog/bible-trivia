@@ -394,3 +394,17 @@ input, select{ font-size: 1.05rem; }
 /* Play page tweaks */
 .header { margin-bottom: 18px; }
 #quit { display: none !important; }
+
+
+/* ===== Bible Battle overrides: header spacing + nav gaps ===== */
+.header{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-bottom:18px;
+}
+.header .nav{
+  display:flex;
+  gap:14px;
+}
