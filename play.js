@@ -1,4 +1,4 @@
-import { loadCategories, buildRound, buildDailyRound, makeChoices, answerMatches } from './trivia.js';
+import { loadCategories, buildRound, buildDailyRound, makeChoicesForQuestion, answerMatches } from './trivia.js';
 import { saveScore, hasDailyAttempt, normalizePlayerKey } from './scores.js';
 
 const qs = new URLSearchParams(location.search);
@@ -33,7 +33,10 @@ const data = await loadCategories();
 const categories = data.categories;
 
 // Build a global pool of answers for distractors
-const answerPool = categories.flatMap(c => (c.questions || []).map(q => q.answer));
+const allQuestions = categories.flatMap(c => (c.questions || []).map(q => ({...q, categoryId: c.id, categoryTitle: c.title})));
+
+// Build a global pool of questions for smarter distractors
+const answerPool = allQuestions;
 
 const catTitle = categoryId === '__ALL__'
   ? 'All Categories'
@@ -102,7 +105,7 @@ function renderQuestion() {
   el('question').textContent = q.prompt;
   el('ref').textContent = q.reference ? `Reference: ${q.reference}` : '';
 
-  const choices = makeChoices(q.answer, answerPool, 4);
+  const choices = makeChoicesForQuestion(q, answerPool, 4);
   const box = el('choices');
   box.innerHTML = '';
 
