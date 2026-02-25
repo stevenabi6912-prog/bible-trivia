@@ -4,6 +4,7 @@ const nameEl = document.getElementById('name');
 const catEl = document.getElementById('category');
 const countEl = document.getElementById('count');
 const secEl = document.getElementById('seconds');
+const dailyEl = document.getElementById('daily');
 const startBtn = document.getElementById('start');
 
 const savedName = localStorage.getItem('bt_name');
@@ -23,7 +24,8 @@ startBtn.addEventListener('click', () => {
     name,
     category: catEl.value,
     count: countEl.value,
-    seconds: secEl.value
+    seconds: secEl.value,
+    daily: dailyEl && dailyEl.checked ? '1' : '0'
   });
   window.location.href = `play.html?${params.toString()}`;
 });

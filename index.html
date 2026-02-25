@@ -23,7 +23,7 @@
         <div class="col">
           <label>Category</label>
           <select id="category"></select>
-          <div class="small">Each game pulls random questions from your chosen category.</div>
+          <div class="small">Daily Challenge uses the same 10 questions for everyone each day (per category).</div>
         </div>
       </div>
 
@@ -32,22 +32,30 @@
       <div class="row">
         <div class="col">
           <label>Questions per round</label>
-          <select id="count">
-            <option>10</option>
-            <option>15</option>
-            <option>20</option>
+          <select id="count" disabled>
+            <option selected>10</option>
           </select>
         </div>
         <div class="col">
           <label>Seconds per question</label>
-          <select id="seconds">
-            <option>10</option>
-            <option>12</option>
-            <option>15</option>
+          <select id="seconds" disabled>
+            <option selected>15</option>
           </select>
         </div>
       </div>
 
+
+      <div class="row">
+        <div class="col">
+          <label>Mode</label>
+          <div class="toggle">
+            <input type="checkbox" id="daily" checked />
+            <span>Daily Challenge (competitive)</span>
+          </div>
+          <div class="small">Questions are the same for everyone each day. Leaderboard resets every 3 months.</div>
+        </div>
+        <div class="col"></div>
+      </div>
       <div class="hr"></div>
 
       <div class="pillRow">

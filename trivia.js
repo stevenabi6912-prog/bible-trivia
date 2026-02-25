@@ -5,6 +5,36 @@ export async function loadCategories() {
   return data;
 }
 
+
+function mulberry32(seed) {
+  let t = seed >>> 0;
+  return function() {
+    t += 0x6D2B79F5;
+    let r = Math.imul(t ^ (t >>> 15), 1 | t);
+    r ^= r + Math.imul(r ^ (r >>> 7), 61 | r);
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function hashStringToSeed(str) {
+  // FNV-1a 32-bit
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+function shuffleSeeded(arr, seedStr) {
+  const rnd = mulberry32(hashStringToSeed(seedStr));
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 function shuffle(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -29,6 +59,23 @@ export function buildRound(allCategories, selectedCategoryId, questionCount) {
   }
 
   shuffle(questions);
+  return questions.slice(0, questionCount);
+}
+
+
+export function buildDailyRound(allCategories, selectedCategoryId, questionCount, seedStr) {
+  const pools = selectedCategoryId === '__ALL__'
+    ? allCategories
+    : allCategories.filter(c => c.id === selectedCategoryId);
+
+  const questions = pools.flatMap(c => c.questions.map(q => ({...q, categoryId: c.id, categoryTitle: c.title})));
+
+  if (questions.length < questionCount) {
+    throw new Error(`Not enough questions in that category. Needed ${questionCount}, found ${questions.length}.`);
+  }
+
+  // Deterministic shuffle based on seedStr so everyone gets the same set for the day
+  shuffleSeeded(questions, seedStr);
   return questions.slice(0, questionCount);
 }
 

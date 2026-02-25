@@ -1,4 +1,4 @@
-import { loadCategories, buildRound, makeChoices, pickCanonicalAnswer, answerMatches } from './trivia.js';
+import { loadCategories, buildRound, buildDailyRound, makeChoices, pickCanonicalAnswer, answerMatches } from './trivia.js';
 import { saveScore } from './scores.js';
 
 const qs = new URLSearchParams(location.search);
@@ -6,6 +6,7 @@ const playerName = qs.get('name') || 'Player';
 const categoryId = qs.get('category') || '__ALL__';
 const questionCount = parseInt(qs.get('count') || '10', 10);
 const secondsPer = parseInt(qs.get('seconds') || '10', 10);
+const dailyMode = (qs.get('daily') || '0') === '1';
 
 const el = (id) => document.getElementById(id);
 el('pillName').textContent = playerName;
@@ -15,9 +16,26 @@ const categories = data.categories;
 
 const catTitle = categoryId === '__ALL__' ? 'All Categories' : (categories.find(c => c.id === categoryId)?.title || 'Category');
 el('pillCat').textContent = catTitle;
-el('qTotal').textContent = String(questionCount);
 
-const round = buildRound(categories, categoryId, questionCount);
+// Competitive settings
+const fixedCount = dailyMode ? 10 : questionCount;
+const fixedSeconds = dailyMode ? 15 : secondsPer;
+
+function seasonIdFor(d) {
+  const y = d.getFullYear();
+  const q = Math.floor(d.getMonth() / 3) + 1;
+  return `${y}Q${q}`; // resets every 3 months
+}
+const now = new Date();
+const seasonId = seasonIdFor(now);
+const dayId = now.toISOString().slice(0, 10); // YYYY-MM-DD
+const seedStr = `${seasonId}:${dayId}:${categoryId}`;
+
+el('qTotal').textContent = String(fixedCount);
+
+const round = dailyMode
+  ? buildDailyRound(categories, categoryId, fixedCount, seedStr)
+  : buildRound(categories, categoryId, fixedCount);
 
 // Build answer pools for distractors (better: same category + same type)
 const pools = categoryId === '__ALL__' ? categories : categories.filter(c => c.id === categoryId);
@@ -183,18 +201,18 @@ let streak = 0;
 let locked = false;
 let t0 = 0;
 let timer = null;
-let remaining = secondsPer;
+let remaining = fixedSeconds;
 
 function setStatus(msg) { el('status').textContent = msg; }
 
 function updateBar() {
-  const frac = Math.max(0, remaining) / secondsPer;
+  const frac = Math.max(0, remaining) / fixedSeconds;
   el('bar').style.transform = `scaleX(${frac})`;
 }
 
 function startTimer() {
   clearInterval(timer);
-  remaining = secondsPer;
+  remaining = fixedSeconds;
   updateBar();
   timer = setInterval(() => {
     remaining -= 0.1;
@@ -237,14 +255,14 @@ function computePoints(isCorrect) {
   if (!isCorrect) return 0;
   const base = 100;
   const elapsed = (performance.now() - t0) / 1000;
-  const speedBonus = Math.max(0, Math.floor((secondsPer - elapsed) * 8)); // up to ~80
+  const speedBonus = Math.max(0, Math.floor((fixedSeconds - elapsed) * 8)); // up to ~80
   const streakBonus = streak >= 2 ? 25 : 0; // kick in after 3rd correct
   return base + speedBonus + streakBonus;
 }
 
 async function finish(totalMs) {
   clearInterval(timer);
-  const total = questionCount;
+  const total = fixedCount;
   const correct = round.filter(q => q.__correct).length;
 
   // Save score
@@ -255,8 +273,11 @@ async function finish(totalMs) {
       categoryId,
       score,
       correct,
-      total,
-      ms: totalMs
+      total: fixedCount,
+      ms: totalMs,
+      seasonId,
+      dayId,
+      mode: dailyMode ? 'daily' : 'practice'
     });
   } catch (e) {
     console.error(e);

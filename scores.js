@@ -22,27 +22,30 @@ export async function saveScore({ name, category, categoryId, score, correct, to
   await addDoc(collection(db, 'scores'), clean);
 }
 
-export function subscribeLeaderboard({ category, limit, onData, onError }) {
-  let q;
+export function subscribeLeaderboard({ category, limit, seasonId, dayId, mode, onData, onError }) {
+  const clauses = [collection(db, 'scores')];
+
+  // Filters
+  if (mode) clauses.push(where('mode', '==', mode));
+  if (seasonId) clauses.push(where('seasonId', '==', seasonId));
+  if (dayId) clauses.push(where('dayId', '==', dayId));
+
+  // Category filter uses stored display title (keeps UI simple)
   if (category && category !== '__ALL__') {
-    q = query(
-      collection(db, 'scores'),
-      where('category', '==', category),
-      orderBy('score', 'desc'),
-      orderBy('ms', 'asc'),
-      qLimit(limit)
-    );
-  } else {
-    q = query(
-      collection(db, 'scores'),
-      orderBy('score', 'desc'),
-      orderBy('ms', 'asc'),
-      qLimit(limit)
-    );
+    clauses.push(where('category', '==', category));
   }
+
+  // Ordering (tie-breakers)
+  clauses.push(orderBy('score', 'desc'));
+  clauses.push(orderBy('correct', 'desc'));
+  clauses.push(orderBy('ms', 'asc'));
+  clauses.push(qLimit(limit));
+
+  const q = query(...clauses);
 
   return onSnapshot(q, (snap) => {
     const scores = snap.docs.map(d => ({ id: d.id, ...d.data() }));
     onData(scores);
   }, onError);
 }
+

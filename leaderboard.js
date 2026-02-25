@@ -45,16 +45,29 @@ function setStatus(msg) { statusEl.textContent = msg; }
 
 function resub() {
   if (unsub) unsub();
+
+  const view = viewEl ? viewEl.value : 'today';
+  const seasonId = (view === 'season') ? currentSeason : currentSeason;
+  const dayId = (view === 'today') ? todayId : null;
+
   setStatus('Loading…');
   unsub = subscribeLeaderboard({
     category: catEl.value,
     limit: parseInt(limitEl.value, 10),
+    mode: 'daily',
+    seasonId: seasonId,
+    dayId: dayId,
     onData: (scores) => { setStatus(''); render(scores); },
-    onError: (e) => { console.error(e); setStatus('Leaderboard error. Check Firebase config / Firestore rules / index requirements.'); }
+    onError: (e) => {
+      console.error(e);
+      setStatus('Leaderboard error. If this is the first time, Firestore may require an index (check the console for a link).');
+    }
   });
 }
 
 catEl.addEventListener('change', resub);
+('change', resub);
 limitEl.addEventListener('change', resub);
+if (viewEl) viewEl.addEventListener('change', resub);
 
 resub();
