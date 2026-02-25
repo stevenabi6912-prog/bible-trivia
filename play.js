@@ -14,8 +14,12 @@ const QUESTION_COUNT = 10;
 const SECONDS_PER = 15;
 
 const el = (id) => document.getElementById(id);
+const setText = (id, text) => {
+  const node = el(id);
+  if (node) node.textContent = text;
+};
 
-el('pillName').textContent = playerName;
+setText('pillName', playerName);
 
 function seasonIdFor(d) {
   const y = d.getFullYear();
@@ -43,8 +47,8 @@ const catTitle = categoryId === '__ALL__'
   ? 'All Categories'
   : (categories.find(c => c.id === categoryId)?.title || 'Category');
 
-el('pillCat').textContent = catTitle;
-el('pillMode').textContent = mode === 'daily' ? 'Daily Challenge' : 'Practice';
+setText('pillCat', catTitle);
+setText('pillMode', mode === 'daily' ? 'Daily Challenge' : 'Practice');
 
 if (mode === 'daily') {
   try {

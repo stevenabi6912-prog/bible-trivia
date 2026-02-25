@@ -4,6 +4,7 @@ import { subscribeLeaderboard } from './scores.js';
 
 initAudioUI();
 
+const catEl = document.getElementById('cat');
 const viewEl = document.getElementById('view');
 const limitEl = document.getElementById('limit');
 const rowsEl = document.getElementById('rows');
@@ -19,6 +20,18 @@ const now = new Date();
 const dayId = now.toISOString().slice(0, 10);
 const seasonId = seasonIdFor(now);
 seasonLabel.textContent = `Season: ${seasonId}`;
+
+let data = null;
+try {
+  data = await loadCategories();
+} catch (e) {
+  console.error('Failed to load categories:', e);
+}
+catEl.innerHTML = '';
+catEl.append(new Option('All Categories', '__ALL__'));
+if (data?.categories) {
+  for (const c of data.categories) catEl.append(new Option(c.title, c.title));
+} // filter uses stored title
 
 let unsub = null;
 
@@ -58,7 +71,7 @@ function resub() {
 
   if (unsub) unsub();
 
-  const category = '__ALL__';
+  const category = catEl.value;
   const view = viewEl.value;
   const limit = Number(limitEl.value) || 20;
 
