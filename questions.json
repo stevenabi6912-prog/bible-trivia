@@ -106,7 +106,12 @@
             "Great fish Whale"
           ],
           "reference": "Matthew 12:40",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "They would be consumed 5:16-21",
+            "The adoption of sons 4:6-10",
+            "The times of this ignorance"
+          ]
         },
         {
           "id": "animals_in_the_bible_0011",
@@ -331,7 +336,12 @@
             "The valley of Siddim"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Held up Moses’ hands",
+            "The elders of Israel",
+            "Joshua and the elders"
+          ]
         },
         {
           "id": "battles_of_the_bible_0002",
@@ -474,7 +484,12 @@
             "Jehovahnissi"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jerubbaal",
+            "Phineas’",
+            "Rephidim"
+          ]
         },
         {
           "id": "battles_of_the_bible_0017",
@@ -534,7 +549,12 @@
             "Rahab, because she hid the spies, everyone that was with her"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Israel might vaunt themselves and think they had won on their own",
+            "In the name of the Lord of hosts, the God of Israel",
+            "Let no man’s heart fail, I will go fight this Philistine"
+          ]
         },
         {
           "id": "battles_of_the_bible_0022",
@@ -543,7 +563,12 @@
             "Every day"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "10 cheeses",
+            "40 years",
+            "Morning and evening for 40 days"
+          ]
         },
         {
           "id": "battles_of_the_bible_0023",
@@ -552,7 +577,12 @@
             "Only on the 7th trip around on the 7th day"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Morning and evening for 40 days",
+            "His staff, 5 smooth stones and his sling",
+            "An ephah of parched corn and 10 loaves"
+          ]
         },
         {
           "id": "battles_of_the_bible_0024",
@@ -570,7 +600,12 @@
             "Nothing"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Ichabod",
+            "Birsha",
+            "Israel"
+          ]
         },
         {
           "id": "battles_of_the_bible_0026",
@@ -579,7 +614,12 @@
             "Achan"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jesse",
+            "Judah",
+            "Seven"
+          ]
         },
         {
           "id": "battles_of_the_bible_0027",
@@ -588,7 +628,12 @@
             "Judah"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Achan",
+            "Jesse",
+            "Seven"
+          ]
         },
         {
           "id": "battles_of_the_bible_0028",
@@ -612,7 +657,12 @@
             "Joshua, the elders"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Held up Moses’ hands",
+            "The elders of Israel",
+            "The valley of Siddim"
+          ]
         },
         {
           "id": "battles_of_the_bible_0030",
@@ -660,7 +710,12 @@
             "A Babylonish garment and 200 shekels of silver and a wedge of gold"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Only on the 7th trip around on the 7th day",
+            "His staff, 5 smooth stones and his sling",
+            "An ephah of parched corn and 10 loaves"
+          ]
         },
         {
           "id": "battles_of_the_bible_0034",
@@ -678,7 +733,12 @@
             "Jerubbaal"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Phineas’",
+            "Rephidim",
+            "Ichabod"
+          ]
         },
         {
           "id": "battles_of_the_bible_0036",
@@ -825,7 +885,12 @@
             "By Ebenezer"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "In Aphek",
+            "Jehovahnissi",
+            "Jerubbaal"
+          ]
         },
         {
           "id": "battles_of_the_bible_0049",
@@ -843,7 +908,12 @@
             "The elders of Israel"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Held up Moses’ hands",
+            "The valley of Siddim",
+            "Joshua and the elders"
+          ]
         },
         {
           "id": "battles_of_the_bible_0051",
@@ -959,7 +1029,12 @@
             "Phineas’"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Rephidim",
+            "Goliath’s",
+            "Ichabod"
+          ]
         },
         {
           "id": "battles_of_the_bible_0062",
@@ -977,7 +1052,12 @@
             "Ichabod"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Nothing",
+            "Birsha",
+            "Israel"
+          ]
         },
         {
           "id": "battles_of_the_bible_0064",
@@ -986,7 +1066,12 @@
             "By the valley of Elah"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "He had not proved it",
+            "To the valley of Achor",
+            "They were dismayed and afraid"
+          ]
         },
         {
           "id": "battles_of_the_bible_0065",
@@ -995,7 +1080,12 @@
             "Gath"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Bera",
+            "four",
+            "Achan"
+          ]
         },
         {
           "id": "battles_of_the_bible_0066",
@@ -1007,7 +1097,12 @@
             "Six cubits, a span"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Morning and evening for 40 days",
+            "Those that lapped with their hands, 300",
+            "10 cheeses"
+          ]
         },
         {
           "id": "battles_of_the_bible_0067",
@@ -1073,7 +1168,12 @@
             "An ephah of parched corn, 10 loaves"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "His staff, 5 smooth stones and his sling",
+            "Those that lapped with their hands, 300",
+            "Only on the 7th trip around on the 7th day"
+          ]
         },
         {
           "id": "battles_of_the_bible_0073",
@@ -1082,7 +1182,12 @@
             "10 cheeses"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Every day",
+            "40 years",
+            "22,000"
+          ]
         },
         {
           "id": "battles_of_the_bible_0074",
@@ -1183,7 +1288,12 @@
             "His staff, 5 smooth stones, his sling"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "An ephah of parched corn and 10 loaves",
+            "Those that lapped with their hands, 300",
+            "Only on the 7th trip around on the 7th day"
+          ]
         },
         {
           "id": "battles_of_the_bible_0083",
@@ -1263,7 +1373,12 @@
             "In the forehead"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The three oldest",
+            "They were afraid",
+            "Hophni & Phinehas"
+          ]
         },
         {
           "id": "battles_of_the_bible_0090",
@@ -1293,7 +1408,12 @@
             "The promise of the father, the holy ghost. Jesus told the Apostles that it was not for them to know the _________, ___________ which the father hath put in his own power. Times, Seasons"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "In like manner as ye have seen him go into heaven. How far does Acts 1 say that mount Olivette is from Jerusalem. A sabbath day’s journey",
+            "Adultery, fornication, uncleanness, lasciviousness, Idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies, Envyings, murders, drunkenness, revellings 5:22-26",
+            "Until the second year of the reign of Darius king of Persia True or False: The enemies helped the Jews finish the temple. False"
+          ]
         },
         {
           "id": "the_church_in_acts_0002",
@@ -1326,7 +1446,12 @@
             "In like manner as ye have seen him go into heaven. How far does Acts 1 say that mount Olivette is from Jerusalem. A sabbath day’s journey"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Until the second year of the reign of Darius king of Persia True or False: The enemies helped the Jews finish the temple. False",
+            "The promise of the father/the holy ghost. Jesus told the Apostles that it was not for them to know the _________ and ___________ which the father hath put in his own power. Times and Seasons",
+            "Adultery, fornication, uncleanness, lasciviousness, Idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies, Envyings, murders, drunkenness, revellings 5:22-26"
+          ]
         },
         {
           "id": "the_church_in_acts_0005",
@@ -1392,7 +1517,12 @@
             "Joel"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Ahab",
+            "Asia",
+            "Baal"
+          ]
         },
         {
           "id": "the_church_in_acts_0011",
@@ -1514,7 +1644,12 @@
             "The land of Nod"
           ],
           "reference": "Genesis 4:16",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "A Roaring Lion",
+            "Sanballat and Tobiah",
+            "Potiphar’s wife"
+          ]
         },
         {
           "id": "villains_of_the_bible_0002",
@@ -1532,7 +1667,12 @@
             "Ahab"
           ],
           "reference": "1 Kings 16:30",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Saul",
+            "Haman",
+            "Judah"
+          ]
         },
         {
           "id": "villains_of_the_bible_0004",
@@ -1541,7 +1681,12 @@
             "Manasseh"
           ],
           "reference": "1 Kings 21:11",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jezebel",
+            "Jonadab",
+            "Belshazzar"
+          ]
         },
         {
           "id": "villains_of_the_bible_0005",
@@ -1593,7 +1738,12 @@
             "A Javelin"
           ],
           "reference": "1 Sam 18:11 & 19:10",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Belshazzar",
+            "Manasseh",
+            "Jezebel"
+          ]
         },
         {
           "id": "villains_of_the_bible_0010",
@@ -1611,7 +1761,12 @@
             "A Roaring Lion"
           ],
           "reference": "1 Peter 5:8",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "A Javelin",
+            "Nebuchadnezzar",
+            "Belshazzar"
+          ]
         },
         {
           "id": "villains_of_the_bible_0012",
@@ -1620,7 +1775,12 @@
             "Jonadab"
           ],
           "reference": "2 Samuel 13",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jezebel",
+            "Manasseh",
+            "Haman"
+          ]
         },
         {
           "id": "villains_of_the_bible_0013",
@@ -1632,7 +1792,12 @@
             "Six cubits, a span"
           ],
           "reference": "1 Samuel 17:4",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "As to the Jews 2:15-21",
+            "Wash in Jordan 7 times",
+            "20 years old and upward"
+          ]
         },
         {
           "id": "villains_of_the_bible_0014",
@@ -1668,7 +1833,12 @@
             "Nebuchadnezzar"
           ],
           "reference": "Daniel 3",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Belshazzar",
+            "Manasseh",
+            "Jezebel"
+          ]
         },
         {
           "id": "villains_of_the_bible_0018",
@@ -1677,7 +1847,12 @@
             "Belshazzar"
           ],
           "reference": "Daniel 5",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Manasseh",
+            "Jezebel",
+            "Jonadab"
+          ]
         },
         {
           "id": "villains_of_the_bible_0019",
@@ -1700,7 +1875,12 @@
             "Herod, had all baby boys 2, under killed"
           ],
           "reference": "Matthew 2",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Them who are of the household of faith 6:11-18",
+            "Eleven hundred pieces of silver from each of them",
+            "Only on the 7th trip around on the 7th day"
+          ]
         }
       ]
     },
@@ -1755,7 +1935,12 @@
             "Into the grace of"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Pluck out their own eyes 4:16-20",
+            "The right hands of fellowship 2:10-15",
+            "Days, Months, Times, and Years 4:11-15"
+          ]
         },
         {
           "id": "the_book_of_galatians_0006",
@@ -1803,7 +1988,12 @@
             "Man 1:13-18"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Abrahams 4:1-5",
+            "Jerusalem 4:26-31",
+            "A tree 3:16-23"
+          ]
         },
         {
           "id": "the_book_of_galatians_0011",
@@ -1897,7 +2087,12 @@
             "That he which persecuted us in times past now preacheth the faith which once he destroyed"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "That the truth of the gospel might continue with you 2:6-10",
+            "Days, Months, Times, and Years 4:11-15",
+            "Them who are of the household of faith 6:11-18"
+          ]
         },
         {
           "id": "the_book_of_galatians_0020",
@@ -1907,7 +2102,12 @@
             "They glorified"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Provoke and envy 6:1-5",
+            "His own burden 6:6-10",
+            "As to the Jews 2:15-21"
+          ]
         },
         {
           "id": "the_book_of_galatians_0021",
@@ -1928,7 +2128,12 @@
             "Greek"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Faith",
+            "Peter",
+            "Christ"
+          ]
         },
         {
           "id": "the_book_of_galatians_0023",
@@ -1937,7 +2142,12 @@
             "False Brethren"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "A transgressor",
+            "The Galatians",
+            "Through faith"
+          ]
         },
         {
           "id": "the_book_of_galatians_0024",
@@ -1955,7 +2165,12 @@
             "That the truth of the gospel might continue with you 2:6-10"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Them who are of the household of faith 6:11-18",
+            "They shall bear their own judgment 5:11-15",
+            "If righteousness come by the law 3:1-7"
+          ]
         },
         {
           "id": "the_book_of_galatians_0026",
@@ -1964,7 +2179,12 @@
             "God"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Well",
+            "Faith",
+            "Greek"
+          ]
         },
         {
           "id": "the_book_of_galatians_0027",
@@ -1982,7 +2202,12 @@
             "Peter"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Faith",
+            "Greek",
+            "Christ"
+          ]
         },
         {
           "id": "the_book_of_galatians_0029",
@@ -2005,7 +2230,12 @@
             "The right hands of fellowship 2:10-15"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Days, Months, Times, and Years 4:11-15",
+            "Pluck out their own eyes 4:16-20",
+            "Into the grace of Christ 1:7-12"
+          ]
         },
         {
           "id": "the_book_of_galatians_0031",
@@ -2032,7 +2262,12 @@
             "The Gentiles"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Christ Jesus",
+            "Abba Father",
+            "The Galatians"
+          ]
         },
         {
           "id": "the_book_of_galatians_0034",
@@ -2051,7 +2286,12 @@
             "As to the"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The adoption of sons 4:6-10",
+            "They would be consumed 5:16-21",
+            "Provoke and envy 6:1-5"
+          ]
         },
         {
           "id": "the_book_of_galatians_0036",
@@ -2096,7 +2336,12 @@
             "If righteousness come by the law 3:1-7"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "They shall bear their own judgment 5:11-15",
+            "They which are of the faith 3:8-15",
+            "Days, Months, Times, and Years 4:11-15"
+          ]
         },
         {
           "id": "the_book_of_galatians_0041",
@@ -2105,7 +2350,12 @@
             "The Galatians"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Through faith",
+            "A transgressor",
+            "Christ Jesus"
+          ]
         },
         {
           "id": "the_book_of_galatians_0042",
@@ -2132,7 +2382,12 @@
             "They which are of the faith 3:8-15"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "If righteousness come by the law 3:1-7",
+            "They shall bear their own judgment 5:11-15",
+            "Pluck out their own eyes 4:16-20"
+          ]
         },
         {
           "id": "the_book_of_galatians_0045",
@@ -2150,7 +2405,12 @@
             "Abraham"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Bondage",
+            "Liberty",
+            "Promise"
+          ]
         },
         {
           "id": "the_book_of_galatians_0047",
@@ -2177,7 +2437,12 @@
             "A tree 3:16-23"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "15 Days 1:19-24",
+            "The law 3:24-29",
+            "The Spirit 5:6-10"
+          ]
         },
         {
           "id": "the_book_of_galatians_0050",
@@ -2198,7 +2463,12 @@
             "Promise"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Abraham",
+            "Bondage",
+            "Liberty"
+          ]
         },
         {
           "id": "the_book_of_galatians_0052",
@@ -2216,7 +2486,12 @@
             "Scripture"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Corruption",
+            "Abraham",
+            "Bondage"
+          ]
         },
         {
           "id": "the_book_of_galatians_0054",
@@ -2225,7 +2500,12 @@
             "The law 3:24-29"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "15 Days 1:19-24",
+            "A tree 3:16-23",
+            "The Spirit 5:6-10"
+          ]
         },
         {
           "id": "the_book_of_galatians_0055",
@@ -2234,7 +2514,12 @@
             "Schoolmaster"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Circumcision",
+            "Corruption",
+            "Scripture"
+          ]
         },
         {
           "id": "the_book_of_galatians_0056",
@@ -2252,7 +2537,12 @@
             "Faith"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Greek",
+            "Peter",
+            "Christ"
+          ]
         },
         {
           "id": "the_book_of_galatians_0058",
@@ -2261,7 +2551,12 @@
             "Christ Jesus"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The Gentiles",
+            "Abba Father",
+            "The Galatians"
+          ]
         },
         {
           "id": "the_book_of_galatians_0059",
@@ -2270,7 +2565,12 @@
             "Abrahams 4:1-5"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jerusalem 4:26-31",
+            "Man 1:13-18",
+            "A tree 3:16-23"
+          ]
         },
         {
           "id": "the_book_of_galatians_0060",
@@ -2348,7 +2648,12 @@
             "The adoption of sons 4:6-10"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "They would be consumed 5:16-21",
+            "As to the Jews 2:15-21",
+            "Doubt about the Galatians 4:21-25"
+          ]
         },
         {
           "id": "the_book_of_galatians_0068",
@@ -2366,7 +2671,12 @@
             "Abba Father"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Christ Jesus",
+            "The Gentiles",
+            "The Galatians"
+          ]
         },
         {
           "id": "the_book_of_galatians_0070",
@@ -2375,7 +2685,12 @@
             "A Son"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The World",
+            "Abba Father",
+            "Christ Jesus"
+          ]
         },
         {
           "id": "the_book_of_galatians_0071",
@@ -2419,7 +2734,12 @@
             "Days, Months, Times"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The right hands of fellowship 2:10-15",
+            "Pluck out their own eyes 4:16-20",
+            "Into the grace of Christ 1:7-12"
+          ]
         },
         {
           "id": "the_book_of_galatians_0075",
@@ -2480,7 +2800,12 @@
             "Pluck out their own eyes 4:16-20"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Into the grace of Christ 1:7-12",
+            "The right hands of fellowship 2:10-15",
+            "Days, Months, Times, and Years 4:11-15"
+          ]
         },
         {
           "id": "the_book_of_galatians_0081",
@@ -2538,7 +2863,12 @@
             "Doubt about the"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "They would be consumed 5:16-21",
+            "The adoption of sons 4:6-10",
+            "As to the Jews 2:15-21"
+          ]
         },
         {
           "id": "the_book_of_galatians_0087",
@@ -2577,7 +2907,12 @@
             "Promise"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Abraham",
+            "Bondage",
+            "Liberty"
+          ]
         },
         {
           "id": "the_book_of_galatians_0091",
@@ -2595,7 +2930,12 @@
             "Bondage"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Abraham",
+            "Liberty",
+            "Promise"
+          ]
         },
         {
           "id": "the_book_of_galatians_0093",
@@ -2604,7 +2944,12 @@
             "Jerusalem 4:26-31"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Abrahams 4:1-5",
+            "Man 1:13-18",
+            "The Spirit 5:6-10"
+          ]
         },
         {
           "id": "the_book_of_galatians_0094",
@@ -2661,7 +3006,12 @@
             "The freewoman 5:1-5"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The Spirit 5:6-10",
+            "15 Days 1:19-24",
+            "The law 3:24-29"
+          ]
         },
         {
           "id": "the_book_of_galatians_0100",
@@ -2679,7 +3029,12 @@
             "Circumcision"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Schoolmaster",
+            "Corruption",
+            "Scripture"
+          ]
         },
         {
           "id": "the_book_of_galatians_0102",
@@ -2707,7 +3062,12 @@
             "The"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "15 Days 1:19-24",
+            "The freewoman 5:1-5",
+            "The law 3:24-29"
+          ]
         },
         {
           "id": "the_book_of_galatians_0105",
@@ -2728,7 +3088,12 @@
             "Faith"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Greek",
+            "Peter",
+            "Christ"
+          ]
         },
         {
           "id": "the_book_of_galatians_0107",
@@ -2737,7 +3102,12 @@
             "Well"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Faith",
+            "God",
+            "Greek"
+          ]
         },
         {
           "id": "the_book_of_galatians_0108",
@@ -2764,7 +3134,12 @@
             "They shall bear their own judgment 5:11-15"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "If righteousness come by the law 3:1-7",
+            "They which are of the faith 3:8-15",
+            "Days, Months, Times, and Years 4:11-15"
+          ]
         },
         {
           "id": "the_book_of_galatians_0111",
@@ -2791,7 +3166,12 @@
             "Liberty"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Abraham",
+            "Bondage",
+            "Promise"
+          ]
         },
         {
           "id": "the_book_of_galatians_0114",
@@ -2818,7 +3198,12 @@
             "They would be consumed 5:16-21"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Doubt about the Galatians 4:21-25",
+            "The adoption of sons 4:6-10",
+            "As to the Jews 2:15-21"
+          ]
         },
         {
           "id": "the_book_of_galatians_0117",
@@ -2875,7 +3260,12 @@
             "Adultery and fornication and uncleanness and lasciviousness and Idolatry and witchcraft and hatred and variance and emulations and wrath and strife and seditions and heresies and Envyings and murders and drunkenness and revellings 5:22-26"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "That he which persecuted us in times past now preacheth the faith which once he destroyed",
+            "That the truth of the gospel might continue with you 2:6-10",
+            "Them who are of the household of faith 6:11-18"
+          ]
         },
         {
           "id": "the_book_of_galatians_0121",
@@ -2933,7 +3323,12 @@
             "Provoke, envy 6:1-5"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "His own burden 6:6-10",
+            "They glorified God 2:1-5",
+            "As to the Jews 2:15-21"
+          ]
         },
         {
           "id": "the_book_of_galatians_0126",
@@ -2978,7 +3373,12 @@
             "His own burden 6:6-10"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Provoke and envy 6:1-5",
+            "They glorified God 2:1-5",
+            "As to the Jews 2:15-21"
+          ]
         },
         {
           "id": "the_book_of_galatians_0131",
@@ -3005,7 +3405,12 @@
             "Corruption"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Scripture",
+            "Circumcision",
+            "Schoolmaster"
+          ]
         },
         {
           "id": "the_book_of_galatians_0134",
@@ -3032,7 +3437,12 @@
             "Them who are of the household of faith 6:11-18"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "They shall bear their own judgment 5:11-15",
+            "If righteousness come by the law 3:1-7",
+            "They which are of the faith 3:8-15"
+          ]
         },
         {
           "id": "the_book_of_galatians_0137",
@@ -3077,7 +3487,12 @@
             "The World"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Abba Father",
+            "Christ Jesus",
+            "The Gentiles"
+          ]
         },
         {
           "id": "the_book_of_galatians_0142",
@@ -3143,7 +3558,12 @@
             "The Thessalonians"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "King Artaxerxes",
+            "False Brethren",
+            "A Pirathonite"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0003",
@@ -3292,7 +3712,12 @@
             "The Gospel"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "King Cyrus",
+            "A Javelin",
+            "Abba Father"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0016",
@@ -3335,7 +3760,12 @@
             "Night, day"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "15 Days 1:19-24",
+            "Three Sabbath days",
+            "Three days"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0020",
@@ -3423,7 +3853,12 @@
             "The Thessalonians"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The feebleminded",
+            "Without ceasing",
+            "At Philippi"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0028",
@@ -3464,7 +3899,12 @@
             "Tribulation"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Fornication",
+            "Jehoshaphat",
+            "Sheshbazzar"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0032",
@@ -3550,7 +3990,12 @@
             "Fornication"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jehoshaphat",
+            "Sheshbazzar",
+            "Tribulation"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0040",
@@ -3589,7 +4034,12 @@
             "God"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "All",
+            "Dan",
+            "Oak"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0044",
@@ -3685,7 +4135,12 @@
             "Light, the day"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Three Sabbath days",
+            "15 Days 1:19-24",
+            "Night and day"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0053",
@@ -3766,7 +4221,12 @@
             "The feebleminded"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The Thessalonians",
+            "Without ceasing",
+            "At Philippi"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0061",
@@ -3784,7 +4244,12 @@
             "All men"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "No man",
+            "The weak",
+            "At Athens"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0063",
@@ -3802,7 +4267,12 @@
             "Evermore"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Achmetha",
+            "Adonijah",
+            "Believed"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0065",
@@ -3821,7 +4291,12 @@
             "“In everything give thanks” Quote . “Quench not the Spirit”"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "(2 reasons) Because of the matter (sin) and because of the great rain",
+            "A Babylonish garment; 200 shekels of silver, a wedge of gold",
+            "That the truth of the gospel might continue with you 2:6-10"
+          ]
         },
         {
           "id": "the_book_of_1_thessalonians_0067",
@@ -3919,7 +4394,12 @@
             "Chushanrishathaim"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Firebrands",
+            "Shibboleth",
+            "Abimelech"
+          ]
         },
         {
           "id": "the_book_of_judges_0003",
@@ -3985,7 +4465,12 @@
             "Ehud"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Beer",
+            "Elon",
+            "Jael"
+          ]
         },
         {
           "id": "the_book_of_judges_0010",
@@ -3997,7 +4482,12 @@
             "A summer parlour Describe Ehud’s dagger. It had 2 edges, was a cubit long"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "To be bound with 7 green withs that were never dried",
+            "10 thousand men from the tribes of Naphtali & Zebulun",
+            "He slew 30 men of Ashkelon and took their spoil"
+          ]
         },
         {
           "id": "the_book_of_judges_0011",
@@ -4024,7 +4514,12 @@
             "Seirath"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Deborah",
+            "Delilah",
+            "Othniel"
+          ]
         },
         {
           "id": "the_book_of_judges_0014",
@@ -4103,7 +4598,12 @@
             "Hazor"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Anath",
+            "Barak",
+            "Eglon"
+          ]
         },
         {
           "id": "the_book_of_judges_0022",
@@ -4121,7 +4621,12 @@
             "Harosheth of the Gentiles"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "They were his bretheren",
+            "The children of Israel",
+            "Throughout all mount Ephraim"
+          ]
         },
         {
           "id": "the_book_of_judges_0024",
@@ -4169,7 +4674,12 @@
             "River Kishon"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "His daughter",
+            "A Pirathonite",
+            "A millstone"
+          ]
         },
         {
           "id": "the_book_of_judges_0029",
@@ -4205,7 +4715,12 @@
             "Jael"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Beer",
+            "Ehud",
+            "Elon"
+          ]
         },
         {
           "id": "the_book_of_judges_0033",
@@ -4223,7 +4738,12 @@
             "Milk"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Beer",
+            "Ehud",
+            "Elon"
+          ]
         },
         {
           "id": "the_book_of_judges_0035",
@@ -4253,7 +4773,12 @@
             "The song of Deborah, Barak of praise to God"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The shadow of the mountains as if they were men",
+            "Throw it down and cut down the grove by it",
+            "A trumpet and a pitcher with a lamp in it"
+          ]
         },
         {
           "id": "the_book_of_judges_0038",
@@ -4262,7 +4787,12 @@
             "Midian"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Gideon",
+            "Samson",
+            "Sisera"
+          ]
         },
         {
           "id": "the_book_of_judges_0039",
@@ -4306,7 +4836,12 @@
             "Oak"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "All",
+            "Dan",
+            "God"
+          ]
         },
         {
           "id": "the_book_of_judges_0043",
@@ -4396,7 +4931,12 @@
             "Jerubbaal"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Abimelech",
+            "Shibboleth",
+            "Deborah"
+          ]
         },
         {
           "id": "the_book_of_judges_0052",
@@ -4435,7 +4975,12 @@
             "10 and 000"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "5 men",
+            "6 years",
+            "8 years"
+          ]
         },
         {
           "id": "the_book_of_judges_0056",
@@ -4453,7 +4998,12 @@
             "Into 3 companies"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Fourscore (80) years",
+            "About 10,000",
+            "25,000 men"
+          ]
         },
         {
           "id": "the_book_of_judges_0058",
@@ -4558,7 +5108,12 @@
             "Oreb and Zeeb"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "A young lion",
+            "An ox goad",
+            "Break it down"
+          ]
         },
         {
           "id": "the_book_of_judges_0067",
@@ -4663,7 +5218,12 @@
             "Beer"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Ehud",
+            "Elon",
+            "Jael"
+          ]
         },
         {
           "id": "the_book_of_judges_0078",
@@ -4690,7 +5250,12 @@
             "Salt"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Beer",
+            "Ehud",
+            "Elon"
+          ]
         },
         {
           "id": "the_book_of_judges_0081",
@@ -4741,7 +5306,12 @@
             "All the men, woman of the city"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The pin of the beam and the web",
+            "The sword of the Lord and of Gideon",
+            "That she would conceive and bear a son"
+          ]
         },
         {
           "id": "the_book_of_judges_0086",
@@ -4777,7 +5347,12 @@
             "Tola"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Beer",
+            "Ehud",
+            "Elon"
+          ]
         },
         {
           "id": "the_book_of_judges_0090",
@@ -4822,7 +5397,12 @@
             "The elders of Gilead"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The misery of Israel",
+            "Caleb was his uncle",
+            "The gods they chose"
+          ]
         },
         {
           "id": "the_book_of_judges_0095",
@@ -4885,7 +5465,12 @@
             "Shibboleth"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Abimelech",
+            "Jerubbaal",
+            "Deborah"
+          ]
         },
         {
           "id": "the_book_of_judges_0102",
@@ -4924,7 +5509,12 @@
             "A Pirathonite"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "River Kishon",
+            "A Levite",
+            "The Lord"
+          ]
         },
         {
           "id": "the_book_of_judges_0106",
@@ -4972,7 +5562,12 @@
             "Samson"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Gideon",
+            "Midian",
+            "Sisera"
+          ]
         },
         {
           "id": "the_book_of_judges_0111",
@@ -5020,7 +5615,12 @@
             "Samson’s wife"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "A Pirathonite",
+            "Monoah’s wife",
+            "His daughter"
+          ]
         },
         {
           "id": "the_book_of_judges_0116",
@@ -5032,7 +5632,12 @@
             "He slew 30 men of Ashkelon, took their spoil"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "10 thousand men from the tribes of Naphtali & Zebulun",
+            "Eleven hundred pieces of silver from each of them",
+            "To be bound with 7 green withs that were never dried"
+          ]
         },
         {
           "id": "the_book_of_judges_0117",
@@ -5068,7 +5673,12 @@
             "Thirst"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Gideon",
+            "Midian",
+            "Samson"
+          ]
         },
         {
           "id": "the_book_of_judges_0121",
@@ -5077,7 +5687,12 @@
             "Water"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Anath",
+            "Barak",
+            "Eglon"
+          ]
         },
         {
           "id": "the_book_of_judges_0122",
@@ -5107,7 +5722,12 @@
             "Delilah"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Deborah",
+            "Othniel",
+            "Seirath"
+          ]
         },
         {
           "id": "the_book_of_judges_0125",
@@ -5116,7 +5736,12 @@
             "Eleven hundred pieces of silver from each of them"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "He slew 30 men of Ashkelon and took their spoil",
+            "10 thousand men from the tribes of Naphtali & Zebulun",
+            "To be bound with 7 green withs that were never dried"
+          ]
         },
         {
           "id": "the_book_of_judges_0126",
@@ -5125,7 +5750,12 @@
             "To be bound with 7 green withs that were never dried"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "10 thousand men from the tribes of Naphtali & Zebulun",
+            "He slew 30 men of Ashkelon and took their spoil",
+            "Eleven hundred pieces of silver from each of them"
+          ]
         },
         {
           "id": "the_book_of_judges_0127",
@@ -5191,7 +5821,12 @@
             "Micah"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Anath",
+            "Barak",
+            "Eglon"
+          ]
         },
         {
           "id": "the_book_of_judges_0134",
@@ -5271,7 +5906,12 @@
             "Dan"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "All",
+            "God",
+            "Oak"
+          ]
         },
         {
           "id": "the_book_of_judges_0142",
@@ -5381,7 +6021,12 @@
             "Solomon"
           ],
           "reference": "1Kings 1:30",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jezebel",
+            "Adonijah",
+            "Baasha"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0003",
@@ -5399,7 +6044,12 @@
             "The city of David"
           ],
           "reference": "1Kings 2:10",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "On his right hand",
+            "Two calves of gold",
+            "Under a juniper tree"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0005",
@@ -5453,7 +6103,12 @@
             "The Lord"
           ],
           "reference": "1Kings 3:3",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "An angel",
+            "His feet",
+            "Pure Gold"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0011",
@@ -5462,7 +6117,12 @@
             "Child"
           ],
           "reference": "1Kings 3:7",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Egypt",
+            "Judah",
+            "Right"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0012",
@@ -5575,7 +6235,12 @@
             "Pure Gold"
           ],
           "reference": "1Kings 6:21-22",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The Lord",
+            "Mount Carmel",
+            "Adonijah"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0023",
@@ -5636,7 +6301,12 @@
             "20 cities in the land of Galilee"
           ],
           "reference": "1Kings 9:11",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "They which are of the faith 3:8-15",
+            "A talent and two changes of garments",
+            "If righteousness come by the law 3:1-7"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0029",
@@ -5690,7 +6360,12 @@
             "Egypt"
           ],
           "reference": "1Kings 11:40",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Child",
+            "Judah",
+            "Right"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0035",
@@ -5708,7 +6383,12 @@
             "Rehoboam"
           ],
           "reference": "1Kings 11:43",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Adonijah",
+            "Jeroboam",
+            "Jezebel"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0037",
@@ -5726,7 +6406,12 @@
             "Rehoboam"
           ],
           "reference": "1Kings 12:17",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Adonijah",
+            "Jeroboam",
+            "Jezebel"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0039",
@@ -5735,7 +6420,12 @@
             "Jeroboam"
           ],
           "reference": "1Kings 12:20",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Adonijah",
+            "Rehoboam",
+            "Jezebel"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0040",
@@ -5798,7 +6488,12 @@
             "War"
           ],
           "reference": "1Kings 14:30",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Win",
+            "Baal",
+            "Evil"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0046",
@@ -5807,7 +6502,12 @@
             "Judah"
           ],
           "reference": "1Kings 15:9",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Child",
+            "Egypt",
+            "Lions"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0047",
@@ -5816,7 +6516,12 @@
             "Right"
           ],
           "reference": "1Kings 15:11",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Child",
+            "Egypt",
+            "Judah"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0048",
@@ -5865,7 +6570,12 @@
             "Evil"
           ],
           "reference": "1Kings 16:30",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Baal",
+            "Child",
+            "Egypt"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0053",
@@ -5874,7 +6584,12 @@
             "Jezebel"
           ],
           "reference": "1Kings 16:31",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Solomon",
+            "Adonijah",
+            "Baasha"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0054",
@@ -5892,7 +6607,12 @@
             "The brook Cherith"
           ],
           "reference": "1Kings 17:3",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "King David’s mule",
+            "Riches and honor",
+            "Bread or water"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0056",
@@ -5940,7 +6660,12 @@
             "In a cave"
           ],
           "reference": "1Kings 18:4",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The old men",
+            "He would die",
+            "Licked it up"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0061",
@@ -5980,7 +6705,12 @@
             "Water"
           ],
           "reference": "1Kings 18:33",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Child",
+            "Egypt",
+            "Judah"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0065",
@@ -5998,7 +6728,12 @@
             "Under a juniper tree"
           ],
           "reference": "1Kings 19:5",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "God Save King Solomon",
+            "Knops and open flowers",
+            "Two calves of gold"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0067",
@@ -6031,7 +6766,12 @@
             "Win"
           ],
           "reference": "1Kings 20:29",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "War",
+            "Baal",
+            "Evil"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0070",
@@ -6040,7 +6780,12 @@
             "Naboth"
           ],
           "reference": "1Kings 21:1",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Baasha",
+            "Ravens",
+            "Sticks"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0071",
@@ -6099,7 +6844,12 @@
             "Jehoshaphat"
           ],
           "reference": "1Kings 22:4,29",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Adonijah",
+            "Jeroboam",
+            "Rehoboam"
+          ]
         },
         {
           "id": "the_book_of_1_kings_0077",
@@ -6117,7 +6867,12 @@
             "Right"
           ],
           "reference": "1Kings 22:43",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Child",
+            "Egypt",
+            "Judah"
+          ]
         }
       ]
     },
@@ -6300,7 +7055,12 @@
             "Sneeze"
           ],
           "reference": "2Kings 4:35",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Hazael",
+            "Isaiah",
+            "Jehoram"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0019",
@@ -6309,7 +7069,12 @@
             "Leprosy"
           ],
           "reference": "2Kings 5:1",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jehoram",
+            "Benhadad",
+            "Hazael"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0020",
@@ -6318,7 +7083,12 @@
             "Wash in Jordan 7 times"
           ],
           "reference": "2Kings 5:10",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "He shall prolong his days",
+            "his soul (Isaiah 53:12",
+            "A full month"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0021",
@@ -6330,7 +7100,12 @@
             "A talent, two changes of garments"
           ],
           "reference": "2Kings 5:22",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "He shall prolong his days",
+            "Wash in Jordan 7 times",
+            "2 measures of barley and a measure of fine flour"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0022",
@@ -6413,7 +7188,12 @@
             "2 measures of barley, a measure of fine flour"
           ],
           "reference": "2Kings 7:16",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "A talent and two changes of garments",
+            "He shall prolong his days",
+            "Wash in Jordan 7 times"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0030",
@@ -6422,7 +7202,12 @@
             "Benhadad"
           ],
           "reference": "2Kings 8:7",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Furiously",
+            "Jehoram",
+            "Leprosy"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0031",
@@ -6449,7 +7234,12 @@
             "Furiously"
           ],
           "reference": "2Kings 9:20",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Benhadad",
+            "Jehoram",
+            "Leprosy"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0034",
@@ -6476,7 +7266,12 @@
             "Jehu"
           ],
           "reference": "2Kings 10:11",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Moab",
+            "dumb",
+            "Forts"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0037",
@@ -6485,7 +7280,12 @@
             "Jehu"
           ],
           "reference": "2Kings 10:28",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Moab",
+            "dumb",
+            "Forts"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0038",
@@ -6524,7 +7324,12 @@
             "7 years old"
           ],
           "reference": "2Kings 11:21",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "8 years old",
+            "28 years",
+            "6 years"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0042",
@@ -6542,7 +7347,12 @@
             "His servants"
           ],
           "reference": "2Kings 12:20",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "” generation",
+            "A sheepmaster",
+            "A whirlwind"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0044",
@@ -6551,7 +7361,12 @@
             "Hazael king of Syria"
           ],
           "reference": "2Kings 13:22",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "He rent his clothes",
+            "For his own sin",
+            "Smite them with blindness"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0045",
@@ -6596,7 +7411,12 @@
             "Their father’s"
           ],
           "reference": "2Kings 17:14",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "A sheepmaster",
+            "His servants",
+            "their iniquities"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0050",
@@ -6638,7 +7458,12 @@
             "Isaiah"
           ],
           "reference": "2Kings 20:1",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Hazael",
+            "Sneeze",
+            "Forts"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0054",
@@ -6677,7 +7502,12 @@
             "8 years old"
           ],
           "reference": "2Kings 22:1",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "7 years old",
+            "28 years",
+            "6 years"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0058",
@@ -6716,7 +7546,12 @@
             "No"
           ],
           "reference": "2Kings 23:25",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jehu",
+            "Moab",
+            "Hazael"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0062",
@@ -7013,7 +7848,12 @@
             "He shall prolong his days"
           ],
           "reference": "Isaiah 53:10",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Wash in Jordan 7 times",
+            "his soul (Isaiah 53:12",
+            "A talent and two changes of garments"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0092",
@@ -7068,7 +7908,12 @@
             "his soul ("
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Wash in Jordan 7 times",
+            "He shall prolong his days",
+            "A full month"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0098",
@@ -7077,7 +7922,12 @@
             "the transgressors"
           ],
           "reference": "Isaiah 53:12",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "their iniquities",
+            "Their father’s",
+            "A sheepmaster"
+          ]
         },
         {
           "id": "the_book_of_2_kings_0099",
@@ -7095,7 +7945,12 @@
             "Intercession"
           ],
           "reference": "Isaiah 53:12",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Furiously",
+            "Benhadad",
+            "Jehoram"
+          ]
         }
       ]
     },
@@ -7227,7 +8082,12 @@
             "Nebuchadnezzar"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Sheshbazzar",
+            "Artaxerxes",
+            "Mithredath"
+          ]
         },
         {
           "id": "the_book_of_ezra_0013",
@@ -7290,7 +8150,12 @@
             "5 and 400"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "1,000",
+            "Three days",
+            "The ninth month"
+          ]
         },
         {
           "id": "the_book_of_ezra_0019",
@@ -7299,7 +8164,12 @@
             "The seventh month"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The second month",
+            "The ninth month",
+            "On the 14th day of the first month"
+          ]
         },
         {
           "id": "the_book_of_ezra_0020",
@@ -7320,7 +8190,12 @@
             "Priest"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Syrian",
+            "Timber",
+            "Daily"
+          ]
         },
         {
           "id": "the_book_of_ezra_0022",
@@ -7329,7 +8204,12 @@
             "Governor"
           ],
           "reference": "or leader from David’s family",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Achmetha",
+            "Shimshai",
+            "Jerusalem"
+          ]
         },
         {
           "id": "the_book_of_ezra_0023",
@@ -7380,7 +8260,12 @@
             "Daily"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Ezra",
+            "Levi",
+            "Priest"
+          ]
         },
         {
           "id": "the_book_of_ezra_0028",
@@ -7402,7 +8287,12 @@
             "From the first day of the seventh month"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "On the 14th day of the first month",
+            "The third day of the month Adar, in the sixth year of King Darius",
+            "Three days"
+          ]
         },
         {
           "id": "the_book_of_ezra_0030",
@@ -7411,7 +8301,12 @@
             "No"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "God",
+            "Ezra",
+            "Levi"
+          ]
         },
         {
           "id": "the_book_of_ezra_0031",
@@ -7435,7 +8330,12 @@
             "Lebanon"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Achmetha",
+            "Governor",
+            "Priest"
+          ]
         },
         {
           "id": "the_book_of_ezra_0033",
@@ -7456,7 +8356,12 @@
             "The second month"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The ninth month",
+            "The seventh month",
+            "Three days"
+          ]
         },
         {
           "id": "the_book_of_ezra_0035",
@@ -7483,7 +8388,12 @@
             "20 years old, upward"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The seventh month",
+            "The second month",
+            "The ninth month"
+          ]
         },
         {
           "id": "the_book_of_ezra_0037",
@@ -7510,7 +8420,12 @@
             "King David of Israel"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Cyrus king of Persia",
+            "Aaron the high priest",
+            "All those around them"
+          ]
         },
         {
           "id": "the_book_of_ezra_0040",
@@ -7612,7 +8527,12 @@
             "Zerubbabel, Jeshua, the leaders of Israel"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The adversaries (enemies) of Judah and Benjamin",
+            "Zerubbabel, Jeshua, and the priests and Levites",
+            "The chief priests, Levites, and all Israel"
+          ]
         },
         {
           "id": "the_book_of_ezra_0049",
@@ -7706,7 +8626,12 @@
             "Syrian"
           ],
           "reference": "Aramaic",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Priest",
+            "Timber",
+            "Daily"
+          ]
         },
         {
           "id": "the_book_of_ezra_0058",
@@ -7845,7 +8770,12 @@
             "King Artaxerxes"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "A proclamation",
+            "Their iniquities",
+            "Their trespass"
+          ]
         },
         {
           "id": "the_book_of_ezra_0071",
@@ -7977,7 +8907,12 @@
             "Until the second year of the reign of Darius king of Persia True, False: The enemies helped the Jews finish the temple. False"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The third day of the month Adar, in the sixth year of King Darius",
+            "(2 reasons) Because of the matter (sin) and because of the great rain",
+            "20 years old and upward"
+          ]
         },
         {
           "id": "the_book_of_ezra_0083",
@@ -7989,7 +8924,12 @@
             "Haggai, Zechariah"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Artaxerxes the king",
+            "Celebrated with joy",
+            "Jeshua and Zerubbabel"
+          ]
         },
         {
           "id": "the_book_of_ezra_0084",
@@ -7998,7 +8938,12 @@
             "Zechariah the son of Iddo"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Be strong and take action",
+            "Building the house of God",
+            "That the work should stop"
+          ]
         },
         {
           "id": "the_book_of_ezra_0085",
@@ -8152,7 +9097,12 @@
             "Timber"
           ],
           "reference": "wood",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Priest",
+            "Syrian",
+            "Daily"
+          ]
         },
         {
           "id": "the_book_of_ezra_0100",
@@ -8248,7 +9198,12 @@
             "From the temple in Jerusalem"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Shechaniah the son of Jehiel",
+            "Young bulls, rams, and lambs",
+            "Because of the people’s sin"
+          ]
         },
         {
           "id": "the_book_of_ezra_0109",
@@ -8257,7 +9212,12 @@
             "Sheshbazzar"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Artaxerxes",
+            "Mithredath",
+            "Jerusalem"
+          ]
         },
         {
           "id": "the_book_of_ezra_0110",
@@ -8293,7 +9253,12 @@
             "King Darius"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "In Jerusalem",
+            "King Cyrus",
+            "In Judah"
+          ]
         },
         {
           "id": "the_book_of_ezra_0114",
@@ -8311,7 +9276,12 @@
             "Achmetha"
           ],
           "reference": "Ecbatana",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Governor",
+            "Shimshai",
+            "Trumpets"
+          ]
         },
         {
           "id": "the_book_of_ezra_0116",
@@ -8398,7 +9368,12 @@
             "The people beyond the river"
           ],
           "reference": "the local Persian officials",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Because of the people’s sin",
+            "Great stones and new timber",
+            "From the temple in Jerusalem"
+          ]
         },
         {
           "id": "the_book_of_ezra_0124",
@@ -8407,7 +9382,12 @@
             "Daily"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Ezra",
+            "Levi",
+            "Priest"
+          ]
         },
         {
           "id": "the_book_of_ezra_0125",
@@ -8517,7 +9497,12 @@
             "The third day of the month Adar and in the sixth year of King Darius"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "(2 reasons) Because of the matter (sin) and because of the great rain",
+            "20 years old and upward",
+            "From the first day of the seventh month"
+          ]
         },
         {
           "id": "the_book_of_ezra_0135",
@@ -8550,7 +9535,12 @@
             "On the 14th day of the first month"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "From the first day of the seventh month",
+            "Three days",
+            "20 years old and upward"
+          ]
         },
         {
           "id": "the_book_of_ezra_0138",
@@ -8586,7 +9576,12 @@
             "Levi"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Ezra",
+            "Daily",
+            "God"
+          ]
         },
         {
           "id": "the_book_of_ezra_0142",
@@ -8613,7 +9608,12 @@
             "The Lord God of Israel"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "A great king of Israel",
+            "Build the house of God",
+            "Teach it to the people"
+          ]
         },
         {
           "id": "the_book_of_ezra_0145",
@@ -8784,7 +9784,12 @@
             "The princes"
           ],
           "reference": "leaders",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "King Darius",
+            "Their names",
+            "Great stones"
+          ]
         },
         {
           "id": "the_book_of_ezra_0160",
@@ -8926,7 +9931,12 @@
             "In His holy place"
           ],
           "reference": "the temple",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "By force and power",
+            "His head and beard",
+            "The law of Moses"
+          ]
         },
         {
           "id": "the_book_of_ezra_0174",
@@ -9141,7 +10151,12 @@
             "The ninth month"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The second month",
+            "The seventh month",
+            "Three days"
+          ]
         },
         {
           "id": "the_book_of_ezra_0194",
@@ -9150,7 +10165,12 @@
             "In the open place before the house of God"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The noise of joy and the noise of weeping",
+            "Because the eye of their God was upon them",
+            "They must help Ezra and give what he needed"
+          ]
         },
         {
           "id": "the_book_of_ezra_0195",
@@ -9165,7 +10185,12 @@
             "Because of the matter, because of the great rain, 2 reasons, sin"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The third day of the month Adar, in the sixth year of King Darius",
+            "From the first day of the seventh month",
+            "On the 14th day of the first month"
+          ]
         },
         {
           "id": "the_book_of_ezra_0196",
@@ -9207,7 +10232,12 @@
             "The Holy Ghost"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "The Gentiles",
+            "Jerusalem",
+            "Believed"
+          ]
         },
         {
           "id": "pauls_journeys_0002",
@@ -9228,7 +10258,12 @@
             "Seleucia"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Believed",
+            "Philippi",
+            "Antioch"
+          ]
         },
         {
           "id": "pauls_journeys_0004",
@@ -9237,7 +10272,12 @@
             "Boat"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Asia",
+            "Daily",
+            "God"
+          ]
         },
         {
           "id": "pauls_journeys_0005",
@@ -9260,7 +10300,12 @@
             "Sergius Paulus"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "An earthquake",
+            "The prisoners",
+            "Kill himself"
+          ]
         },
         {
           "id": "pauls_journeys_0007",
@@ -9278,7 +10323,12 @@
             "Believed"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Philippi",
+            "Seleucia",
+            "Antioch"
+          ]
         },
         {
           "id": "pauls_journeys_0009",
@@ -9320,7 +10370,12 @@
             "David John said “whose shoes of his feet I am not worthy to _____.” loose"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "They shook off the dust of their feet against them and came unto Iconium",
+            "Confirmed the souls of the disciples, and exhorted them to continue in the faith",
+            "Except ye be circumcised after the manner of Moses, ye cannot be saved"
+          ]
         },
         {
           "id": "pauls_journeys_0013",
@@ -9362,7 +10417,12 @@
             "Many of the Jews, religious proselytes"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Certain lewd fellows of the baser sort",
+            "Come over into Macedonia, and help us",
+            "Went into the synagogue and sat down"
+          ]
         },
         {
           "id": "pauls_journeys_0017",
@@ -9404,7 +10464,12 @@
             "The Gentiles"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Kill himself",
+            "An earthquake",
+            "The prisoners"
+          ]
         },
         {
           "id": "pauls_journeys_0021",
@@ -9486,7 +10551,12 @@
             "Lystra, Derbe"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "They were loosed",
+            "Abide there still",
+            "He became blind"
+          ]
         },
         {
           "id": "pauls_journeys_0028",
@@ -9513,7 +10583,12 @@
             "Jupiter"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Antioch",
+            "Believed",
+            "Philippi"
+          ]
         },
         {
           "id": "pauls_journeys_0031",
@@ -9564,7 +10639,12 @@
             "Antioch"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Jupiter",
+            "Believed",
+            "Philippi"
+          ]
         },
         {
           "id": "pauls_journeys_0036",
@@ -9619,7 +10699,12 @@
             "Peter"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Daily",
+            "Lydia",
+            "Asia"
+          ]
         },
         {
           "id": "pauls_journeys_0041",
@@ -9700,7 +10785,12 @@
             "Daily"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Lydia",
+            "Peter",
+            "Asia"
+          ]
         },
         {
           "id": "pauls_journeys_0049",
@@ -9748,7 +10838,12 @@
             "Philippi"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Believed",
+            "Seleucia",
+            "Antioch"
+          ]
         },
         {
           "id": "pauls_journeys_0054",
@@ -9757,7 +10852,12 @@
             "Lydia"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Daily",
+            "Peter",
+            "Asia"
+          ]
         },
         {
           "id": "pauls_journeys_0055",
@@ -9775,7 +10875,12 @@
             "He came out the same hour"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Into the grace of Christ 1:7-12",
+            "Morning and evening for 40 days",
+            "Pluck out their own eyes 4:16-20"
+          ]
         },
         {
           "id": "pauls_journeys_0057",
@@ -9817,7 +10922,12 @@
             "The prisoners"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "An earthquake",
+            "Kill himself",
+            "Sergius Paulus"
+          ]
         },
         {
           "id": "pauls_journeys_0061",
@@ -9895,7 +11005,12 @@
             "Certain lewd fellows of the baser sort"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Come over into Macedonia, and help us",
+            "Went into the synagogue and sat down",
+            "Many of the Jews and religious proselytes"
+          ]
         },
         {
           "id": "pauls_journeys_0069",
@@ -10000,7 +11115,12 @@
             "The times of this ignorance"
           ],
           "reference": "",
-          "difficulty": 1
+          "difficulty": 1,
+          "distractors": [
+            "Wash in Jordan 7 times",
+            "Days, Months, Times, and Years 4:11-15",
+            "The adoption of sons 4:6-10"
+          ]
         },
         {
           "id": "pauls_journeys_0079",
