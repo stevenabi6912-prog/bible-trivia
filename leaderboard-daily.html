@@ -14,46 +14,54 @@
     <header class="topbar">
       <a class="btn btn-ghost" href="index.html">← Home</a>
       <div class="brand">
-        <img class="brandLogo" src="assets/bible-battle-logo.png" alt="Bible Battle"/>
-        <span class="brandText">Daily Leaderboard</span>
+        <div class="logo">🏆</div>
+        <div class="title">Daily Leaderboard</div>
       </div>
-      <nav class="topnav">
-        <button class="btn btn-ghost" id="settingsBtn" type="button">⚙️ Settings</button>
+      <div class="topbar-right">
+        <button id="settingsBtn" class="btn btn-ghost">⚙️ Settings</button>
         <a class="btn btn-ghost" href="leaderboard-practice.html">🎯 Practice</a>
-      </nav>
+      </div>
     </header>
 
     <main class="card">
-      <div class="lbControls">
-        <div class="lbBadge">
-          <div class="helper">Challenge</div>
-          <div class="pillTag">All Categories</div>
-        </div>
-<div>
-          <label for="view">View</label>
-          <select id="view" class="input-lg">
-            <option value="today">Today</option>
-            <option value="season">This Season</option>
-          </select>
-          <div class="helper" id="seasonLabel"></div>
+      <div class="row row-between row-wrap">
+        <div class="field">
+          <div class="label">Challenge</div>
+          <div class="pill">All Categories</div>
         </div>
 
-        <div>
-          <label for="limit">Show</label>
-          <select id="limit" class="input-lg">
+        <div class="field">
+          <div class="label">View</div>
+          <select id="view" class="select">
+            <option value="today" selected>Today</option>
+            <option value="season">This Season</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <div class="label">Show</div>
+          <select id="limit" class="select">
             <option value="10">Top 10</option>
             <option value="20" selected>Top 20</option>
             <option value="50">Top 50</option>
+            <option value="100">Top 100</option>
           </select>
         </div>
       </div>
 
-      <div class="statusText" id="status"></div>
+      <div class="subtle" id="seasonLabel"></div>
+      <div class="subtle" id="status"></div>
 
       <div class="tableWrap">
-        <table>
+        <table class="table">
           <thead>
-            <tr><th>#</th><th>Name</th><th>Score</th><th>Correct</th><th>Date</th></tr>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th class="num">Score</th>
+              <th class="num">Correct</th>
+              <th>Date</th>
+            </tr>
           </thead>
           <tbody id="rows"></tbody>
         </table>
@@ -64,40 +72,16 @@
   </div>
 
   <script type="module" src="leaderboard-daily.js"></script>
+
   <div id="settingsOverlay" class="modalOverlay"></div>
   <div id="settingsModal" class="modal">
     <div class="modalHeader">
       <div class="modalTitle">Settings</div>
-      <button id="settingsClose" class="iconBtn" type="button" aria-label="Close">✕</button>
+      <button id="settingsClose" class="icoBtn" aria-label="Close">✕</button>
     </div>
-
     <div class="modalBody">
-      <div class="settingRow">
-        <div class="settingLabel">Music</div>
-        <div class="settingControl">
-          <input id="musicVol" type="range" min="0" max="100" value="18" />
-          <div class="settingVal" id="musicVal">18%</div>
-        </div>
-      </div>
-
-      <div class="settingRow">
-        <div class="settingLabel">Sound effects</div>
-        <div class="settingControl">
-          <input id="sfxVol" type="range" min="0" max="100" value="60" />
-          <div class="settingVal" id="sfxVal">60%</div>
-        </div>
-      </div>
-
-      <label class="toggleRow">
-        <input id="muteToggle" type="checkbox" />
-        <span>Mute all audio</span>
-      </label>
-
-      <div class="fineprint">
-        Audio starts after your first click (browser rule). Placeholder sounds included.
-      </div>
+      <div id="audioSettingsMount"></div>
     </div>
   </div>
-
 </body>
 </html>

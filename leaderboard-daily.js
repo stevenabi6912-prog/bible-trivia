@@ -12,71 +12,100 @@ const seasonLabel = document.getElementById('seasonLabel');
 function seasonIdFor(d) {
   const y = d.getFullYear();
   const q = Math.floor(d.getMonth() / 3) + 1;
-  return `${y}Q${q}`;
+  return `${y}-Q${q}`;
 }
-const now = new Date();
-const dayId = now.toISOString().slice(0, 10);
-const seasonId = seasonIdFor(now);
-seasonLabel.textContent = `Season: ${seasonId}`;
 
-let data = null;
-try {
-  data = await loadCategories();
-} catch (e) {
-  console.error('Failed to load categories:', e);
+function dayIdFor(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
 }
-if (data?.categories) {
-  for (const c of data.categories) } // filter uses stored title
+
+function fmtDate(val) {
+  if (!val) return '';
+  // Firestore Timestamp support
+  if (typeof val?.toDate === 'function') {
+    const d = val.toDate();
+    return d.toLocaleDateString();
+  }
+  // millis/Date fallback
+  const d = (val instanceof Date) ? val : new Date(val);
+  return isNaN(d.getTime()) ? '' : d.toLocaleDateString();
+}
+
+function escapeHtml(s) {
+  return String(s ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
+}
 
 let unsub = null;
 
-function fmtDate(ts) {
-  try {
-    const d = ts?.toDate ? ts.toDate() : (ts ? new Date(ts) : null);
-    if (!d) return '';
-    return d.toLocaleDateString();
-  } catch { return ''; }
-}
-
-function render(list) {
+function render(scores) {
   rowsEl.innerHTML = '';
-  list.forEach((s, i) => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td>${i + 1}</td>
-      <td>${escapeHtml(s.name || '')}</td>      <td><b>${Number(s.score || 0)}</b></td>
-      <td>${Number(s.correct || 0)}/${Number(s.total || 0)}</td>
-      <td>${fmtDate(s.createdAt)}</td>
-    `;
-    rowsEl.appendChild(tr);
-  });
-}
+  if (!scores || scores.length === 0) {
+    statusEl.textContent = 'No scores yet.';
+    return;
+  }
+  statusEl.textContent = '';
 
-function escapeHtml(str) {
-  return String(str).replace(/[&<>"']/g, (m) => ({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
-  }[m]));
+  const frag = document.createDocumentFragment();
+
+  scores.forEach((s, i) => {
+    const tr = document.createElement('tr');
+
+    const rank = document.createElement('td');
+    rank.textContent = String(i + 1);
+
+    const name = document.createElement('td');
+    name.textContent = s.playerName || s.name || 'Anonymous';
+
+    const score = document.createElement('td');
+    score.className = 'num';
+    score.textContent = String(Number(s.score) || 0);
+
+    const correct = document.createElement('td');
+    correct.className = 'num';
+    correct.textContent = String(Number(s.correct) || 0);
+
+    const date = document.createElement('td');
+    date.textContent = fmtDate(s.createdAt || s.date);
+
+    tr.append(rank, name, score, correct, date);
+    frag.appendChild(tr);
+  });
+
+  rowsEl.appendChild(frag);
 }
 
 function resub() {
-  statusEl.textContent = 'Loading…';
-  rowsEl.innerHTML = '';
+  if (typeof unsub === 'function') unsub();
 
-  if (unsub) unsub();
-
-  const category =   const view = viewEl.value;
+  const now = new Date();
+  const view = viewEl.value;
   const limit = Number(limitEl.value) || 20;
 
+  const dayId = dayIdFor(now);
+  const seasonId = seasonIdFor(now);
+
+  if (view === 'season') {
+    seasonLabel.textContent = `Season: ${seasonId}`;
+  } else {
+    seasonLabel.textContent = `Today: ${dayId}`;
+  }
+
   const opts = {
-    category,
-    limit,
     mode: 'daily',
-    seasonId: view === 'season' ? seasonId : null,
-    dayId: view === 'today' ? dayId : null,
-    onData: (scores) => {
-      statusEl.textContent = scores.length ? '' : 'No scores yet—be the first!';
-      render(scores);
-    },
+    // Daily is always “All Categories”
+    category: '__ALL__',
+    limit,
+    dayId: (view === 'today') ? dayId : undefined,
+    seasonId: (view === 'season') ? seasonId : undefined,
+    onData: (scores) => render(scores),
     onError: (e) => {
       console.error(e);
       statusEl.textContent = 'Leaderboard error. Check Firestore rules / index requirements.';
