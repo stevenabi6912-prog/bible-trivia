@@ -9,7 +9,7 @@ const modeDaily = document.getElementById('modeDaily');
 const modePractice = document.getElementById('modePractice');
 const agreeDaily = document.getElementById('agreeDaily');
 const dailyDisclaimer = document.getElementById('dailyDisclaimer');
-const modeHint = document.getElementById('modeHint');
+const categoryWrap = document.getElementById('categoryWrap');
 const catHelp = document.getElementById('catHelp');
 
 let mode = 'daily'; // default
@@ -24,19 +24,15 @@ function setMode(next) {
   modeDaily.setAttribute('aria-checked', String(daily));
   modePractice.setAttribute('aria-checked', String(!daily));
 
-  dailyDisclaimer.style.display = daily ? 'block' : 'none';
-
-  modeHint.textContent = daily
-    ? 'Daily Challenge is selected. One attempt per day.'
-    : 'Practice is selected. Random questions to train up.';
-
-  catHelp.textContent = daily
+  dailyDisclaimer.style.display = daily ? 'block' : 'none';catHelp.textContent = daily
     ? 'Daily Challenge uses the same 10 questions for everyone today (from ANY category).'
     : 'Practice lets you pick a category to train up.';
 
   // Category is only selectable in Practice
   catEl.disabled = daily;
   if (daily) catEl.value = '__ALL__';
+  // Hide the whole category section in Daily to reduce confusion
+  if (categoryWrap) categoryWrap.style.display = daily ? 'none' : 'block';
 }
 
 function onCardActivate(card, nextMode) {

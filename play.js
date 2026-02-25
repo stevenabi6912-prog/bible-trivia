@@ -141,8 +141,9 @@ async function finish(totalMs) {
 
   const correct = round.filter(q => q.__correct).length;
 
+  let docId = '';
   try {
-    await saveScore({
+    docId = await saveScore({
       name: playerName,
       playerKey,
       dailyKey: mode === 'daily' ? dailyKey : '',
@@ -155,10 +156,11 @@ async function finish(totalMs) {
       seasonId,
       dayId,
       mode
-    });
+    }) || '';
   } catch (e) {
     console.error(e);
-    alert('Score could not be saved. Check Firestore rules.');
+    // Don't block the user at the end of the game.
+    docId = '';
   }
 
   const params = new URLSearchParams({

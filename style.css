@@ -313,9 +313,10 @@ tr:hover td{background:rgba(255,255,255,0.04)}
   font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 .theme-bible-battle .brandText{
-  font-family: 'Bangers', 'Nunito', sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 1.65rem;
+  font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  font-size: 1.55rem;
 }
 .brandLogo{
   width: 36px;
@@ -400,13 +401,13 @@ input, select{ font-size: 1.05rem; }
 .header{
   display:flex;
   align-items:center;
-  gap:32px;
+  gap:52px;
   flex-wrap:wrap;
   margin-bottom:18px;
 }
 .header .nav{
   display:flex;
-  gap:18px;
+  gap:24px;
 }
 
 
@@ -493,3 +494,8 @@ input, select{ font-size: 1.05rem; }
   border-color: rgba(255, 90, 90, 0.55);
   background: rgba(90, 20, 30, 0.45);
 }
+
+
+/* ===== v5 play spacing tweaks ===== */
+.pillRow{margin-bottom:14px;}
+.qPrompt{margin-top:10px;}
