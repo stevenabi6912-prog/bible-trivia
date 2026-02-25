@@ -1,7 +1,5 @@
-import { loadCategories } from './trivia.js';
 import { subscribeLeaderboard } from './scores.js';
 
-const catEl = document.getElementById('cat');
 const viewEl = document.getElementById('view');
 const limitEl = document.getElementById('limit');
 const rowsEl = document.getElementById('rows');
@@ -84,7 +82,6 @@ function resub() {
   unsub = subscribeLeaderboard(opts);
 }
 
-catEl.addEventListener('change', resub);
 viewEl.addEventListener('change', resub);
 limitEl.addEventListener('change', resub);
 

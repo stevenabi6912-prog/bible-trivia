@@ -3,8 +3,9 @@ import { saveScore, hasDailyAttempt, normalizePlayerKey } from './scores.js';
 
 const qs = new URLSearchParams(location.search);
 const playerName = qs.get('name') || 'Player';
-const categoryId = qs.get('category') || '__ALL__';
+const categoryIdParam = qs.get('category') || '__ALL__';
 const mode = (qs.get('mode') || 'daily').toLowerCase() === 'practice' ? 'practice' : 'daily';
+const categoryId = (mode === 'daily') ? '__ALL__' : categoryIdParam;
 
 // Locked competitive settings
 const QUESTION_COUNT = 10;
@@ -60,7 +61,7 @@ if (mode === 'daily') {
 let round = [];
 try {
   if (mode === 'daily') {
-    const seedStr = `${dayId}|${categoryId}`; // same questions for everyone today (per category)
+    const seedStr = `${dayId}|ALL`; // same questions for everyone today (any category)
     round = buildDailyRound(categories, categoryId, QUESTION_COUNT, seedStr);
   } else {
     round = buildRound(categories, categoryId, QUESTION_COUNT);

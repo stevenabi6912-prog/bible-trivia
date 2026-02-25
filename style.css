@@ -247,3 +247,5 @@ tr:hover td{background:rgba(255,255,255,0.04)}
 .col{flex:1}
 .pillRow{display:flex; gap:10px; flex-wrap:wrap}
 .pill{padding:10px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); background:rgba(0,0,0,0.16); font-size:14px}
+
+.static-pill{display:inline-block;padding:10px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);font-weight:800;}

@@ -31,8 +31,12 @@ function setMode(next) {
     : 'Practice is selected. Random questions to train up.';
 
   catHelp.textContent = daily
-    ? 'Daily Challenge uses the same 10 questions for everyone today (per category).'
-    : 'Practice is random questions (great for learning).';
+    ? 'Daily Challenge uses the same 10 questions for everyone today (from ANY category).'
+    : 'Practice lets you pick a category to train up.';
+
+  // Category is only selectable in Practice
+  catEl.disabled = daily;
+  if (daily) catEl.value = '__ALL__';
 }
 
 function onCardActivate(card, nextMode) {
@@ -70,7 +74,8 @@ startBtn.addEventListener('click', async () => {
 
   localStorage.setItem('bt_name', name);
 
-  const categoryId = catEl.value || '__ALL__';
+  let categoryId = catEl.value || '__ALL__';
+  if (mode === 'daily') categoryId = '__ALL__';
 
   // Locked competition settings
   const count = 10;
@@ -105,7 +110,7 @@ startBtn.addEventListener('click', async () => {
 
   const params = new URLSearchParams({
     name,
-    category: categoryId,
+    category: (mode === 'daily' ? '__ALL__' : categoryId),
     count: String(count),
     seconds: String(seconds),
     mode
