@@ -167,7 +167,10 @@ async function finish(totalMs) {
     score: String(score),
     correct: String(correct),
     total: String(QUESTION_COUNT),
-    mode
+    mode,
+    seasonId,
+    dayId,
+    docId
   });
   location.href = `result.html?${params.toString()}`;
 }

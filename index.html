@@ -27,10 +27,14 @@
           <div class="helper">Tip: use the same spelling each time.</div>
         </div>
 
-        <div>
+        <div id="categoryWrap" class="fade-section">
           <label for="category">Category</label>
           <select id="category" class="input-lg"></select>
           <div class="helper" id="catHelp">Choose a category (or All Categories).</div>
+        </div>
+
+        <div id="dailyNote" class="helper fade-section fade-hidden">
+          Daily Challenge uses 10 questions from <b>all categories</b>.
         </div>
       </div>
 
@@ -40,7 +44,7 @@
         <button type="button" class="modeCard selected" id="modeDaily" role="radio" aria-checked="true">
           <div class="modeBadge">🏆 Competitive</div>
           <div class="modeTitle">Daily Challenge</div>
-          <div class="modeDesc">Same 10 questions for everyone today (per category).</div>
+          <div class="modeDesc">Same 10 questions for everyone today (all categories).</div>
           <ul class="modeBullets">
             <li><b>One attempt per day</b></li>
             <li>Counts toward the Daily Leaderboard</li>

@@ -2,7 +2,7 @@ import { firebaseConfig } from './firebase-config.js';
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
 import {
   getFirestore, collection, addDoc, serverTimestamp,
-  query, orderBy, limit as qLimit, where, onSnapshot, getDocs
+  query, orderBy, limit as qLimit, where, onSnapshot, getDocs, getDoc, doc
 } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
 
 const app = initializeApp(firebaseConfig);
@@ -54,7 +54,8 @@ export async function saveScore({
 
     createdAt: serverTimestamp()
   };
-  await addDoc(collection(db, 'scores'), clean);
+  const ref = await addDoc(collection(db, 'scores'), clean);
+  return ref.id;
 }
 
 export function subscribeLeaderboard({ category, limit, seasonId, dayId, mode, onData, onError }) {
@@ -79,4 +80,26 @@ export function subscribeLeaderboard({ category, limit, seasonId, dayId, mode, o
     const scores = snap.docs.map(d => ({ id: d.id, ...d.data() }));
     onData(scores);
   }, onError);
+}
+
+
+export async function getScoreDoc(docId){
+  if(!docId) return null;
+  const snap = await getDoc(doc(db,'scores',String(docId)));
+  return snap.exists() ? ({ id: snap.id, ...snap.data() }) : null;
+}
+
+export async function fetchLeaderboardOnce({ category, limit, seasonId, dayId, mode }){
+  const clauses = [collection(db,'scores')];
+  if (mode) clauses.push(where('mode','==',mode));
+  if (seasonId) clauses.push(where('seasonId','==',seasonId));
+  if (dayId) clauses.push(where('dayId','==',dayId));
+  if (category && category !== '__ALL__') clauses.push(where('category','==',category));
+  clauses.push(orderBy('score','desc'));
+  clauses.push(orderBy('correct','desc'));
+  clauses.push(orderBy('ms','asc'));
+  clauses.push(qLimit(limit||50));
+  const q = query(...clauses);
+  const snap = await getDocs(q);
+  return snap.docs.map(d => ({ id: d.id, ...d.data() }));
 }
