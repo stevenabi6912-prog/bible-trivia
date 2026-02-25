@@ -79,12 +79,19 @@ export function buildDailyRound(allCategories, selectedCategoryId, questionCount
   return questions.slice(0, questionCount);
 }
 
-export function makeChoices(correctAnswer, allAnswersPool, k = 4) {
-  const correct = normalizeAnswer(correctAnswer);
-  const choices = new Set([correct]);
+export function makeChoices(correctAnswerField, allAnswersPool, k = 4) {
+  // We only *display* one canonical label per question/answer.
+  // (Each question may store multiple acceptable answers as an array.)
+  const correctLabel = pickCanonicalAnswer(correctAnswerField);
+  const choices = new Set([correctLabel]);
 
-  // Fill with random distractors from the global pool
-  const pool = allAnswersPool.map(normalizeAnswer).filter(Boolean).filter(a => a !== correct);
+  // Build distractor labels from the global pool, canonicalized and de-duped
+  const pool = allAnswersPool
+    .map(pickCanonicalAnswer)
+    .map(a => normalizeAnswer(a))
+    .filter(Boolean)
+    .filter(a => a !== correctLabel);
+
   shuffle(pool);
 
   for (const a of pool) {
@@ -92,7 +99,6 @@ export function makeChoices(correctAnswer, allAnswersPool, k = 4) {
     if (choices.size >= k) break;
   }
 
-  // If pool was tiny, duplicate-safe fallback
   while (choices.size < k) choices.add('—');
 
   return shuffle(Array.from(choices));
