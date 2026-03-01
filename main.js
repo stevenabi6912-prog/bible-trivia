@@ -4,7 +4,7 @@ import { hasDailyAttempt, normalizePlayerKey } from './scores.js';
 
 // Temporary special event toggle (set enabled:false to remove the event from the UI)
 const SPECIAL_EVENT = {
-  enabled: true,
+  enabled: false,
   slug: 'missions-2026',
   title: 'Missions Conference Challenge',
   desc: 'Special competition quiz for the conference.'
