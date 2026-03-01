@@ -2,14 +2,40 @@ import { initAudioUI, unlockAudio, startMusic, sfx } from './audio.js';
 import { loadCategories } from './trivia.js';
 import { hasDailyAttempt, normalizePlayerKey } from './scores.js';
 
+// Temporary special event toggle (set enabled:false to remove the event from the UI)
+const SPECIAL_EVENT = {
+  enabled: true,
+  slug: 'missions-2026',
+  title: 'Missions Conference Challenge',
+  desc: 'Special competition quiz for the conference.'
+};
+
 const nameEl = document.getElementById('name');
 const catEl = document.getElementById('category');
 const startBtn = document.getElementById('start');
 
 initAudioUI();
 
+// Wire up optional Event Mode
+if (modeEvent) {
+  if (SPECIAL_EVENT.enabled) {
+    modeEvent.style.display = '';
+    if (eventTitleEl) eventTitleEl.textContent = SPECIAL_EVENT.title;
+    if (eventDescEl) eventDescEl.textContent = SPECIAL_EVENT.desc;
+    if (eventLbLink) eventLbLink.style.display = '';
+  } else {
+    modeEvent.style.display = 'none';
+    if (eventLbLink) eventLbLink.style.display = 'none';
+  }
+}
+
 const modeDaily = document.getElementById('modeDaily');
 const modePractice = document.getElementById('modePractice');
+const modeEvent = document.getElementById('modeEvent');
+const eventTitleEl = document.getElementById('eventTitle');
+const eventDescEl = document.getElementById('eventDesc');
+const eventNote = document.getElementById('eventNote');
+const eventLbLink = document.getElementById('eventLeaderboardLink');
 const agreeDaily = document.getElementById('agreeDaily');
 const dailyDisclaimer = document.getElementById('dailyDisclaimer');
 const categoryWrap = document.getElementById('categoryWrap');
@@ -20,24 +46,41 @@ let mode = 'daily'; // default
 function setMode(next) {
   try { sfx.click(); } catch (_) {}
   mode = next;
+
   const daily = mode === 'daily';
+  const practice = mode === 'practice';
+  const event = mode === 'event';
 
   modeDaily.classList.toggle('selected', daily);
-  modePractice.classList.toggle('selected', !daily);
+  modePractice.classList.toggle('selected', practice);
+  if (modeEvent) modeEvent.classList.toggle('selected', event);
 
   modeDaily.setAttribute('aria-checked', String(daily));
-  modePractice.setAttribute('aria-checked', String(!daily));
+  modePractice.setAttribute('aria-checked', String(practice));
+  if (modeEvent) modeEvent.setAttribute('aria-checked', String(event));
 
-  dailyDisclaimer.style.display = daily ? 'block' : 'none';catHelp.textContent = daily
-    ? 'Daily Challenge uses the same 10 questions for everyone today (from ANY category).'
-    : 'Practice lets you pick a category to train up.';
+  // Show/hide notes
+  if (dailyDisclaimer) dailyDisclaimer.style.display = daily ? 'block' : 'none';
+  if (document.getElementById('dailyNote')) document.getElementById('dailyNote').classList.toggle('fade-hidden', !daily);
+  if (eventNote) eventNote.classList.toggle('fade-hidden', !event);
+
+  // Helper text
+  if (catHelp) {
+    catHelp.textContent = daily
+      ? 'Daily Challenge uses the same 10 questions for everyone today (from ANY category).'
+      : practice
+        ? 'Practice lets you pick a category to train up.'
+        : 'Event Challenge uses the special conference question set.';
+  }
 
   // Category is only selectable in Practice
-  catEl.disabled = daily;
-  if (daily) catEl.value = '__ALL__';
-  // Hide the whole category section in Daily to reduce confusion
-  if (categoryWrap) categoryWrap.style.display = daily ? 'none' : 'block';
+  catEl.disabled = !practice;
+  if (!practice) catEl.value = '__ALL__';
+
+  // Hide category selection unless practice
+  if (categoryWrap) categoryWrap.style.display = practice ? 'block' : 'none';
 }
+
 
 function onCardActivate(card, nextMode) {
   card.addEventListener('click', () => setMode(nextMode));
@@ -51,6 +94,7 @@ function onCardActivate(card, nextMode) {
 
 onCardActivate(modeDaily, 'daily');
 onCardActivate(modePractice, 'practice');
+if (modeEvent) onCardActivate(modeEvent, 'event');
 
 setMode('daily');
 
@@ -119,5 +163,6 @@ startBtn.addEventListener('click', async () => {
     mode
   });
 
+  if (mode === 'event') params.set('event', SPECIAL_EVENT.slug);
   location.href = `play.html?${params.toString()}`;
 });

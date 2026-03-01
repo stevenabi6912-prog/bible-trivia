@@ -6,21 +6,19 @@ const qs = new URLSearchParams(location.search);
 initAudioUI();
 const playerName = qs.get('name') || 'Player';
 const categoryIdParam = qs.get('category') || '__ALL__';
-const mode = (qs.get('mode') || 'daily').toLowerCase() === 'practice' ? 'practice' : 'daily';
-const categoryId = (mode === 'daily') ? '__ALL__' : categoryIdParam;
+const modeRaw = (qs.get('mode') || 'daily').toLowerCase();
+const mode = (modeRaw === 'practice' || modeRaw === 'event') ? modeRaw : 'daily';
+const eventSlug = qs.get('event') || '';
+const categoryId = (mode === 'daily' || mode === 'event') ? '__ALL__' : categoryIdParam;
 
 // Locked competitive settings
 const QUESTION_COUNT = 10;
 const SECONDS_PER = 15;
 
 const el = (id) => document.getElementById(id);
+const safeSet = (id, text) => { const node = el(id); if (node) node.textContent = text; };
 
-// Try to start music as early as the browser allows.
-// Note: many browsers (especially iOS/Safari) require a user gesture before audio can play.
-// We attempt immediately, and also hook into the *first* click/tap/keydown on this page.
-try { startMusic(); } catch (_) {}
-
-el('pillName').textContent = playerName;
+safeSet('pillName', playerName);
 
 function seasonIdFor(d) {
   const y = d.getFullYear();
@@ -39,17 +37,26 @@ const dailyKey = `${dayId}_${playerKey}`;
 const data = await loadCategories();
 const categories = data.categories;
 
+async function loadEventSet(slug) {
+  const res = await fetch(`${slug}.json`, { cache: 'no-store' });
+  if (!res.ok) throw new Error(`Could not load event question set: ${slug}.json`);
+  const data = await res.json();
+  if (!data || !Array.isArray(data.questions)) throw new Error('Event file missing "questions" array.');
+  return data;
+}
+
+
 // Build a global pool of answers for distractors
 const answerPool = Array.from(new Set(categories.flatMap(c => (c.questions || []).map(q => pickCanonicalAnswer(q.answer)))));
 
 const categoryAnswerPool = (categoryId === '__ALL__') ? answerPool : Array.from(new Set((categories.find(c => c.id === categoryId)?.questions || []).map(q => pickCanonicalAnswer(q.answer))));
 
-const catTitle = categoryId === '__ALL__'
+let catTitle = categoryId === '__ALL__'
   ? 'All Categories'
   : (categories.find(c => c.id === categoryId)?.title || 'Category');
 
-el('pillCat').textContent = catTitle;
-el('pillMode').textContent = mode === 'daily' ? 'Daily Challenge' : 'Practice';
+safeSet('pillCat', catTitle);
+safeSet('pillMode', mode === 'daily' ? 'Daily Challenge' : 'Practice';
 
 if (mode === 'daily') {
   try {
@@ -69,7 +76,27 @@ if (mode === 'daily') {
 
 let round = [];
 try {
-  if (mode === 'daily') {
+  if (mode === 'event') {
+    if (!eventSlug) throw new Error('Missing event slug.');
+    const eventSet = await loadEventSet(eventSlug);
+    catTitle = String(eventSet.title || 'Event Challenge');
+    safeSet('pillCat', catTitle);
+
+    // Event questions are manual: {question, options[], answerIndex, reference?}
+    round = (eventSet.questions || []).slice(0, QUESTION_COUNT).map((q) => {
+      const opts = Array.isArray(q.options) ? q.options.map(String) : [];
+      const ai = Number(q.answerIndex);
+      const ans = (opts[ai] ?? '');
+      if (!ans) throw new Error('Event question missing valid answerIndex/options.');
+      return {
+        prompt: String(q.question || q.prompt || '').trim(),
+        reference: String(q.reference || '').trim(),
+        answer: ans,
+        __choices: opts
+      };
+    });
+    if (round.length < QUESTION_COUNT) throw new Error('Not enough event questions for a full round.');
+  } else if (mode === 'daily') {
     const seedStr = `${dayId}|ALL`; // same questions for everyone today (any category)
     round = buildDailyRound(categories, categoryId, QUESTION_COUNT, seedStr);
   } else {
@@ -111,7 +138,7 @@ function renderQuestion() {
   el('question').textContent = q.prompt;
   el('ref').textContent = q.reference ? `Reference: ${q.reference}` : '';
 
-  const choices = makeChoicesForQuestion(q, categoryAnswerPool, answerPool, 4);
+  const choices = Array.isArray(q.__choices) && q.__choices.length ? q.__choices : makeChoicesForQuestion(q, categoryAnswerPool, answerPool, 4);
   const box = el('choices');
   box.innerHTML = '';
 
@@ -168,7 +195,8 @@ async function finish(totalMs) {
       ms: totalMs,
       seasonId,
       dayId,
-      mode
+      mode,
+      eventSlug: (mode === 'event' ? eventSlug : '')
     }) || '';
   } catch (e) {
     console.error(e);
@@ -199,13 +227,6 @@ async function ensureAudioStarted() {
   await unlockAudio();
   startMusic();
 }
-
-// First interaction anywhere on the page starts audio (so it doesn't wait until after answering).
-window.addEventListener('pointerdown', () => { ensureAudioStarted().catch(() => {}); }, { once: true, passive: true });
-window.addEventListener('keydown', () => { ensureAudioStarted().catch(() => {}); }, { once: true });
-
-// Best-effort attempt on load (may be blocked; that's okay).
-ensureAudioStarted().catch(() => {});
 
 function handleAnswer(choice, btnEl) {
   if (locked) return;

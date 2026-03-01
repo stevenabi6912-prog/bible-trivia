@@ -21,7 +21,9 @@ const total = qs.get('total') || '0';
 const seasonId = qs.get('seasonId') || '';
 const dayId = qs.get('dayId') || '';
 const docId = qs.get('docId') || '';
-const mode = (qs.get('mode') || 'daily').toLowerCase() === 'practice' ? 'practice' : 'daily';
+const modeRaw = (qs.get('mode') || 'daily').toLowerCase();
+const mode = (modeRaw === 'practice' || modeRaw === 'event') ? modeRaw : 'daily';
+const eventSlug = qs.get('event') || '';
 
 document.getElementById('name').textContent = name;
 document.getElementById('cat').textContent = category;
@@ -32,8 +34,16 @@ document.getElementById('total').textContent = total;
 document.getElementById('mode').textContent = mode === 'daily' ? 'Daily Challenge' : 'Practice';
 
 const lbLink = document.getElementById('lbLink');
-lbLink.href = mode === 'daily' ? 'leaderboard-daily.html' : 'leaderboard-practice.html';
-lbLink.textContent = mode === 'daily' ? 'View Daily Leaderboard' : 'View Practice Leaderboard';
+if (mode === 'daily') {
+  lbLink.href = 'leaderboard-daily.html';
+  lbLink.textContent = 'View Daily Leaderboard';
+} else if (mode === 'event') {
+  lbLink.href = `leaderboard-event.html?event=${encodeURIComponent(eventSlug)}`;
+  lbLink.textContent = 'View Event Leaderboard';
+} else {
+  lbLink.href = 'leaderboard-practice.html';
+  lbLink.textContent = 'View Practice Leaderboard';
+}
 
 
 function showRank(text) {

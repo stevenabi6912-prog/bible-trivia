@@ -20,6 +20,7 @@
         <button class="btn btn-ghost" id="settingsBtn" type="button">⚙️ Settings</button>
         <a class="btn btn-ghost" href="leaderboard-daily.html">🏆 Daily</a>
         <a class="btn btn-ghost" href="leaderboard-practice.html">🎯 Practice</a>
+        <a class="btn btn-ghost" id="eventLeaderboardLink" href="leaderboard-event.html" style="display:none">🌍 Missions</a>
       </nav>
     </header>
 
@@ -40,6 +41,8 @@
         <div id="dailyNote" class="helper fade-section fade-hidden">
           Daily Challenge uses 10 questions from <b>all categories</b>.
         </div>
+
+        <div id="eventNote" class="helper fade-section fade-hidden">Event Challenge uses the <b>special conference question set</b>.</div>
       </div>
 
       <h2 class="sectionTitle">Choose your challenge</h2>
@@ -64,6 +67,17 @@
             <li>Saves to the Practice Leaderboard</li>
           </ul>
         </button>
+      
+        <button type="button" class="modeCard" id="modeEvent" role="radio" aria-checked="false" style="display:none">
+          <div class="modeBadge alt2">🌍 Special</div>
+          <div class="modeTitle" id="eventTitle">Missions Conference Challenge</div>
+          <div class="modeDesc" id="eventDesc">Special competition quiz for the conference.</div>
+          <ul class="modeBullets">
+            <li>Manual questions (event set)</li>
+            <li>Counts toward the Event Leaderboard</li>
+          </ul>
+        </button>
+
       </div>
 
       <div class="rulesStrip" aria-label="Game rules">
