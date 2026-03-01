@@ -22,6 +22,22 @@ function dayIdFor(d) {
   return `${y}-${m}-${day}`;
 }
 
+function parseDayId(dayId) {
+  if (!dayId) return null;
+  const parts = String(dayId).split('-').map(n => Number(n));
+  if (parts.length !== 3) return null;
+  const [y, m, d] = parts;
+  if (!y || !m || !d) return null;
+  return new Date(y, m - 1, d); // local midnight
+}
+
+function weekStartSunday(d) {
+  const base = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  base.setHours(0, 0, 0, 0);
+  base.setDate(base.getDate() - base.getDay()); // Sunday = 0
+  return base;
+}
+
 function fmtDate(val) {
   if (!val) return '';
   // Firestore Timestamp support
@@ -92,8 +108,13 @@ function resub() {
   const dayId = dayIdFor(now);
   const seasonId = seasonIdFor(now);
 
-  if (view === 'season') {
-    seasonLabel.textContent = `Season: ${seasonId}`;
+  // Weekly reset: Sunday 12:00 AM local time.
+  const ws = weekStartSunday(now);
+  const we = new Date(ws);
+  we.setDate(we.getDate() + 7);
+
+  if (view === 'week') {
+    seasonLabel.textContent = `Week of ${ws.toLocaleDateString()}`;
   } else {
     seasonLabel.textContent = `Today: ${dayId}`;
   }
@@ -102,10 +123,22 @@ function resub() {
     mode: 'daily',
     // Daily is always “All Categories”
     category: '__ALL__',
-    limit,
+    // Pull extra, then filter/slice client-side (avoids Firestore index headaches)
+    limit: 200,
     dayId: (view === 'today') ? dayId : undefined,
-    seasonId: (view === 'season') ? seasonId : undefined,
-    onData: (scores) => render(scores),
+    seasonId: (view === 'week') ? seasonId : undefined,
+    onData: (scores) => {
+      let list = scores || [];
+      if (view === 'week') {
+        list = list.filter(s => {
+          const d = parseDayId(s.dayId);
+          return d && d >= ws && d < we;
+        });
+      }
+      // subscribeLeaderboard already sorts for us.
+      list = list.slice(0, Math.max(1, Math.min(limit, 200)));
+      render(list);
+    },
     onError: (e) => {
       console.error(e);
       statusEl.textContent = 'Leaderboard error. Check Firestore rules / index requirements.';

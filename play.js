@@ -14,12 +14,13 @@ const QUESTION_COUNT = 10;
 const SECONDS_PER = 15;
 
 const el = (id) => document.getElementById(id);
-const setText = (id, text) => {
-  const node = el(id);
-  if (node) node.textContent = text;
-};
 
-setText('pillName', playerName);
+// Try to start music as early as the browser allows.
+// Note: many browsers (especially iOS/Safari) require a user gesture before audio can play.
+// We attempt immediately, and also hook into the *first* click/tap/keydown on this page.
+try { startMusic(); } catch (_) {}
+
+el('pillName').textContent = playerName;
 
 function seasonIdFor(d) {
   const y = d.getFullYear();
@@ -47,8 +48,8 @@ const catTitle = categoryId === '__ALL__'
   ? 'All Categories'
   : (categories.find(c => c.id === categoryId)?.title || 'Category');
 
-setText('pillCat', catTitle);
-setText('pillMode', mode === 'daily' ? 'Daily Challenge' : 'Practice');
+el('pillCat').textContent = catTitle;
+el('pillMode').textContent = mode === 'daily' ? 'Daily Challenge' : 'Practice';
 
 if (mode === 'daily') {
   try {
@@ -198,6 +199,13 @@ async function ensureAudioStarted() {
   await unlockAudio();
   startMusic();
 }
+
+// First interaction anywhere on the page starts audio (so it doesn't wait until after answering).
+window.addEventListener('pointerdown', () => { ensureAudioStarted().catch(() => {}); }, { once: true, passive: true });
+window.addEventListener('keydown', () => { ensureAudioStarted().catch(() => {}); }, { once: true });
+
+// Best-effort attempt on load (may be blocked; that's okay).
+ensureAudioStarted().catch(() => {});
 
 function handleAnswer(choice, btnEl) {
   if (locked) return;
