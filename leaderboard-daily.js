@@ -8,35 +8,36 @@ const limitEl = document.getElementById('limit');
 const rowsEl = document.getElementById('rows');
 const statusEl = document.getElementById('status');
 const seasonLabel = document.getElementById('seasonLabel');
+
 const lastWeekWinnerEl = document.getElementById('lastWeekWinner');
 const lastWeekRangeEl = document.getElementById('lastWeekRange');
 
-
-function seasonIdFor(d) {
-  const y = d.getFullYear();
-  const q = Math.floor(d.getMonth() / 3) + 1;
-  return `${y}-Q${q}`;
-}
+function pad2(n) { return String(n).padStart(2, '0'); }
 
 function dayIdFor(d) {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${y}-${m}-${day}`;
+  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
 }
 
 function parseDayId(dayId) {
-  if (!dayId) return null;
-  const parts = String(dayId).split('-').map(n => Number(n));
-  if (parts.length !== 3) return null;
-  const [y, m, d] = parts;
-  if (!y || !m || !d) return null;
-  return new Date(y, m - 1, d); // local midnight
+  const m = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/.exec(String(dayId || ''));
+  if (!m) return null;
+  const y = Number(m[1]), mo = Number(m[2]) - 1, da = Number(m[3]);
+  const d = new Date(y, mo, da);
+  return isNaN(d.getTime()) ? null : d;
 }
 
-function scoreLocalDayDate(s) {
-  // Prefer dayId (YYYY-MM-DD) because it is stable and doesn't require Firestore indexes.
-  if (s?.dayId && typeof s.dayId === 'string') {
+function weekStartSunday(d) {
+  const x = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  // JS: Sunday=0, Monday=1, ...
+  const dow = x.getDay();
+  x.setDate(x.getDate() - dow);
+  x.setHours(0, 0, 0, 0);
+  return x;
+}
+
+function scoreLocalDate(s) {
+  // Prefer dayId (stable across timezones if produced locally)
+  if (s?.dayId) {
     const d = parseDayId(s.dayId);
     if (d) return d;
   }
@@ -47,35 +48,29 @@ function scoreLocalDayDate(s) {
   return isNaN(d.getTime()) ? null : d;
 }
 
-function weekStartSunday(d) {
-  const base = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-  base.setHours(0, 0, 0, 0);
-  base.setDate(base.getDate() - base.getDay()); // Sunday = 0
-  return base;
-}
-
 function fmtDate(val) {
   if (!val) return '';
-  // Firestore Timestamp support
-  if (typeof val?.toDate === 'function') {
-    const d = val.toDate();
-    return d.toLocaleDateString();
-  }
-  // millis/Date fallback
+  if (typeof val?.toDate === 'function') return val.toDate().toLocaleDateString();
   const d = (val instanceof Date) ? val : new Date(val);
   return isNaN(d.getTime()) ? '' : d.toLocaleDateString();
 }
 
-function escapeHtml(s) {
-  return String(s ?? '')
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;');
-}
+function sortScores(scores) {
+  scores.sort((a, b) => {
+    const sa = Number(a.score) || 0;
+    const sb = Number(b.score) || 0;
+    if (sb !== sa) return sb - sa;
 
-let unsub = null;
+    const ca = Number(a.correct) || 0;
+    const cb = Number(b.correct) || 0;
+    if (cb !== ca) return cb - ca;
+
+    const ma = Number(a.ms) || Number(a.time) || 0;
+    const mb = Number(b.ms) || Number(b.time) || 0;
+    return ma - mb;
+  });
+  return scores;
+}
 
 function render(scores) {
   rowsEl.innerHTML = '';
@@ -114,67 +109,14 @@ function render(scores) {
   rowsEl.appendChild(frag);
 }
 
-function resub() {
-  if (typeof unsub === 'function') unsub();
-
-  const now = new Date();
-  const view = viewEl.value;
-  const limit = Number(limitEl.value) || 20;
-
-  const dayId = dayIdFor(now);
-  const seasonId = seasonIdFor(now);
-
-  // Weekly reset: Sunday 12:00 AM local time.
-  const ws = weekStartSunday(now);
-  const we = new Date(ws);
-  we.setDate(we.getDate() + 7);
-
-  if (view === 'week') {
-    seasonLabel.textContent = `Week of ${ws.toLocaleDateString()}`;
-  } else {
-    seasonLabel.textContent = `Today: ${dayId}`;
-  }
-
-  const opts = {
-    mode: 'daily',
-    // Daily is always “All Categories”
-    category: '__ALL__',
-    // Pull extra, then filter/slice client-side (avoids Firestore index headaches)
-    limit: 200,
-    dayId: (view === 'today') ? dayId : undefined,
-    seasonId: (view === 'week') ? seasonId : undefined,
-    onData: (scores) => {
-      let list = scores || [];
-      if (view === 'week') {
-        list = list.filter(s => {
-          const d = parseDayId(s.dayId);
-          return d && d >= ws && d < we;
-        });
-      }
-      // subscribeLeaderboard already sorts for us.
-      list = list.slice(0, Math.max(1, Math.min(limit, 200)));
-      render(list);
-    },
-    onError: (e) => {
-      console.error(e);
-      statusEl.textContent = 'Leaderboard error. Check Firestore rules / index requirements.';
-    }
-  };
-
-  unsub = subscribeLeaderboard(opts);
-}
-
-viewEl.addEventListener('change', resub);
-limitEl.addEventListener('change', resub);
-
-
+let unsub = null;
 let unsubLastWeek = null;
 
 function updateLastWeekWinner(allDailyScores) {
   if (!lastWeekWinnerEl) return;
 
   const now = new Date();
-  const thisWeekStart = weekStartSunday(now); // Sunday 00:00 local
+  const thisWeekStart = weekStartSunday(now);
   const lastWeekStart = new Date(thisWeekStart);
   lastWeekStart.setDate(lastWeekStart.getDate() - 7);
 
@@ -184,28 +126,14 @@ function updateLastWeekWinner(allDailyScores) {
     lastWeekRangeEl.textContent = `${lastWeekStart.toLocaleDateString()} – ${end.toLocaleDateString()}`;
   }
 
-  const inLastWeek = (s) => {
-    const d = scoreLocalDayDate(s);
-    if (!d) return false;
-    return d >= lastWeekStart && d < thisWeekStart;
-  };
-
-  let scores = (allDailyScores || []).filter(inLastWeek);
-
-  // Sort using same rules: score desc, correct desc, ms asc
-  scores.sort((a, b) => {
-    const sa = Number(a.score) || 0;
-    const sb = Number(b.score) || 0;
-    if (sb !== sa) return sb - sa;
-    const ca = Number(a.correct) || 0;
-    const cb = Number(b.correct) || 0;
-    if (cb !== ca) return cb - ca;
-    const ma = Number(a.ms) || 0;
-    const mb = Number(b.ms) || 0;
-    return ma - mb;
+  const lastWeekScores = (allDailyScores || []).filter(s => {
+    const d = scoreLocalDate(s);
+    return d && d >= lastWeekStart && d < thisWeekStart;
   });
 
-  const w = scores[0];
+  sortScores(lastWeekScores);
+
+  const w = lastWeekScores[0];
   if (!w) {
     lastWeekWinnerEl.textContent = '—';
     return;
@@ -220,11 +148,11 @@ function updateLastWeekWinner(allDailyScores) {
 function subLastWeekWinner() {
   if (typeof unsubLastWeek === 'function') unsubLastWeek();
 
-  // Pull recent Daily scores (client-side filtering for last week).
+  // Fetch recent Daily scores, then compute last week's winner client-side.
   unsubLastWeek = subscribeLeaderboard({
     mode: 'daily',
-    limit: 200,
     category: '__ALL__',
+    limit: 200,
     onData: (scores) => updateLastWeekWinner(scores),
     onError: (e) => {
       console.error(e);
@@ -234,6 +162,56 @@ function subLastWeekWinner() {
   });
 }
 
-subLastWeekWinner();
+function resub() {
+  if (typeof unsub === 'function') unsub();
 
+  const now = new Date();
+  const view = viewEl.value; // today | week
+  const limit = Number(limitEl.value) || 20;
+
+  const todayId = dayIdFor(now);
+
+  // Always query recent daily scores and filter client-side.
+  unsub = subscribeLeaderboard({
+    mode: 'daily',
+    category: '__ALL__',
+    limit: 200,
+    onData: (scores) => {
+      let filtered = scores || [];
+
+      if (view === 'today') {
+        // Prefer dayId match; if absent, fallback to local date
+        filtered = filtered.filter(s => {
+          if (s.dayId) return s.dayId === todayId;
+          const d = scoreLocalDate(s);
+          return d && dayIdFor(d) === todayId;
+        });
+        seasonLabel.textContent = `Today: ${todayId}`;
+      } else {
+        const start = weekStartSunday(now);
+        const end = new Date(start);
+        end.setDate(end.getDate() + 7);
+
+        filtered = filtered.filter(s => {
+          const d = scoreLocalDate(s);
+          return d && d >= start && d < end;
+        });
+
+        seasonLabel.textContent = `Week of ${dayIdFor(start)}`;
+      }
+
+      sortScores(filtered);
+      render(filtered.slice(0, limit));
+    },
+    onError: (e) => {
+      console.error(e);
+      statusEl.textContent = 'Leaderboard error. Check Firestore rules / indexes.';
+    }
+  });
+}
+
+viewEl.addEventListener('change', resub);
+limitEl.addEventListener('change', resub);
+
+subLastWeekWinner();
 resub();
