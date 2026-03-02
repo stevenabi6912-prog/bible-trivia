@@ -14,27 +14,33 @@
     <header class="topbar">
       <a class="btn btn-ghost" href="index.html">← Home</a>
       <div class="brand">
-        <img class="brandLogo" src="assets/bible-battle-logo.png" alt="Bible Battle"/>
-        <span class="brandText">Daily Leaderboard</span>
+        <div class="logo">🏆</div>
+        <div class="title">Daily Leaderboard</div>
       </div>
-      <nav class="topnav">
-        <button class="btn btn-ghost" id="settingsBtn" type="button">⚙️ Settings</button>
+      <div class="topbar-right">
+        <button id="settingsBtn" class="btn btn-ghost">⚙️ Settings</button>
         <a class="btn btn-ghost" href="leaderboard-practice.html">🎯 Practice</a>
-      </nav>
+      </div>
     </header>
 
     <main class="card">
       <div class="lbControls">
         <div>
-          <label for="cat">Category</label>
-          <select id="cat" class="input-lg"></select>
+          <label>Challenge</label>
+          <div class="pill">All Categories</div>
+        </div>
+
+        <div>
+          <label>Last Week Winner</label>
+          <div class="pill" id="lastWeekWinner">—</div>
+          <div class="helper" id="lastWeekRange"></div>
         </div>
 
         <div>
           <label for="view">View</label>
           <select id="view" class="input-lg">
+            <option value="week" selected>This Week</option>
             <option value="today">Today</option>
-            <option value="season">This Season</option>
           </select>
           <div class="helper" id="seasonLabel"></div>
         </div>
@@ -52,9 +58,15 @@
       <div class="statusText" id="status"></div>
 
       <div class="tableWrap">
-        <table>
+        <table class="table">
           <thead>
-            <tr><th>#</th><th>Name</th><th>Category</th><th>Score</th><th>Correct</th><th>Date</th></tr>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th class="num">Score</th>
+              <th class="num">Correct</th>
+              <th>Date</th>
+            </tr>
           </thead>
           <tbody id="rows"></tbody>
         </table>
@@ -65,40 +77,16 @@
   </div>
 
   <script type="module" src="leaderboard-daily.js"></script>
+
   <div id="settingsOverlay" class="modalOverlay"></div>
   <div id="settingsModal" class="modal">
     <div class="modalHeader">
       <div class="modalTitle">Settings</div>
-      <button id="settingsClose" class="iconBtn" type="button" aria-label="Close">✕</button>
+      <button id="settingsClose" class="icoBtn" aria-label="Close">✕</button>
     </div>
-
     <div class="modalBody">
-      <div class="settingRow">
-        <div class="settingLabel">Music</div>
-        <div class="settingControl">
-          <input id="musicVol" type="range" min="0" max="100" value="18" />
-          <div class="settingVal" id="musicVal">18%</div>
-        </div>
-      </div>
-
-      <div class="settingRow">
-        <div class="settingLabel">Sound effects</div>
-        <div class="settingControl">
-          <input id="sfxVol" type="range" min="0" max="100" value="60" />
-          <div class="settingVal" id="sfxVal">60%</div>
-        </div>
-      </div>
-
-      <label class="toggleRow">
-        <input id="muteToggle" type="checkbox" />
-        <span>Mute all audio</span>
-      </label>
-
-      <div class="fineprint">
-        Audio starts after your first click (browser rule). Placeholder sounds included.
-      </div>
+      <div id="audioSettingsMount"></div>
     </div>
   </div>
-
 </body>
 </html>
