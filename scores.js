@@ -31,7 +31,7 @@ export async function saveScore({
   name, category, categoryId,
   score, correct, total, ms,
   seasonId, dayId, mode,
-  playerKey, dailyKey, eventSlug
+  playerKey, dailyKey
 }) {
   const clean = {
     name: String(name).slice(0, 18),
@@ -59,7 +59,7 @@ export async function saveScore({
 }
 
 export 
-function subscribeLeaderboard({ category, limit, seasonId, dayId, mode, eventSlug, onData, onError }) {
+function subscribeLeaderboard({ category, limit, seasonId, dayId, mode, onData, onError }) {
   // Firestore composite indexes can be a pain on hobby projects.
   // We prefer simple queries (single where, no orderBy) and do sorting/filtering client-side.
   // This avoids "failed-precondition / index required" errors.
@@ -92,7 +92,6 @@ function subscribeLeaderboard({ category, limit, seasonId, dayId, mode, eventSlu
     // Client-side filters
     if (mode) scores = scores.filter(s => (s.mode || '').toLowerCase() === mode);
     if (dayId) scores = scores.filter(s => s.dayId === dayId);
-    if (eventSlug) scores = scores.filter(s => (s.eventSlug || '') === eventSlug);
     if (seasonId) scores = scores.filter(s => s.seasonId === seasonId);
 
     if (category && category !== '__ALL__') {
@@ -127,12 +126,11 @@ export async function getScoreDoc(docId){
   return snap.exists() ? ({ id: snap.id, ...snap.data() }) : null;
 }
 
-export async function fetchLeaderboardOnce({ category, limit, seasonId, dayId, mode, eventSlug }){
+export async function fetchLeaderboardOnce({ category, limit, seasonId, dayId, mode }){
   const clauses = [collection(db,'scores')];
   if (mode) clauses.push(where('mode','==',mode));
   if (seasonId) clauses.push(where('seasonId','==',seasonId));
   if (dayId) clauses.push(where('dayId','==',dayId));
-  if (eventSlug) clauses.push(where('eventSlug','==',eventSlug));
   if (category && category !== '__ALL__') clauses.push(where('category','==',category));
   clauses.push(orderBy('score','desc'));
   clauses.push(orderBy('correct','desc'));

@@ -2,167 +2,189 @@ import { initAudioUI, unlockAudio, startMusic, sfx } from './audio.js';
 import { loadCategories } from './trivia.js';
 import { hasDailyAttempt, normalizePlayerKey } from './scores.js';
 
-// Temporary special event toggle (set enabled:false to remove the event from the UI)
+/**
+ * Toggle-able special event mode (e.g., Missions Conference).
+ * Set enabled:false to hide it completely (no buttons/links).
+ */
 const SPECIAL_EVENT = {
   enabled: false,
   slug: 'missions-2026',
-  title: 'Missions Conference Challenge',
-  desc: 'Special competition quiz for the conference.'
+  title: 'Missions Conference Challenge'
 };
 
+// ---- DOM ----
 const nameEl = document.getElementById('name');
 const catEl = document.getElementById('category');
 const startBtn = document.getElementById('start');
 
-initAudioUI();
-
-// Wire up optional Event Mode
-if (modeEvent) {
-  if (SPECIAL_EVENT.enabled) {
-    modeEvent.style.display = '';
-    if (eventTitleEl) eventTitleEl.textContent = SPECIAL_EVENT.title;
-    if (eventDescEl) eventDescEl.textContent = SPECIAL_EVENT.desc;
-    if (eventLbLink) eventLbLink.style.display = '';
-  } else {
-    modeEvent.style.display = 'none';
-    if (eventLbLink) eventLbLink.style.display = 'none';
-  }
-}
-
 const modeDaily = document.getElementById('modeDaily');
 const modePractice = document.getElementById('modePractice');
-const modeEvent = document.getElementById('modeEvent');
-const eventTitleEl = document.getElementById('eventTitle');
-const eventDescEl = document.getElementById('eventDesc');
-const eventNote = document.getElementById('eventNote');
-const eventLbLink = document.getElementById('eventLeaderboardLink');
+
 const agreeDaily = document.getElementById('agreeDaily');
 const dailyDisclaimer = document.getElementById('dailyDisclaimer');
+const dailyNote = document.getElementById('dailyNote');
+
 const categoryWrap = document.getElementById('categoryWrap');
 const catHelp = document.getElementById('catHelp');
 
+const eventContainer = document.getElementById('eventContainer');
+
+initAudioUI();
+
 let mode = 'daily'; // default
+
+function safeText(el, text) {
+  if (el) el.textContent = text;
+}
 
 function setMode(next) {
   try { sfx.click(); } catch (_) {}
   mode = next;
-
   const daily = mode === 'daily';
-  const practice = mode === 'practice';
-  const event = mode === 'event';
 
-  modeDaily.classList.toggle('selected', daily);
-  modePractice.classList.toggle('selected', practice);
-  if (modeEvent) modeEvent.classList.toggle('selected', event);
-
-  modeDaily.setAttribute('aria-checked', String(daily));
-  modePractice.setAttribute('aria-checked', String(practice));
-  if (modeEvent) modeEvent.setAttribute('aria-checked', String(event));
-
-  // Show/hide notes
-  if (dailyDisclaimer) dailyDisclaimer.style.display = daily ? 'block' : 'none';
-  if (document.getElementById('dailyNote')) document.getElementById('dailyNote').classList.toggle('fade-hidden', !daily);
-  if (eventNote) eventNote.classList.toggle('fade-hidden', !event);
-
-  // Helper text
-  if (catHelp) {
-    catHelp.textContent = daily
-      ? 'Daily Challenge uses the same 10 questions for everyone today (from ANY category).'
-      : practice
-        ? 'Practice lets you pick a category to train up.'
-        : 'Event Challenge uses the special conference question set.';
+  // Visual selection states
+  if (modeDaily) {
+    modeDaily.classList.toggle('selected', daily);
+    modeDaily.setAttribute('aria-checked', String(daily));
   }
+  if (modePractice) {
+    modePractice.classList.toggle('selected', !daily);
+    modePractice.setAttribute('aria-checked', String(!daily));
+  }
+
+  // Daily disclaimer + helper
+  if (dailyDisclaimer) dailyDisclaimer.style.display = daily ? 'block' : 'none';
+  if (dailyNote) dailyNote.classList.toggle('fade-hidden', !daily);
+
+  safeText(catHelp, daily
+    ? 'Daily Challenge uses the same 10 questions for everyone today (from ANY category).'
+    : 'Practice lets you pick a category to train up.'
+  );
 
   // Category is only selectable in Practice
-  catEl.disabled = !practice;
-  if (!practice) catEl.value = '__ALL__';
+  if (categoryWrap) categoryWrap.classList.toggle('fade-hidden', daily);
+  if (catEl) catEl.disabled = daily;
 
-  // Hide category selection unless practice
-  if (categoryWrap) categoryWrap.style.display = practice ? 'block' : 'none';
+  // Daily requires checkbox acknowledgement
+  if (agreeDaily) {
+    if (!daily) agreeDaily.checked = true;
+    agreeDaily.style.opacity = daily ? '1' : '0.5';
+  }
+
+  updateStartEnabled();
 }
 
-
-function onCardActivate(card, nextMode) {
-  card.addEventListener('click', () => setMode(nextMode));
-  card.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      setMode(nextMode);
-    }
-  });
+function updateStartEnabled() {
+  if (!startBtn) return;
+  const nameOk = !!(nameEl && nameEl.value.trim().length >= 2);
+  const dailyOk = (mode !== 'daily') || (!!agreeDaily && agreeDaily.checked);
+  startBtn.disabled = !(nameOk && dailyOk);
 }
 
-onCardActivate(modeDaily, 'daily');
-onCardActivate(modePractice, 'practice');
-if (modeEvent) onCardActivate(modeEvent, 'event');
-
-setMode('daily');
-
-const savedName = localStorage.getItem('bt_name');
-if (savedName) nameEl.value = savedName;
-
-const { categories } = await loadCategories();
-catEl.innerHTML = '';
-catEl.append(new Option('All Categories', '__ALL__'));
-for (const c of categories) catEl.append(new Option(c.title, c.id));
-
-function seasonIdFor(d) {
-  const y = d.getFullYear();
-  const q = Math.floor(d.getMonth() / 3) + 1;
-  return `${y}Q${q}`;
-}
-
-startBtn.addEventListener('click', async () => {
-  await unlockAudio();
-  try { await sfx.click(); } catch (_) {}
-  startMusic();
-  const name = (nameEl.value || '').trim();
-  if (!name) { alert('Enter a player name (first name + last initial works great).'); return; }
-
-  localStorage.setItem('bt_name', name);
-
-  let categoryId = catEl.value || '__ALL__';
-  if (mode === 'daily') categoryId = '__ALL__';
-
-  // Locked competition settings
-  const count = 10;
-  const seconds = 15;
-
-  const now = new Date();
-  const dayId = now.toISOString().slice(0, 10);
-  const seasonId = seasonIdFor(now);
-
-  if (mode === 'daily') {
-    if (!agreeDaily.checked) {
-      alert('Before you start: Daily Challenge is ONE attempt per day. Check the box to confirm.');
-      return;
-    }
-
-    // Enforce 1 daily attempt per player name per day (best-effort, without login)
-    const playerKey = normalizePlayerKey(name);
-    const dailyKey = `${dayId}_${playerKey}`; // single-field lookup (no composite index needed)
-
-    try {
-      const already = await hasDailyAttempt(dailyKey);
-      if (already) {
-        alert('Looks like you already played today’s Daily Challenge with this name. Come back tomorrow!');
-        return;
+async function boot() {
+  // Populate categories (for Practice mode)
+  try {
+    if (catEl) {
+      const cats = await loadCategories();
+      catEl.innerHTML = '';
+      for (const c of cats) {
+        const opt = document.createElement('option');
+        opt.value = c.id;
+        opt.textContent = c.title;
+        catEl.appendChild(opt);
       }
-    } catch (e) {
-      console.error(e);
-      alert('Could not verify daily attempt. Check Firebase rules / config.');
+    }
+  } catch (e) {
+    console.error('Failed to load categories', e);
+  }
+
+  // Wire mode buttons
+  if (modeDaily) modeDaily.addEventListener('click', () => setMode('daily'));
+  if (modePractice) modePractice.addEventListener('click', () => setMode('practice'));
+
+  // Start button enable logic
+  if (nameEl) nameEl.addEventListener('input', updateStartEnabled);
+  if (agreeDaily) agreeDaily.addEventListener('change', updateStartEnabled);
+
+  // Special event (hidden if disabled)
+  if (eventContainer) {
+    if (SPECIAL_EVENT.enabled) {
+      eventContainer.classList.remove('fade-hidden');
+
+      const wrap = document.createElement('div');
+      wrap.className = 'eventCard';
+
+      const title = document.createElement('div');
+      title.className = 'eventTitle';
+      title.textContent = SPECIAL_EVENT.title;
+
+      const btn = document.createElement('button');
+      btn.className = 'btn btn-primary';
+      btn.textContent = 'Play Event Quiz';
+      btn.addEventListener('click', () => {
+        // Music unlocks on click naturally
+        const name = (nameEl?.value || '').trim();
+        if (!name) {
+          alert('Please enter your name first.');
+          return;
+        }
+        const params = new URLSearchParams({
+          name,
+          mode: 'event',
+          event: SPECIAL_EVENT.slug,
+          category: '__EVENT__',
+          count: '10',
+          seconds: '15'
+        });
+        location.href = `play.html?${params.toString()}`;
+      });
+
+      const lb = document.createElement('a');
+      lb.className = 'btn btn-ghost';
+      lb.href = 'leaderboard-event.html';
+      lb.textContent = 'Event Leaderboard';
+
+      wrap.append(title, btn, lb);
+      eventContainer.replaceChildren(wrap);
+    } else {
+      eventContainer.classList.add('fade-hidden');
+      eventContainer.replaceChildren();
+    }
+  }
+
+  // Default state
+  setMode('daily');
+}
+
+startBtn?.addEventListener('click', async () => {
+  try { sfx.start(); } catch (_) {}
+  try { unlockAudio(); } catch (_) {}
+  try { startMusic(); } catch (_) {}
+
+  const name = (nameEl?.value || '').trim();
+  if (!name) return;
+
+  // Daily attempt guard
+  if (mode === 'daily') {
+    const key = normalizePlayerKey(name);
+    const already = await hasDailyAttempt(key);
+    if (already) {
+      alert('Daily Challenge already completed today for this name. Try Practice instead!');
       return;
     }
   }
+
+  const categoryId = (catEl?.value || '__ALL__');
 
   const params = new URLSearchParams({
     name,
     category: (mode === 'daily' ? '__ALL__' : categoryId),
-    count: String(count),
-    seconds: String(seconds),
+    count: '10',
+    seconds: '15',
     mode
   });
 
-  if (mode === 'event') params.set('event', SPECIAL_EVENT.slug);
   location.href = `play.html?${params.toString()}`;
 });
+
+boot();
