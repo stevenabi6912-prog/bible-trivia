@@ -1,49 +1,3 @@
-
-// --- Choice quality helpers (hand-tuned sets) ---
-const BIRD_SET = new Set(["Sparrow","Dove","Raven","Eagle","Quail","Owl","Hawk","Vulture","Stork","Pelican","Swallow","Cuckow"]);
-const KING_SET = new Set(["Saul","David","Solomon","Rehoboam","Jeroboam","Ahab","Jehu","Hezekiah","Josiah","Zedekiah","Nebuchadnezzar","Belshazzar","Darius","Cyrus","Pharaoh","Herod","Artaxerxes"]);
-const INSECT_SET = new Set(["Locusts","Locust","Flies","Fly","Bees","Bee","Worm","Worms","Moth","Moths"]);
-const ANIMAL_SET = new Set(["Lion","Bear","Donkey","Ass","Camel","Ox","Sheep","Goat","Serpent","Fish","Locust","Frog","Dog","Horse","Spider","Cony","Coney","Leopard","Wolf"]);
-const EVENT_SET_PREFIXES = ["they ","the "];
-
-function titleCase(s){
-  return (s||'').split(' ').map(w=>w? (w[0].toUpperCase()+w.slice(1)) : w).join(' ');
-}
-
-function parseEitherOr(prompt){
-  const m = prompt.match(/^did\s+the\s+(.+?)\s+or\s+the\s+(.+?)\s+win\??$/i);
-  if(!m) return null;
-  return [titleCase(m[1].trim()), titleCase(m[2].trim())];
-}
-
-function parseNListCount(prompt){
-  const m = prompt.match(/^what\s+(two|three|four)\b/i);
-  if(!m) return null;
-  const word=m[1].toLowerCase();
-  return word==="two"?2:word==="three"?3:4;
-}
-
-function makeAnimalLists(count, correctLabel){
-  const animals = Array.from(ANIMAL_SET).map(a=>a==="Ass"?"Donkey":a);
-  const correct = (correctLabel||'').trim();
-  const combos = [];
-  for (let i=0;i<200;i++){
-    const pick = [];
-    while (pick.length < count){
-      const a = animals[Math.floor(Math.random()*animals.length)];
-      if(!pick.includes(a)) pick.push(a);
-    }
-    combos.push(pick.join(", "));
-  }
-  const uniq = [];
-  for (const c of combos){
-    if (c.toLowerCase()===correct.toLowerCase()) continue;
-    if (uniq.some(u=>u.toLowerCase()===c.toLowerCase())) continue;
-    uniq.push(c);
-    if (uniq.length>=10) break;
-  }
-  return uniq;
-}
 export async function loadCategories() {
   const res = await fetch('./questions.json', { cache: 'no-store' });
   if (!res.ok) throw new Error('Failed to load questions.json');
@@ -90,7 +44,12 @@ function shuffle(arr) {
 }
 
 function normalizeAnswer(a) {
-  return String(a || '').trim();
+  let s = String(a ?? '').replace(/\s+/g, ' ').trim();
+  // Strip wrapping quotes
+  s = s.replace(/^["'`]+|["'`]+$/g, '').trim();
+  // Normalize parenthetical synonyms: "Donkey (Ass)" -> "Donkey"
+  s = s.replace(/\s*\([^\)]*\)\s*$/g, '').trim();
+  return s;
 }
 
 export function buildRound(allCategories, selectedCategoryId, questionCount) {
@@ -129,30 +88,99 @@ export function inferExpectedType(prompt, correctLabel) {
   const p = (prompt || '').trim().toLowerCase();
   const a = (correctLabel || '').trim();
 
-  // Special structures
-  if (parseEitherOr(p)) return 'eitheror';
-  const listCount = parseNListCount(p);
-  if (listCount && (p.includes('animal') || p.includes('animals'))) return 'animal_list';
+  // Highly specific patterns first
+  if (/\bwhat\s+weapon\b/.test(p) || /\bwhich\s+weapon\b/.test(p)) return 'weapon';
+  if (/\bwhat\s+bird\b/.test(p) || /\bwhich\s+bird\b/.test(p) || (p.includes('bird') && p.includes('value'))) return 'bird';
+  if (/\bwhat\s+insect\b/.test(p) || /\bwhich\s+insect\b/.test(p)) return 'insect';
+  if (/\bwhat\s+(two|three|four)\s+animals\b/.test(p) || /\banimals\b/.test(p)) return 'animal';
+  if (/\bhow\s+tall\b/.test(p) || /\bhow\s+high\b/.test(p)) return 'measure';
+  if (/\bantichrist\b/.test(p) || /\bwhat\s+makes\s+someone\b/.test(p)) return 'doctrine';
+  if (/\b(win|won)\b/.test(p) && (p.includes('or') || p.includes('either'))) return 'eitheror';
 
-  // Numeric
-  if (/^\d+$/.test(a)) return 'number';
-  if (p.startsWith('how many') || p.startsWith('how long') || p.startsWith('how old') || p.startsWith('how much')) return 'number';
+  // Numeric / time answers
+  if (/\d/.test(a)) return 'number';
+  if (p.startsWith('how many') || p.startsWith('how long')) return 'number';
+  if (/(year|years|day|days|month|months|week|weeks|cubit|cubits|span|shekel|shekels|talent|talents|piece|pieces|hour|hours|times)\b/i.test(a)) return 'number';
 
-  // Explicit semantic cues
-  if (p.includes('bird')) return 'bird';
-  if (p.includes('insect')) return 'insect';
-  if (p.includes('animal') || p.includes('beast')) return 'animal';
-  if (p.includes('what happened') || p.includes('what did the people do') || p.includes('after the people')) return 'event';
-
-  // People / kings
-  if (p.includes('which king') || p.includes('what king')) return 'king';
+  // People / names
   if (p.startsWith('who') || p.startsWith('whose')) return 'name';
 
   // Places
-  if (p.startsWith('where') || p.includes('what city') || p.includes('what country') || p.includes('what place') || p.includes('in which city')) return 'place';
+  if (
+    p.startsWith('where') ||
+    p.includes('what city') ||
+    p.includes('what town') ||
+    p.includes('what place') ||
+    p.includes('what country') ||
+    p.includes('what land') ||
+    p.includes('in which city')
+  ) return 'place';
 
   return 'thing';
 }
+
+// Choice-quality pools (small, curated lists)
+const BIRDS = ['Sparrow','Dove','Raven','Eagle','Quail','Owl','Hawk','Vulture','Stork','Pelican','Swallow'];
+const INSECTS = ['Locusts','Bees','Flies','Gnats','Worms'];
+const ANIMALS = ['Lion','Bear','Donkey','Camel','Ox','Sheep','Goat','Serpent','Horse','Dog','Fish'];
+const WEAPONS = ['Javelin','Spear','Sword','Bow','Arrow','Sling','Dagger','Staff'];
+
+function hasReferenceJunk(s) {
+  const t = (s || '').trim();
+  if (!t) return false;
+  if (/^as to the\b/i.test(t)) return true;
+  if (/\b(Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|Samuel|Kings|Chronicles|Ezra|Nehemiah|Esther|Job|Psalms|Proverbs|Ecclesiastes|Song of Solomon|Isaiah|Jeremiah|Ezekiel|Daniel|Hosea|Joel|Amos|Obadiah|Jonah|Micah|Nahum|Habakkuk|Zephaniah|Haggai|Zechariah|Malachi|Matthew|Mark|Luke|John|Acts|Romans|Corinthians|Galatians|Ephesians|Philippians|Colossians|Thessalonians|Timothy|Titus|Philemon|Hebrews|James|Peter|Jude|Revelation)\b/i.test(t)) return true;
+  if (/\d+\s*:\s*\d+/.test(t)) return true;
+  return false;
+}
+
+function measureUnit(s) {
+  const t = (s || '').toLowerCase();
+  if (t.includes('cubit')) return 'cubit';
+  if (t.includes('span')) return 'span';
+  if (t.includes('piece') && t.includes('silver')) return 'silver';
+  if (t.includes('shekel')) return 'shekel';
+  if (t.includes('talent')) return 'talent';
+  if (t.includes('year')) return 'year';
+  if (t.includes('month')) return 'month';
+  if (t.includes('day')) return 'day';
+  return '';
+}
+
+function isValidByType(expectedType, prompt, correctLabel, cand) {
+  const c = (cand || '').trim();
+  if (!c) return false;
+  if (c.toLowerCase() === (correctLabel || '').toLowerCase()) return false;
+
+  // Never allow obvious junk as an option
+  if (hasReferenceJunk(c) && !hasReferenceJunk(correctLabel)) return false;
+  if (c.length > 80) return false;
+
+  if (expectedType === 'bird') return BIRDS.includes(c);
+  if (expectedType === 'insect') return INSECTS.includes(c);
+  if (expectedType === 'animal') return ANIMALS.includes(c) || /\b(and|&)\b/i.test(c); // allow pairs
+  if (expectedType === 'weapon') return WEAPONS.includes(c) || /(spear|javelin|sword|bow|arrow|sling|dagger|staff)/i.test(c);
+  if (expectedType === 'doctrine') return /^(denying|confessing|refusing|not confessing|not believing|teaching|saying)/i.test(c) || c.toLowerCase().includes('jesus');
+  if (expectedType === 'eitheror') return true; // handled separately
+
+  if (expectedType === 'measure') {
+    const u = measureUnit(correctLabel);
+    if (u) return measureUnit(c) === u || (u === 'cubit' && c.toLowerCase().includes('span'));
+    return /\b(cubit|span)\b/i.test(c);
+  }
+
+  if (expectedType === 'number') {
+    const u = measureUnit(correctLabel);
+    if (u) return measureUnit(c) === u || (u === 'cubit' && c.toLowerCase().includes('span'));
+    return /\d/.test(c);
+  }
+
+  if (expectedType === 'name') return looksLikeName(c);
+  if (expectedType === 'place') return looksLikePlace(c);
+
+  return true;
+}
+
 
 function looksLikeName(s) {
   const t = (s || '').trim();
@@ -178,29 +206,14 @@ function looksLikePlace(s) {
 }
 
 function inferLabelType(prompt, label) {
-  const p = (prompt || '').trim().toLowerCase();
-  const l = (label || '').trim();
-  const expected = inferExpectedType(p, l);
-
-  if (expected === 'number') return /^\d+$/.test(l) ? 'number' : 'thing';
-  if (expected === 'bird') return BIRD_SET.has(l) ? 'bird' : 'thing';
-  if (expected === 'king') return KING_SET.has(l) ? 'king' : 'thing';
-  if (expected === 'insect') return INSECT_SET.has(l) ? 'insect' : 'thing';
-  if (expected === 'animal') return ANIMAL_SET.has(l) ? 'animal' : 'thing';
-  if (expected === 'event') {
-    const ll=l.toLowerCase();
-    return EVENT_SET_PREFIXES.some(pfx=>ll.startsWith(pfx)) ? 'event' : 'thing';
-  }
-  if (expected === 'name') return looksLikeName(l) ? 'name' : 'thing';
-  if (expected === 'place') return looksLikePlace(l) ? 'place' : 'thing';
-
-  if (/^\d+$/.test(l)) return 'number';
-  if (BIRD_SET.has(l)) return 'bird';
-  if (KING_SET.has(l)) return 'king';
-  if (INSECT_SET.has(l)) return 'insect';
-  if (ANIMAL_SET.has(l)) return 'animal';
-  if (looksLikeName(l)) return 'name';
-  if (looksLikePlace(l)) return 'place';
+  const expected = inferExpectedType(prompt, label);
+  if (expected === 'number') return 'number';
+  if (expected === 'name') return looksLikeName(label) ? 'name' : 'thing';
+  if (expected === 'place') return looksLikePlace(label) ? 'place' : 'thing';
+  // For "thing", we don't enforce much.
+  if (/\d/.test(label)) return 'number';
+  if (looksLikeName(label)) return 'name';
+  if (looksLikePlace(label)) return 'place';
   return 'thing';
 }
 
@@ -222,86 +235,84 @@ export function makeChoicesForQuestion(q, categoryAnswersPool, allAnswersPool, k
   const correctLabel = pickCanonicalAnswer(q.answer);
   const prompt = q.prompt || '';
 
+  // If we can't find a usable answer, fail safe
+  if (!correctLabel) {
+    return shuffle(['(Missing answer)','(Missing answer)','(Missing answer)','(Missing answer)']).slice(0, k);
+  }
+
   const expectedType = inferExpectedType(prompt, correctLabel);
 
-  // Special: Either/Or win questions
+  // Special: either/or win questions — keep it sane
   if (expectedType === 'eitheror') {
-    const parts = parseEitherOr(prompt.trim());
-    const a = parts ? parts[0] : '';
-    const b = parts ? parts[1] : '';
-    const out = new Set([correctLabel, a, b, 'Neither']);
-    return shuffle(Array.from(out).filter(Boolean)).slice(0, k);
+    const m = prompt.match(/did\s+(.+?)\s+or\s+(.+?)\s+win\?/i);
+    const a = m ? normalizeAnswer(m[1]) : '';
+    const b = m ? normalizeAnswer(m[2]) : '';
+    const base = [correctLabel, a, b, 'Neither'];
+    const uniq = [];
+    for (const x of base) {
+      const v = normalizeAnswer(x);
+      if (v && !uniq.some(u => u.toLowerCase() === v.toLowerCase())) uniq.push(v);
+    }
+    while (uniq.length < k) uniq.push('Neither');
+    return shuffle(uniq.slice(0, k));
   }
 
-  // Special: multi-animal list questions
-  if (expectedType === 'animal_list') {
-    const cnt = parseNListCount(prompt) || 2;
-    const d = makeAnimalLists(cnt, correctLabel);
-    const set = new Set([correctLabel, ...d]);
-    return shuffle(Array.from(set)).slice(0, k);
-  }
+  const choices = [correctLabel];
 
-  const choices = new Set([correctLabel]);
-
-  // Manual overrides: q.distractors = ["...", "...", "..."]
+  // 1) Use manual distractors if present, but only if they match type
   if (Array.isArray(q.distractors)) {
     for (const d of q.distractors) {
       const dl = normalizeAnswer(d);
-      if (dl && dl !== correctLabel) choices.add(dl);
-      if (choices.size >= k) break;
+      if (!dl) continue;
+      if (!isValidByType(expectedType, prompt, correctLabel, dl)) continue;
+      if (!choices.some(x => x.toLowerCase() === dl.toLowerCase())) choices.push(dl);
+      if (choices.length >= k) break;
     }
   }
 
-  // Canonicalize pools
-  const catPool = (categoryAnswersPool || [])
-    .map(normalizeAnswer)
-    .filter(Boolean)
-    .filter(a => a !== correctLabel);
-
-  const globalPool = (allAnswersPool || [])
-    .map(normalizeAnswer)
-    .filter(Boolean)
-    .filter(a => a !== correctLabel);
-
-  // Build candidate list with type enforcement for strict types
-  const wantStrict = (expectedType === 'name' || expectedType === 'number' || expectedType === 'place');
-
-  function filterStrict(pool) {
-    if (!wantStrict) return Array.from(new Set(pool));
-    const out = [];
-    for (const a of pool) {
-      const t = inferLabelType(prompt, a);
-      if (t === expectedType) out.push(a);
-    }
-    return Array.from(new Set(out));
+  // 2) Use category pool (filtered)
+  const catPool = (categoryAnswersPool || []).map(normalizeAnswer).filter(Boolean);
+  for (const a of catPool) {
+    if (choices.length >= k) break;
+    if (!isValidByType(expectedType, prompt, correctLabel, a)) continue;
+    if (!choices.some(x => x.toLowerCase() === a.toLowerCase())) choices.push(a);
   }
 
-  const candidates = filterStrict(catPool);
-  const globalCandidates = filterStrict(globalPool);
-
-  // Sort by "plausibility" (shape similarity)
-  candidates.sort((a, b) => scoreCandidate(correctLabel, a, expectedType) - scoreCandidate(correctLabel, b, expectedType));
-  globalCandidates.sort((a, b) => scoreCandidate(correctLabel, a, expectedType) - scoreCandidate(correctLabel, b, expectedType));
-
-  for (const a of candidates) {
-    choices.add(a);
-    if (choices.size >= k) break;
-  }
-  if (choices.size < k) {
-    for (const a of globalCandidates) {
-      choices.add(a);
-      if (choices.size >= k) break;
-    }
-  }
-  // Final fallback if still short
-  if (choices.size < k) {
-    for (const a of globalPool) {
-      choices.add(a);
-      if (choices.size >= k) break;
-    }
+  // 3) Global pool (filtered)
+  const globalPool = (allAnswersPool || []).map(normalizeAnswer).filter(Boolean);
+  for (const a of globalPool) {
+    if (choices.length >= k) break;
+    if (!isValidByType(expectedType, prompt, correctLabel, a)) continue;
+    if (!choices.some(x => x.toLowerCase() === a.toLowerCase())) choices.push(a);
   }
 
-  return shuffle(Array.from(choices)).slice(0, k);
+  // 4) Pad by type if still short
+  const padPools = {
+    bird: BIRDS,
+    insect: INSECTS,
+    animal: ANIMALS,
+    weapon: WEAPONS,
+    measure: ['Five cubits and a span','Six cubits and a span','Seven cubits and a span','Ten cubits'],
+    number: ['3','7','10','12','40','70','100','1000'],
+    doctrine: ['Denying that Jesus was come in the flesh','Not confessing Jesus Christ is come in the flesh','Refusing the truth about Christ','Teaching another doctrine']
+  };
+  const pad = padPools[expectedType] || [];
+  for (const a of pad) {
+    if (choices.length >= k) break;
+    const v = normalizeAnswer(a);
+    if (!isValidByType(expectedType, prompt, correctLabel, v)) continue;
+    if (!choices.some(x => x.toLowerCase() === v.toLowerCase())) choices.push(v);
+  }
+
+  // Final: guarantee correct is present, and exactly k choices
+  const uniq = [];
+  for (const x of choices) {
+    const v = normalizeAnswer(x);
+    if (v && !uniq.some(u => u.toLowerCase() === v.toLowerCase())) uniq.push(v);
+  }
+  if (!uniq.some(u => u.toLowerCase() === correctLabel.toLowerCase())) uniq.unshift(correctLabel);
+
+  return shuffle(uniq.slice(0, k));
 }
 
 // Backward-compatible wrapper (older calls)
