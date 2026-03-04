@@ -2,35 +2,8 @@ export async function loadCategories() {
   const res = await fetch('./questions.json', { cache: 'no-store' });
   if (!res.ok) throw new Error('Failed to load questions.json');
   const data = await res.json();
-
-  // Normalize across possible question.json shapes:
-  // 1) { gameTitle, categories: [ { id, title, questions:[...] }, ... ] }
-  // 2) { categories: { "<id>": { title, questions }, ... } }
-  // 3) [ { id, title, questions }, ... ]  (legacy)
-  const out = { gameTitle: data?.gameTitle || data?.title || 'Bible Battle', categories: [] };
-
-  let cats = data?.categories ?? data;
-
-  if (Array.isArray(cats)) {
-    out.categories = cats;
-  } else if (cats && typeof cats === 'object') {
-    out.categories = Object.entries(cats).map(([id, v]) => ({ id, ...(v || {}) }));
-  } else {
-    out.categories = [];
-  }
-
-  // Ensure id/title/questions exist
-  out.categories = out.categories
-    .filter(Boolean)
-    .map((c, i) => ({
-      id: c.id || c.slug || c.key || `cat_${i+1}`,
-      title: c.title || c.name || `Category ${i+1}`,
-      questions: Array.isArray(c.questions) ? c.questions : [],
-    }));
-
-  return out;
+  return data;
 }
-
 
 
 function mulberry32(seed) {
@@ -240,7 +213,7 @@ export function makeChoicesForQuestion(q, categoryAnswersPool, allAnswersPool, k
     }
   }
 
-  return shuffle(Array.from(choices));
+  return shuffle(Array.from(choices)).slice(0, k);
 }
 
 // Backward-compatible wrapper (older calls)
