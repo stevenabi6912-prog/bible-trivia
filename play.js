@@ -106,7 +106,19 @@ function renderQuestion() {
   el('question').textContent = q.prompt;
   el('ref').textContent = q.reference ? `Reference: ${q.reference}` : '';
 
-  const choices = makeChoicesForQuestion(q, categoryAnswerPool, answerPool, 4);
+  let choices = makeChoicesForQuestion(q, categoryAnswerPool, answerPool, 4);
+// Safety: always render exactly 4 clean, unique choices.
+choices = Array.from(new Set(choices)).map(c => String(c || '').trim()).filter(c => c && c !== '—');
+if (choices.length > 4) choices = choices.slice(0, 4);
+if (choices.length < 4) {
+  for (const a of answerPool) {
+    const v = String(a || '').trim();
+    if (!v || v === '—') continue;
+    if (!choices.some(x => x.toLowerCase() === v.toLowerCase())) choices.push(v);
+    if (choices.length >= 4) break;
+  }
+}
+
   const box = el('choices');
   box.innerHTML = '';
 
