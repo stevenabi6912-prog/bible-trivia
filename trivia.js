@@ -1,3 +1,49 @@
+
+// --- Choice quality helpers (hand-tuned sets) ---
+const BIRD_SET = new Set(["Sparrow","Dove","Raven","Eagle","Quail","Owl","Hawk","Vulture","Stork","Pelican","Swallow","Cuckow"]);
+const KING_SET = new Set(["Saul","David","Solomon","Rehoboam","Jeroboam","Ahab","Jehu","Hezekiah","Josiah","Zedekiah","Nebuchadnezzar","Belshazzar","Darius","Cyrus","Pharaoh","Herod","Artaxerxes"]);
+const INSECT_SET = new Set(["Locusts","Locust","Flies","Fly","Bees","Bee","Worm","Worms","Moth","Moths"]);
+const ANIMAL_SET = new Set(["Lion","Bear","Donkey","Ass","Camel","Ox","Sheep","Goat","Serpent","Fish","Locust","Frog","Dog","Horse","Spider","Cony","Coney","Leopard","Wolf"]);
+const EVENT_SET_PREFIXES = ["they ","the "];
+
+function titleCase(s){
+  return (s||'').split(' ').map(w=>w? (w[0].toUpperCase()+w.slice(1)) : w).join(' ');
+}
+
+function parseEitherOr(prompt){
+  const m = prompt.match(/^did\s+the\s+(.+?)\s+or\s+the\s+(.+?)\s+win\??$/i);
+  if(!m) return null;
+  return [titleCase(m[1].trim()), titleCase(m[2].trim())];
+}
+
+function parseNListCount(prompt){
+  const m = prompt.match(/^what\s+(two|three|four)\b/i);
+  if(!m) return null;
+  const word=m[1].toLowerCase();
+  return word==="two"?2:word==="three"?3:4;
+}
+
+function makeAnimalLists(count, correctLabel){
+  const animals = Array.from(ANIMAL_SET).map(a=>a==="Ass"?"Donkey":a);
+  const correct = (correctLabel||'').trim();
+  const combos = [];
+  for (let i=0;i<200;i++){
+    const pick = [];
+    while (pick.length < count){
+      const a = animals[Math.floor(Math.random()*animals.length)];
+      if(!pick.includes(a)) pick.push(a);
+    }
+    combos.push(pick.join(", "));
+  }
+  const uniq = [];
+  for (const c of combos){
+    if (c.toLowerCase()===correct.toLowerCase()) continue;
+    if (uniq.some(u=>u.toLowerCase()===c.toLowerCase())) continue;
+    uniq.push(c);
+    if (uniq.length>=10) break;
+  }
+  return uniq;
+}
 export async function loadCategories() {
   const res = await fetch('./questions.json', { cache: 'no-store' });
   if (!res.ok) throw new Error('Failed to load questions.json');
@@ -83,18 +129,28 @@ export function inferExpectedType(prompt, correctLabel) {
   const p = (prompt || '').trim().toLowerCase();
   const a = (correctLabel || '').trim();
 
-  // Numeric / time answers
-  if (/\d/.test(a)) return 'number';
-  if (p.startsWith('how many') || p.startsWith('how long')) return 'number';
-  if (/(year|years|day|days|month|months|week|weeks|cubit|cubits|hour|hours|times)\b/i.test(a)) return 'number';
+  // Special structures
+  if (parseEitherOr(p)) return 'eitheror';
+  const listCount = parseNListCount(p);
+  if (listCount && (p.includes('animal') || p.includes('animals'))) return 'animal_list';
 
-  // People / names
+  // Numeric
+  if (/^\d+$/.test(a)) return 'number';
+  if (p.startsWith('how many') || p.startsWith('how long') || p.startsWith('how old') || p.startsWith('how much')) return 'number';
+
+  // Explicit semantic cues
+  if (p.includes('bird')) return 'bird';
+  if (p.includes('insect')) return 'insect';
+  if (p.includes('animal') || p.includes('beast')) return 'animal';
+  if (p.includes('what happened') || p.includes('what did the people do') || p.includes('after the people')) return 'event';
+
+  // People / kings
+  if (p.includes('which king') || p.includes('what king')) return 'king';
   if (p.startsWith('who') || p.startsWith('whose')) return 'name';
 
   // Places
-  if (p.startsWith('where') || p.includes('what city') || p.includes('what country') || p.includes('what land') || p.includes('in which city')) return 'place';
+  if (p.startsWith('where') || p.includes('what city') || p.includes('what country') || p.includes('what place') || p.includes('in which city')) return 'place';
 
-  // Default
   return 'thing';
 }
 
@@ -122,14 +178,29 @@ function looksLikePlace(s) {
 }
 
 function inferLabelType(prompt, label) {
-  const expected = inferExpectedType(prompt, label);
-  if (expected === 'number') return 'number';
-  if (expected === 'name') return looksLikeName(label) ? 'name' : 'thing';
-  if (expected === 'place') return looksLikePlace(label) ? 'place' : 'thing';
-  // For "thing", we don't enforce much.
-  if (/\d/.test(label)) return 'number';
-  if (looksLikeName(label)) return 'name';
-  if (looksLikePlace(label)) return 'place';
+  const p = (prompt || '').trim().toLowerCase();
+  const l = (label || '').trim();
+  const expected = inferExpectedType(p, l);
+
+  if (expected === 'number') return /^\d+$/.test(l) ? 'number' : 'thing';
+  if (expected === 'bird') return BIRD_SET.has(l) ? 'bird' : 'thing';
+  if (expected === 'king') return KING_SET.has(l) ? 'king' : 'thing';
+  if (expected === 'insect') return INSECT_SET.has(l) ? 'insect' : 'thing';
+  if (expected === 'animal') return ANIMAL_SET.has(l) ? 'animal' : 'thing';
+  if (expected === 'event') {
+    const ll=l.toLowerCase();
+    return EVENT_SET_PREFIXES.some(pfx=>ll.startsWith(pfx)) ? 'event' : 'thing';
+  }
+  if (expected === 'name') return looksLikeName(l) ? 'name' : 'thing';
+  if (expected === 'place') return looksLikePlace(l) ? 'place' : 'thing';
+
+  if (/^\d+$/.test(l)) return 'number';
+  if (BIRD_SET.has(l)) return 'bird';
+  if (KING_SET.has(l)) return 'king';
+  if (INSECT_SET.has(l)) return 'insect';
+  if (ANIMAL_SET.has(l)) return 'animal';
+  if (looksLikeName(l)) return 'name';
+  if (looksLikePlace(l)) return 'place';
   return 'thing';
 }
 
@@ -152,6 +223,23 @@ export function makeChoicesForQuestion(q, categoryAnswersPool, allAnswersPool, k
   const prompt = q.prompt || '';
 
   const expectedType = inferExpectedType(prompt, correctLabel);
+
+  // Special: Either/Or win questions
+  if (expectedType === 'eitheror') {
+    const parts = parseEitherOr(prompt.trim());
+    const a = parts ? parts[0] : '';
+    const b = parts ? parts[1] : '';
+    const out = new Set([correctLabel, a, b, 'Neither']);
+    return shuffle(Array.from(out).filter(Boolean)).slice(0, k);
+  }
+
+  // Special: multi-animal list questions
+  if (expectedType === 'animal_list') {
+    const cnt = parseNListCount(prompt) || 2;
+    const d = makeAnimalLists(cnt, correctLabel);
+    const set = new Set([correctLabel, ...d]);
+    return shuffle(Array.from(set)).slice(0, k);
+  }
 
   const choices = new Set([correctLabel]);
 
