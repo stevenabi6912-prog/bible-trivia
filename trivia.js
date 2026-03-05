@@ -176,7 +176,7 @@ function scoreCandidate(correctLabel, candLabel, expectedType) {
   return score;
 }
 
-function makeChoicesForQuestion(question, k = 4) {
+export function makeChoicesForQuestion(question, k = 4) {
   if (question && Array.isArray(question.choices) && question.choices.length) {
     return _bbMakeChoices(question);
   }
