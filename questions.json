@@ -422,9 +422,9 @@
           "difficulty": 1,
           "choices": [
             "Slimepits",
-            "The army retreated",
-            "They took the city",
-            "They wept"
+            "Gold mines",
+            "Vineyards",
+            "Water springs"
           ]
         },
         {
@@ -434,10 +434,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Israel won",
-            "The city was destroyed",
-            "They took the city",
-            "His trained servants"
+            "His trained servants",
+            "The men of Lot",
+            "The kings of Canaan",
+            "The Amorites"
           ]
         },
         {
@@ -447,10 +447,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Israel won",
             "Bera",
-            "The king was killed",
-            "The army retreated"
+            "Birsha",
+            "Shinab",
+            "Chedorlaomer"
           ]
         },
         {
@@ -460,10 +460,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Israel won",
             "Birsha",
-            "They fasted and prayed",
-            "They rejoiced greatly"
+            "Bera",
+            "Shemeber",
+            "Tidal"
           ]
         },
         {
@@ -473,10 +473,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The army retreated",
-            "They made a covenant",
             "Shinab of Admah, Shemeber of Zeboiim, and Zoar of Bela",
-            "The king was killed"
+            "Tidal, Amraphel, and Arioch",
+            "Chedorlaomer, Tidal, and Amraphel",
+            "Amraphel, Arioch, and Bera"
           ]
         },
         {
@@ -486,10 +486,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They offered sacrifices",
-            "The army retreated",
-            "They made a covenant",
-            "four"
+            "four",
+            "two",
+            "three",
+            "five"
           ]
         },
         {
@@ -512,10 +512,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They wept",
             "Joshua",
-            "Israel was defeated",
-            "They rejoiced greatly"
+            "Aaron",
+            "Caleb",
+            "Eleazar"
           ]
         },
         {
@@ -526,9 +526,9 @@
           "difficulty": 1,
           "choices": [
             "The rod of God",
-            "They fasted and prayed",
-            "They rejoiced greatly",
-            "Israel was defeated"
+            "A stone tablet",
+            "A sword",
+            "A cedar staff"
           ]
         },
         {
@@ -538,10 +538,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The city was destroyed",
-            "The king was killed",
-            "They fasted and prayed",
-            "Aaron & Hur"
+            "Aaron & Hur",
+            "Joshua & Caleb",
+            "Miriam & Aaron",
+            "Eleazar & Phinehas"
           ]
         },
         {
@@ -551,10 +551,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They wept",
             "Israel prevailed",
-            "The army was scattered",
-            "They were defeated"
+            "Amalek prevailed",
+            "The sun stood still",
+            "Thunder and lightning came"
           ]
         },
         {
@@ -577,10 +577,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They fled in fear",
-            "They offered sacrifices",
-            "They were defeated",
-            "Held up Moses' hands"
+            "Held up Moses' hands",
+            "Blew the trumpets",
+            "Went down to the battle",
+            "Prayed on their knees"
           ]
         },
         {
@@ -617,9 +617,9 @@
           "difficulty": 1,
           "choices": [
             "Seven",
-            "They were defeated",
-            "They took the city",
-            "The army retreated"
+            "Three",
+            "Forty",
+            "One"
           ]
         },
         {
@@ -630,9 +630,9 @@
           "difficulty": 1,
           "choices": [
             "One",
-            "The army was scattered",
-            "They rejoiced greatly",
-            "The walls fell down"
+            "Two",
+            "Three",
+            "Seven"
           ]
         },
         {
@@ -642,10 +642,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They offered sacrifices",
-            "They took the city",
-            "Israel was defeated",
-            "Seven Put the following in the proper order in which they marched"
+            "Seven Put the following in the proper order in which they marched",
+            "Three times",
+            "Once",
+            "Twice"
           ]
         },
         {
@@ -655,10 +655,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They rejoiced greatly",
             "Trumpets of rams' horns",
-            "They fled in fear",
-            "The city was destroyed"
+            "The Ark of the Covenant only",
+            "Swords and shields",
+            "Clay jars with torches"
           ]
         },
         {
@@ -668,10 +668,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were scattered",
-            "They wept",
-            "The enemy fled",
-            "Rahab, because she hid the spies and everyone that was with her"
+            "Rahab, because she hid the spies and everyone that was with her",
+            "The king of Jericho, because he surrendered",
+            "Achan, because he was from Judah",
+            "The priests of Jericho, because they were holy men"
           ]
         },
         {
@@ -682,9 +682,9 @@
           "difficulty": 1,
           "choices": [
             "Every day",
-            "They offered sacrifices",
-            "Israel was defeated",
-            "They were defeated"
+            "Only on the seventh day",
+            "Morning and evening",
+            "Three times a day"
           ]
         },
         {
@@ -695,9 +695,9 @@
           "difficulty": 1,
           "choices": [
             "Only on the 7th trip around on the 7th day",
-            "They were defeated",
-            "They rejoiced greatly",
-            "The city was destroyed"
+            "After every lap each day",
+            "On the first day only",
+            "When the walls began to shake"
           ]
         },
         {
@@ -708,9 +708,9 @@
           "difficulty": 1,
           "choices": [
             "The wall fell flat",
-            "They fled in fear",
-            "Israel won",
-            "They made a covenant"
+            "Fire came down from heaven",
+            "The gate opened by itself",
+            "An angel appeared"
           ]
         },
         {
@@ -721,9 +721,9 @@
           "difficulty": 1,
           "choices": [
             "Nothing",
-            "They made a covenant",
-            "They worshipped the LORD",
-            "They took the city"
+            "Only gold and silver",
+            "Cattle and clothing",
+            "Whatever they could carry"
           ]
         },
         {
@@ -733,10 +733,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The king was killed",
-            "The army retreated",
             "Achan",
-            "They made a covenant"
+            "Zimri",
+            "Korah",
+            "Dathan"
           ]
         },
         {
@@ -746,10 +746,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The walls fell down",
-            "They rejoiced greatly",
-            "The city was destroyed",
-            "Judah"
+            "Judah",
+            "Benjamin",
+            "Simeon",
+            "Gad"
           ]
         },
         {
@@ -760,9 +760,9 @@
           "difficulty": 1,
           "choices": [
             "Rent his clothes and fell to the earth",
-            "Israel won",
-            "They were scattered",
-            "They wept"
+            "Gathered his army and retreated to camp",
+            "Called a council of war with the elders",
+            "Fasted for three days"
           ]
         },
         {
@@ -772,10 +772,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were scattered",
-            "They offered sacrifices",
-            "They were defeated",
-            "Joshua and the elders"
+            "Joshua and the elders",
+            "The priests and Levites",
+            "The soldiers",
+            "The women of Israel"
           ]
         },
         {
@@ -785,10 +785,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They wept",
             "Destroy the accursed thing",
-            "The army retreated",
-            "They worshipped the LORD"
+            "Build an altar to the LORD",
+            "Fast for seven days",
+            "Offer a burnt offering"
           ]
         },
         {
@@ -798,10 +798,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The walls fell down",
             "They came before him by tribe, then families, then households, then man by man",
-            "Israel won",
-            "They worshipped the LORD"
+            "The LORD spoke in a dream and named Achan",
+            "A dove landed on the guilty man's tent",
+            "Lots were cast among the tribe of Judah only"
           ]
         },
         {
@@ -812,9 +812,9 @@
           "difficulty": 1,
           "choices": [
             "Burn him and all that he had",
-            "They fasted and prayed",
-            "Israel won",
-            "The city was destroyed"
+            "Cast him out of the camp",
+            "Stone him only",
+            "Sell him into slavery"
           ]
         },
         {
@@ -824,10 +824,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They worshipped the LORD",
-            "They were defeated",
             "A Babylonish garment; 200 shekels of silver, a wedge of gold",
-            "They were scattered"
+            "A coat of fine linen and 50 shekels of silver",
+            "A golden ring and 100 shekels of silver",
+            "Two camels and a bag of spices"
           ]
         },
         {
@@ -850,10 +850,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They offered sacrifices",
-            "They fasted and prayed",
             "Jerubbaal",
-            "They took the city"
+            "Abimelech",
+            "Joash",
+            "Baal-Berith"
           ]
         },
         {
@@ -863,10 +863,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They made a covenant",
-            "They fasted and prayed",
             "32,000",
-            "The walls fell down"
+            "10,000",
+            "70,000",
+            "300"
           ]
         },
         {
@@ -877,9 +877,9 @@
           "difficulty": 1,
           "choices": [
             "Israel might vaunt themselves and think they had won on their own",
-            "They fasted and prayed",
-            "The king was killed",
-            "They rejoiced greatly"
+            "The Midianites were too few to make it a fair fight",
+            "God wanted to test Gideon's faith first",
+            "The land could not support such a large army"
           ]
         },
         {
@@ -889,10 +889,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They worshipped the LORD",
-            "They fled in fear",
-            "They shouted for joy",
-            "Said that anyone who was afraid could go home"
+            "Said that anyone who was afraid could go home",
+            "Drew lots and dismissed half the men",
+            "Chose only those who had fought before",
+            "Had them fast and sent the weak away"
           ]
         },
         {
@@ -903,9 +903,9 @@
           "difficulty": 1,
           "choices": [
             "22,000",
-            "They were defeated",
-            "They made a covenant",
-            "They wept"
+            "10,000",
+            "300",
+            "31,700"
           ]
         },
         {
@@ -915,10 +915,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Israel was defeated",
             "He took them to the water to drink, and whoever lapped like a dog, he",
-            "They made a covenant",
-            "They took the city"
+            "He tested their skill with a sword",
+            "He had them run and chose the fastest",
+            "He asked which men had crossed the Jordan"
           ]
         },
         {
@@ -929,9 +929,9 @@
           "difficulty": 1,
           "choices": [
             "Those that lapped with their hands, 300",
-            "They shouted for joy",
-            "The army retreated",
-            "They wept"
+            "Those that knelt down to drink, 300",
+            "Those that lapped with their tongue, 10,000",
+            "Those who stood upright to drink, 300"
           ]
         },
         {
@@ -941,10 +941,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The army was scattered",
-            "They rejoiced greatly",
-            "They offered sacrifices",
-            "To take his servant and go down to hear what the Midianites were saying"
+            "To take his servant and go down to hear what the Midianites were saying",
+            "To pray through the night",
+            "To offer a burnt sacrifice before battle",
+            "To consult the priest of the LORD"
           ]
         },
         {
@@ -954,10 +954,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They shouted for joy",
-            "The army retreated",
-            "The king was killed",
-            "Three"
+            "Three",
+            "Two",
+            "Four",
+            "Seven"
           ]
         },
         {
@@ -967,10 +967,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They fasted and prayed",
             "A trumpet and a pitcher containing a lamp",
-            "They rejoiced greatly",
-            "They were scattered"
+            "A sword and a shield",
+            "A bow and a quiver",
+            "A spear and a torch"
           ]
         },
         {
@@ -981,9 +981,9 @@
           "difficulty": 1,
           "choices": [
             "The sword of the Lord and of Gideon",
-            "They wept",
-            "They were scattered",
-            "Israel won"
+            "For Israel and for the LORD",
+            "Victory belongs to Gideon",
+            "The LORD fights for us today"
           ]
         },
         {
@@ -993,10 +993,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The king was killed",
-            "They made a covenant",
-            "They rejoiced greatly",
-            "The beginning of the middle watch"
+            "The beginning of the middle watch",
+            "At sunrise",
+            "At midnight",
+            "At the first watch of the night"
           ]
         },
         {
@@ -1006,10 +1006,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They worshipped the LORD",
-            "The army retreated",
             "Oreb and Zeeb",
-            "The walls fell down"
+            "Zebah and Zalmunna",
+            "Sisera and Jabin",
+            "Sheba and Bichri"
           ]
         },
         {
@@ -1045,10 +1045,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They rejoiced greatly",
-            "They were scattered",
-            "They made a covenant",
-            "The elders of Israel"
+            "The elders of Israel",
+            "The priests of Shiloh",
+            "Eli the priest",
+            "Hophni and Phinehas"
           ]
         },
         {
@@ -1072,9 +1072,9 @@
           "difficulty": 1,
           "choices": [
             "It may save them out of the hands of their enemies",
-            "Israel was defeated",
-            "Israel won",
-            "The king was killed"
+            "It would bring fire from heaven on the Philistines",
+            "God would fight for them openly",
+            "It would cause the Philistines to flee in terror"
           ]
         },
         {
@@ -1084,10 +1084,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were defeated",
             "Hophni & Phinehas",
-            "The king was killed",
-            "They fasted and prayed"
+            "Joel & Abiah",
+            "Nadab & Abihu",
+            "Eleazar & Ithamar"
           ]
         },
         {
@@ -1098,9 +1098,9 @@
           "difficulty": 1,
           "choices": [
             "They shouted with a great shout",
-            "They worshipped the LORD",
-            "They fled in fear",
-            "Israel won"
+            "They blew the trumpets seven times",
+            "They fell to their faces in worship",
+            "They sang praises to the LORD"
           ]
         },
         {
@@ -1110,10 +1110,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were defeated",
             "They were afraid",
-            "They were scattered",
-            "The city was destroyed"
+            "They prepared eagerly for battle",
+            "They sent a messenger to negotiate",
+            "They mocked Israel"
           ]
         },
         {
@@ -1123,10 +1123,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Israel was defeated",
-            "They shouted for joy",
             "Be strong and quit you like men",
-            "They were defeated"
+            "Charge and take the ark at any cost",
+            "Surround the camp of Israel",
+            "Fight to the last man standing"
           ]
         },
         {
@@ -1137,9 +1137,9 @@
           "difficulty": 1,
           "choices": [
             "30,000",
-            "They made a covenant",
-            "Israel won",
-            "The army retreated"
+            "4,000",
+            "3,000",
+            "70,000"
           ]
         },
         {
@@ -1149,10 +1149,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The walls fell down",
-            "Israel was defeated",
-            "They offered sacrifices",
-            "The ark was taken, and he sons were slain"
+            "The ark was taken, and he sons were slain",
+            "The ark was hidden, and the sons fled",
+            "The ark was returned, and the sons were captured",
+            "The ark was destroyed, and the sons escaped"
           ]
         },
         {
@@ -1162,10 +1162,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They made a covenant",
-            "They shouted for joy",
-            "The enemy fled",
-            "He fell off his seat backward, broke his neck and died"
+            "He fell off his seat backward, broke his neck and died",
+            "He tore his robe and wept bitterly",
+            "He cried out to God and fainted",
+            "He refused to believe the messenger"
           ]
         },
         {
@@ -1175,10 +1175,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The city was destroyed",
-            "They wept",
             "40 years",
-            "Israel won"
+            "20 years",
+            "12 years",
+            "30 years"
           ]
         },
         {
@@ -1188,10 +1188,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The king was killed",
-            "They worshipped the LORD",
             "Phineas",
-            "They offered sacrifices"
+            "Hophni",
+            "Eli",
+            "Samuel"
           ]
         },
         {
@@ -1202,9 +1202,9 @@
           "difficulty": 1,
           "choices": [
             "She went into labor",
-            "The enemy fled",
-            "The king was killed",
-            "They rejoiced greatly"
+            "She fainted and did not recover",
+            "She cried out and tore her clothes",
+            "She refused to believe the messenger"
           ]
         },
         {
@@ -1214,10 +1214,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The army was scattered",
             "Ichabod",
-            "They wept",
-            "They worshipped the LORD"
+            "Shiloh",
+            "Baruch",
+            "Phinehas"
           ]
         },
         {
@@ -1253,10 +1253,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They fled in fear",
-            "They rejoiced greatly",
-            "They wept",
-            "Six cubits and a span"
+            "Six cubits and a span",
+            "Four cubits and a span",
+            "Five cubits and a span",
+            "Seven cubits"
           ]
         },
         {
@@ -1266,10 +1266,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were scattered",
             "Send one man to fight, whichever one loses would become servants to the victor",
-            "Israel won",
-            "They shouted for joy"
+            "Surrender now or be completely destroyed",
+            "Bring your king out to fight me in single combat",
+            "Pay tribute every year and we will leave in peace"
           ]
         },
         {
@@ -1279,10 +1279,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Israel was defeated",
-            "The army was scattered",
             "They were dismayed and afraid",
-            "They fled in fear"
+            "They prayed and fasted for three days",
+            "They sought a champion among the mighty men",
+            "They consulted the priest for guidance"
           ]
         },
         {
@@ -1293,9 +1293,9 @@
           "difficulty": 1,
           "choices": [
             "Jesse",
-            "Israel won",
-            "The city was destroyed",
-            "They offered sacrifices"
+            "Boaz",
+            "Obed",
+            "Saul"
           ]
         },
         {
@@ -1305,10 +1305,10 @@
           "reference": "Eliab, Abinadab, and Shammah",
           "difficulty": 1,
           "choices": [
-            "The city was destroyed",
             "The three oldest",
-            "Israel was defeated",
-            "The walls fell down"
+            "The four youngest",
+            "Only David",
+            "All eight sons"
           ]
         },
         {
@@ -1318,10 +1318,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They offered sacrifices",
             "Morning and evening for 40 days",
-            "The king was killed",
-            "Israel won"
+            "Only at noon for 30 days",
+            "Every morning for 7 days",
+            "Morning and evening for 30 days"
           ]
         },
         {
@@ -1331,10 +1331,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They rejoiced greatly",
-            "The king was killed",
-            "They fasted and prayed",
-            "An ephah of parched corn and 10 loaves"
+            "An ephah of parched corn and 10 loaves",
+            "A skin of wine and 5 loaves",
+            "Two sheep and a skin of oil",
+            "10 loaves and a flask of honey"
           ]
         },
         {
@@ -1344,10 +1344,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They took the city",
-            "They were defeated",
-            "The enemy fled",
-            "10 cheeses"
+            "10 cheeses",
+            "A skin of wine",
+            "5 loaves of bread",
+            "A lamb for offering"
           ]
         },
         {
@@ -1357,10 +1357,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They fled in fear",
-            "The army was scattered",
-            "The enemy fled",
-            "He left them with a keeper"
+            "He left them with a keeper",
+            "He drove them back to his father's house",
+            "He left them in the fold",
+            "He gave them to his youngest brother"
           ]
         },
         {
@@ -1370,10 +1370,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The army was scattered",
-            "The enemy fled",
-            "The walls fell down",
-            "He was angry"
+            "He was angry",
+            "He was afraid for David's safety",
+            "He encouraged David to be bold",
+            "He laughed at David's suggestion"
           ]
         },
         {
@@ -1383,10 +1383,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They shouted for joy",
-            "They took the city",
-            "They rejoiced greatly",
-            "What have I done? Is there not a cause?"
+            "What have I done? Is there not a cause?",
+            "A man of God does not fear the uncircumcised",
+            "The LORD who delivered the lion will deliver this Philistine",
+            "I have done nothing wrong; let me prove myself"
           ]
         },
         {
@@ -1396,10 +1396,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They worshipped the LORD",
-            "The king was killed",
-            "They took the city",
-            "Let no man's heart fail, I will go fight this Philistine"
+            "Let no man's heart fail, I will go fight this Philistine",
+            "Give me your armor and I will slay him today",
+            "I have fought greater enemies than this man",
+            "God has promised me victory over this Philistine"
           ]
         },
         {
@@ -1409,10 +1409,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The walls fell down",
             "He was a youth and Goliath was a man of war from his youth",
-            "They offered sacrifices",
-            "The king was killed"
+            "He had no armor or weapons",
+            "He was not a soldier in the army",
+            "He was too important to the king to risk"
           ]
         },
         {
@@ -1422,10 +1422,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The enemy fled",
             "God had enabled him to kill a lion and a bear that had threatened his sheep",
-            "They made a covenant",
-            "They shouted for joy"
+            "He had defeated Philistine raiders in the past",
+            "He had trained with the mightiest men of Israel",
+            "His father Jesse had been a great warrior"
           ]
         },
         {
@@ -1435,10 +1435,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The city was destroyed",
             "His own armor, a helmet of brass, a coat of mail and his sword",
-            "The walls fell down",
-            "They worshipped the LORD"
+            "A shield of bronze and a spear",
+            "A leather breastplate and a sword",
+            "Goliath's armor from a previous battle"
           ]
         },
         {
@@ -1449,9 +1449,9 @@
           "difficulty": 1,
           "choices": [
             "He had not proved it",
-            "The city was destroyed",
-            "The king was killed",
-            "They wept"
+            "It was too heavy for him to move in",
+            "It did not fit him properly",
+            "He trusted only in God, not in armor"
           ]
         },
         {
@@ -1461,10 +1461,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The city was destroyed",
-            "They wept",
             "His staff, 5 smooth stones and his sling",
-            "They shouted for joy"
+            "His shepherd's rod and a knife",
+            "A sword borrowed from Jonathan",
+            "His sling and a pouch of water"
           ]
         },
         {
@@ -1474,10 +1474,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The king was killed",
-            "They fled in fear",
-            "Israel won",
-            "He disdained him because he was a youth, ruddy and of a fair countenance"
+            "He disdained him because he was a youth, ruddy and of a fair countenance",
+            "He laughed and called on his gods to curse him",
+            "He challenged David to send a real warrior",
+            "He was surprised and asked who the boy was"
           ]
         },
         {
@@ -1487,10 +1487,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Israel won",
-            "They offered sacrifices",
-            "The army retreated",
-            "Am I a dog, that thou comest to me with staves?"
+            "Am I a dog, that thou comest to me with staves?",
+            "Do you think sticks and stones can defeat a warrior?",
+            "Why does Israel send a boy to do a man's work?",
+            "Have you come to mock me with shepherd's tools?"
           ]
         },
         {
@@ -1500,10 +1500,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were defeated",
-            "The city was destroyed",
             "Give it to the fowls and the beasts",
-            "They wept"
+            "Leave it in the valley as a warning to Israel",
+            "Throw it to the dogs of the Philistines",
+            "Scatter it on the mountains of Judah"
           ]
         },
         {
@@ -1513,10 +1513,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They offered sacrifices",
-            "They were defeated",
             "In the name of the Lord of hosts, the God of Israel",
-            "They wept"
+            "With the strength of Israel's God behind him",
+            "As a servant of the living God of heaven",
+            "In the power of the Almighty God of Abraham"
           ]
         },
         {
@@ -1526,10 +1526,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They fled in fear",
             "His head",
-            "They took the city",
-            "They wept"
+            "His sword",
+            "His armor",
+            "His life"
           ]
         },
         {
@@ -1539,10 +1539,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They offered sacrifices",
-            "They shouted for joy",
             "He hasted and ran toward the army to meet him",
-            "They were defeated"
+            "He stood still and drew his sling",
+            "He knelt briefly in prayer then rose and ran",
+            "He cried out to God and charged forward"
           ]
         },
         {
@@ -1565,10 +1565,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were defeated",
-            "Israel won",
-            "They shouted for joy",
-            "Goliath's"
+            "Goliath's",
+            "Saul's",
+            "Jonathan's",
+            "His own"
           ]
         }
       ]
@@ -1585,9 +1585,9 @@
           "difficulty": 1,
           "choices": [
             "The promise of the father/the holy ghost",
-            "They wept",
-            "Redemption",
-            "They offered sacrifices"
+            "The return of Jesus in glory",
+            "A sign from heaven above",
+            "The gathering of all Israel"
           ]
         },
         {
@@ -1597,10 +1597,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Tribulation",
-            "Grace",
-            "Mount of Olives / Olivette"
+            "Mount of Olives / Olivette",
+            "Mount Sinai",
+            "Mount Zion",
+            "Mount Moriah"
           ]
         },
         {
@@ -1610,10 +1610,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They fled in fear",
-            "Rapture",
-            "They rejoiced greatly",
-            "Prayer and Supplication"
+            "Prayer and Supplication",
+            "Fasting and reading of Scripture",
+            "Singing and praise",
+            "Teaching and breaking of bread"
           ]
         },
         {
@@ -1623,10 +1623,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They made a covenant",
             "In like manner as ye have seen him go into heaven",
-            "Faith",
-            "Resurrection"
+            "With the clouds and great glory",
+            "As a thief in the night",
+            "With the sound of a great trumpet"
           ]
         },
         {
@@ -1636,10 +1636,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
             "Peter, James, john, Andrew, Philip, Thomas, Bartholomew, Matthew, Jame",
-            "Charity",
-            "They rejoiced greatly"
+            "Peter, Paul, John, Barnabas, Philip, Thomas, Mark, Matthew, Luke",
+            "Peter, James, John, Silas, Philip, Titus, Bartholomew, Matthew, James",
+            "Andrew, Peter, James, John, Judas Iscariot, Philip, Thomas, Bartholomew, Matthew"
           ]
         },
         {
@@ -1662,10 +1662,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
             "Cloven tongues like as of fire",
-            "Repentance",
-            "Sanctification"
+            "A mighty rushing wind",
+            "A shining light from heaven",
+            "A dove resting upon them"
           ]
         },
         {
@@ -1675,10 +1675,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
             "Speak with other tongues",
-            "They shouted for joy",
-            "They wept"
+            "Prophesy and heal the sick",
+            "Pray aloud with loud voices",
+            "Sing psalms and hymns"
           ]
         },
         {
@@ -1689,9 +1689,9 @@
           "difficulty": 1,
           "choices": [
             "Devout Jews of every nation",
-            "Grace",
-            "They were scattered",
-            "Tribulation"
+            "Roman soldiers and Jewish priests",
+            "The apostles and their families",
+            "Pilgrims from Judea only"
           ]
         },
         {
@@ -1701,10 +1701,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They rejoiced greatly",
-            "They fled in fear",
-            "Holiness",
-            "Joel"
+            "Joel",
+            "Isaiah",
+            "Ezekiel",
+            "Amos"
           ]
         },
         {
@@ -1714,10 +1714,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were defeated",
-            "They wept",
-            "Tribulation",
-            "His servants and handmaids"
+            "His servants and handmaids",
+            "All of Israel and Judah",
+            "The elders and prophets",
+            "The priests and Levites"
           ]
         },
         {
@@ -1727,10 +1727,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
-            "They fled in fear",
-            "Charity",
-            "By miracles wonders and signs"
+            "By miracles wonders and signs",
+            "By his fulfillment of the scriptures",
+            "By his sinless life and teaching",
+            "By the testimony of John the Baptist"
           ]
         },
         {
@@ -1740,10 +1740,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were defeated",
             "In hell",
-            "They rejoiced greatly",
-            "They offered sacrifices"
+            "In the grave",
+            "In darkness",
+            "In the power of death"
           ]
         },
         {
@@ -1753,10 +1753,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were defeated",
             "Till his foes are made to be his footstool",
-            "Sanctification",
-            "Faith"
+            "Until the last trumpet sounds",
+            "Until all nations hear the gospel",
+            "Until the Day of Judgment"
           ]
         },
         {
@@ -1766,10 +1766,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They offered sacrifices",
-            "They were scattered",
-            "Adoption",
-            "They were pricked in their heart"
+            "They were pricked in their heart",
+            "They were astonished and fell silent",
+            "Many believed immediately without question",
+            "They debated among themselves"
           ]
         },
         {
@@ -1779,10 +1779,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They fasted and prayed",
-            "Gospel",
             "Repent and be baptized",
-            "Baptism"
+            "Believe on the Lord Jesus Christ",
+            "Fast and pray for forgiveness",
+            "Go and sin no more"
           ]
         },
         {
@@ -1793,9 +1793,9 @@
           "difficulty": 1,
           "choices": [
             "They were baptized",
-            "Redemption",
-            "They wept",
-            "They were scattered"
+            "They joined the disciples in the upper room",
+            "They sold their possessions and gave to the poor",
+            "They went to the temple to worship"
           ]
         },
         {
@@ -1805,10 +1805,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They fasted and prayed",
-            "They wept",
             "3,000",
-            "Sanctification"
+            "5,000",
+            "120",
+            "500"
           ]
         },
         {
@@ -1818,10 +1818,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They made a covenant",
-            "They shouted for joy",
-            "Resurrection",
-            "The apostle's doctrine and fellowship, and in breaking of breads and in prayers"
+            "The apostle's doctrine and fellowship, and in breaking of breads and in prayers",
+            "The temple worship and giving of alms",
+            "Fasting, prayer, and service to the poor",
+            "Scripture reading, singing, and tithing"
           ]
         },
         {
@@ -1831,10 +1831,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They worshipped the LORD",
-            "Adoption",
             "All people",
-            "Repentance"
+            "The priests and elders",
+            "The Pharisees and scribes",
+            "The rulers of Israel"
           ]
         }
       ]
@@ -2129,10 +2129,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
-            "Baptism",
-            "Tribulation",
-            "The Churches of Galatia"
+            "The Churches of Galatia",
+            "The Church at Corinth",
+            "The Church at Ephesus",
+            "The Church at Rome"
           ]
         },
         {
@@ -2142,10 +2142,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
-            "Resurrection",
             "To deliver us from this present evil world",
-            "Gospel"
+            "To fulfill the law and the prophets",
+            "To make peace between God and man",
+            "To establish his kingdom on earth"
           ]
         },
         {
@@ -2155,10 +2155,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
-            "Faith",
-            "Rapture",
-            "The church had been so soon removed from him that called them"
+            "The church had been so soon removed from him that called them",
+            "The Galatians had returned to idol worship",
+            "The false teachers had gained so many followers",
+            "The Galatians had rejected the apostles"
           ]
         },
         {
@@ -2168,10 +2168,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Gospel",
             "Into the grace of Christ 1:7-12",
-            "Rapture"
+            "Into the fellowship of his Son",
+            "Into his marvelous light",
+            "Into the liberty of the Spirit"
           ]
         },
         {
@@ -2181,10 +2181,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Resurrection",
             "They perverted it",
-            "Justification"
+            "They added to it",
+            "They denied it",
+            "They abandoned it"
           ]
         },
         {
@@ -2194,10 +2194,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Second coming",
-            "Rapture",
-            "They should be \"accursed"
+            "They should be \"accursed",
+            "They should be silenced and rebuked",
+            "They should be removed from fellowship",
+            "They should be handed to the civil authorities"
           ]
         },
         {
@@ -2207,10 +2207,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
             "Men and Angels",
-            "Rapture",
-            "Second coming"
+            "Men and Prophets",
+            "Apostles and Angels",
+            "Angels and Demons"
           ]
         },
         {
@@ -2221,9 +2221,9 @@
           "difficulty": 1,
           "choices": [
             "The servant of Christ",
-            "Repentance",
-            "Baptism",
-            "Rapture"
+            "An apostle of Christ",
+            "A preacher of the gospel",
+            "A follower of the truth"
           ]
         },
         {
@@ -2233,10 +2233,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
             "Man 1:13-18",
-            "Second coming",
-            "Justification"
+            "The law",
+            "Tradition",
+            "The elders of Israel"
           ]
         },
         {
@@ -2246,10 +2246,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Sanctification",
             "Persecuted it and wasted it",
-            "Resurrection"
+            "Imprisoned believers and killed them",
+            "Spoke against it and denied it",
+            "Ridiculed it and ignored it"
           ]
         },
         {
@@ -2259,10 +2259,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Resurrection",
-            "Second coming",
-            "The traditions of his fathers"
+            "The traditions of his fathers",
+            "The law of Moses",
+            "The teachings of the Pharisees",
+            "The synagogue and its customs"
           ]
         },
         {
@@ -2272,10 +2272,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Repentance",
-            "Resurrection",
-            "Gospel",
-            "His mother's womb"
+            "His mother's womb",
+            "His former way of life",
+            "The religion of his fathers",
+            "The company of the Pharisees"
           ]
         },
         {
@@ -2285,10 +2285,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Redemption",
-            "Charity",
-            "Flesh and blood"
+            "Flesh and blood",
+            "The other apostles",
+            "The law of Moses",
+            "The council of Jerusalem"
           ]
         },
         {
@@ -2311,10 +2311,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
             "James, the Lord's brother",
-            "Redemption",
-            "Rapture"
+            "John, the son of Zebedee",
+            "Barnabas, the apostle",
+            "Andrew, Peter's brother"
           ]
         },
         {
@@ -2324,10 +2324,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
-            "Faith",
-            "Baptism",
-            "Syria and Cilicia"
+            "Syria and Cilicia",
+            "Judea and Samaria",
+            "Asia and Macedonia",
+            "Arabia and Damascus"
           ]
         },
         {
@@ -2337,10 +2337,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
-            "Gospel",
-            "Sanctification",
-            "The Churches of Judea"
+            "The Churches of Judea",
+            "The Churches of Syria",
+            "The Churches of Galatia",
+            "The Churches of Asia"
           ]
         },
         {
@@ -2350,10 +2350,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
-            "Tribulation",
             "That he which persecuted us in times past now preacheth the faith whic",
-            "Rapture"
+            "That Paul had been appointed an apostle by Peter",
+            "That Paul had received a vision of the risen Christ",
+            "That Paul had once been a chief persecutor of believers"
           ]
         },
         {
@@ -2363,10 +2363,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
-            "Tribulation",
             "They glorified God 2:1-5",
-            "Adoption"
+            "They sent greetings and support to Paul",
+            "They praised Peter for his witness to Paul",
+            "They were amazed and gave thanks to God"
           ]
         },
         {
@@ -2376,10 +2376,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Gospel",
             "Barnabas and Titus",
-            "Resurrection"
+            "Silas and Timothy",
+            "Luke and Titus",
+            "Barnabas and Silas"
           ]
         },
         {
@@ -2389,10 +2389,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
             "Greek",
-            "Gospel",
-            "Rapture"
+            "Roman",
+            "Jewish",
+            "Syrian"
           ]
         },
         {
@@ -2416,9 +2416,9 @@
           "difficulty": 1,
           "choices": [
             "That they might bring them into bondage",
-            "Adoption",
-            "Sanctification",
-            "Baptism"
+            "To report their practices to the Jewish council",
+            "To test whether Paul's gospel was true",
+            "To accuse them before the Roman authorities"
           ]
         },
         {
@@ -2428,10 +2428,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Faith",
-            "Holiness",
-            "That the truth of the gospel might continue with you 2:6-10"
+            "That the truth of the gospel might continue with you 2:6-10",
+            "So that no one would be led astray",
+            "Because they had come to spy on their freedom",
+            "Because their teaching came from false apostles"
           ]
         },
         {
@@ -2441,10 +2441,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
-            "Justification",
             "God",
-            "Holiness"
+            "Paul the apostle",
+            "Christ Jesus",
+            "The Holy Spirit"
           ]
         },
         {
@@ -2454,10 +2454,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
             "The gospel of the uncircumcision",
-            "Rapture",
-            "Tribulation"
+            "The gospel of the circumcision",
+            "The gospel of the kingdom",
+            "The gospel of grace"
           ]
         },
         {
@@ -2467,10 +2467,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Redemption",
             "Peter",
-            "Adoption"
+            "James",
+            "John",
+            "Barnabas"
           ]
         },
         {
@@ -2480,10 +2480,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
-            "Holiness",
             "James, Cephas and John",
-            "Tribulation"
+            "Peter, Barnabas and Titus",
+            "Peter, James and Andrew",
+            "Barnabas, Titus and James"
           ]
         },
         {
@@ -2493,10 +2493,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
-            "Sanctification",
             "The right hands of fellowship 2:10-15",
-            "Gospel"
+            "A letter of commendation",
+            "Their blessing and approval",
+            "Permission to preach to the Gentiles"
           ]
         },
         {
@@ -2520,9 +2520,9 @@
           "difficulty": 1,
           "choices": [
             "He was to be blamed",
-            "Rapture",
-            "Charity",
-            "Sanctification"
+            "He was eating with the uncircumcised",
+            "He had denied the gospel publicly",
+            "He was following the false brethren"
           ]
         },
         {
@@ -2533,9 +2533,9 @@
           "difficulty": 1,
           "choices": [
             "The Gentiles",
-            "Charity",
-            "Repentance",
-            "Justification"
+            "The Jews of Antioch",
+            "Paul and Barnabas",
+            "The circumcised believers"
           ]
         },
         {
@@ -2546,9 +2546,9 @@
           "difficulty": 1,
           "choices": [
             "Their dissimulation",
-            "Grace",
-            "Resurrection",
-            "Holiness"
+            "Peter's example",
+            "The fear of the circumcision",
+            "The teaching of the false brethren"
           ]
         },
         {
@@ -2558,10 +2558,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
-            "Justification",
-            "Holiness",
-            "As to the Jews 2:15-21"
+            "As to the Jews 2:15-21",
+            "According to the law of Moses",
+            "Under the traditions of the elders",
+            "As though they were uncircumcised"
           ]
         },
         {
@@ -2571,10 +2571,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
             "By the faith of Jesus Christ",
-            "Tribulation",
-            "Grace"
+            "By the works of the law",
+            "By circumcision and obedience",
+            "By his own righteousness"
           ]
         },
         {
@@ -2584,10 +2584,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
             "A transgressor",
-            "Tribulation",
-            "Faith"
+            "An enemy of the cross",
+            "A servant of sin",
+            "A breaker of the covenant"
           ]
         },
         {
@@ -2597,10 +2597,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Sanctification",
             "Dead to the law",
-            "Resurrection"
+            "Alive to righteousness",
+            "Free from sin",
+            "A new creature in Christ"
           ]
         },
         {
@@ -2610,10 +2610,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
             "That he might live unto God",
-            "Grace",
-            "Tribulation"
+            "That he might preach the gospel freely",
+            "That Christ might live in him",
+            "That he might be free from condemnation"
           ]
         },
         {
@@ -2623,10 +2623,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
-            "Repentance",
             "If righteousness come by the law 3:1-7",
-            "Tribulation"
+            "If we do not live by faith",
+            "If circumcision is required for salvation",
+            "If the works of the law are still required"
           ]
         },
         {
@@ -2649,10 +2649,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Redemption",
-            "Adoption",
-            "The truth"
+            "The truth",
+            "The apostle's teaching",
+            "The gospel of Christ",
+            "The commandments of God"
           ]
         },
         {
@@ -2663,9 +2663,9 @@
           "difficulty": 1,
           "choices": [
             "Righteousness",
-            "Sanctification",
-            "Faith",
-            "Redemption"
+            "Justification before the law",
+            "Salvation and eternal life",
+            "A special covenant blessing"
           ]
         },
         {
@@ -2675,10 +2675,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
             "They which are of the faith 3:8-15",
-            "Justification",
-            "Redemption"
+            "Those who are circumcised",
+            "The physical descendants of Israel",
+            "Those who keep the law"
           ]
         },
         {
@@ -2688,10 +2688,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
             "Through faith",
-            "Repentance",
-            "Resurrection"
+            "Through repentance and baptism",
+            "By the preaching of the law",
+            "By the merits of Abraham"
           ]
         },
         {
@@ -2701,10 +2701,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Grace",
             "Abraham",
-            "Rapture"
+            "Moses",
+            "Isaac",
+            "The Messiah"
           ]
         },
         {
@@ -2714,10 +2714,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Rapture",
             "By the law",
-            "Baptism"
+            "By his own righteousness",
+            "By circumcision",
+            "By the traditions of his fathers"
           ]
         },
         {
@@ -2741,9 +2741,9 @@
           "difficulty": 1,
           "choices": [
             "A tree 3:16-23",
-            "Holiness",
-            "Second coming",
-            "Grace"
+            "A cross",
+            "A stake",
+            "A gibbet"
           ]
         },
         {
@@ -2767,9 +2767,9 @@
           "difficulty": 1,
           "choices": [
             "Promise",
-            "Faith",
-            "Rapture",
-            "Holiness"
+            "The blessing of God",
+            "The covenant with Abraham",
+            "The inheritance of faith"
           ]
         },
         {
@@ -2779,10 +2779,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
-            "Redemption",
-            "Rapture",
-            "God forbid"
+            "God forbid",
+            "Yes, the law was added because of transgressions",
+            "No, they work together for righteousness",
+            "The law was given before the promises"
           ]
         },
         {
@@ -2792,10 +2792,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Justification",
             "Scripture",
-            "Baptism"
+            "The testimony of the prophets",
+            "The law of Moses",
+            "The conscience of man"
           ]
         },
         {
@@ -2805,10 +2805,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
-            "Adoption",
             "The law 3:24-29",
-            "Charity"
+            "The bondage of sin",
+            "The power of darkness",
+            "The custody of the prophets"
           ]
         },
         {
@@ -2818,10 +2818,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Adoption",
             "Schoolmaster",
-            "Repentance"
+            "Guardian",
+            "Teacher",
+            "Judge"
           ]
         },
         {
@@ -2832,9 +2832,9 @@
           "difficulty": 1,
           "choices": [
             "To bring us unto Christ",
-            "Justification",
-            "Rapture",
-            "Baptism"
+            "To show us the way of righteousness",
+            "To prepare us for the Spirit",
+            "To keep us from sin"
           ]
         },
         {
@@ -2844,10 +2844,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
             "Faith",
-            "Second coming",
-            "Grace"
+            "The coming of Christ",
+            "The receiving of the Spirit",
+            "The new covenant"
           ]
         },
         {
@@ -2857,10 +2857,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
             "Christ Jesus",
-            "Charity",
-            "Rapture"
+            "The Spirit of God",
+            "The body of the church",
+            "Abraham our father"
           ]
         },
         {
@@ -2870,10 +2870,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Holiness",
-            "Justification",
-            "Abrahams 4:1-5"
+            "Abrahams 4:1-5",
+            "Isaac's",
+            "Israel's",
+            "The promises'"
           ]
         },
         {
@@ -2883,10 +2883,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Second coming",
-            "Sanctification",
-            "When he is a child"
+            "When he is a child",
+            "When he is under the law",
+            "Before he comes of age to inherit",
+            "When he knows not his father's will"
           ]
         },
         {
@@ -2896,10 +2896,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Grace",
             "Tutors and Governors",
-            "Redemption"
+            "The law and the commandments",
+            "Guardians and stewards",
+            "Elders and overseers"
           ]
         },
         {
@@ -2909,10 +2909,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
             "The elements of the world",
-            "Holiness",
-            "Rapture"
+            "The power of sin",
+            "The law of Moses",
+            "The traditions of men"
           ]
         },
         {
@@ -2922,10 +2922,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
-            "Resurrection",
-            "Justification",
-            "When we were children"
+            "When we were children",
+            "Before Christ came in the flesh",
+            "When we lived as Gentiles",
+            "Before we received the Spirit"
           ]
         },
         {
@@ -2936,9 +2936,9 @@
           "difficulty": 1,
           "choices": [
             "In the fulness of time",
-            "Resurrection",
-            "Gospel",
-            "Holiness"
+            "When Israel was in bondage",
+            "When the law had run its course",
+            "At the appointed feast of God"
           ]
         },
         {
@@ -2949,9 +2949,9 @@
           "difficulty": 1,
           "choices": [
             "Made of a woman, and, Made under the law",
-            "Grace",
-            "Redemption",
-            "Second coming"
+            "Born of the Spirit and born in Bethlehem",
+            "Sent from heaven and born of a virgin",
+            "Made in the likeness of sinful flesh and sent under the law"
           ]
         },
         {
@@ -2961,10 +2961,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
-            "Gospel",
-            "Resurrection",
-            "To redeem them that were under the law"
+            "To redeem them that were under the law",
+            "To fulfill all righteousness",
+            "To abolish the law and the prophets",
+            "To bring in the new covenant"
           ]
         },
         {
@@ -2975,9 +2975,9 @@
           "difficulty": 1,
           "choices": [
             "The adoption of sons 4:6-10",
-            "Sanctification",
-            "Second coming",
-            "Redemption"
+            "The gift of the Holy Spirit",
+            "The forgiveness of sins",
+            "The spirit of liberty"
           ]
         },
         {
@@ -2988,9 +2988,9 @@
           "difficulty": 1,
           "choices": [
             "The Spirit of his Son",
-            "Faith",
-            "Adoption",
-            "Justification"
+            "The love of God",
+            "A spirit of adoption",
+            "The witness of Christ"
           ]
         },
         {
@@ -3000,10 +3000,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Baptism",
-            "Justification",
-            "Abba Father"
+            "Abba Father",
+            "Lord Jesus come",
+            "Holy Holy Holy",
+            "Glory to God on high"
           ]
         },
         {
@@ -3013,10 +3013,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
             "A Son",
-            "Charity",
-            "Gospel"
+            "A friend of God",
+            "A joint heir with Christ",
+            "A new creature in Christ"
           ]
         },
         {
@@ -3026,10 +3026,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
-            "Tribulation",
             "An heir of God through Christ",
-            "Repentance"
+            "A partaker of the divine nature",
+            "A member of the body of Christ",
+            "A citizen of the heavenly Jerusalem"
           ]
         },
         {
@@ -3040,9 +3040,9 @@
           "difficulty": 1,
           "choices": [
             "When we knew not God",
-            "Charity",
-            "Second coming",
-            "Sanctification"
+            "Before we received the law",
+            "When we were in bondage to sin",
+            "Before Christ came in the flesh"
           ]
         },
         {
@@ -3052,10 +3052,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Second coming",
             "They turned again to the weak and beggarly elements",
-            "Sanctification"
+            "They returned to the observance of the Mosaic law",
+            "They went back to their idols",
+            "They followed the false teachers again"
           ]
         },
         {
@@ -3066,9 +3066,9 @@
           "difficulty": 1,
           "choices": [
             "Days, Months, Times, and Years 4:11-15",
-            "Redemption",
-            "Repentance",
-            "Gospel"
+            "Feasts, New Moons, Sabbaths, and Fasts",
+            "Sabbaths, Circumcision, Offerings, and Fasts",
+            "New Moons, Annual Feasts, Sabbath Years, and Holy Days"
           ]
         },
         {
@@ -3078,10 +3078,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
             "That he might have bestowed labor on them in vain",
-            "Justification",
-            "Sanctification"
+            "That they would be cut off from Christ",
+            "That they would fall away completely",
+            "That they had never truly believed"
           ]
         },
         {
@@ -3091,10 +3091,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
             "To be as he was",
-            "Gospel",
-            "Second coming"
+            "To stand fast in the liberty of Christ",
+            "To hold fast to his teaching",
+            "To turn away from their false teachers"
           ]
         },
         {
@@ -3104,10 +3104,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Justification",
-            "Holiness",
-            "Infirmity of the flesh"
+            "Infirmity of the flesh",
+            "Great boldness and signs",
+            "Much opposition and danger",
+            "The power of the Holy Spirit"
           ]
         },
         {
@@ -3117,10 +3117,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Repentance",
             "They did not despise or reject it",
-            "Holiness",
-            "Tribulation"
+            "They did not mock or ridicule it",
+            "They did not question or doubt it",
+            "They did not ignore or neglect it"
           ]
         },
         {
@@ -3130,10 +3130,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
-            "Second coming",
             "As an angel of God and as Christ Jesus himself",
-            "Sanctification"
+            "As a holy prophet of the Most High",
+            "As a teacher sent from God",
+            "As a servant of the Lord Jesus"
           ]
         },
         {
@@ -3143,10 +3143,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
-            "Repentance",
-            "Rapture",
-            "Pluck out their own eyes 4:16-20"
+            "Pluck out their own eyes 4:16-20",
+            "Give him all their possessions",
+            "Lay down their lives for him",
+            "Follow him to any land"
           ]
         },
         {
@@ -3156,10 +3156,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
-            "Resurrection",
-            "Adoption",
-            "He told them the truth"
+            "He told them the truth",
+            "He rebuked their false teachers openly",
+            "He refused to circumcise Titus",
+            "He preached against the law of Moses"
           ]
         },
         {
@@ -3169,10 +3169,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
             "Not well",
-            "Charity",
-            "Faith"
+            "With the appearance of wisdom",
+            "With flattery and deceit",
+            "With signs and wonders"
           ]
         },
         {
@@ -3182,10 +3182,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Faith",
             "Always in a good thing",
-            "Adoption"
+            "When Paul is present with them",
+            "When it is done in the name of Christ",
+            "When it produces righteous fruit"
           ]
         },
         {
@@ -3195,10 +3195,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
             "Until Christ was formed in them",
-            "Repentance",
-            "Resurrection"
+            "Until they returned to the true gospel",
+            "Until they cast off the false teachers",
+            "Until the day of redemption"
           ]
         },
         {
@@ -3209,9 +3209,9 @@
           "difficulty": 1,
           "choices": [
             "To be with them and to change his voice",
-            "Resurrection",
-            "Baptism",
-            "Redemption"
+            "To visit them and to write a stronger letter",
+            "To send Titus and to pray for them",
+            "To return to Galatia and rebuke them publicly"
           ]
         },
         {
@@ -3221,10 +3221,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
-            "Resurrection",
             "Doubt about the Galatians 4:21-25",
-            "Charity"
+            "Hope that they would return to the truth",
+            "Amazement at their foolishness",
+            "Grief over their turning away"
           ]
         },
         {
@@ -3234,10 +3234,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
-            "Redemption",
             "Those who desired to be under the law",
-            "Holiness"
+            "The Galatian churches generally",
+            "The false teachers who troubled them",
+            "Those who had accepted circumcision"
           ]
         },
         {
@@ -3247,10 +3247,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
             "A bondmaid and a freewoman",
-            "Adoption",
-            "Grace"
+            "Hagar and Keturah",
+            "Sarah and Hagar",
+            "A slave woman and Sarah the freewoman"
           ]
         },
         {
@@ -3260,10 +3260,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
-            "Adoption",
             "He who was born of the bondwoman",
-            "Redemption"
+            "He who was born of Keturah",
+            "He who was born first",
+            "He who was born of the promise"
           ]
         },
         {
@@ -3273,10 +3273,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
-            "Adoption",
-            "Rapture",
-            "Promise"
+            "Promise",
+            "The grace of God",
+            "Faith in God's word",
+            "A miracle of God"
           ]
         },
         {
@@ -3286,10 +3286,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
-            "Charity",
             "The two covenants",
-            "Faith"
+            "The law and the promise",
+            "Israel and the Gentiles",
+            "The old and new testaments"
           ]
         },
         {
@@ -3299,10 +3299,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
             "Bondage",
-            "Second coming",
-            "Tribulation"
+            "Death and condemnation",
+            "The letter of the law",
+            "Slavery to sin"
           ]
         },
         {
@@ -3312,10 +3312,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
             "Jerusalem 4:26-31",
-            "Resurrection",
-            "Sanctification"
+            "The present earthly temple",
+            "The children of Israel",
+            "The law and its ordinances"
           ]
         },
         {
@@ -3325,10 +3325,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
-            "Holiness",
-            "Justification",
-            "Jerusalem, which is above"
+            "Jerusalem, which is above",
+            "Sarah, the mother of promise",
+            "The heavenly Zion",
+            "The church of the firstborn"
           ]
         },
         {
@@ -3338,10 +3338,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Repentance",
-            "Redemption",
-            "She which is desolate"
+            "She which is desolate",
+            "She which is barren",
+            "The freewoman",
+            "She who waiteth on the LORD"
           ]
         },
         {
@@ -3351,10 +3351,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
             "The children of promise",
-            "Repentance",
-            "Gospel"
+            "Heirs of the kingdom of God",
+            "Sons of the living God",
+            "Children of the freewoman"
           ]
         },
         {
@@ -3364,10 +3364,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
-            "Tribulation",
-            "Justification",
-            "He that was born after the flesh"
+            "He that was born after the flesh",
+            "The Jews of Jerusalem",
+            "The false teachers of Galatia",
+            "Those who enforced the law"
           ]
         },
         {
@@ -3377,10 +3377,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
             "The son of the bondwoman",
-            "Tribulation",
-            "Redemption"
+            "He who trusted in the law",
+            "He who was born after the flesh only",
+            "The children of the earthly Jerusalem"
           ]
         },
         {
@@ -3391,9 +3391,9 @@
           "difficulty": 1,
           "choices": [
             "The freewoman 5:1-5",
-            "Repentance",
-            "Resurrection",
-            "Sanctification"
+            "The heavenly Jerusalem",
+            "Abraham by faith",
+            "The promise of God"
           ]
         },
         {
@@ -3403,10 +3403,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Faith",
             "The liberty wherewith Christ had made them free",
-            "Holiness"
+            "The faith once delivered to the saints",
+            "The truth of the gospel",
+            "The doctrine of the apostles"
           ]
         },
         {
@@ -3416,10 +3416,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Charity",
-            "Baptism",
-            "Circumcision"
+            "Circumcision",
+            "The observance of holy days",
+            "The keeping of the Mosaic law",
+            "The traditions of the fathers"
           ]
         },
         {
@@ -3429,10 +3429,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
-            "Baptism",
             "Him that is trusting in the law",
-            "Adoption"
+            "Every man that is circumcised",
+            "He that seeks righteousness by works",
+            "He that is not justified by faith"
           ]
         },
         {
@@ -3443,9 +3443,9 @@
           "difficulty": 1,
           "choices": [
             "They which were justified by the law",
-            "Resurrection",
-            "Second coming",
-            "Faith"
+            "Those who had been circumcised",
+            "Those who had fallen from grace",
+            "Those who had not believed the gospel"
           ]
         },
         {
@@ -3455,10 +3455,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
-            "Adoption",
             "The Spirit 5:6-10",
-            "Redemption"
+            "The grace of God",
+            "The promise of the Father",
+            "The word of God"
           ]
         },
         {
@@ -3469,9 +3469,9 @@
           "difficulty": 1,
           "choices": [
             "Circumcision and uncircumcision",
-            "Rapture",
-            "Tribulation",
-            "Redemption"
+            "Works of the law and religious observances",
+            "Keeping the Sabbath and circumcision",
+            "Fasting and the keeping of feast days"
           ]
         },
         {
@@ -3481,10 +3481,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Grace",
             "Faith",
-            "Second coming"
+            "The works of the law",
+            "Circumcision",
+            "Keeping the commandments"
           ]
         },
         {
@@ -3494,10 +3494,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
-            "Holiness",
-            "Gospel",
-            "Well"
+            "Well",
+            "With great zeal",
+            "In faith and love",
+            "With steadfast hope"
           ]
         },
         {
@@ -3507,10 +3507,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
             "Him that had called them",
-            "Justification",
-            "Baptism"
+            "The apostle Paul",
+            "The truth of the gospel",
+            "The Holy Spirit"
           ]
         },
         {
@@ -3521,9 +3521,9 @@
           "difficulty": 1,
           "choices": [
             "It leaveneth the whole lump",
-            "Second coming",
-            "Holiness",
-            "Adoption"
+            "It corrupts the whole batch",
+            "It spreads throughout the bread",
+            "It ruins all that it touches"
           ]
         },
         {
@@ -3533,10 +3533,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Faith",
             "They shall bear their own judgment 5:11-15",
-            "Redemption"
+            "They shall be cut off from the church",
+            "They shall be delivered to Satan",
+            "They shall answer to God for their deception"
           ]
         },
         {
@@ -3546,10 +3546,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
-            "Tribulation",
-            "Sanctification",
-            "When circumcision is preached instead of faith"
+            "When circumcision is preached instead of faith",
+            "When the law is put above the gospel",
+            "When works replace grace in the message",
+            "When men seek to please men rather than God"
           ]
         },
         {
@@ -3559,10 +3559,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
-            "Faith",
             "For them to be cut off",
-            "Charity"
+            "For them to be rebuked before all",
+            "For them to be excommunicated from the church",
+            "For them to be delivered to the law"
           ]
         },
         {
@@ -3573,9 +3573,9 @@
           "difficulty": 1,
           "choices": [
             "Liberty",
-            "Faith",
-            "Resurrection",
-            "Redemption"
+            "Fellowship with Christ",
+            "The freedom of the gospel",
+            "A life of service to one another"
           ]
         },
         {
@@ -3585,10 +3585,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
             "The flesh",
-            "Redemption",
-            "Second coming"
+            "To sin against God",
+            "To offend their weaker brethren",
+            "To forsake the law entirely"
           ]
         },
         {
@@ -3599,9 +3599,9 @@
           "difficulty": 1,
           "choices": [
             "Thou shalt love thy neighbor as thyself",
-            "Baptism",
-            "Faith",
-            "Gospel"
+            "Love God with all your heart, soul, and mind",
+            "Do unto others as you would have them do unto you",
+            "Bear one another's burdens and fulfil the law of Christ"
           ]
         },
         {
@@ -3611,10 +3611,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Sanctification",
             "They would be consumed 5:16-21",
-            "Faith"
+            "They would fall into great sin",
+            "They would bring shame on the gospel",
+            "They would be scattered and destroyed"
           ]
         },
         {
@@ -3624,10 +3624,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Repentance",
             "Walking in the spirit",
-            "Second coming",
-            "Adoption"
+            "Putting on the armor of God",
+            "Crucifying the flesh with its passions",
+            "Submitting to the commandments of God"
           ]
         },
         {
@@ -3637,10 +3637,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
-            "Adoption",
             "The flesh and the Spirit",
-            "Redemption"
+            "The law and grace",
+            "Sin and righteousness",
+            "The old man and the new man"
           ]
         },
         {
@@ -3650,10 +3650,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
-            "Holiness",
-            "Resurrection",
-            "Those that are led by the Spirit"
+            "Those that are led by the Spirit",
+            "Those who have been justified by faith",
+            "Those who walk in love",
+            "Those who belong to Christ"
           ]
         },
         {
@@ -3663,10 +3663,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
             "Adultery, fornication, uncleanness, lasciviousness, Idolatry, witchcra",
-            "Gospel",
-            "Adoption"
+            "Murder, theft, covetousness, lying, envy, and pride",
+            "Drunkenness, strife, jealousy, anger, selfishness, and heresies",
+            "Lying, coveting, stealing, murder, adultery, and blasphemy"
           ]
         },
         {
@@ -3676,10 +3676,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
-            "Baptism",
             "love, joy, peace, longsuffering, gentleness, goodness, faith, Meekness",
-            "Gospel"
+            "Boldness, wisdom, knowledge, understanding, holiness, righteousness, and truth",
+            "Charity, hope, faith, patience, mercy, humility, and purity",
+            "Prayer, fasting, giving, service, witness, worship, and obedience"
           ]
         },
         {
@@ -3689,10 +3689,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
             "Crucified the flesh",
-            "Resurrection",
-            "Repentance"
+            "Put off the old man",
+            "Died to sin",
+            "Mortified the deeds of the body"
           ]
         },
         {
@@ -3702,10 +3702,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
             "Walking in the Spirit",
-            "Tribulation",
-            "Faith"
+            "Praying in the Spirit",
+            "Bearing the fruit of the Spirit",
+            "Being led by the Spirit"
           ]
         },
         {
@@ -3716,9 +3716,9 @@
           "difficulty": 1,
           "choices": [
             "Vain glory",
-            "Grace",
-            "Rapture",
-            "Tribulation"
+            "The praise of men",
+            "The things of this world",
+            "The honor of the Pharisees"
           ]
         },
         {
@@ -3728,10 +3728,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
             "Provoke and envy 6:1-5",
-            "Redemption",
-            "Faith"
+            "Bite and devour one another",
+            "Judge and condemn one another",
+            "Compete and quarrel with one another"
           ]
         },
         {
@@ -3741,10 +3741,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Rapture",
             "Ye which are spiritual",
-            "Sanctification"
+            "The elders of the church",
+            "Those who walk in love",
+            "The overseers and deacons"
           ]
         },
         {
@@ -3754,10 +3754,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
             "One another's burdens",
-            "Adoption",
-            "Redemption"
+            "One another's reproaches",
+            "The cross of Christ daily",
+            "The sufferings of this present time"
           ]
         },
         {
@@ -3768,9 +3768,9 @@
           "difficulty": 1,
           "choices": [
             "By thinking he is something when he is nothing",
-            "Justification",
-            "Faith",
-            "Sanctification"
+            "By trusting in his own righteousness",
+            "By comparing himself with others",
+            "By boasting of his own works"
           ]
         },
         {
@@ -3780,10 +3780,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
-            "Tribulation",
-            "Holiness",
-            "His own work"
+            "His own work",
+            "His calling and election",
+            "His faith by his works",
+            "His love for his brethren"
           ]
         },
         {
@@ -3793,10 +3793,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
-            "Faith",
-            "Gospel",
-            "His own burden 6:6-10"
+            "His own burden 6:6-10",
+            "His own cross",
+            "His own sin before God",
+            "His own load of responsibility"
           ]
         },
         {
@@ -3806,10 +3806,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Repentance",
             "Him that teacheth in all good things",
-            "Grace",
-            "Redemption"
+            "His fellow believers in the church",
+            "Those who are in need among the brethren",
+            "The elders who labor in word and doctrine"
           ]
         },
         {
@@ -3819,10 +3819,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
             "That which he soweth",
-            "Rapture",
-            "Sanctification"
+            "A harvest of righteousness",
+            "What God has appointed for him",
+            "The fruit of his own ways"
           ]
         },
         {
@@ -3832,10 +3832,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
             "Corruption",
-            "Justification",
-            "Second coming"
+            "Death and destruction",
+            "The wrath of God",
+            "Shame and dishonor"
           ]
         },
         {
@@ -3845,10 +3845,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
-            "Gospel",
-            "Charity",
-            "Life everlasting"
+            "Life everlasting",
+            "The peace of God",
+            "Joy unspeakable",
+            "The favor of God"
           ]
         },
         {
@@ -3859,9 +3859,9 @@
           "difficulty": 1,
           "choices": [
             "Well doing",
-            "Justification",
-            "Rapture",
-            "Holiness"
+            "Running the race of faith",
+            "Bearing one another's burdens",
+            "The service of God"
           ]
         },
         {
@@ -3872,9 +3872,9 @@
           "difficulty": 1,
           "choices": [
             "Them who are of the household of faith 6:11-18",
-            "Tribulation",
-            "Gospel",
-            "Rapture"
+            "The poor and the needy",
+            "Our enemies and those who persecute us",
+            "Those who have done good to us"
           ]
         },
         {
@@ -3884,10 +3884,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Gospel",
-            "Second coming",
-            "With mine own hand"
+            "With mine own hand",
+            "In the Hebrew tongue",
+            "With great tears and sorrow",
+            "By the hand of Titus"
           ]
         },
         {
@@ -3897,10 +3897,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Repentance",
             "To avoid persecution for the cross of Christ",
-            "Rapture"
+            "To gain favor with the Jewish leaders",
+            "To make a fair show in the flesh",
+            "To bring them back under the law"
           ]
         },
         {
@@ -3910,10 +3910,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
             "That they may glory in your flesh",
-            "Charity",
-            "Tribulation"
+            "That they may bring you back under the law",
+            "That they may have more converts to their cause",
+            "That they may avoid the offense of the cross"
           ]
         },
         {
@@ -3924,9 +3924,9 @@
           "difficulty": 1,
           "choices": [
             "The cross of our Lord Jesus Christ",
-            "Tribulation",
-            "Rapture",
-            "Grace"
+            "The grace of God that saved us",
+            "Our liberty in Christ Jesus",
+            "The gospel of salvation"
           ]
         },
         {
@@ -3936,10 +3936,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
             "The World",
-            "Repentance",
-            "Holiness"
+            "Sin and the flesh",
+            "The law and its ordinances",
+            "The powers of darkness"
           ]
         },
         {
@@ -3949,10 +3949,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
             "A new creature",
-            "Justification",
-            "Resurrection"
+            "The keeping of the commandments",
+            "Faith working through love",
+            "The circumcision of the heart"
           ]
         },
         {
@@ -3962,10 +3962,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
             "Peace and Mercy",
-            "Rapture",
-            "Grace"
+            "Grace and truth",
+            "Blessing and joy",
+            "Love and forgiveness"
           ]
         },
         {
@@ -3975,10 +3975,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Repentance",
-            "Rapture",
             "The marks of the Lord Jesus",
-            "Faith"
+            "The sufferings of Christ",
+            "The fruit of his ministry",
+            "The wounds of his persecution"
           ]
         },
         {
@@ -3988,10 +3988,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
-            "Gospel",
-            "Adoption",
-            "The grace of our Lord Jesus"
+            "The grace of our Lord Jesus",
+            "The peace of God which passes understanding",
+            "The blessing of Abraham",
+            "The love of Christ which surpasses knowledge"
           ]
         }
       ]
@@ -4020,10 +4020,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
             "The Thessalonians",
-            "Sanctification",
-            "Resurrection"
+            "The grace given to him",
+            "His ministry among the Gentiles",
+            "The growth of the churches"
           ]
         },
         {
@@ -4033,10 +4033,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Tribulation",
             "In their prayers",
-            "Sanctification"
+            "In their letters to the churches",
+            "In their preaching to the Gentiles",
+            "In the synagogues"
           ]
         },
         {
@@ -4046,10 +4046,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
             "The Thessalonians' work of faith, labor of love, and patience of hope",
-            "Second coming",
-            "Tribulation"
+            "Their preaching, their giving, and their boldness",
+            "Their unity, their prayer, and their holiness",
+            "Their knowledge of scripture, their worship, and their fellowship"
           ]
         },
         {
@@ -4059,10 +4059,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
             "In word, in power, in the Holy Ghost, and in much assurance",
-            "Resurrection",
-            "Gospel"
+            "In signs, in wonders, in miracles, and in healings",
+            "In preaching, in teaching, in prayer, and in song",
+            "In truth, in love, in boldness, and in suffering"
           ]
         },
         {
@@ -4072,10 +4072,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Tribulation",
-            "Rapture",
-            "Paul, Timotheus, Sylvanus, and the Lord"
+            "Paul, Timotheus, Sylvanus, and the Lord",
+            "The apostles in Jerusalem and the Lord",
+            "Paul and Barnabas and the Lord",
+            "Silas and Timothy and the Lord"
           ]
         },
         {
@@ -4085,10 +4085,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
-            "Resurrection",
             "With much affliction and with joy of the Holy Ghost",
-            "Faith"
+            "With gladness and with great peace",
+            "With fear and trembling and with joy",
+            "With much prayer and with great faith"
           ]
         },
         {
@@ -4098,10 +4098,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
-            "Tribulation",
-            "Baptism",
-            "All that believed in Macedonia and Achaia"
+            "All that believed in Macedonia and Achaia",
+            "The churches of Judea which are in Christ",
+            "The church at Jerusalem",
+            "All the believers in Asia and beyond"
           ]
         },
         {
@@ -4112,9 +4112,9 @@
           "difficulty": 1,
           "choices": [
             "The Word of the Lord",
-            "Redemption",
-            "Baptism",
-            "Gospel"
+            "The testimony of Paul",
+            "The praises of the churches",
+            "The faith of the believers"
           ]
         },
         {
@@ -4124,10 +4124,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
             "Macedonia, Achaia, and every place their faith to Godward was spread abroad",
-            "Repentance",
-            "Rapture"
+            "All of Asia and unto Rome",
+            "Judea, Samaria, and the uttermost parts",
+            "Greece, Rome, and the islands of the sea"
           ]
         },
         {
@@ -4137,10 +4137,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
             "the manner of Paul's entering in unto them, and how they had turned to",
-            "Baptism",
-            "Charity"
+            "How great the faith of the Thessalonians was",
+            "How the word of God had been received among them",
+            "What manner of men Paul and Silas were"
           ]
         },
         {
@@ -4150,10 +4150,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
             "The Wrath to Come",
-            "Gospel",
-            "Baptism"
+            "The power of darkness",
+            "The bondage of sin",
+            "The dominion of death"
           ]
         },
         {
@@ -4163,10 +4163,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
-            "Tribulation",
-            "Sanctification",
-            "Their entrance unto them"
+            "Their entrance unto them",
+            "Paul's preaching among them",
+            "The Thessalonians' faith",
+            "Paul's labors in the gospel"
           ]
         },
         {
@@ -4177,9 +4177,9 @@
           "difficulty": 1,
           "choices": [
             "At Philippi",
-            "Second coming",
-            "Tribulation",
-            "Repentance"
+            "At Thessalonica",
+            "At Corinth",
+            "At Jerusalem"
           ]
         },
         {
@@ -4189,10 +4189,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Repentance",
             "The Gospel",
-            "Adoption",
-            "Justification"
+            "The care of the churches",
+            "The stewardship of the mystery",
+            "The ministry of reconciliation"
           ]
         },
         {
@@ -4203,9 +4203,9 @@
           "difficulty": 1,
           "choices": [
             "Flattering words or a cloke of covetousness",
-            "Second coming",
-            "Tribulation",
-            "Adoption"
+            "Fine speech or wisdom of words",
+            "Authority or power over the people",
+            "Miracles or signs to persuade them"
           ]
         },
         {
@@ -4216,9 +4216,9 @@
           "difficulty": 1,
           "choices": [
             "Glory from men",
-            "Sanctification",
-            "Baptism",
-            "Charity"
+            "Riches or financial support",
+            "Power over the churches",
+            "Honor from the apostles at Jerusalem"
           ]
         },
         {
@@ -4228,10 +4228,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
-            "Rapture",
-            "Charity",
-            "Because they were dear unto them"
+            "Because they were dear unto them",
+            "Because God had called them to serve the Thessalonians",
+            "Because the Thessalonians had suffered greatly",
+            "Because they had labored among them for many months"
           ]
         },
         {
@@ -4241,10 +4241,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
-            "Sanctification",
             "Night and day",
-            "Grace"
+            "Without ceasing",
+            "From early morning until sunset",
+            "Through the Sabbath and weekdays"
           ]
         },
         {
@@ -4254,10 +4254,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Rapture",
-            "Second coming",
-            "Holily, justly, and unblameably"
+            "Holily, justly, and unblameably",
+            "Boldly, humbly, and lovingly",
+            "Gently, faithfully, and carefully",
+            "Wisely, patiently, and mercifully"
           ]
         },
         {
@@ -4267,10 +4267,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
             "Exhorts, comforts, and charges them",
-            "Baptism",
-            "Rapture"
+            "Teaches, corrects, and provides for them",
+            "Loves, guides, and disciplines them",
+            "Prays for, instructs, and blesses them"
           ]
         },
         {
@@ -4280,10 +4280,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Tribulation",
-            "Second coming",
-            "Worthy of God"
+            "Worthy of God",
+            "In the light of truth",
+            "In love toward all men",
+            "In the power of the Holy Ghost"
           ]
         },
         {
@@ -4294,9 +4294,9 @@
           "difficulty": 1,
           "choices": [
             "As it is in truth, the word of God",
-            "Holiness",
-            "Baptism",
-            "Grace"
+            "With great joy and thanksgiving",
+            "With open hearts and much diligence",
+            "As the teaching of holy men"
           ]
         },
         {
@@ -4319,10 +4319,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
-            "Redemption",
             "The Thessalonians face",
-            "Sanctification"
+            "Their growth in the faith",
+            "The completion of his ministry",
+            "The fruit of his labor among them"
           ]
         },
         {
@@ -4332,10 +4332,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
             "Satan hindered him",
-            "Rapture",
-            "Redemption"
+            "The Jews stirred up opposition",
+            "He was imprisoned at the time",
+            "The churches of Asia needed him"
           ]
         },
         {
@@ -4358,10 +4358,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
             "At Athens",
-            "Tribulation",
-            "Faith"
+            "At Corinth",
+            "At Philippi",
+            "At Antioch"
           ]
         },
         {
@@ -4371,10 +4371,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
-            "Adoption",
-            "Rapture",
-            "His brother, minister of God, and their fellowlabourer in the gospel of Christ"
+            "His brother, minister of God, and their fellowlabourer in the gospel of Christ",
+            "His son in the faith and a servant of Jesus Christ",
+            "His companion in tribulation and minister of the churches",
+            "His fellow prisoner and messenger of the churches"
           ]
         },
         {
@@ -4397,10 +4397,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
-            "Resurrection",
-            "Sanctification",
-            "Tribulation"
+            "Tribulation",
+            "Persecution from the Jews",
+            "Affliction and rejection",
+            "Trials and temptations"
           ]
         },
         {
@@ -4410,10 +4410,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
             "Good tidings of the Thessalonians faith and charity",
-            "Charity",
-            "Sanctification"
+            "A letter from the elders of the church",
+            "Gifts from the believers at Thessalonica",
+            "News of their steadfastness under persecution"
           ]
         },
         {
@@ -4423,10 +4423,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
             "The Thessalonians faith",
-            "Tribulation",
-            "Holiness"
+            "The prayers of the churches",
+            "The word of God",
+            "The ministry of Timotheus"
           ]
         },
         {
@@ -4437,9 +4437,9 @@
           "difficulty": 1,
           "choices": [
             "That they might see the Thessalonians' faces",
-            "Gospel",
-            "Repentance",
-            "Redemption"
+            "That the Thessalonians would grow in faith and love",
+            "That the word of God would spread among them",
+            "That the Lord would protect them from evil"
           ]
         },
         {
@@ -4462,10 +4462,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Resurrection",
-            "Faith",
-            "Increase and abound in love one toward another and toward all men"
+            "Increase and abound in love one toward another and toward all men",
+            "Stand fast in the Lord and hold fast the faith",
+            "Walk worthy of God who had called them",
+            "Rejoice and give thanks in all things"
           ]
         },
         {
@@ -4475,10 +4475,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Baptism",
             "Unblameable in holiness before God",
-            "Second coming"
+            "Stedfast and unmoveable in the faith",
+            "Rooted and grounded in love",
+            "Pure and blameless before all men"
           ]
         },
         {
@@ -4488,10 +4488,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
             "How they ought to walk and to please God",
-            "Justification",
-            "Adoption"
+            "Commandments given by the Lord Jesus",
+            "The traditions of the apostles",
+            "Instructions concerning the Lord's coming"
           ]
         },
         {
@@ -4501,10 +4501,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
             "Fornication",
-            "Sanctification",
-            "Charity"
+            "The lust of the eyes and the pride of life",
+            "Idolatry and the works of the flesh",
+            "The love of money and vain glory"
           ]
         },
         {
@@ -4515,9 +4515,9 @@
           "difficulty": 1,
           "choices": [
             "In sanctification and honour",
-            "Rapture",
-            "Adoption",
-            "Holiness"
+            "In purity and righteousness",
+            "In temperance and self-control",
+            "In wisdom and godliness"
           ]
         },
         {
@@ -4528,9 +4528,9 @@
           "difficulty": 1,
           "choices": [
             "In no matter",
-            "Rapture",
-            "Baptism",
-            "Grace"
+            "Only in times of great need",
+            "In matters of business only",
+            "Never, unless the law allows it"
           ]
         },
         {
@@ -4540,10 +4540,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Redemption",
-            "Justification",
-            "Holiness"
+            "Holiness",
+            "Fellowship with his Son",
+            "Eternal life through Christ",
+            "The hope of glory"
           ]
         },
         {
@@ -4554,9 +4554,9 @@
           "difficulty": 1,
           "choices": [
             "God",
-            "Gospel",
-            "Sanctification",
-            "Tribulation"
+            "The apostle who gave the commandment",
+            "The Holy Spirit that was given",
+            "The church and its overseers"
           ]
         },
         {
@@ -4580,9 +4580,9 @@
           "difficulty": 1,
           "choices": [
             "How to be quiet, and to do their own business, and to work with their own hands",
-            "Grace",
-            "Sanctification",
-            "Holiness"
+            "The scriptures and the word of God",
+            "The commandments of the Lord",
+            "The way of holiness and truth"
           ]
         },
         {
@@ -4592,10 +4592,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
-            "Tribulation",
             "Because those who \"sleep in Jesus will God bring with him",
-            "Rapture"
+            "Because they are at rest with the Lord",
+            "Because they will live again at the resurrection",
+            "Because God has promised eternal life to all who believe"
           ]
         },
         {
@@ -4605,10 +4605,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
-            "Faith",
-            "Sanctification",
-            "A shout, the voice of the archangel, and with the trump of God"
+            "A shout, the voice of the archangel, and with the trump of God",
+            "Glory, power, and a great multitude of angels",
+            "Fire, judgment, and the holy angels",
+            "Clouds, lightning, and the voice of God"
           ]
         },
         {
@@ -4618,10 +4618,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
             "The dead in Christ",
-            "Repentance",
-            "Grace"
+            "Those who are alive at his coming",
+            "The righteous saints of old",
+            "The martyrs who died for the faith"
           ]
         },
         {
@@ -4644,10 +4644,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
             "Forever",
-            "Resurrection",
-            "Grace"
+            "Throughout all eternity",
+            "For a thousand years and beyond",
+            "Until the end of the age"
           ]
         },
         {
@@ -4657,10 +4657,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Justification",
             "As a thief in the night",
-            "Tribulation"
+            "With great signs and wonders in the heavens",
+            "With a great shout and the trump of God",
+            "As lightning from the east to the west"
           ]
         },
         {
@@ -4670,10 +4670,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
             "Light and the day",
-            "Faith",
-            "Adoption"
+            "God and his kingdom",
+            "The promise and the covenant",
+            "The Spirit and the truth"
           ]
         },
         {
@@ -4683,10 +4683,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
-            "Second coming",
-            "Rapture",
-            "Watching and being sober"
+            "Watching and being sober",
+            "Praying and giving thanks",
+            "Loving one another and doing good",
+            "Walking in the light and avoiding evil"
           ]
         },
         {
@@ -4696,10 +4696,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
             "In the night",
-            "Grace",
-            "Justification"
+            "When they are weary",
+            "In the darkness of sin",
+            "When the day is past"
           ]
         },
         {
@@ -4709,10 +4709,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Repentance",
-            "Adoption",
             "The breastplate of faith and love",
-            "Gospel"
+            "The breastplate of righteousness",
+            "The breastplate of truth",
+            "The breastplate of the Holy Spirit"
           ]
         },
         {
@@ -4722,10 +4722,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
-            "Grace",
-            "Faith",
-            "The helmet of the hope of salvation"
+            "The helmet of the hope of salvation",
+            "The helmet of righteousness",
+            "The helmet of truth",
+            "The helmet of the knowledge of God"
           ]
         },
         {
@@ -4735,10 +4735,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
-            "Adoption",
-            "Redemption",
-            "Salvation by our Lord Jesus Christ"
+            "Salvation by our Lord Jesus Christ",
+            "Eternal life through the Spirit",
+            "The crown of glory",
+            "Fellowship with the Father and Son"
           ]
         },
         {
@@ -4748,10 +4748,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
-            "Sanctification",
             "Comfort and edify one another",
-            "Rapture"
+            "Bear one another's burdens",
+            "Forgive and restore one another",
+            "Pray and fast for one another"
           ]
         },
         {
@@ -4813,10 +4813,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
             "That which is good",
-            "Justification",
-            "Faith"
+            "The example of Paul and his companions",
+            "The commandments of the Lord",
+            "The way of peace and holiness"
           ]
         },
         {
@@ -4826,10 +4826,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
             "Evermore",
-            "Repentance",
-            "Redemption"
+            "In all things and at all times",
+            "In the Lord always",
+            "In times of trial and blessing alike"
           ]
         },
         {
@@ -4839,10 +4839,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
-            "Redemption",
             "Without ceasing",
-            "Charity"
+            "Night and day",
+            "At all times and in all places",
+            "Morning and evening without fail"
           ]
         },
         {
@@ -4852,10 +4852,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Holiness",
             "In everything give thanks\" Quote 1 Thessalonians 5:19. \"Quench not the Spirit",
-            "Baptism"
+            "That ye be holy as he is holy",
+            "That ye walk worthy of your calling",
+            "That ye love one another as Christ loved you"
           ]
         },
         {
@@ -4865,10 +4865,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
-            "Rapture",
             "Prophesyings",
-            "Repentance"
+            "The correction of the elders",
+            "The fellowship of the brethren",
+            "The gifts of the Holy Spirit"
           ]
         },
         {
@@ -4878,10 +4878,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
-            "Holiness",
-            "Faith",
-            "That which is good"
+            "That which is good",
+            "The form of sound words",
+            "The traditions delivered unto them",
+            "The commandments of the Lord"
           ]
         },
         {
@@ -4891,10 +4891,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
-            "Grace",
             "All appearance of evil",
-            "Sanctification"
+            "The lust of the flesh and the eyes",
+            "The corruption of the world",
+            "Every form of idolatry"
           ]
         },
         {
@@ -4905,9 +4905,9 @@
           "difficulty": 1,
           "choices": [
             "The Thessalonians' whole spirit and soul and body",
-            "Rapture",
-            "Faith",
-            "Baptism"
+            "Their faith, hope, and love",
+            "Their works, service, and sacrifice",
+            "Their fellowship, doctrine, and prayer"
           ]
         },
         {
@@ -4930,10 +4930,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Grace",
-            "Justification",
-            "With an holy kiss"
+            "With an holy kiss",
+            "With a handshake of fellowship",
+            "With a greeting of peace",
+            "With a blessing in the name of the Lord"
           ]
         },
         {
@@ -11798,10 +11798,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
-            "Resurrection",
-            "Charity",
-            "The Holy Ghost"
+            "The Holy Ghost",
+            "The elders of the church at Antioch",
+            "The apostles at Jerusalem",
+            "The congregation by a vote"
           ]
         },
         {
@@ -11812,9 +11812,9 @@
           "difficulty": 1,
           "choices": [
             "Fasting and Praying",
-            "Repentance",
-            "Rapture",
-            "Redemption"
+            "Teaching and expounding the scriptures",
+            "Worshipping and praising the Lord",
+            "Preaching and baptizing new believers"
           ]
         },
         {
@@ -11837,10 +11837,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Faith",
             "Boat",
-            "Sanctification"
+            "Camel caravan",
+            "On foot",
+            "Chariot"
           ]
         },
         {
@@ -11850,10 +11850,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
-            "Sanctification",
-            "Resurrection",
-            "A sorcerer, a false prophet, and a Jew"
+            "A sorcerer, a false prophet, and a Jew",
+            "A high priest and keeper of the temple",
+            "A ruler of the synagogue",
+            "A centurion and a devout man"
           ]
         },
         {
@@ -11863,10 +11863,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Corinth",
             "Sergius Paulus",
-            "Baptism",
-            "They were defeated"
+            "Elymas the sorcerer",
+            "The synagogue rulers of Cyprus",
+            "Bar-Jesus the false prophet"
           ]
         },
         {
@@ -11876,10 +11876,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Sanctification",
-            "Tribulation",
-            "He became blind"
+            "He became blind",
+            "He was struck dead",
+            "He was cast out of the city",
+            "He fell to the ground"
           ]
         },
         {
@@ -11889,10 +11889,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Tribulation",
             "Believed",
-            "Sanctification"
+            "Marveled and was afraid",
+            "Sent them away with gifts",
+            "Reported it to Caesar"
           ]
         },
         {
@@ -11915,10 +11915,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
             "Went into the synagogue and sat down",
-            "Grace",
-            "Rapture"
+            "Preached in the marketplace",
+            "Healed the sick at the city gate",
+            "Stayed with the ruler of the city"
           ]
         },
         {
@@ -11941,10 +11941,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
-            "Faith",
             "David John said \"whose shoes of his feet I am not worthy to _____.\" loose",
-            "Thessalonica"
+            "Abraham",
+            "Moses",
+            "Solomon"
           ]
         },
         {
@@ -11954,10 +11954,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Babylon",
-            "They rejoiced greatly",
-            "Damascus",
-            "God"
+            "God",
+            "The angel of the Lord",
+            "The Holy Spirit alone",
+            "Jesus himself"
           ]
         },
         {
@@ -11967,10 +11967,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Philippi",
-            "Grace",
-            "Jericho",
-            "He, whom God raised again"
+            "He, whom God raised again",
+            "Enoch, who was taken by God",
+            "Elijah, who was taken up in a chariot of fire",
+            "Abraham, the friend of God"
           ]
         },
         {
@@ -11981,9 +11981,9 @@
           "difficulty": 1,
           "choices": [
             "The law of Moses",
-            "Grace",
-            "Adoption",
-            "Charity"
+            "The works of the flesh",
+            "Our own righteousness",
+            "The traditions of the elders"
           ]
         },
         {
@@ -11993,10 +11993,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They fled in fear",
-            "They fasted and prayed",
-            "Gospel",
-            "Many of the Jews and religious proselytes"
+            "Many of the Jews and religious proselytes",
+            "The Gentiles of Antioch",
+            "The elders of the church",
+            "Lydia and her household"
           ]
         },
         {
@@ -12006,10 +12006,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
-            "Adoption",
-            "Grace",
-            "Almost the whole city"
+            "Almost the whole city",
+            "The rulers of the synagogue only",
+            "The Jews and God-fearers",
+            "A small gathering of believers"
           ]
         },
         {
@@ -12019,10 +12019,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
-            "Gospel",
-            "Grace",
-            "They were filled with envy, and spake against those things which were"
+            "They were filled with envy, and spake against those things which were",
+            "They sought to take Paul and Barnabas by force",
+            "They drove the crowds away",
+            "They called for the magistrates"
           ]
         },
         {
@@ -12033,9 +12033,9 @@
           "difficulty": 1,
           "choices": [
             "They waxed bold",
-            "Redemption",
-            "Baptism",
-            "Sanctification"
+            "They departed from the city immediately",
+            "They appealed to the Roman authorities",
+            "They shook the dust off their feet"
           ]
         },
         {
@@ -12046,9 +12046,9 @@
           "difficulty": 1,
           "choices": [
             "The Gentiles",
-            "Faith",
-            "Baptism",
-            "Antioch"
+            "The lost sheep of Israel",
+            "The nations beyond the sea",
+            "The rulers and kings"
           ]
         },
         {
@@ -12058,10 +12058,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Redemption",
-            "Second coming",
-            "They were glad, and glorified the word of the Lord"
+            "They were glad, and glorified the word of the Lord",
+            "They marveled and asked to hear more",
+            "Many believed and were baptized that day",
+            "They went and told their neighbors"
           ]
         },
         {
@@ -12071,10 +12071,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Crete",
             "Paul and Barnabas",
-            "Troas",
-            "They fasted and prayed"
+            "Silas and Timothy",
+            "Paul and Silas",
+            "Barnabas and Mark"
           ]
         },
         {
@@ -12085,9 +12085,9 @@
           "difficulty": 1,
           "choices": [
             "They shook off the dust of their feet against them and came unto Iconium",
-            "Adoption",
-            "Repentance",
-            "Rapture"
+            "They appealed to the Roman authorities",
+            "They called down judgment on the city",
+            "They returned to Antioch of Syria"
           ]
         },
         {
@@ -12097,10 +12097,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Grace",
-            "Second coming",
             "Joy and the Holy Ghost",
-            "Justification"
+            "Zeal and boldness",
+            "Peace and assurance",
+            "Comfort and gladness"
           ]
         },
         {
@@ -12111,9 +12111,9 @@
           "difficulty": 1,
           "choices": [
             "A great multitude both of Jews and also of the Greeks",
-            "Redemption",
-            "Charity",
-            "Resurrection"
+            "The ruler of the synagogue only",
+            "A few devout men and women",
+            "The whole city almost"
           ]
         },
         {
@@ -12123,10 +12123,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
-            "Faith",
             "Made their minds evil affected against the brethren",
-            "Second coming"
+            "Persuaded them to follow the law of Moses",
+            "Drove them away from the synagogue",
+            "Threatened them with expulsion"
           ]
         },
         {
@@ -12149,10 +12149,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
             "Since being in his mother's womb",
-            "Sanctification",
-            "Baptism"
+            "Since childhood",
+            "For thirty-eight years",
+            "Since a great fall"
           ]
         },
         {
@@ -12163,9 +12163,9 @@
           "difficulty": 1,
           "choices": [
             "The gods are come down to us in the likeness of men",
-            "Resurrection",
-            "Tribulation",
-            "Baptism"
+            "This man is a great prophet among us",
+            "Surely these are servants of the Most High God",
+            "A miracle has been done through these men"
           ]
         },
         {
@@ -12175,10 +12175,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Faith",
-            "Adoption",
-            "Jupiter"
+            "Jupiter",
+            "Apollo",
+            "Mars",
+            "Hermes"
           ]
         },
         {
@@ -12189,9 +12189,9 @@
           "difficulty": 1,
           "choices": [
             "Mercurius",
-            "Rapture",
-            "Resurrection",
-            "Gospel"
+            "Apollo",
+            "Neptune",
+            "Jupiter"
           ]
         },
         {
@@ -12201,10 +12201,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Sanctification",
             "Stoned him and drew him out of the city",
-            "Repentance"
+            "Imprisoned him and beat him with rods",
+            "Dragged him before the city rulers",
+            "Cast him out of the synagogue"
           ]
         },
         {
@@ -12215,9 +12215,9 @@
           "difficulty": 1,
           "choices": [
             "Confirmed the souls of the disciples, and exhorted them to continue in the faith",
-            "Baptism",
-            "Gospel",
-            "Charity"
+            "Taught them the scriptures and baptized new believers",
+            "Appointed overseers and commended them to the Lord",
+            "Gathered the churches and gave them the letter from Jerusalem"
           ]
         },
         {
@@ -12228,9 +12228,9 @@
           "difficulty": 1,
           "choices": [
             "Elders",
-            "Repentance",
-            "They offered sacrifices",
-            "Resurrection"
+            "Deacons",
+            "Bishops",
+            "Apostles"
           ]
         },
         {
@@ -12240,10 +12240,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Resurrection",
-            "Redemption",
-            "Antioch"
+            "Antioch",
+            "Cyprus",
+            "Jerusalem",
+            "Rome"
           ]
         },
         {
@@ -12253,10 +12253,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
             "They rehearsed all that God had done with them, and how he had opened",
-            "Repentance",
-            "Resurrection"
+            "They read the letter from the Jerusalem council",
+            "They appointed elders and gave thanks",
+            "They baptized the new believers and prayed"
           ]
         },
         {
@@ -12266,10 +12266,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Repentance",
             "Except ye be circumcised after the manner of Moses, ye cannot be saved",
-            "Justification"
+            "You must keep all the feasts of the law",
+            "You must observe the Sabbath and all commandments",
+            "You must be baptized by the apostles in Jerusalem"
           ]
         },
         {
@@ -12279,10 +12279,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Grace",
-            "Repentance",
-            "They caused great joy unto all the brethren"
+            "They caused great joy unto all the brethren",
+            "They were received with gladness by the churches",
+            "Many more believed and turned to the Lord",
+            "The churches sent gifts to support their work"
           ]
         },
         {
@@ -12292,10 +12292,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Thessalonica",
             "The church, and of the apostles and elders",
-            "Corinth",
-            "Faith"
+            "James alone, the Lord's brother",
+            "The elders and the high priest",
+            "Peter and John only"
           ]
         },
         {
@@ -12305,10 +12305,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
-            "Adoption",
             "Peter",
-            "Faith"
+            "James, the Lord's brother",
+            "Paul himself",
+            "Barnabas"
           ]
         },
         {
@@ -12318,10 +12318,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
             "All his works from the beginning of the world",
-            "Baptism",
-            "Rapture"
+            "Every thought and intent of the heart",
+            "The number of the stars and their names",
+            "The days of every man's life"
           ]
         },
         {
@@ -12331,10 +12331,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Philippi",
             "Judas and Silas",
-            "Caesarea",
-            "Tribulation"
+            "Peter and John",
+            "Barnabas and Mark",
+            "Timothy and Luke"
           ]
         },
         {
@@ -12344,10 +12344,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Charity",
             "Exhorted the brethren with many words, and confirmed them",
-            "Justification"
+            "Baptized the new believers and appointed elders",
+            "Taught the scriptures and established the church",
+            "Read the letter from Jerusalem and answered questions"
           ]
         },
         {
@@ -12357,10 +12357,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Adoption",
-            "Baptism",
             "Abide there still",
-            "Faith"
+            "Return to Jerusalem immediately",
+            "Travel to Corinth with Paul",
+            "Go ahead to Berea"
           ]
         },
         {
@@ -12370,10 +12370,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
             "John, whose surname was Mark",
-            "Jericho",
-            "They worshipped the LORD"
+            "Silas, a chief man among the brethren",
+            "Timothy, whose mother was a Jewess",
+            "Luke, the beloved physician"
           ]
         },
         {
@@ -12384,9 +12384,9 @@
           "difficulty": 1,
           "choices": [
             "Silas",
-            "They were defeated",
-            "Damascus",
-            "They offered sacrifices"
+            "Timothy",
+            "Barnabas",
+            "Luke"
           ]
         },
         {
@@ -12396,10 +12396,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Second coming",
-            "Resurrection",
-            "Charity",
-            "Timotheus"
+            "Timotheus",
+            "Titus",
+            "Silas",
+            "Barnabas"
           ]
         },
         {
@@ -12409,10 +12409,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
-            "Sanctification",
             "Daily",
-            "Baptism"
+            "Weekly",
+            "Month by month",
+            "At each Passover season"
           ]
         },
         {
@@ -12435,10 +12435,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Repentance",
-            "Grace",
-            "Charity",
-            "A vision"
+            "A vision",
+            "An angel of the Lord",
+            "A dream of a man calling to him",
+            "A mighty light from heaven"
           ]
         },
         {
@@ -12448,10 +12448,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Redemption",
             "Come over into Macedonia, and help us",
-            "Charity",
-            "Second coming"
+            "Arise, and go into the city, and it shall be told thee what thou must do",
+            "Go to Corinth, for I have many people in this city",
+            "Sail to Rome, for thou must bear witness there also"
           ]
         },
         {
@@ -12461,10 +12461,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
-            "Adoption",
             "To preach the gospel unto them",
-            "Faith"
+            "To establish a church and appoint elders",
+            "To gather support for the church at Jerusalem",
+            "To teach the scriptures in the synagogues"
           ]
         },
         {
@@ -12487,10 +12487,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
             "Lydia",
-            "Redemption",
-            "Repentance"
+            "Priscilla",
+            "Damaris",
+            "Dorcas"
           ]
         },
         {
@@ -12501,9 +12501,9 @@
           "difficulty": 1,
           "choices": [
             "A spirit of divination",
-            "Baptism",
-            "Justification",
-            "Sanctification"
+            "An unclean spirit",
+            "A familiar spirit",
+            "A spirit of infirmity"
           ]
         },
         {
@@ -12513,10 +12513,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Resurrection",
-            "Charity",
-            "He came out the same hour"
+            "He came out the same hour",
+            "The damsel fell to the ground as if dead",
+            "The spirit cried out with a loud voice",
+            "The spirit came out after Paul prayed three times"
           ]
         },
         {
@@ -12526,10 +12526,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
             "They saw that the hope of their gains were gone",
-            "Adoption",
-            "Holiness"
+            "They were angry that Paul preached in their city",
+            "The Jews stirred them up with false charges",
+            "They accused them of teaching against Caesar"
           ]
         },
         {
@@ -12539,10 +12539,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
-            "Rapture",
             "Rent off their clothes and commanded to beat them",
-            "Resurrection"
+            "Cast them into prison without a hearing",
+            "Sent them away with a warning",
+            "Put them in chains and set a guard over them"
           ]
         },
         {
@@ -12552,10 +12552,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
-            "Tribulation",
-            "Second coming",
-            "Prayed and sang praises unto God"
+            "Prayed and sang praises unto God",
+            "Called out to God for deliverance",
+            "Encouraged the other prisoners with scripture",
+            "Wept and pleaded with God for release"
           ]
         },
         {
@@ -12566,9 +12566,9 @@
           "difficulty": 1,
           "choices": [
             "The prisoners",
-            "They rejoiced greatly",
-            "Samaria",
-            "They fled in fear"
+            "The jailer alone",
+            "The guards and the jailer",
+            "The city officials"
           ]
         },
         {
@@ -12578,10 +12578,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Justification",
             "An earthquake",
-            "Rapture",
-            "Charity"
+            "A mighty wind from God",
+            "The power of the Holy Ghost",
+            "An angel of the Lord"
           ]
         },
         {
@@ -12591,10 +12591,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Charity",
-            "Grace",
             "They were loosed",
-            "Sanctification"
+            "They remained fastened but the doors opened",
+            "They fell to the ground by themselves",
+            "The jailer removed them in fear"
           ]
         },
         {
@@ -12605,9 +12605,9 @@
           "difficulty": 1,
           "choices": [
             "Kill himself",
-            "Charity",
-            "Baptism",
-            "Rapture"
+            "Run to the magistrates",
+            "Call for the guards",
+            "Flee the city"
           ]
         },
         {
@@ -12617,10 +12617,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Tribulation",
-            "Second coming",
-            "Sirs, what must I do to be saved?"
+            "Sirs, what must I do to be saved?",
+            "Why did you not escape when the doors were opened?",
+            "Are you men of God who have done this miracle?",
+            "What god do you serve that has done this?"
           ]
         },
         {
@@ -12630,10 +12630,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Sanctification",
-            "Redemption",
-            "Washed them"
+            "Washed them",
+            "Bandaged them with linen",
+            "Anointed them with oil",
+            "Treated them with medicine"
           ]
         },
         {
@@ -12643,10 +12643,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Resurrection",
-            "Redemption",
             "Because Paul and Silas were Romans",
-            "Adoption"
+            "Because of the earthquake and the prison doors",
+            "Because the people took Paul and Silas' side",
+            "Because an angel appeared to them in the night"
           ]
         },
         {
@@ -12657,9 +12657,9 @@
           "difficulty": 1,
           "choices": [
             "Three Sabbath days",
-            "Faith",
-            "Repentance",
-            "Second coming"
+            "Seven days",
+            "One Sabbath day",
+            "Many days and weeks"
           ]
         },
         {
@@ -12669,10 +12669,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They offered sacrifices",
-            "Crete",
-            "Galilee",
-            "Certain lewd fellows of the baser sort"
+            "Certain lewd fellows of the baser sort",
+            "The rulers of the synagogue",
+            "The soldiers of the city garrison",
+            "The merchants of the marketplace"
           ]
         },
         {
@@ -12682,10 +12682,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Faith",
-            "Caesarea",
-            "They shouted for joy",
-            "Jason's"
+            "Jason's",
+            "Paul's",
+            "Silas's",
+            "Luke's"
           ]
         },
         {
@@ -12695,10 +12695,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
             "At night",
-            "Redemption",
-            "Repentance"
+            "Early in the morning",
+            "After three days",
+            "On the Sabbath day"
           ]
         },
         {
@@ -12708,10 +12708,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tribulation",
             "They received the word with all readiness of mind, and searched the sc",
-            "Resurrection",
-            "Sanctification"
+            "They welcomed Paul and Silas into their homes",
+            "They did not oppose the preaching of the gospel",
+            "They sent gifts to support Paul's ministry"
           ]
         },
         {
@@ -12722,9 +12722,9 @@
           "difficulty": 1,
           "choices": [
             "Silas and Timotheus",
-            "Resurrection",
-            "Sanctification",
-            "Second coming"
+            "Luke and Titus",
+            "Barnabas and Mark",
+            "Aquila and Priscilla"
           ]
         },
         {
@@ -12735,9 +12735,9 @@
           "difficulty": 1,
           "choices": [
             "He saw the city wholly given to idolatry",
-            "Redemption",
-            "Sanctification",
-            "Charity"
+            "He saw the great suffering of the people",
+            "He heard the philosophers mocking the truth",
+            "He saw the altar to the Unknown God"
           ]
         },
         {
@@ -12747,10 +12747,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Jerusalem",
-            "They were defeated",
             "Certain philosophers of the Epicureans and of the Stoicks",
-            "Athens"
+            "The rulers of the synagogue in Athens",
+            "The priests of Zeus and Hermes",
+            "The city magistrates of Athens"
           ]
         },
         {
@@ -12760,10 +12760,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Baptism",
             "Mar's Hill",
-            "Holiness",
-            "Repentance"
+            "The Mount of Olives",
+            "Mount Zion",
+            "The hill of Corinth"
           ]
         },
         {
@@ -12773,10 +12773,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Repentance",
-            "Charity",
-            "Second coming",
-            "TO THE UNKNOWN GOD"
+            "TO THE UNKNOWN GOD",
+            "TO THE GODS OF GREECE",
+            "TO THE GREAT ZEUS",
+            "TO THE GODS OF HEAVEN AND EARTH"
           ]
         },
         {
@@ -12786,10 +12786,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Rapture",
             "We live, and move, and have our being",
-            "Redemption",
-            "Resurrection"
+            "We hope, and trust, and find our rest",
+            "We breathe, and think, and find our strength",
+            "We find our purpose, our joy, and our salvation"
           ]
         },
         {
@@ -12799,10 +12799,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gospel",
             "The times of this ignorance",
-            "Second coming",
-            "Repentance"
+            "The sins of the nations in past generations",
+            "The idol worship of the Gentiles",
+            "The unbelief of the Jews"
           ]
         },
         {
@@ -12812,10 +12812,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Sanctification",
-            "Baptism",
-            "Adoption",
-            "That man whom he hath ordained"
+            "That man whom he hath ordained",
+            "The holy angels sent from heaven",
+            "The twelve apostles of the Lamb",
+            "The prophets of old whom he chose"
           ]
         },
         {
@@ -12825,10 +12825,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Holiness",
             "Some mocked: and others said, we will hear thee again of this matter",
-            "Adoption",
-            "Resurrection"
+            "Most believed and a few doubted",
+            "They debated among themselves",
+            "They asked Paul to prove it with a sign"
           ]
         },
         {
@@ -12839,9 +12839,9 @@
           "difficulty": 1,
           "choices": [
             "Dionysius the Areopagite and a woman named Damaris",
-            "Gospel",
-            "Rapture",
-            "They wept"
+            "Lydia and the Philippian jailer",
+            "Aquila and Priscilla",
+            "Crispus and Gaius"
           ]
         }
       ]
