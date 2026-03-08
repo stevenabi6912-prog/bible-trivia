@@ -1851,9 +1851,9 @@
           "difficulty": 1,
           "choices": [
             "The land of Nod",
-            "Judas Iscariot",
-            "Delilah",
-            "Sennacherib"
+            "The land of Shinar",
+            "The land of Canaan",
+            "The land of Uz"
           ]
         },
         {
@@ -1864,9 +1864,9 @@
           "difficulty": 1,
           "choices": [
             "Potiphar's wife",
-            "Diotrephes",
-            "Sapphira",
-            "Ananias"
+            "Delilah",
+            "Herodias",
+            "Athaliah"
           ]
         },
         {
@@ -1889,10 +1889,10 @@
           "reference": "1 Kings 21:11",
           "difficulty": 1,
           "choices": [
-            "Diotrephes",
-            "Haman",
-            "Pharaoh",
-            "Manasseh"
+            "Manasseh",
+            "Rehoboam",
+            "Ahaz",
+            "Amon"
           ]
         },
         {
@@ -1902,10 +1902,10 @@
           "reference": "2 Kings 9:30-35",
           "difficulty": 1,
           "choices": [
-            "Sanballat",
-            "Pontius Pilate",
             "Skull, Feet, Palms of hands",
-            "Nebuchadnezzar"
+            "Skull and rib bones only",
+            "Hands, feet, and head",
+            "Only her skull remained"
           ]
         },
         {
@@ -1916,9 +1916,9 @@
           "difficulty": 1,
           "choices": [
             "Sanballat and Tobiah",
-            "Sennacherib",
-            "Goliath",
-            "Tobiah"
+            "Geshem and Shimei",
+            "Eliashib and Shemaiah",
+            "Noadiah and Geshem"
           ]
         },
         {
@@ -1954,10 +1954,10 @@
           "reference": "1 Sam 18:11 & 19:10",
           "difficulty": 1,
           "choices": [
-            "Sapphira",
             "A Javelin",
-            "Pharaoh",
-            "Simon Magus"
+            "A sword",
+            "A spear and shield",
+            "A bow and arrow"
           ]
         },
         {
@@ -1980,10 +1980,10 @@
           "reference": "1 Peter 5:8",
           "difficulty": 1,
           "choices": [
-            "Jezebel",
-            "Judas Iscariot",
             "A Roaring Lion",
-            "Sennacherib"
+            "A prowling wolf",
+            "A serpent of old",
+            "A devouring dragon"
           ]
         },
         {
@@ -2006,10 +2006,10 @@
           "reference": "1 Samuel 17:4",
           "difficulty": 1,
           "choices": [
-            "Nebuchadnezzar",
-            "Simon Magus",
-            "Judas Iscariot",
-            "Six cubits and a span"
+            "Six cubits and a span",
+            "Four cubits and a span",
+            "Five cubits and a span",
+            "Seven cubits"
           ]
         },
         {
@@ -2046,9 +2046,9 @@
           "difficulty": 1,
           "choices": [
             "Denying that Jesus was come in the flesh",
-            "Belshazzar",
-            "Sapphira",
-            "Judas Iscariot"
+            "Worshipping idols instead of God",
+            "Denying that Jesus rose from the dead",
+            "Blaspheming the name of the Lord"
           ]
         },
         {
@@ -2085,9 +2085,9 @@
           "difficulty": 1,
           "choices": [
             "12 months",
-            "Ahab",
-            "Sennacherib",
-            "Haman"
+            "Seven years",
+            "Forty days",
+            "Three years"
           ]
         },
         {
@@ -2098,9 +2098,9 @@
           "difficulty": 1,
           "choices": [
             "Herod, had all baby boys 2 and under killed",
-            "Sennacherib",
-            "Sapphira",
-            "Judas Iscariot"
+            "Caesar Augustus, ordered a census of all the world",
+            "Pilate, had the wise men followed and reported to him",
+            "Archelaus, sent soldiers to Bethlehem to search for the child"
           ]
         }
       ]
