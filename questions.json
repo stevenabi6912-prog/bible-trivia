@@ -499,10 +499,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Thessalonica",
-            "Caesarea",
             "Rephidim",
-            "Colossae"
+            "Kadesh",
+            "Meribah",
+            "Horeb"
           ]
         },
         {
@@ -564,10 +564,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Athens",
             "A rock",
-            "Mount Sinai",
-            "Caesarea"
+            "A wooden stool",
+            "A pile of sand",
+            "A fallen tree"
           ]
         },
         {
@@ -603,10 +603,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gilgal",
             "Jehovahnissi",
-            "Troas",
-            "Crete"
+            "Jehovah-Shalom",
+            "Jehovah-Jireh",
+            "Massah"
           ]
         },
         {
@@ -837,10 +837,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ephesus",
-            "Egypt",
-            "Nazareth",
-            "To the valley of Achor"
+            "To the valley of Achor",
+            "The valley of Jezreel",
+            "The valley of Hinnom",
+            "Gilgal"
           ]
         },
         {
@@ -1019,10 +1019,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Nazareth",
             "By Ebenezer",
-            "Babylon",
-            "Crete"
+            "Mizpah",
+            "Gilgal",
+            "Shiloh"
           ]
         },
         {
@@ -1058,10 +1058,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Nazareth",
             "Out of Shiloh",
-            "Galilee",
-            "Athens"
+            "Hebron",
+            "Gilgal",
+            "Bethel"
           ]
         },
         {
@@ -1227,10 +1227,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gilgal",
-            "Egypt",
-            "Nazareth",
-            "By the valley of Elah"
+            "By the valley of Elah",
+            "By the brook Besor",
+            "In the valley of Rephaim",
+            "By the waters of Merom"
           ]
         },
         {
@@ -1553,9 +1553,9 @@
           "difficulty": 1,
           "choices": [
             "In the forehead",
-            "Hebron",
-            "Gilgal",
-            "Athens"
+            "In the throat",
+            "In the chest",
+            "In the knee"
           ]
         },
         {
@@ -1876,10 +1876,10 @@
           "reference": "1 Kings 16:30",
           "difficulty": 1,
           "choices": [
-            "Belshazzar",
             "Ahab",
-            "Sanballat",
-            "Nebuchadnezzar"
+            "Omri",
+            "Jeroboam",
+            "Baasha"
           ]
         },
         {
@@ -1929,9 +1929,9 @@
           "difficulty": 1,
           "choices": [
             "Haman",
-            "Simon Magus",
-            "Sanballat",
-            "Delilah"
+            "Teresh",
+            "Bigthan",
+            "Harbona"
           ]
         },
         {
@@ -1942,9 +1942,9 @@
           "difficulty": 1,
           "choices": [
             "Jezebel",
-            "Sennacherib",
-            "Pharaoh",
-            "Belshazzar"
+            "Athaliah",
+            "Maacah",
+            "Naamah"
           ]
         },
         {
@@ -1967,10 +1967,10 @@
           "reference": "Genesis 37:27-28",
           "difficulty": 1,
           "choices": [
-            "Goliath",
-            "Belshazzar",
-            "Ahab",
-            "Judah"
+            "Judah",
+            "Reuben",
+            "Simeon",
+            "Levi"
           ]
         },
         {
@@ -1993,10 +1993,10 @@
           "reference": "2 Samuel 13",
           "difficulty": 1,
           "choices": [
-            "Judas Iscariot",
-            "Herodias",
-            "Jezebel",
-            "Jonadab"
+            "Jonadab",
+            "Ahithophel",
+            "Hushai",
+            "Shimei"
           ]
         },
         {
@@ -2019,10 +2019,10 @@
           "reference": "Acts 8:1",
           "difficulty": 1,
           "choices": [
-            "Nebuchadnezzar",
-            "Goliath",
-            "Simon Magus",
-            "Saul"
+            "Saul",
+            "Caiaphas",
+            "Herod Agrippa",
+            "Ananias the high priest"
           ]
         },
         {
@@ -2058,10 +2058,10 @@
           "reference": "Daniel 3",
           "difficulty": 1,
           "choices": [
-            "Sennacherib",
-            "Goliath",
-            "Judas Iscariot",
-            "Nebuchadnezzar"
+            "Nebuchadnezzar",
+            "Darius",
+            "Belshazzar",
+            "Cyrus"
           ]
         },
         {
@@ -2116,10 +2116,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Matthew",
-            "Stephen",
             "Jesus Christ and God the Father",
-            "Bartholomew"
+            "The apostles at Jerusalem",
+            "The church at Antioch",
+            "The elders of the synagogue"
           ]
         },
         {
@@ -2402,10 +2402,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Agrippa",
             "False Brethren",
-            "Sapphira",
-            "Ananias"
+            "The men from James",
+            "The circumcision party",
+            "The teachers from Judea"
           ]
         },
         {
@@ -2727,10 +2727,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Stephen",
-            "Agrippa",
             "Christ",
-            "Sapphira"
+            "The Holy Spirit",
+            "Moses",
+            "The law itself"
           ]
         },
         {
@@ -2754,9 +2754,9 @@
           "difficulty": 1,
           "choices": [
             "Abraham and his seed",
-            "Sapphira",
-            "Stephen",
-            "Agrippa"
+            "Moses and the Israelites",
+            "David and his descendants",
+            "Noah and his family"
           ]
         },
         {
@@ -4007,10 +4007,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gamaliel",
-            "Andrew",
             "Timotheus and Sylvanus",
-            "Cornelius"
+            "Barnabas",
+            "Titus",
+            "Luke"
           ]
         },
         {
@@ -4346,9 +4346,9 @@
           "difficulty": 1,
           "choices": [
             "The Thessalonians",
-            "Thaddaeus",
-            "Thomas",
-            "Philip"
+            "The Philippians",
+            "The Corinthians",
+            "The Galatians"
           ]
         },
         {
@@ -4384,10 +4384,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Festus",
-            "Silas",
             "No man",
-            "Aquila"
+            "Only the weak in faith",
+            "Those who grieve",
+            "Those without hope"
           ]
         },
         {
@@ -4450,9 +4450,9 @@
           "difficulty": 1,
           "choices": [
             "God himself, and our Father, and our Lord Jesus Christ",
-            "Peter",
-            "Paul",
-            "James the son of Alphaeus"
+            "The Holy Spirit",
+            "The brethren at Antioch",
+            "An angel of the Lord"
           ]
         },
         {
@@ -4566,10 +4566,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Bartholomew",
-            "Matthew",
             "God",
-            "James"
+            "Paul and Silas",
+            "Timothy",
+            "The elders of the church"
           ]
         },
         {
@@ -4631,10 +4631,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Bartholomew",
-            "Thomas",
-            "Judas Iscariot",
-            "We which are alive and remain"
+            "We which are alive and remain",
+            "The dead in Christ only",
+            "The angels of heaven",
+            "The souls under the altar"
           ]
         },
         {
@@ -4761,10 +4761,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Priscilla",
-            "Peter",
-            "Gamaliel",
-            "Them that are unruly"
+            "Them that are unruly",
+            "The faint-hearted",
+            "The strong in faith",
+            "The elders of the church"
           ]
         },
         {
@@ -4775,9 +4775,9 @@
           "difficulty": 1,
           "choices": [
             "The feebleminded",
-            "Matthew",
-            "Stephen",
-            "Festus"
+            "The unruly",
+            "The weak",
+            "The bereaved"
           ]
         },
         {
@@ -4787,10 +4787,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Timothy",
-            "Bartholomew",
             "The weak",
-            "Peter"
+            "The feebleminded",
+            "The unruly",
+            "Those that are asleep"
           ]
         },
         {
@@ -4801,9 +4801,9 @@
           "difficulty": 1,
           "choices": [
             "All men",
-            "Simon the Zealot",
-            "Andrew",
-            "Stephen"
+            "Their enemies",
+            "Their rulers",
+            "The unbelievers around them"
           ]
         },
         {
@@ -4917,10 +4917,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Matthew",
-            "Judas Iscariot",
             "He that calleth you",
-            "Thomas"
+            "The Holy Spirit who guides you",
+            "Christ Jesus who saved you",
+            "The God of peace"
           ]
         },
         {
@@ -4939,14 +4939,14 @@
         {
           "id": "the_book_of_1_thessalonians_0073",
           "prompt": "Who is supposed to read the book of 1 Thessalonians?",
-          "answer": "All the holy bretheren The Book of Judges",
+          "answer": "All the holy brethren",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "All the holy bretheren The Book of Judges",
-            "Peter",
-            "Thaddaeus",
-            "Sapphira"
+            "All the holy brethren",
+            "The elders of the church only",
+            "The Jewish believers in Jerusalem",
+            "Those who had received the baptism of the Spirit"
           ]
         }
       ]
@@ -4962,10 +4962,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gideon",
             "Canaanites, Hittites, Amorites, Perizzites, Hivites, Jebusites",
-            "Ibzan",
-            "Ehud"
+            "Philistines, Moabites, and Midianites",
+            "Edomites, Syrians, and Ammonites",
+            "Assyrians, Babylonians, and Egyptians"
           ]
         },
         {
@@ -5014,10 +5014,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Deborah",
             "Caleb was his uncle",
-            "Samson",
-            "Othniel"
+            "Caleb was his father",
+            "Caleb was his brother",
+            "Caleb was his son-in-law"
           ]
         },
         {
@@ -5027,10 +5027,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Jephthah",
             "40 years",
-            "Samuel",
-            "Saul"
+            "20 years",
+            "80 years",
+            "7 years"
           ]
         },
         {
@@ -5041,9 +5041,9 @@
           "difficulty": 1,
           "choices": [
             "Eglon",
-            "Abdon",
-            "Delilah",
-            "Goliath"
+            "Balak",
+            "Mesha",
+            "Sihon"
           ]
         },
         {
@@ -5054,9 +5054,9 @@
           "difficulty": 1,
           "choices": [
             "The Ammonites and the Amalekites",
-            "Deborah",
-            "Jair",
-            "Ibzan"
+            "The Philistines",
+            "The Midianites",
+            "The Syrians"
           ]
         },
         {
@@ -5105,10 +5105,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Micah",
-            "Samuel",
             "The fat closed upon it so he couldn't pull it out",
-            "David"
+            "It broke into pieces",
+            "It fell to the floor beside Eglon",
+            "Ehud retrieved it and hid it"
           ]
         },
         {
@@ -5118,10 +5118,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Delilah",
-            "Shamgar",
             "Seirath",
-            "Deborah"
+            "Gilgal",
+            "The rock Etam",
+            "Ramah"
           ]
         },
         {
@@ -5144,10 +5144,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Goliath",
             "Fourscore (80) years",
-            "Jair",
-            "Jephthah"
+            "40 years",
+            "20 years",
+            "6 years"
           ]
         },
         {
@@ -5183,10 +5183,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Delilah",
             "An ox goad",
-            "David",
-            "Goliath"
+            "The jawbone of an ass",
+            "A sling and stone",
+            "A sword"
           ]
         },
         {
@@ -5197,9 +5197,9 @@
           "difficulty": 1,
           "choices": [
             "Evil in the sight of the Lord",
-            "Saul",
-            "Shamgar",
-            "Samuel"
+            "Cried unto the Lord for deliverance",
+            "Built altars to false gods",
+            "Went to war with their neighbors"
           ]
         },
         {
@@ -5262,9 +5262,9 @@
           "difficulty": 1,
           "choices": [
             "20 years",
-            "Goliath",
-            "Gideon",
-            "Tola"
+            "40 years",
+            "7 years",
+            "8 years"
           ]
         },
         {
@@ -5301,9 +5301,9 @@
           "difficulty": 1,
           "choices": [
             "10 thousand men from the tribes of Naphtali & Zebulun",
-            "7",
-            "5",
-            "2"
+            "5 thousand men from the tribes of Dan and Asher",
+            "20 thousand men from all twelve tribes",
+            "300 men from the tribe of Judah"
           ]
         },
         {
@@ -5378,10 +5378,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Goliath",
-            "Delilah",
-            "Gideon",
-            "A little water"
+            "A little water",
+            "Bread and meat",
+            "A place to hide",
+            "A covering for himself"
           ]
         },
         {
@@ -5391,10 +5391,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Delilah",
-            "Micah",
             "Milk",
-            "Jair"
+            "Water",
+            "Wine",
+            "Vinegar"
           ]
         },
         {
@@ -5404,10 +5404,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Shamgar",
             "Hammered a tent spike through his skull",
-            "Jephthah",
-            "David"
+            "Stabbed him with a dagger",
+            "Strangled him with a rope",
+            "Smothered him with a blanket"
           ]
         },
         {
@@ -5456,10 +5456,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Goliath",
-            "Abdon",
-            "Tola",
-            "Dens, caves and strong holds"
+            "Dens, caves and strong holds",
+            "Altars on the high places",
+            "Watchtowers in every city",
+            "Fortified gates and walls"
           ]
         },
         {
@@ -5469,10 +5469,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Saul",
-            "Abdon",
             "They destroyed their crops and left them with no sustenance",
-            "Ibzan"
+            "They took their livestock and enslaved their children",
+            "They burned their cities and carried off their gold",
+            "They blocked the roads and taxed all their trade"
           ]
         },
         {
@@ -5482,10 +5482,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tola",
-            "Shamgar",
             "Cry to the Lord",
-            "Jephthah"
+            "Gathered their armies and fought back",
+            "Fled to Egypt for help",
+            "Offered sacrifices on the high places"
           ]
         },
         {
@@ -5495,10 +5495,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Samuel",
-            "Delilah",
-            "David",
-            "Oak"
+            "Oak",
+            "Terebinth",
+            "Palm",
+            "Fig"
           ]
         },
         {
@@ -5547,10 +5547,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Delilah",
-            "Gideon",
-            "David",
-            "He would save Israel from the hand of the Midianites"
+            "He would save Israel from the hand of the Midianites",
+            "He would destroy all the altars of Baal in Israel",
+            "He would bring Israel back to worship the Lord",
+            "He would defeat the Ammonites and Moabites"
           ]
         },
         {
@@ -5573,10 +5573,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ibzan",
             "Throw it down and cut down the grove by it",
-            "Samuel",
-            "Shamgar"
+            "Build a new altar to the Lord on top of it",
+            "Leave it and worship the Lord instead",
+            "Offer a sacrifice on the altar of Baal"
           ]
         },
         {
@@ -5587,9 +5587,9 @@
           "difficulty": 1,
           "choices": [
             "At night because he feared his father's household and the men of the city",
-            "Gideon",
-            "Delilah",
-            "Samuel"
+            "At dawn because he wanted to see what he was doing",
+            "At noon to prove he had nothing to fear",
+            "On the Sabbath because no one would be watching"
           ]
         },
         {
@@ -5599,10 +5599,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Delilah",
-            "Goliath",
-            "Jephthah",
-            "A fleece of wool"
+            "A fleece of wool",
+            "A burnt offering on a rock",
+            "A clay jar with a torch",
+            "A bowl of water"
           ]
         },
         {
@@ -5638,10 +5638,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Samson",
-            "Goliath",
-            "Samuel",
-            "They were too many"
+            "They were too many",
+            "They were too few to fight the Midianites",
+            "They were not yet trained for battle",
+            "They were faithless and unworthy"
           ]
         },
         {
@@ -5651,10 +5651,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Saul",
-            "Ehud",
             "Said that anyone who was afraid could go home",
-            "Delilah"
+            "Had them draw lots and sent every third man home",
+            "Told Gideon to choose only those who had weapons",
+            "Required them to fast for three days and dismissed the weakest"
           ]
         },
         {
@@ -5664,10 +5664,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Abdon",
-            "Othniel",
             "10,000",
-            "Ibzan"
+            "22,000",
+            "300",
+            "32,000"
           ]
         },
         {
@@ -5677,10 +5677,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Micah",
             "If they stuck their face in the water to drink they were to go home",
-            "Shamgar",
-            "Delilah"
+            "He had them run a race and dismissed those who fell behind",
+            "He required each man to name the God of Israel and dismissed those who could not",
+            "He had them fight each other and dismissed the losers"
           ]
         },
         {
@@ -5690,10 +5690,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Elon",
-            "Samson",
-            "Jair",
-            "Into 3 companies"
+            "Into 3 companies",
+            "Into 7 companies",
+            "Into 2 groups",
+            "Each man fought alone"
           ]
         },
         {
@@ -5703,10 +5703,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ehud",
-            "Abdon",
-            "Micah",
-            "A trumpet and a pitcher with a lamp in it"
+            "A trumpet and a pitcher with a lamp in it",
+            "A sword and a torch",
+            "A spear and a shield",
+            "A sling and five stones"
           ]
         },
         {
@@ -5716,10 +5716,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Deborah",
             "The beginning of the middle watch",
-            "Delilah",
-            "Shamgar"
+            "At sunrise",
+            "At the first watch of the night",
+            "At midnight"
           ]
         },
         {
@@ -5729,10 +5729,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Delilah",
-            "Elon",
-            "Tola",
-            "They blew the trumpets and broke the pitchers"
+            "They blew the trumpets and broke the pitchers",
+            "They threw the pitchers at the Midianites",
+            "They laid the pitchers down and drew their swords",
+            "They held the pitchers high and marched in silence"
           ]
         },
         {
@@ -5742,10 +5742,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Abdon",
             "The sword of the Lord and of Gideon",
-            "Tola"
+            "For Israel and for the Lord our God",
+            "The Lord fights for us this day",
+            "Victory is the Lord's"
           ]
         },
         {
@@ -5755,10 +5755,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Abdon",
-            "Jair",
             "They ran and cried and fled",
-            "Ibzan"
+            "They fell on one another with their swords",
+            "They surrendered to Gideon immediately",
+            "They retreated to their tents and hid"
           ]
         },
         {
@@ -5768,10 +5768,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ibzan",
-            "Samuel",
             "Bethshittah in Zererath, and to the border of Abelmeholah, unto Tabbath",
-            "Samson"
+            "The plains of Moab",
+            "The valley of Jezreel",
+            "Across the Jordan to the east"
           ]
         },
         {
@@ -5782,9 +5782,9 @@
           "difficulty": 1,
           "choices": [
             "Throughout all mount Ephraim",
-            "Samson",
-            "Micah",
-            "Jephthah"
+            "Throughout all the tribe of Manasseh",
+            "To the cities beyond the Jordan",
+            "To all the elders of Israel"
           ]
         },
         {
@@ -5794,10 +5794,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gideon",
-            "Samuel",
             "The waters unto Bethbarah and Jordan",
-            "Micah"
+            "The spring of Harod",
+            "The brook Kishon",
+            "The river of Egypt"
           ]
         },
         {
@@ -5821,9 +5821,9 @@
           "difficulty": 1,
           "choices": [
             "Loaves of bread",
-            "Jephthah",
-            "David",
-            "Gideon"
+            "Water from the well",
+            "Silver and gold",
+            "Animals for sacrifice"
           ]
         },
         {
@@ -5833,36 +5833,36 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Shamgar",
             "Break it down",
-            "Samson",
-            "Elon"
+            "Burn it to the ground",
+            "Tear out its foundation stones",
+            "Use it as a prison for their leaders"
           ]
         },
         {
           "id": "the_book_of_judges_0069",
           "prompt": "When did Gideon return from battle?",
-          "answer": "Beefore the sun was up",
+          "answer": "Before the sun was up",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gideon",
-            "Samuel",
-            "Beefore the sun was up",
-            "Micah"
+            "Before the sun was up",
+            "At midday",
+            "Three days after the battle",
+            "On the seventh day"
           ]
         },
         {
           "id": "the_book_of_judges_0070",
           "prompt": "How were the men that Zebah and Zalmunna killed related to Gideon?",
-          "answer": "They were his bretheren",
+          "answer": "They were his brethren",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were his bretheren",
-            "Othniel",
-            "Gideon",
-            "Saul"
+            "They were his brethren",
+            "They were his servants",
+            "They were men of the tribe of Manasseh",
+            "They were strangers from another tribe"
           ]
         },
         {
@@ -5872,10 +5872,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Delilah",
-            "Elon",
             "He feared because he was a youth",
-            "Samuel"
+            "He refused because it was Gideon's right",
+            "He could not find a weapon in time",
+            "He was restrained by the men around him"
           ]
         },
         {
@@ -5950,10 +5950,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Goliath",
-            "Ehud",
-            "Deborah",
-            "Beer"
+            "Beer",
+            "Shechem",
+            "Ophrah",
+            "Penuel"
           ]
         },
         {
@@ -5964,9 +5964,9 @@
           "difficulty": 1,
           "choices": [
             "The shadow of the mountains as if they were men",
-            "Tola",
-            "Ibzan",
-            "Elon"
+            "An army gathering in the valley",
+            "Smoke rising from the watchtowers",
+            "Gideon's sons returning from war"
           ]
         },
         {
@@ -5976,10 +5976,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Shamgar",
-            "Goliath",
-            "Ibzan",
-            "Chased him"
+            "Chased him",
+            "Imprisoned him",
+            "Killed him in battle",
+            "Made him a slave"
           ]
         },
         {
@@ -6002,10 +6002,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Jephthah",
-            "Micah",
-            "Samson",
-            "Laid it on his shoulder"
+            "Laid it on his shoulder",
+            "Threw it at the walls of the tower",
+            "Bound it into a bundle with the others",
+            "Used it to set fire to the gate"
           ]
         },
         {
@@ -6067,10 +6067,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Saul",
-            "Ibzan",
             "A millstone",
-            "Gideon"
+            "A burning brand",
+            "A jar of boiling water",
+            "A sword from the wall"
           ]
         },
         {
@@ -6093,10 +6093,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Samson",
-            "Ehud",
-            "Jephthah",
-            "So people would not say a woman slew him"
+            "So people would not say a woman slew him",
+            "Because he was in great pain from the wound",
+            "Because he wanted to die with honor in battle",
+            "Because his armourbearer was his most trusted servant"
           ]
         },
         {
@@ -6133,9 +6133,9 @@
           "difficulty": 1,
           "choices": [
             "The gods they chose",
-            "Elon",
-            "Samuel",
-            "Delilah"
+            "The priests of Israel",
+            "The king of the Ammonites",
+            "The elders of Gilead"
           ]
         },
         {
@@ -6146,9 +6146,9 @@
           "difficulty": 1,
           "choices": [
             "The misery of Israel",
-            "Abdon",
-            "Saul",
-            "Ibzan"
+            "Their idolatry and wickedness",
+            "The destruction of their cities",
+            "The crying of the people"
           ]
         },
         {
@@ -6184,10 +6184,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ehud",
-            "Samson",
-            "Saul",
-            "Be their captain against the children of Ammon"
+            "Be their captain against the children of Ammon",
+            "Judge all the disputes of the people",
+            "Lead them in prayer and sacrifice",
+            "Negotiate a peace treaty with Ammon"
           ]
         },
         {
@@ -6197,10 +6197,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Othniel",
-            "Goliath",
             "Deliver the children of Ammon into his hands",
-            "Samuel"
+            "Give him a sign before the battle",
+            "Protect his daughter from harm",
+            "Destroy the high places of the Ammonites"
           ]
         },
         {
@@ -6211,9 +6211,9 @@
           "difficulty": 1,
           "choices": [
             "Offer it up for a burnt offering",
-            "Abdon",
-            "Delilah",
-            "Deborah"
+            "Give it to the Lord as a servant",
+            "Dedicate it to the tabernacle",
+            "Return it to its owner with a gift"
           ]
         },
         {
@@ -6223,10 +6223,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Saul",
             "The children of Israel",
-            "Othniel",
-            "Elon"
+            "The children of Ammon",
+            "Neither side \u2014 they made peace",
+            "The Midianites who intervened"
           ]
         },
         {
@@ -6249,10 +6249,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Delilah",
-            "Jair",
-            "Shamgar",
-            "Yes"
+            "Yes",
+            "No \u2014 he substituted a burnt offering of animals",
+            "No \u2014 he dedicated her to temple service instead",
+            "No \u2014 the elders released him from the vow"
           ]
         },
         {
@@ -6328,22 +6328,22 @@
           "difficulty": 1,
           "choices": [
             "40 years",
-            "David",
-            "Deborah",
-            "Saul"
+            "20 years",
+            "7 years",
+            "80 years"
           ]
         },
         {
           "id": "the_book_of_judges_0107",
           "prompt": "In Judges 13, who did the angel of the Lord appear unto?",
-          "answer": "Monoah's wife",
+          "answer": "Manoah's wife",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Shamgar",
-            "Othniel",
-            "Jephthah",
-            "Monoah's wife"
+            "Manoah's wife",
+            "Manoah himself",
+            "Samson's sister",
+            "The elders of Zorah"
           ]
         },
         {
@@ -6354,22 +6354,22 @@
           "difficulty": 1,
           "choices": [
             "That she would conceive and bear a son",
-            "Shamgar",
-            "Samson",
-            "Samuel"
+            "That she must separate herself from wine and strong drink",
+            "That her son would be a Nazarite from birth",
+            "That God would deliver Israel from the Philistines through her son"
           ]
         },
         {
           "id": "the_book_of_judges_0109",
           "prompt": "What happened when Manoah offered the offering to the Lord?",
-          "answer": "The angelof the Lord ascended in the flame of the altar",
+          "answer": "The angel of the Lord ascended in the flame of the altar",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Delilah",
-            "Samson",
-            "The angelof the Lord ascended in the flame of the altar",
-            "Gideon"
+            "The angel of the Lord ascended in the flame of the altar",
+            "The flame went out and nothing happened",
+            "A voice from heaven spoke to Manoah",
+            "The angel stood beside the altar and blessed them"
           ]
         },
         {
@@ -6392,10 +6392,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Shamgar",
-            "Samuel",
-            "Ehud",
-            "The Spirit of the Lord"
+            "The Spirit of the Lord",
+            "The anger of the Lord",
+            "The love for Delilah",
+            "The desire for vengeance against the Philistines"
           ]
         },
         {
@@ -6405,10 +6405,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Abdon",
-            "Elon",
-            "Tola",
-            "A young lion"
+            "A young lion",
+            "A bear from the hills",
+            "A swarm of bees",
+            "A Philistine warrior"
           ]
         },
         {
@@ -6419,9 +6419,9 @@
           "difficulty": 1,
           "choices": [
             "A swarm of bees and honey",
-            "Jephthah",
-            "Deborah",
-            "Abdon"
+            "The bones were clean and dry",
+            "A nest of birds",
+            "Nothing \u2014 it was empty"
           ]
         },
         {
@@ -6432,9 +6432,9 @@
           "difficulty": 1,
           "choices": [
             "Declare the riddle",
-            "Othniel",
-            "Jair",
-            "Shamgar"
+            "Defeat Samson in a wrestling match",
+            "Bring him a gift from the Philistine lords",
+            "Pledge their loyalty to Samson's father"
           ]
         },
         {
@@ -6457,10 +6457,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Elon",
-            "Deborah",
             "He slew 30 men of Ashkelon and took their spoil",
-            "Samuel"
+            "He bought them from a merchant in Timnath",
+            "His father provided them as a dowry gift",
+            "He took them from the Philistine lords' storehouses"
           ]
         },
         {
@@ -6470,10 +6470,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ehud",
-            "Gideon",
             "Firebrands",
-            "Shamgar"
+            "Burning torches",
+            "Dry thornbushes",
+            "Oil-soaked rags"
           ]
         },
         {
@@ -6483,10 +6483,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gideon",
             "The rock Etam",
-            "Shamgar",
-            "Othniel"
+            "The rock of Oreb",
+            "The rock at Rimmon",
+            "The crag of Bozez"
           ]
         },
         {
@@ -6496,10 +6496,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Jephthah",
-            "Goliath",
-            "Micah",
-            "The jawbone of an ass"
+            "The jawbone of an ass",
+            "The leg bone of an ox",
+            "A Philistine's own sword",
+            "His bare hands"
           ]
         },
         {
@@ -6509,10 +6509,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "David",
             "Thirst",
-            "Gideon",
-            "Delilah"
+            "Exhaustion and wounds",
+            "Hunger and starvation",
+            "The sword of the Philistines"
           ]
         },
         {
@@ -6522,10 +6522,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Jair",
             "Water",
-            "Ibzan",
-            "Delilah"
+            "Blood",
+            "Honey",
+            "Fire"
           ]
         },
         {
@@ -6535,10 +6535,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Elon",
-            "Abdon",
             "The doors of the gate of the city and the two posts",
-            "Shamgar"
+            "The silver and gold from the Philistine treasury",
+            "The weapons of the city guard",
+            "The idol of Dagon from the temple"
           ]
         },
         {
@@ -6574,10 +6574,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Tola",
             "Eleven hundred pieces of silver from each of them",
-            "Jair",
-            "Jephthah"
+            "A thousand pieces of gold",
+            "The finest garments from Philistia",
+            "A large estate and freedom from all taxation"
           ]
         },
         {
@@ -6588,9 +6588,9 @@
           "difficulty": 1,
           "choices": [
             "To be bound with 7 green withs that were never dried",
-            "Delilah",
-            "Saul",
-            "Ibzan"
+            "To cut his hair while he slept",
+            "To bind him with new ropes",
+            "To weave his hair into a loom"
           ]
         },
         {
@@ -6600,10 +6600,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Saul",
-            "Micah",
-            "Ehud",
-            "To be bound with new ropes that were never occupied"
+            "To be bound with new ropes that were never occupied",
+            "To weave the seven locks of his head into a web",
+            "To cut all the hair from his head",
+            "To bind him with 7 green withs"
           ]
         },
         {
@@ -6614,9 +6614,9 @@
           "difficulty": 1,
           "choices": [
             "The pin of the beam and the web",
-            "David",
-            "Gideon",
-            "Ehud"
+            "A rope woven from new hemp",
+            "The seven green withs of the first attempt",
+            "A knot tied by Delilah herself"
           ]
         },
         {
@@ -6626,10 +6626,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Gideon",
-            "Samson",
             "He had been a Nazarite unto God from his mother's womb",
-            "David"
+            "His mother had made a vow to God on his behalf",
+            "The Philistines had forbidden it under pain of death",
+            "No one in his tribe had cut their hair since the time of Manoah"
           ]
         },
         {
@@ -6640,9 +6640,9 @@
           "difficulty": 1,
           "choices": [
             "That the Lord was departed from him",
-            "Ibzan",
-            "Saul",
-            "Ehud"
+            "That his hair had been cut while he slept",
+            "That Delilah had sold his secret to the lords",
+            "That the Philistines were waiting in ambush for him"
           ]
         },
         {
@@ -6652,10 +6652,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ibzan",
-            "Othniel",
             "The two middle pillars of the house",
-            "Micah"
+            "The great doors of the Philistine temple",
+            "The chains binding his hands and feet",
+            "The idol of Dagon from its pedestal"
           ]
         },
         {
@@ -6665,10 +6665,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Micah",
             "20 years",
-            "Deborah",
-            "Samuel"
+            "40 years",
+            "6 years",
+            "7 years"
           ]
         },
         {
@@ -6744,9 +6744,9 @@
           "difficulty": 1,
           "choices": [
             "Weapons of war",
-            "David",
-            "Ehud",
-            "Tola"
+            "The ark of God they had stolen",
+            "The idols from Micah's house",
+            "Silver and gold for the journey"
           ]
         },
         {
@@ -6757,9 +6757,9 @@
           "difficulty": 1,
           "choices": [
             "The ephod, the teraphim, and the graven image",
-            "Saul",
-            "Micah",
-            "Othniel"
+            "Only the silver he had received as wages",
+            "The ark of God from the tabernacle",
+            "A carved staff and a scroll of the law"
           ]
         },
         {
@@ -6769,10 +6769,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ehud",
             "Smote them with the edge of the sword, and burnt the city with fire",
-            "Tola",
-            "David"
+            "Made a covenant of peace with them",
+            "Drove them out and settled in their houses",
+            "Took them captive and brought them back to Zorah"
           ]
         },
         {
@@ -6791,14 +6791,14 @@
         {
           "id": "the_book_of_judges_0142",
           "prompt": "What was special about the 700 chosen men?",
-          "answer": "They were lefthanded, and they could sling stones at an hair breadth a",
+          "answer": "They were lefthanded, and they could sling stones at an hair breadth",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Othniel",
-            "Gideon",
-            "David",
-            "They were lefthanded, and they could sling stones at an hair breadth a"
+            "They were lefthanded, and they could sling stones at an hair breadth",
+            "They were all from the tribe of Judah",
+            "They were veterans of the war against Midian",
+            "They were specially trained archers from youth"
           ]
         },
         {
@@ -6808,10 +6808,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Shamgar",
             "All",
-            "Ehud",
-            "Tola"
+            "Half of them",
+            "Only those with weapons",
+            "300,000"
           ]
         },
         {
@@ -6821,23 +6821,23 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Shamgar",
-            "Micah",
-            "Ibzan",
-            "Go up against him"
+            "Go up against him",
+            "Make peace and do not fight your brother",
+            "Seek first to correct the evil in your own camp",
+            "Wait and pray for seven days before going up"
           ]
         },
         {
           "id": "the_book_of_judges_0145",
           "prompt": "After the third day what did the children of Israel do in the house of God?",
-          "answer": "Wept, sat before the Lord, fasted, and offered burnt offerings and pea",
+          "answer": "Wept, sat before the Lord, fasted, and offered burnt offerings and peace offerings",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Micah",
-            "Gideon",
-            "Ibzan",
-            "Wept, sat before the Lord, fasted, and offered burnt offerings and pea"
+            "Wept, sat before the Lord, fasted, and offered burnt offerings and peace offerings",
+            "Demanded that Benjamin surrender the guilty men",
+            "Sent spies to count the Benjaminite army",
+            "Built an altar and inquired of the Lord again"
           ]
         },
         {
@@ -6847,10 +6847,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ibzan",
-            "Samuel",
-            "Ehud",
-            "To draw the children of Benjamin from the city unto the highways"
+            "To draw the children of Benjamin from the city unto the highways",
+            "Because they were afraid of the Benjaminites' skill with slings",
+            "Because the Lord had told them to retreat",
+            "Because they had run out of arrows and were outflanked"
           ]
         },
         {
@@ -6874,9 +6874,9 @@
           "difficulty": 1,
           "choices": [
             "They were amazed",
-            "Ehud",
-            "Abdon",
-            "Micah"
+            "They fled toward the wilderness",
+            "They rallied and charged at Israel",
+            "They surrendered to the elders of Israel"
           ]
         },
         {
@@ -6931,10 +6931,10 @@
           "reference": "1Kings 1:38",
           "difficulty": 1,
           "choices": [
-            "Belshazzar",
-            "Hezekiah",
             "King David's mule",
-            "Elisha"
+            "A white horse",
+            "A chariot of iron",
+            "A donkey from the royal stable"
           ]
         },
         {
@@ -6958,9 +6958,9 @@
           "difficulty": 1,
           "choices": [
             "40 Years",
-            "Artaxerxes",
-            "Naaman",
-            "Hazael"
+            "20 years",
+            "33 years",
+            "47 years"
           ]
         },
         {
@@ -6970,10 +6970,10 @@
           "reference": "1Kings 1:39",
           "difficulty": 1,
           "choices": [
-            "Elisha",
             "God Save King Solomon",
-            "Nebuchadnezzar",
-            "Josiah"
+            "Long live the king",
+            "Peace and prosperity to Israel",
+            "Blessed is he who comes in the name of the Lord"
           ]
         },
         {
@@ -7191,10 +7191,10 @@
           "reference": "1Kings 6:38",
           "difficulty": 1,
           "choices": [
-            "Jehu",
             "7 years",
-            "Naaman",
-            "Belshazzar"
+            "3 years",
+            "12 years",
+            "20 years"
           ]
         },
         {
@@ -7347,10 +7347,10 @@
           "reference": "1Kings 11:42",
           "difficulty": 1,
           "choices": [
-            "Micaiah",
             "40 years",
-            "Elisha",
-            "Hezekiah"
+            "20 years",
+            "33 years",
+            "60 years"
           ]
         },
         {
@@ -7426,9 +7426,9 @@
           "difficulty": 1,
           "choices": [
             "Bread or water",
-            "Cyrus",
-            "Elisha",
-            "Hezekiah"
+            "Wine or strong drink",
+            "Meat or oil",
+            "Anything offered to idols"
           ]
         },
         {
@@ -7439,9 +7439,9 @@
           "difficulty": 1,
           "choices": [
             "An angel",
-            "Herod Agrippa",
-            "Elisha",
-            "Solomon"
+            "The Lord himself",
+            "A messenger from Jeroboam",
+            "A prophet from Bethel"
           ]
         },
         {
@@ -7451,10 +7451,10 @@
           "reference": "1Kings 13:24",
           "difficulty": 1,
           "choices": [
-            "Herod",
-            "Ahab",
             "A lion",
-            "Hezekiah"
+            "A sword from the king of Bethel",
+            "His own donkey trampling him",
+            "Sickness from the Lord"
           ]
         },
         {
@@ -7464,10 +7464,10 @@
           "reference": "1Kings 14:3",
           "difficulty": 1,
           "choices": [
-            "Saul",
-            "Artaxerxes",
-            "Cyrus",
-            "Ten loaves, cracknels, and an cruse of honey"
+            "Ten loaves, cracknels, and an cruse of honey",
+            "A ram for a burnt offering",
+            "Silver and gold from the treasury",
+            "A fine linen garment and a flask of oil"
           ]
         },
         {
@@ -7503,10 +7503,10 @@
           "reference": "1Kings 15:11",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Artaxerxes",
             "Right",
-            "Cyrus"
+            "Evil",
+            "Neither \u2014 his heart was divided",
+            "Right in some things but not all"
           ]
         },
         {
@@ -7516,10 +7516,10 @@
           "reference": "1Kings 15:23",
           "difficulty": 1,
           "choices": [
-            "Darius",
-            "Naaman",
             "His feet",
-            "Artaxerxes"
+            "His hands",
+            "His eyes",
+            "His heart"
           ]
         },
         {
@@ -7568,10 +7568,10 @@
           "reference": "1Kings 16:30",
           "difficulty": 1,
           "choices": [
-            "Rehoboam",
             "Evil",
-            "Artaxerxes",
-            "Nebuchadnezzar"
+            "Right",
+            "Better than Omri his father",
+            "Neither right nor evil"
           ]
         },
         {
@@ -7620,10 +7620,10 @@
           "reference": "1Kings 17:6",
           "difficulty": 1,
           "choices": [
-            "Belshazzar",
-            "Solomon",
             "Ravens",
-            "Cyrus"
+            "Angels from heaven",
+            "A widow from the city",
+            "A cart left by the road"
           ]
         },
         {
@@ -7633,10 +7633,10 @@
           "reference": "1Kings 17:10",
           "difficulty": 1,
           "choices": [
-            "Ben-hadad",
-            "Cyrus",
-            "Josiah",
-            "Sticks"
+            "Sticks",
+            "Water from the spring",
+            "Grain from the field",
+            "Olives from the trees"
           ]
         },
         {
@@ -7711,10 +7711,10 @@
           "reference": "1Kings 18:27",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Cyrus",
             "He mocked them",
-            "Belshazzar"
+            "He prayed loudly to the Lord",
+            "He repaired the altar of the Lord",
+            "He poured water on their sacrifice"
           ]
         },
         {
@@ -7724,10 +7724,10 @@
           "reference": "1Kings 18:33",
           "difficulty": 1,
           "choices": [
-            "Zedekiah",
-            "Hezekiah",
             "Water",
-            "Cyrus"
+            "Oil",
+            "Blood from the animals",
+            "Wine from the vessels"
           ]
         },
         {
@@ -7737,10 +7737,10 @@
           "reference": "1Kings 18:38",
           "difficulty": 1,
           "choices": [
-            "Nebuchadnezzar",
-            "Hezekiah",
-            "Solomon",
-            "Licked it up"
+            "Licked it up",
+            "Turned it to steam before the sacrifice was consumed",
+            "Left it untouched in the trench",
+            "Pushed it out of the trench before the fire fell"
           ]
         },
         {
@@ -7841,10 +7841,10 @@
           "reference": "1Kings 21:13",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Jeroboam",
-            "Hazael",
-            "He was stoned"
+            "He was stoned",
+            "He was beheaded",
+            "He was thrown from a wall",
+            "He was stabbed in the night"
           ]
         },
         {
@@ -7893,10 +7893,10 @@
           "reference": "1Kings 22:34",
           "difficulty": 1,
           "choices": [
-            "Herod",
             "A bow",
-            "Herod Agrippa",
-            "Hezekiah"
+            "A spear",
+            "A sword",
+            "A sling"
           ]
         },
         {
@@ -7906,10 +7906,10 @@
           "reference": "1Kings 22:43",
           "difficulty": 1,
           "choices": [
-            "Naaman",
             "Right",
-            "Cyrus",
-            "Pharaoh"
+            "Evil",
+            "Both right and evil in different periods",
+            "Neither \u2014 he was like his father Asa"
           ]
         }
       ]
@@ -7926,9 +7926,9 @@
           "difficulty": 1,
           "choices": [
             "Moab",
-            "Ahab",
-            "Josiah",
-            "Ben-hadad"
+            "Syria",
+            "Edom",
+            "Philistia"
           ]
         },
         {
@@ -8004,9 +8004,9 @@
           "difficulty": 1,
           "choices": [
             "Yes",
-            "Herod",
-            "Hezekiah",
-            "Saul"
+            "No \u2014 the waters did not part",
+            "They parted only briefly then closed",
+            "They divided and turned to blood"
           ]
         },
         {
@@ -8016,10 +8016,10 @@
           "reference": "2Kings 2:21",
           "difficulty": 1,
           "choices": [
-            "Cyrus",
-            "Elisha",
-            "Josiah",
-            "He cast salt in it"
+            "He cast salt in it",
+            "He prayed over it and spoke the word of the Lord",
+            "He threw a branch into it",
+            "He washed the vessel and poured it back"
           ]
         },
         {
@@ -8042,10 +8042,10 @@
           "reference": "2Kings 3:2",
           "difficulty": 1,
           "choices": [
-            "David",
             "Jehoram",
-            "Saul",
-            "Pharaoh"
+            "Joash",
+            "Jehu",
+            "Ahaziah"
           ]
         },
         {
@@ -8159,10 +8159,10 @@
           "reference": "2Kings 5:1",
           "difficulty": 1,
           "choices": [
-            "Naaman",
-            "Belshazzar",
-            "Micaiah",
-            "Leprosy"
+            "Leprosy",
+            "Fever and swelling of the joints",
+            "Blindness from a battle wound",
+            "A wasting disease of the bones"
           ]
         },
         {
@@ -8172,10 +8172,10 @@
           "reference": "2Kings 5:10",
           "difficulty": 1,
           "choices": [
-            "Hezekiah",
-            "Micaiah",
-            "Naaman",
-            "Wash in Jordan 7 times"
+            "Wash in Jordan 7 times",
+            "Go and show himself to the priests of Israel",
+            "Offer a sacrifice of seven lambs and seven rams",
+            "Fast for seven days and pray to the God of Israel"
           ]
         },
         {
@@ -8732,9 +8732,9 @@
           "difficulty": 1,
           "choices": [
             "and to whom is the ____ of the Lord _____?\" report; arm; revealed",
-            "Elijah",
-            "Jeroboam",
-            "Cyrus"
+            "message; hand; given",
+            "word; strength; shown",
+            "truth; power; hidden"
           ]
         },
         {
@@ -8745,9 +8745,9 @@
           "difficulty": 1,
           "choices": [
             "A tender plant and as a root out of a dry ground",
-            "Hezekiah",
-            "Jehu",
-            "Saul"
+            "A great cedar from Lebanon",
+            "A vine planted by rivers of water",
+            "A tree full of leaves and fruit"
           ]
         },
         {
@@ -8757,10 +8757,10 @@
           "reference": "Isaiah 53:2",
           "difficulty": 1,
           "choices": [
-            "Artaxerxes",
-            "Jehu",
             "form, comliness, or beauty",
-            "Micaiah"
+            "strength, honor, or glory",
+            "power, majesty, or might",
+            "stature, bearing, or presence"
           ]
         },
         {
@@ -8770,10 +8770,10 @@
           "reference": "Isaiah 53:3",
           "difficulty": 1,
           "choices": [
-            "Rehoboam",
-            "Josiah",
             "men",
-            "Solomon"
+            "the rulers and priests",
+            "Israel and Judah",
+            "his disciples and followers"
           ]
         },
         {
@@ -8783,10 +8783,10 @@
           "reference": "Isaiah 53:3",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Herod",
             "grief",
-            "Herod Agrippa"
+            "sorrow",
+            "suffering",
+            "loneliness"
           ]
         },
         {
@@ -8797,9 +8797,9 @@
           "difficulty": 1,
           "choices": [
             "our faces",
-            "Zedekiah",
-            "Elisha",
-            "Jeroboam"
+            "our hearts",
+            "our eyes",
+            "our shame"
           ]
         },
         {
@@ -8809,10 +8809,10 @@
           "reference": "Isaiah 53:3",
           "difficulty": 1,
           "choices": [
-            "Josiah",
-            "Hazael",
-            "Zedekiah",
-            "esteemed him not"
+            "esteemed him not",
+            "turned our backs on him",
+            "mocked him openly",
+            "counted him accursed"
           ]
         },
         {
@@ -8822,10 +8822,10 @@
           "reference": "Isaiah 53:4",
           "difficulty": 1,
           "choices": [
-            "Micaiah",
-            "Herod Agrippa",
-            "Herod",
-            "our griefs"
+            "our griefs",
+            "our sins",
+            "our sorrows",
+            "our iniquities"
           ]
         },
         {
@@ -8836,9 +8836,9 @@
           "difficulty": 1,
           "choices": [
             "our sorrows",
-            "Zedekiah",
-            "Hezekiah",
-            "Ben-hadad"
+            "our guilt",
+            "our shame",
+            "our transgressions"
           ]
         },
         {
@@ -8848,10 +8848,10 @@
           "reference": "Isaiah 53:4",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Saul",
-            "Naaman",
-            "stricken, smitten of God and afflicted"
+            "stricken, smitten of God and afflicted",
+            "righteous and without sin",
+            "powerful and glorious",
+            "unworthy and accursed"
           ]
         },
         {
@@ -8861,10 +8861,10 @@
           "reference": "Isaiah 53:5",
           "difficulty": 1,
           "choices": [
-            "Rehoboam",
             "for our transgressions",
-            "Naaman",
-            "Saul"
+            "for the sins of Israel alone",
+            "because of his own iniquity",
+            "for speaking against the rulers"
           ]
         },
         {
@@ -8874,10 +8874,10 @@
           "reference": "Isaiah 53:5",
           "difficulty": 1,
           "choices": [
-            "David",
             "for our iniquities",
-            "Cyrus",
-            "Elijah"
+            "for the sins of the priests",
+            "because of his own rebellion",
+            "for the sake of Israel's covenant"
           ]
         },
         {
@@ -8887,10 +8887,10 @@
           "reference": "Isaiah 53:5",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Belshazzar",
-            "Rehoboam",
-            "the chastisement of our peace"
+            "the chastisement of our peace",
+            "the wrath of God Almighty",
+            "the crown of thorns and shame",
+            "the burden of all the nations"
           ]
         },
         {
@@ -8900,10 +8900,10 @@
           "reference": "Isaiah 53:5",
           "difficulty": 1,
           "choices": [
-            "Hazael",
-            "Elijah",
             "his stripes",
-            "Zedekiah"
+            "his blood",
+            "his prayer",
+            "his sacrifice"
           ]
         },
         {
@@ -8913,10 +8913,10 @@
           "reference": "Isaiah 53:6",
           "difficulty": 1,
           "choices": [
-            "Hazael",
             "gone astray and turned every one to his own way",
-            "Nebuchadnezzar",
-            "David"
+            "wandered and been lost without a shepherd",
+            "fled from God and hidden ourselves",
+            "gone after idols and forgotten the Lord"
           ]
         },
         {
@@ -8926,10 +8926,10 @@
           "reference": "Isaiah 53:6",
           "difficulty": 1,
           "choices": [
-            "Josiah",
             "the iniquity of us all",
-            "Solomon",
-            "Jeroboam"
+            "the sins of the nations",
+            "the chastisement we deserved",
+            "the wrath of God's judgment"
           ]
         },
         {
@@ -8940,9 +8940,9 @@
           "difficulty": 1,
           "choices": [
             "open his mouth",
-            "Saul",
-            "Artaxerxes",
-            "Josiah"
+            "cry out for vengeance",
+            "call on the angels to save him",
+            "resist those who came against him"
           ]
         },
         {
@@ -8952,10 +8952,10 @@
           "reference": "Isaiah 53:7",
           "difficulty": 1,
           "choices": [
-            "Zedekiah",
             "a lamb to the slaughter",
-            "Ahab",
-            "Nebuchadnezzar"
+            "an offering for the sin of many",
+            "a prisoner before his accusers",
+            "a king without a throne"
           ]
         },
         {
@@ -8965,10 +8965,10 @@
           "reference": "Isaiah 53:7",
           "difficulty": 1,
           "choices": [
-            "Herod",
             "dumb",
-            "Ahab",
-            "Jeroboam"
+            "silent",
+            "afraid",
+            "willing"
           ]
         },
         {
@@ -8978,10 +8978,10 @@
           "reference": "Isaiah 53:8",
           "difficulty": 1,
           "choices": [
-            "Bethlehem",
             "prison and judgment",
-            "Caesarea",
-            "Athens"
+            "the land of the living",
+            "the city of peace",
+            "the house of his people"
           ]
         },
         {
@@ -8992,9 +8992,9 @@
           "difficulty": 1,
           "choices": [
             "generation",
-            "Cyrus",
-            "Darius",
-            "Herod"
+            "righteousness",
+            "suffering",
+            "glory"
           ]
         },
         {
@@ -9004,10 +9004,10 @@
           "reference": "Isaiah 53:8",
           "difficulty": 1,
           "choices": [
-            "Zedekiah",
             "the land of the living",
-            "Elisha",
-            "Darius"
+            "the presence of God",
+            "the city of his fathers",
+            "the covenant people of Israel"
           ]
         },
         {
@@ -9017,10 +9017,10 @@
           "reference": "Isaiah 53:8",
           "difficulty": 1,
           "choices": [
-            "Elisha",
-            "Ahab",
             "for the transgression of my people",
-            "Hazael"
+            "because of his own sins",
+            "for the sake of Israel's blessing",
+            "to fulfill the law of Moses"
           ]
         },
         {
@@ -9030,10 +9030,10 @@
           "reference": "Isaiah 53:9",
           "difficulty": 1,
           "choices": [
-            "Samaria",
-            "Nineveh",
             "with the wicked and with the rich",
-            "Crete"
+            "among the outcasts of Israel",
+            "with those who were forgotten",
+            "beside the prophets of old"
           ]
         },
         {
@@ -9043,10 +9043,10 @@
           "reference": "Isaiah 53:9",
           "difficulty": 1,
           "choices": [
-            "Elisha",
             "violence",
-            "Elijah",
-            "David"
+            "sin",
+            "deceit",
+            "wrong"
           ]
         },
         {
@@ -9056,10 +9056,10 @@
           "reference": "Isaiah 53:9",
           "difficulty": 1,
           "choices": [
-            "Cyrus",
             "in his mouth",
-            "Elisha",
-            "Zedekiah"
+            "in his heart",
+            "in his deeds",
+            "among his followers"
           ]
         },
         {
@@ -9069,10 +9069,10 @@
           "reference": "Isaiah 53:10",
           "difficulty": 1,
           "choices": [
-            "Hezekiah",
             "to bruise him",
-            "Ahab",
-            "Elisha"
+            "to exalt him above all others",
+            "to spare him from suffering",
+            "to reveal his glory to the nations"
           ]
         },
         {
@@ -9082,10 +9082,10 @@
           "reference": "Isaiah 53:10",
           "difficulty": 1,
           "choices": [
-            "Cyrus",
-            "Micaiah",
             "he shall see his seed",
-            "Nebuchadnezzar"
+            "he shall be raised from the dead",
+            "he shall be exalted above all kings",
+            "he shall be satisfied with his suffering"
           ]
         },
         {
@@ -9095,10 +9095,10 @@
           "reference": "Isaiah 53:10",
           "difficulty": 1,
           "choices": [
-            "Zedekiah",
             "He shall prolong his days",
-            "Herod Agrippa",
-            "Ahab"
+            "he shall see his seed",
+            "the pleasure of the Lord shall prosper in his hand",
+            "he shall justify many"
           ]
         },
         {
@@ -9109,9 +9109,9 @@
           "difficulty": 1,
           "choices": [
             "the pleasure of the Lord shall prosper in his hand",
-            "Naaman",
-            "Ahab",
-            "Jeroboam"
+            "he shall prolong his days",
+            "he shall be satisfied",
+            "he shall see his seed"
           ]
         },
         {
@@ -9121,10 +9121,10 @@
           "reference": "Isaiah 53:11",
           "difficulty": 1,
           "choices": [
-            "Jehu",
             "when he sees the travail of his soul",
-            "Nebuchadnezzar",
-            "Elisha"
+            "when all nations bow before him",
+            "when the last enemy is destroyed",
+            "when his people are brought home from captivity"
           ]
         },
         {
@@ -9134,10 +9134,10 @@
           "reference": "Isaiah 53:11",
           "difficulty": 1,
           "choices": [
-            "Herod Agrippa",
-            "Naaman",
-            "Rehoboam",
-            "their iniquities"
+            "their iniquities",
+            "their sorrows",
+            "their transgressions",
+            "their shame"
           ]
         },
         {
@@ -9148,9 +9148,9 @@
           "difficulty": 1,
           "choices": [
             "a portion with the great",
-            "Herod Agrippa",
-            "Naaman",
-            "Darius"
+            "the spoils of the strong",
+            "a kingdom without end",
+            "glory among the nations"
           ]
         },
         {
@@ -9160,10 +9160,10 @@
           "reference": "Isaiah 53:12",
           "difficulty": 1,
           "choices": [
-            "Elisha",
-            "Jehu",
-            "Ben-hadad",
-            "the strong"
+            "the strong",
+            "the mighty",
+            "the faithful",
+            "the many"
           ]
         },
         {
@@ -9173,10 +9173,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Hezekiah",
-            "Artaxerxes",
             "his soul (Isaiah 53:12",
-            "Jeroboam"
+            "his blood",
+            "his life",
+            "his strength"
           ]
         },
         {
@@ -9186,10 +9186,10 @@
           "reference": "Isaiah 53:12",
           "difficulty": 1,
           "choices": [
-            "Ben-hadad",
             "the transgressors",
-            "Herod Agrippa",
-            "Elisha"
+            "the righteous of Israel",
+            "the kings of the earth",
+            "the prophets of old"
           ]
         },
         {
@@ -9199,10 +9199,10 @@
           "reference": "Isaiah 53:12",
           "difficulty": 1,
           "choices": [
-            "David",
             "the sin",
-            "Ben-hadad",
-            "Elisha"
+            "the grief",
+            "the iniquity",
+            "the sorrow"
           ]
         },
         {
@@ -9212,10 +9212,10 @@
           "reference": "Isaiah 53:12",
           "difficulty": 1,
           "choices": [
-            "Solomon",
-            "Rehoboam",
             "Intercession",
-            "Darius"
+            "Atonement",
+            "A sacrifice",
+            "A covenant of peace"
           ]
         }
       ]
@@ -10129,7 +10129,7 @@
           "difficulty": 1,
           "choices": [
             "Nehemiah",
-            "Artaxerxes",
+            "King Darius",
             "Haggai",
             "King Artaxerxes"
           ]
@@ -10726,7 +10726,7 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Cyrus",
+            "King Darius",
             "Nehemiah",
             "King Cyrus",
             "Ezra"
@@ -10739,7 +10739,7 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Jerusalem",
+            "Samaria",
             "Rome",
             "Corinth",
             "In Jerusalem"
@@ -11502,14 +11502,14 @@
         {
           "id": "the_book_of_ezra_0176",
           "prompt": "Did Ezra say they deserved God's kindness?",
-          "answer": "No — he said they were unworthy",
+          "answer": "No \u2014 he said they were unworthy",
           "reference": "",
           "difficulty": 1,
           "choices": [
             "Mordecai",
             "Zerubbabel",
             "Nehemiah",
-            "No — he said they were unworthy"
+            "No \u2014 he said they were unworthy"
           ]
         },
         {
@@ -11789,7 +11789,7 @@
     },
     {
       "id": "pauls_journeys",
-      "title": "Paul’s Journeys",
+      "title": "Paul\u2019s Journeys",
       "questions": [
         {
           "id": "pauls_journeys_0001",
@@ -11929,9 +11929,9 @@
           "difficulty": 1,
           "choices": [
             "Men of Israel and Those that fear God",
-            "Philippi",
-            "They were scattered",
-            "Nazareth"
+            "The Greeks and the God-fearers",
+            "The rulers of the synagogue",
+            "The elders and the priests"
           ]
         },
         {
@@ -12436,9 +12436,9 @@
           "difficulty": 1,
           "choices": [
             "A vision",
-            "An angel of the Lord",
-            "A dream of a man calling to him",
-            "A mighty light from heaven"
+            "An angel standing at the foot of his bed",
+            "The voice of the Lord speaking in the darkness",
+            "A pillar of fire before him"
           ]
         },
         {
