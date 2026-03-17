@@ -25,10 +25,10 @@
           "reference": "1 Samuel 17:35-36",
           "difficulty": 1,
           "choices": [
-            "Deer",
+            "Wolf & Leopard",
             "Lion & Bear",
-            "Lion",
-            "Calf"
+            "Fox & Serpent",
+            "Eagle & Serpent"
           ]
         },
         {
@@ -38,10 +38,10 @@
           "reference": "Daniel 6:16",
           "difficulty": 1,
           "choices": [
-            "Ox",
-            "Dog",
+            "Bears",
+            "Leopards",
             "Lions",
-            "Lamb"
+            "Wolves"
           ]
         },
         {
@@ -51,10 +51,10 @@
           "reference": "Genesis 41:2-3",
           "difficulty": 1,
           "choices": [
-            "Locust",
+            "Sheep",
             "Cattle",
-            "Coney",
-            "Camel"
+            "Goats",
+            "Camels"
           ]
         },
         {
@@ -65,9 +65,9 @@
           "difficulty": 1,
           "choices": [
             "Dove & Raven",
-            "Sparrow",
-            "Vulture",
-            "Hawk"
+            "Sparrow & Swallow",
+            "Eagle & Hawk",
+            "Quail & Pigeon"
           ]
         },
         {
@@ -104,9 +104,9 @@
           "difficulty": 1,
           "choices": [
             "Camels",
-            "Calf",
-            "Bear",
-            "Locust"
+            "Sheep",
+            "Goats",
+            "Foxes"
           ]
         },
         {
@@ -129,9 +129,9 @@
           "reference": "Matthew 12:40",
           "difficulty": 1,
           "choices": [
-            "Coney",
-            "Bull",
-            "Dog",
+            "Whale",
+            "Leviathan",
+            "Serpent",
             "Great fish"
           ]
         },
@@ -155,10 +155,10 @@
           "reference": "Revelation 19:11-14",
           "difficulty": 1,
           "choices": [
-            "Sheep",
-            "Coney",
-            "Calf",
-            "White horses"
+            "White horses",
+            "White camels",
+            "White donkeys",
+            "White chariots"
           ]
         },
         {
@@ -169,8 +169,8 @@
           "difficulty": 1,
           "choices": [
             "Horse",
-            "Leopard",
-            "Lion",
+            "Camel",
+            "Young donkey",
             "Colt of an ass"
           ]
         },
@@ -195,9 +195,9 @@
           "difficulty": 1,
           "choices": [
             "Pelican & Owl",
-            "Vulture",
-            "Swallow",
-            "Pelican"
+            "Dove & Sparrow",
+            "Raven & Eagle",
+            "Swallow & Quail"
           ]
         },
         {
@@ -208,9 +208,9 @@
           "difficulty": 1,
           "choices": [
             "Ant, Coney, Locust, & Spider",
-            "Calf",
-            "Deer",
-            "Dog"
+            "Ant, Bee, Locust, & Moth",
+            "Serpent, Ant, Eagle, & Ox",
+            "Coney, Dove, Locust, & Lizard"
           ]
         },
         {
@@ -220,10 +220,10 @@
           "reference": "1 Peter 5:8",
           "difficulty": 1,
           "choices": [
-            "Camel",
-            "Locust",
+            "Bear",
+            "Serpent",
             "Lion",
-            "Horse"
+            "Wolf"
           ]
         },
         {
@@ -234,9 +234,9 @@
           "difficulty": 1,
           "choices": [
             "Eagles",
-            "Owl",
-            "Quail",
-            "Raven"
+            "Owls",
+            "Doves",
+            "Ravens"
           ]
         },
         {
@@ -260,8 +260,8 @@
           "difficulty": 1,
           "choices": [
             "Doesn't say",
-            "Calf",
-            "Frog",
+            "Lamb",
+            "Goat",
             "Ox"
           ]
         },
@@ -272,10 +272,10 @@
           "reference": "Deuteronomy 14:9",
           "difficulty": 1,
           "choices": [
-            "Leopard",
-            "Dog",
-            "Horse",
-            "Those that had fins and scales"
+            "Those that had fins and scales",
+            "Those that lived in the rivers only",
+            "Those that had shells and claws",
+            "Any creature taken from the sea or rivers"
           ]
         },
         {
@@ -286,9 +286,9 @@
           "difficulty": 1,
           "choices": [
             "A pair of turtledoves or two young pigeons",
-            "Camel",
-            "Sheep",
-            "Dog"
+            "A young lamb without blemish",
+            "A ram and a dove",
+            "Two turtledoves and a grain offering"
           ]
         },
         {
@@ -299,9 +299,9 @@
           "difficulty": 1,
           "choices": [
             "A lamb taken from the sheep or the goats",
-            "Lion",
-            "Locust",
-            "Ox"
+            "A young bull without blemish",
+            "A firstborn ox or donkey",
+            "A pair of turtledoves"
           ]
         },
         {
@@ -311,9 +311,9 @@
           "reference": "Genesis 22:13",
           "difficulty": 1,
           "choices": [
-            "Dog",
-            "Hare",
-            "Donkey",
+            "A lamb",
+            "A goat",
+            "An ox",
             "A ram"
           ]
         },
@@ -325,9 +325,9 @@
           "difficulty": 1,
           "choices": [
             "Lion, Calf, & Eagle",
-            "Sheep",
-            "Lamb",
-            "Camel"
+            "Ox, Lamb, & Dove",
+            "Bear, Eagle, & Leopard",
+            "Lion, Ox, & Serpent"
           ]
         },
         {
@@ -337,9 +337,9 @@
           "reference": "Song of Solomon 2:9, 17; 8:14",
           "difficulty": 1,
           "choices": [
-            "Lamb",
-            "Bull",
-            "Calf",
+            "A young lion",
+            "A young bull",
+            "A young eagle",
             "A roe or a young hart"
           ]
         },
@@ -350,10 +350,10 @@
           "reference": "Song of Solomon 4:1",
           "difficulty": 1,
           "choices": [
-            "Sheep",
+            "A flock of sheep",
             "A flock of goats",
-            "Horse",
-            "Ox"
+            "A herd of young deer",
+            "A drove of camels"
           ]
         },
         {
@@ -364,9 +364,9 @@
           "difficulty": 1,
           "choices": [
             "Grasshoppers",
-            "Lion",
-            "Deer",
-            "Donkey"
+            "Ants",
+            "Mice",
+            "Worms"
           ]
         },
         {
@@ -376,10 +376,10 @@
           "reference": "Isaiah 11:8",
           "difficulty": 1,
           "choices": [
-            "Bear",
+            "Lion & Bear",
             "Asp & Cockatrice",
-            "Locust",
-            "Frog"
+            "Serpent & Scorpion",
+            "Viper & Dragon"
           ]
         },
         {
@@ -391,7 +391,7 @@
           "choices": [
             "Goat",
             "Wolf",
-            "Locust",
+            "Bear",
             "Leopard"
           ]
         }
@@ -494,7 +494,7 @@
         },
         {
           "id": "battles_of_the_bible_0008",
-          "prompt": "Where did this battle take place?",
+          "prompt": "In the battle between Israel and the Amalekites (Exodus 17), where did this battle take place?",
           "answer": "Rephidim",
           "reference": "",
           "difficulty": 1,
@@ -507,7 +507,7 @@
         },
         {
           "id": "battles_of_the_bible_0009",
-          "prompt": "Whom did Moses tell to choose out men?",
+          "prompt": "During the battle at Rephidim against the Amalekites, whom did Moses tell to choose out men to go fight?",
           "answer": "Joshua",
           "reference": "",
           "difficulty": 1,
@@ -520,7 +520,7 @@
         },
         {
           "id": "battles_of_the_bible_0010",
-          "prompt": "What did Moses have in his hand?",
+          "prompt": "During the battle at Rephidim, what did Moses have in his hand as he stood on the hill?",
           "answer": "The rod of God",
           "reference": "",
           "difficulty": 1,
@@ -533,7 +533,7 @@
         },
         {
           "id": "battles_of_the_bible_0011",
-          "prompt": "Who went with Moses to the top of the hill?",
+          "prompt": "During the battle at Rephidim, who went with Moses to the top of the hill?",
           "answer": "Aaron & Hur",
           "reference": "",
           "difficulty": 1,
@@ -546,7 +546,7 @@
         },
         {
           "id": "battles_of_the_bible_0012",
-          "prompt": "What happened when Moses raised his hand?",
+          "prompt": "During the battle at Rephidim, what happened when Moses raised his hand?",
           "answer": "Israel prevailed",
           "reference": "",
           "difficulty": 1,
@@ -559,7 +559,7 @@
         },
         {
           "id": "battles_of_the_bible_0013",
-          "prompt": "What did they place for Moses to sit on?",
+          "prompt": "During the battle at Rephidim, what did they place for Moses to sit on when his hands grew heavy?",
           "answer": "A rock",
           "reference": "",
           "difficulty": 1,
@@ -572,7 +572,7 @@
         },
         {
           "id": "battles_of_the_bible_0014",
-          "prompt": "What did Aaron & Hur do?",
+          "prompt": "During the battle at Rephidim, what did Aaron & Hur do to help Moses?",
           "answer": "Held up Moses' hands",
           "reference": "",
           "difficulty": 1,
@@ -585,7 +585,7 @@
         },
         {
           "id": "battles_of_the_bible_0015",
-          "prompt": "Who ultimately won the battle?",
+          "prompt": "In the battle at Rephidim against the Amalekites, who ultimately won?",
           "answer": "Israel",
           "reference": "",
           "difficulty": 1,
@@ -598,7 +598,7 @@
         },
         {
           "id": "battles_of_the_bible_0016",
-          "prompt": "Moses built an altar, and what name did he give the place?",
+          "prompt": "After the victory at Rephidim, Moses built an altar — what name did he give the place?",
           "answer": "Jehovahnissi",
           "reference": "",
           "difficulty": 1,
@@ -624,7 +624,7 @@
         },
         {
           "id": "battles_of_the_bible_0018",
-          "prompt": "How many times did they go around the first six days?",
+          "prompt": "In the battle of Jericho, how many times did they march around the city each of the first six days?",
           "answer": "One",
           "reference": "",
           "difficulty": 1,
@@ -637,12 +637,12 @@
         },
         {
           "id": "battles_of_the_bible_0019",
-          "prompt": "How many times did they go around the 7th day?",
-          "answer": "Seven Put the following in the proper order in which they marched",
+          "prompt": "In the battle of Jericho, how many times did they march around the city on the 7th day?",
+          "answer": "Seven",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Seven Put the following in the proper order in which they marched",
+            "Seven",
             "Three times",
             "Once",
             "Twice"
@@ -676,7 +676,7 @@
         },
         {
           "id": "battles_of_the_bible_0022",
-          "prompt": "When did the priests blow the trumpets?",
+          "prompt": "During the march around Jericho, when did the priests blow the trumpets?",
           "answer": "Every day",
           "reference": "",
           "difficulty": 1,
@@ -689,7 +689,7 @@
         },
         {
           "id": "battles_of_the_bible_0023",
-          "prompt": "When did the people shout?",
+          "prompt": "During the march around Jericho, when did the people shout?",
           "answer": "Only on the 7th trip around on the 7th day",
           "reference": "",
           "difficulty": 1,
@@ -702,7 +702,7 @@
         },
         {
           "id": "battles_of_the_bible_0024",
-          "prompt": "What happened after the people shouted?",
+          "prompt": "During the battle of Jericho, what happened after the people shouted?",
           "answer": "The wall fell flat",
           "reference": "",
           "difficulty": 1,
@@ -715,7 +715,7 @@
         },
         {
           "id": "battles_of_the_bible_0025",
-          "prompt": "What spoils were they allowed to take for themselves?",
+          "prompt": "After the battle of Jericho, what spoils were the Israelites allowed to keep for themselves?",
           "answer": "Nothing",
           "reference": "",
           "difficulty": 1,
@@ -767,7 +767,7 @@
         },
         {
           "id": "battles_of_the_bible_0029",
-          "prompt": "Who put dust on their heads?",
+          "prompt": "After Israel's defeat at Ai, who put dust on their heads as a sign of mourning?",
           "answer": "Joshua and the elders",
           "reference": "",
           "difficulty": 1,
@@ -780,7 +780,7 @@
         },
         {
           "id": "battles_of_the_bible_0030",
-          "prompt": "What did they need to do if they wanted God to be with them?",
+          "prompt": "After Israel's defeat at Ai, what did God say they needed to do before He would be with them again?",
           "answer": "Destroy the accursed thing",
           "reference": "",
           "difficulty": 1,
@@ -793,7 +793,7 @@
         },
         {
           "id": "battles_of_the_bible_0031",
-          "prompt": "How did the Lord show Joshua who was at fault?",
+          "prompt": "After the defeat at Ai, how did the Lord show Joshua who was at fault for Israel's sin?",
           "answer": "They came before him by tribe, then families, then households, then man by man",
           "reference": "",
           "difficulty": 1,
@@ -806,7 +806,7 @@
         },
         {
           "id": "battles_of_the_bible_0032",
-          "prompt": "What were they to do to the man the Lord pointed out to them?",
+          "prompt": "After Achan was identified as the guilty party at Ai, what were they to do to him?",
           "answer": "Burn him and all that he had",
           "reference": "",
           "difficulty": 1,
@@ -827,12 +827,12 @@
             "A Babylonish garment; 200 shekels of silver, a wedge of gold",
             "A coat of fine linen and 50 shekels of silver",
             "A golden ring and 100 shekels of silver",
-            "Two camels and a bag of spices"
+            "A Sidonian robe, 50 shekels of silver, and a golden earring"
           ]
         },
         {
           "id": "battles_of_the_bible_0034",
-          "prompt": "Where did they take Achan and all that he had?",
+          "prompt": "Where did they take Achan and all that he had to carry out God's judgment?",
           "answer": "To the valley of Achor",
           "reference": "",
           "difficulty": 1,
@@ -1040,7 +1040,7 @@
         },
         {
           "id": "battles_of_the_bible_0050",
-          "prompt": "Who suggested they get the ark of the covenant?",
+          "prompt": "In the battle between Israel and the Philistines at Ebenezer, who suggested bringing the ark of the covenant to the camp?",
           "answer": "The elders of Israel",
           "reference": "",
           "difficulty": 1,
@@ -1053,7 +1053,7 @@
         },
         {
           "id": "battles_of_the_bible_0051",
-          "prompt": "From where did they fetch the ark?",
+          "prompt": "In the battle at Ebenezer, from where did they fetch the ark?",
           "answer": "Out of Shiloh",
           "reference": "",
           "difficulty": 1,
@@ -1066,7 +1066,7 @@
         },
         {
           "id": "battles_of_the_bible_0052",
-          "prompt": "What did they think would happen when the ark came into the camp?",
+          "prompt": "In the battle at Ebenezer, what did Israel think would happen when the ark came into the camp?",
           "answer": "It may save them out of the hands of their enemies",
           "reference": "",
           "difficulty": 1,
@@ -1079,7 +1079,7 @@
         },
         {
           "id": "battles_of_the_bible_0053",
-          "prompt": "Who were Eli's two sons?",
+          "prompt": "In the battle at Ebenezer, who were Eli's two sons that accompanied the ark?",
           "answer": "Hophni & Phinehas",
           "reference": "",
           "difficulty": 1,
@@ -1092,7 +1092,7 @@
         },
         {
           "id": "battles_of_the_bible_0054",
-          "prompt": "What did Israel do when the ark came into the camp?",
+          "prompt": "In the battle at Ebenezer, what did Israel do when the ark arrived in the camp?",
           "answer": "They shouted with a great shout",
           "reference": "",
           "difficulty": 1,
@@ -1105,7 +1105,7 @@
         },
         {
           "id": "battles_of_the_bible_0055",
-          "prompt": "What was the reaction of the Philistines when they heard the shout?",
+          "prompt": "In the battle at Ebenezer, what was the reaction of the Philistines when they heard the Israelites shout?",
           "answer": "They were afraid",
           "reference": "",
           "difficulty": 1,
@@ -1118,7 +1118,7 @@
         },
         {
           "id": "battles_of_the_bible_0056",
-          "prompt": "What was the command to the Philistine army?",
+          "prompt": "In the battle at Ebenezer, what was the rallying command given to the Philistine army?",
           "answer": "Be strong and quit you like men",
           "reference": "",
           "difficulty": 1,
@@ -1131,7 +1131,7 @@
         },
         {
           "id": "battles_of_the_bible_0057",
-          "prompt": "How many Israelites were slain in the second battle?",
+          "prompt": "In the battle at Ebenezer, how many Israelites were slain in the second engagement with the Philistines?",
           "answer": "30,000",
           "reference": "",
           "difficulty": 1,
@@ -1144,7 +1144,7 @@
         },
         {
           "id": "battles_of_the_bible_0058",
-          "prompt": "What happened to the Ark of God and to the sons of Eli?",
+          "prompt": "At the end of the battle at Ebenezer, what happened to the Ark of God and to the sons of Eli?",
           "answer": "The ark was taken, and he sons were slain",
           "reference": "",
           "difficulty": 1,
@@ -1170,7 +1170,7 @@
         },
         {
           "id": "battles_of_the_bible_0060",
-          "prompt": "How long had Eli judged Israel?",
+          "prompt": "At the time of the battle at Ebenezer, how long had Eli judged Israel?",
           "answer": "40 years",
           "reference": "",
           "difficulty": 1,
@@ -1183,7 +1183,7 @@
         },
         {
           "id": "battles_of_the_bible_0061",
-          "prompt": "Whose wife was pregnant?",
+          "prompt": "In connection with the battle at Ebenezer, whose wife went into labor upon hearing the news?",
           "answer": "Phineas",
           "reference": "",
           "difficulty": 1,
@@ -1222,7 +1222,7 @@
         },
         {
           "id": "battles_of_the_bible_0064",
-          "prompt": "Where were the Israelites camped for this battle?",
+          "prompt": "In the battle between Israel and the Philistines where David faced Goliath, where were the Israelites camped?",
           "answer": "By the valley of Elah",
           "reference": "",
           "difficulty": 1,
@@ -1287,7 +1287,7 @@
         },
         {
           "id": "battles_of_the_bible_0069",
-          "prompt": "Who was David's father?",
+          "prompt": "In the story of David and Goliath, who was David's father?",
           "answer": "Jesse",
           "reference": "",
           "difficulty": 1,
@@ -1300,7 +1300,7 @@
         },
         {
           "id": "battles_of_the_bible_0070",
-          "prompt": "Which sons of Jesse followed Saul to the battle?",
+          "prompt": "In the story of David and Goliath, which of Jesse's sons followed Saul to the battle?",
           "answer": "The three oldest",
           "reference": "Eliab, Abinadab, and Shammah",
           "difficulty": 1,
@@ -1649,10 +1649,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Aquila",
-            "Timothy",
+            "Barsabas",
+            "Barnabas",
             "Matthias",
-            "John"
+            "Stephen"
           ]
         },
         {
@@ -2032,10 +2032,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Nebuchadnezzar",
             "Judas Iscariot",
-            "Diotrephes",
-            "Pontius Pilate"
+            "Thomas",
+            "Simon the Zealot",
+            "Bartholomew"
           ]
         },
         {
@@ -2072,9 +2072,9 @@
           "difficulty": 1,
           "choices": [
             "Belshazzar",
-            "Sanballat",
-            "Ahab",
-            "Ananias"
+            "Nebuchadnezzar",
+            "Darius the Mede",
+            "Cyrus the Great"
           ]
         },
         {
@@ -2637,9 +2637,9 @@
           "difficulty": 1,
           "choices": [
             "The Galatians",
-            "Cornelius",
-            "Stephen",
-            "Priscilla"
+            "The Corinthians",
+            "The Thessalonians",
+            "The Ephesians"
           ]
         },
         {
@@ -4008,9 +4008,9 @@
           "difficulty": 1,
           "choices": [
             "Timotheus and Sylvanus",
-            "Barnabas",
-            "Titus",
-            "Luke"
+            "Barnabas and Titus",
+            "Luke and Titus",
+            "Silas and Timothy"
           ]
         },
         {
@@ -4306,10 +4306,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Titus",
-            "Judas Iscariot",
-            "John",
-            "The Lord Jesus and their own prophets"
+            "The Lord Jesus and their own prophets",
+            "Stephen and James the brother of John",
+            "The Lord Jesus and John the Baptist",
+            "The Lord Jesus and the apostles"
           ]
         },
         {
@@ -4957,7 +4957,7 @@
       "questions": [
         {
           "id": "the_book_of_judges_0001",
-          "prompt": "Among whom did the children of Israel dwell?",
+          "prompt": "After the death of Joshua's generation, Israel failed to drive out all the peoples of Canaan — among whom did the children of Israel dwell?",
           "answer": "Canaanites, Hittites, Amorites, Perizzites, Hivites, Jebusites",
           "reference": "",
           "difficulty": 1,
@@ -4983,7 +4983,7 @@
         },
         {
           "id": "the_book_of_judges_0003",
-          "prompt": "How many years did they serve the king of Mesopotamia?",
+          "prompt": "After Israel fell into sin following Joshua's generation, how many years did they serve Chushanrishathaim, the king of Mesopotamia?",
           "answer": "8 years",
           "reference": "",
           "difficulty": 1,
@@ -5022,7 +5022,7 @@
         },
         {
           "id": "the_book_of_judges_0006",
-          "prompt": "How long did the land have rest before the first judge died?",
+          "prompt": "After Othniel delivered Israel as the first judge, how long did the land have rest before he died?",
           "answer": "40 years",
           "reference": "",
           "difficulty": 1,
@@ -5035,7 +5035,7 @@
         },
         {
           "id": "the_book_of_judges_0007",
-          "prompt": "Who was the king of Moab that the Israelites served?",
+          "prompt": "After Othniel died and Israel again did evil, who was the king of Moab that the Israelites were made to serve?",
           "answer": "Eglon",
           "reference": "",
           "difficulty": 1,
@@ -5048,7 +5048,7 @@
         },
         {
           "id": "the_book_of_judges_0008",
-          "prompt": "Whom did the king of Moab gather unto himself to smite the Israelites?",
+          "prompt": "In the time of Eglon and Ehud, whom did the king of Moab gather to help him smite the Israelites?",
           "answer": "The Ammonites and the Amalekites",
           "reference": "",
           "difficulty": 1,
@@ -5075,14 +5075,14 @@
         {
           "id": "the_book_of_judges_0010",
           "prompt": "Where was Eglon sitting when Ehud came to him?",
-          "answer": "A summer parlour Describe Ehud's dagger. It had 2 edges and was a cubit long",
+          "answer": "A summer parlour",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Samaria",
-            "A summer parlour Describe Ehud's dagger. It had 2 edges and was a cubit long",
-            "Nazareth",
-            "Troas"
+            "A summer parlour",
+            "His throne room",
+            "His bedchamber",
+            "His banquet hall"
           ]
         },
         {
@@ -5092,10 +5092,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Egypt",
-            "Corinth",
-            "Shiloh",
-            "Under his raiment on his right thigh"
+            "Under his raiment on his right thigh",
+            "Strapped to his left arm",
+            "Tucked in his belt",
+            "Hidden in his sandal"
           ]
         },
         {
@@ -5126,7 +5126,7 @@
         },
         {
           "id": "the_book_of_judges_0014",
-          "prompt": "How many Moabites were slain in the battle?",
+          "prompt": "In Ehud's battle to free Israel from Moab, how many Moabites were slain?",
           "answer": "About 10,000",
           "reference": "",
           "difficulty": 1,
@@ -5178,7 +5178,7 @@
         },
         {
           "id": "the_book_of_judges_0018",
-          "prompt": "What weapon did Shamgar use?",
+          "prompt": "What weapon did Shamgar use when he slew 600 Philistines?",
           "answer": "An ox goad",
           "reference": "",
           "difficulty": 1,
@@ -5223,9 +5223,9 @@
           "difficulty": 1,
           "choices": [
             "Hazor",
-            "Mount Sinai",
-            "Babylon",
-            "Corinth"
+            "Megiddo",
+            "Gezer",
+            "Lachish"
           ]
         },
         {
@@ -5248,10 +5248,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Jericho",
             "Harosheth of the Gentiles",
-            "Crete",
-            "Mount Sinai"
+            "Jabesh-gilead",
+            "The valley of Jezreel",
+            "Kedesh in Naphtali"
           ]
         },
         {
@@ -5313,15 +5313,15 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Philippi",
+            "River Kishon",
+            "The plains of Megiddo",
             "Bethel",
-            "Shiloh",
-            "River Kishon"
+            "Shiloh"
           ]
         },
         {
           "id": "the_book_of_judges_0029",
-          "prompt": "Who discomfited Sisera?",
+          "prompt": "In the battle against Sisera at the river Kishon, who discomfited Sisera and all his chariots?",
           "answer": "The Lord",
           "reference": "",
           "difficulty": 1,
@@ -5334,7 +5334,7 @@
         },
         {
           "id": "the_book_of_judges_0030",
-          "prompt": "How many of Sisera's men were left?",
+          "prompt": "After the battle at the river Kishon, how many of Sisera's men were left alive?",
           "answer": "None",
           "reference": "",
           "difficulty": 1,
@@ -5412,7 +5412,7 @@
         },
         {
           "id": "the_book_of_judges_0036",
-          "prompt": "Who subdued Jabin?",
+          "prompt": "After the defeat of Sisera, who ultimately subdued Jabin king of Canaan?",
           "answer": "God",
           "reference": "",
           "difficulty": 1,
@@ -5430,10 +5430,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Abdon",
-            "Saul",
             "The song of Deborah and Barak of praise to God",
-            "Ibzan"
+            "The song of Moses and Miriam at the Red Sea",
+            "The song of Hannah unto the Lord",
+            "The psalm of Asaph in the tabernacle"
           ]
         },
         {
@@ -5521,10 +5521,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Bethel",
             "By the winepress",
-            "Samaria",
-            "Mount Sinai"
+            "On the threshing floor",
+            "Under the oak tree in Ophrah",
+            "In the field near the city gate"
           ]
         },
         {
@@ -5535,9 +5535,9 @@
           "difficulty": 1,
           "choices": [
             "A mighty man of valour",
-            "Ibzan",
-            "Jair",
-            "Deborah"
+            "A servant chosen of God",
+            "A prince among his brethren",
+            "A man after God's own heart"
           ]
         },
         {
@@ -5560,10 +5560,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Elon",
             "His family was poor in Manasseh and he was the least in his father's house",
-            "Shamgar",
-            "Jephthah"
+            "His tribe was Ephraim and he was the firstborn of his father",
+            "His family was great in Gilead and he was the eldest among his brothers",
+            "He was of the tribe of Judah and came from a house of warriors"
           ]
         },
         {
@@ -5625,10 +5625,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Bethlehem",
-            "Samaria",
-            "Corinth",
-            "By the well of Harod"
+            "By the well of Harod",
+            "By the spring of Jezreel",
+            "At the foot of Mount Gilboa",
+            "Near the valley of Esdraelon"
           ]
         },
         {
@@ -5958,7 +5958,7 @@
         },
         {
           "id": "the_book_of_judges_0078",
-          "prompt": "What did Zebul say Gaal saw when he was looking at the mountains?",
+          "prompt": "When Gaal was challenging Abimelech's rule at Shechem, what did Zebul say Gaal was really seeing when Gaal claimed he saw men coming down from the mountains?",
           "answer": "The shadow of the mountains as if they were men",
           "reference": "",
           "difficulty": 1,
@@ -5990,9 +5990,9 @@
           "difficulty": 1,
           "choices": [
             "Salt",
-            "Ephesus",
-            "Nazareth",
-            "Corinth"
+            "Ashes",
+            "Burning coals",
+            "Thorns and briars"
           ]
         },
         {
@@ -6015,10 +6015,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Athens",
             "On the hold/tower where the men of Shechem were hiding",
-            "Nineveh",
-            "Bethel"
+            "Around the base of the city wall to set it afire",
+            "Against the city gates to break them down",
+            "In the field outside the city and burned them there"
           ]
         },
         {
@@ -6159,9 +6159,9 @@
           "difficulty": 1,
           "choices": [
             "The land of Tob",
-            "Colossae",
-            "Corinth",
-            "Hebron"
+            "The land of Gilead",
+            "The land of Midian",
+            "The cities of Manasseh"
           ]
         },
         {
@@ -6225,7 +6225,7 @@
           "choices": [
             "The children of Israel",
             "The children of Ammon",
-            "Neither side \u2014 they made peace",
+            "Neither side — they made peace",
             "The Midianites who intervened"
           ]
         },
@@ -6250,9 +6250,9 @@
           "difficulty": 1,
           "choices": [
             "Yes",
-            "No \u2014 he substituted a burnt offering of animals",
-            "No \u2014 he dedicated her to temple service instead",
-            "No \u2014 the elders released him from the vow"
+            "No — he substituted a burnt offering of animals",
+            "No — he dedicated her to temple service instead",
+            "No — the elders released him from the vow"
           ]
         },
         {
@@ -6421,7 +6421,7 @@
             "A swarm of bees and honey",
             "The bones were clean and dry",
             "A nest of birds",
-            "Nothing \u2014 it was empty"
+            "Nothing — it was empty"
           ]
         },
         {
@@ -6548,10 +6548,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Crete",
-            "Nineveh",
             "The top of the hill that is before Hebron",
-            "Troas"
+            "In the valley of Sorek near Delilah's house",
+            "At the gates of Gaza before the Philistines",
+            "On the rock of Etam"
           ]
         },
         {
@@ -6782,15 +6782,15 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Mount Sinai",
             "Dan",
-            "Corinth",
-            "Jericho"
+            "Laish",
+            "Mahaneh-dan",
+            "Zorah"
           ]
         },
         {
           "id": "the_book_of_judges_0142",
-          "prompt": "What was special about the 700 chosen men?",
+          "prompt": "In the civil war against the tribe of Benjamin, what was special about the 700 chosen men of Benjamin?",
           "answer": "They were lefthanded, and they could sling stones at an hair breadth",
           "reference": "",
           "difficulty": 1,
@@ -6803,7 +6803,7 @@
         },
         {
           "id": "the_book_of_judges_0143",
-          "prompt": "Out of the 400,000 men of Israel, beside Benjamin, how many were men of war?",
+          "prompt": "In the civil war against Benjamin, out of the 400,000 men of Israel gathered besides Benjamin, how many were men of war?",
           "answer": "All",
           "reference": "",
           "difficulty": 1,
@@ -6816,7 +6816,7 @@
         },
         {
           "id": "the_book_of_judges_0144",
-          "prompt": "What did the Lord say when the children of Israel asked if they should fight against their brother Benjamin?",
+          "prompt": "In the civil war against Benjamin, what did the Lord say when the children of Israel asked whether they should fight against their brother Benjamin?",
           "answer": "Go up against him",
           "reference": "",
           "difficulty": 1,
@@ -6829,7 +6829,7 @@
         },
         {
           "id": "the_book_of_judges_0145",
-          "prompt": "After the third day what did the children of Israel do in the house of God?",
+          "prompt": "In the civil war against Benjamin, after the third day what did the children of Israel do in the house of God before going up again?",
           "answer": "Wept, sat before the Lord, fasted, and offered burnt offerings and peace offerings",
           "reference": "",
           "difficulty": 1,
@@ -6842,7 +6842,7 @@
         },
         {
           "id": "the_book_of_judges_0146",
-          "prompt": "Why did the children of Israel flee?",
+          "prompt": "During the battle strategy against Gibeah, why did the children of Israel deliberately flee from the Benjaminites?",
           "answer": "To draw the children of Benjamin from the city unto the highways",
           "reference": "",
           "difficulty": 1,
@@ -6855,20 +6855,20 @@
         },
         {
           "id": "the_book_of_judges_0147",
-          "prompt": "What was the sign that the children of Israel used to show they had taken the city?",
+          "prompt": "During the battle against Gibeah of Benjamin, what signal did the children of Israel agree to use to show they had taken the city?",
           "answer": "They were to make a great flame with smoke rise up out of the city",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Colossae",
             "They were to make a great flame with smoke rise up out of the city",
-            "Galilee",
-            "Troas"
+            "They were to shout three times from the walls",
+            "They were to blow their trumpets at the city gate",
+            "They were to hang a scarlet cloth from the tower"
           ]
         },
         {
           "id": "the_book_of_judges_0148",
-          "prompt": "What was the children of Benjamin's reaction when they saw the smoke?",
+          "prompt": "During the battle against Gibeah of Benjamin, what was the Benjaminites' reaction when they saw the smoke rising from the city?",
           "answer": "They were amazed",
           "reference": "",
           "difficulty": 1,
@@ -6944,10 +6944,10 @@
           "reference": "1Kings 2:10",
           "difficulty": 1,
           "choices": [
-            "Damascus",
-            "Samaria",
-            "Ephesus",
-            "The city of David"
+            "The city of David",
+            "Hebron",
+            "Bethlehem",
+            "Jerusalem"
           ]
         },
         {
@@ -7009,10 +7009,10 @@
           "reference": "1Kings 2:19",
           "difficulty": 1,
           "choices": [
-            "Jerusalem",
-            "Galilee",
             "On his right hand",
-            "Damascus"
+            "On his left hand",
+            "At the foot of his throne",
+            "Behind the king's seat"
           ]
         },
         {
@@ -7023,9 +7023,9 @@
           "difficulty": 1,
           "choices": [
             "The Lord",
-            "Herod Agrippa",
-            "Josiah",
-            "Artaxerxes"
+            "Pharaoh's daughter",
+            "Wisdom above all things",
+            "The many foreign women he married"
           ]
         },
         {
@@ -7035,10 +7035,10 @@
           "reference": "1Kings 3:7",
           "difficulty": 1,
           "choices": [
-            "Jehu",
-            "Herod",
             "Child",
-            "Rehoboam"
+            "Servant",
+            "Man",
+            "King"
           ]
         },
         {
@@ -7049,9 +7049,9 @@
           "difficulty": 1,
           "choices": [
             "An understanding heart to judge",
-            "Micaiah",
-            "Josiah",
-            "Zedekiah"
+            "Riches and long life",
+            "The death of his enemies",
+            "Strength to build the temple"
           ]
         },
         {
@@ -7062,9 +7062,9 @@
           "difficulty": 1,
           "choices": [
             "Riches and honor",
-            "Hazael",
-            "Hezekiah",
-            "Elijah"
+            "Long life and peace",
+            "Power over all nations",
+            "Many servants and horses"
           ]
         },
         {
@@ -7074,10 +7074,10 @@
           "reference": "1Kings 3:25",
           "difficulty": 1,
           "choices": [
-            "Zedekiah",
-            "Naaman",
             "He told them to divide it in two and give each mother a half",
-            "Jeroboam"
+            "He had them each swear before the altar of God",
+            "He asked the elders of Israel to decide",
+            "He asked God for a sign to reveal the true mother"
           ]
         },
         {
@@ -7087,10 +7087,10 @@
           "reference": "1Kings 3:28",
           "difficulty": 1,
           "choices": [
-            "Hezekiah",
             "They saw that the wisdom of God was in him to do judgment",
-            "Solomon",
-            "Herod"
+            "Because he was a mighty man of war",
+            "Because he was the firstborn of David the king",
+            "Because he had great wealth and many chariots"
           ]
         },
         {
@@ -7127,9 +7127,9 @@
           "difficulty": 1,
           "choices": [
             "A house unto the name of the Lord",
-            "Herod Agrippa",
-            "Darius",
-            "Nebuchadnezzar"
+            "A house of cedars for himself",
+            "A great altar for burnt offerings",
+            "A city fortress for all Israel"
           ]
         },
         {
@@ -7139,10 +7139,10 @@
           "reference": "1Kings 5:7",
           "difficulty": 1,
           "choices": [
-            "Ben-hadad",
-            "Darius",
             "Rejoiced greatly",
-            "Solomon"
+            "Sent envoys back to inquire further",
+            "Offered sacrifices to his gods in thanks",
+            "Wrote a proclamation to all his people"
           ]
         },
         {
@@ -7152,10 +7152,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Herod Agrippa",
-            "Artaxerxes",
             "Hammer, axe, or any tool of iron",
-            "Hazael"
+            "Shouting or raising of voices",
+            "Music or singing from the workmen",
+            "The sound of wood being cut or shaped"
           ]
         },
         {
@@ -7165,10 +7165,10 @@
           "reference": "1Kings 6:18",
           "difficulty": 1,
           "choices": [
-            "Jeroboam",
-            "Ben-hadad",
-            "Pharaoh",
-            "Knops and open flowers"
+            "Knops and open flowers",
+            "Palms and chains",
+            "Cherubims and lions",
+            "Stars and pomegranates"
           ]
         },
         {
@@ -7205,9 +7205,9 @@
           "difficulty": 1,
           "choices": [
             "In the oracle of the house, to the most holy place, under the wings of",
-            "Hebron",
-            "Nineveh",
-            "Damascus"
+            "Before the great bronze altar in the outer court",
+            "In the chamber of the priests at the south side",
+            "Before the veil at the door of the sanctuary"
           ]
         },
         {
@@ -7217,10 +7217,10 @@
           "reference": "1Kings 8:9",
           "difficulty": 1,
           "choices": [
-            "Ahab",
             "The two tables of stone which Moses put there at Horeb",
-            "Hezekiah",
-            "Darius"
+            "The rod of Aaron and a pot of manna",
+            "The book of the law written by Moses",
+            "The golden censer and the incense of the priests"
           ]
         },
         {
@@ -7230,10 +7230,10 @@
           "reference": "1Kings 8:10-11",
           "difficulty": 1,
           "choices": [
-            "Jehu",
-            "Hazael",
             "The glory of the Lord",
-            "Solomon"
+            "A great cloud of incense",
+            "A pillar of fire and smoke",
+            "Angelic singing and rejoicing"
           ]
         },
         {
@@ -7243,10 +7243,10 @@
           "reference": "1Kings 9:3",
           "difficulty": 1,
           "choices": [
-            "Jehu",
             "His eyes and His heart",
-            "Zedekiah",
-            "Solomon"
+            "His glory and His name",
+            "His mercy and His judgment",
+            "His throne and His covenant"
           ]
         },
         {
@@ -7257,9 +7257,9 @@
           "difficulty": 1,
           "choices": [
             "20 cities in the land of Galilee",
-            "Elisha",
-            "Hazael",
-            "Saul"
+            "Fifty talents of gold",
+            "Cedar timber for the palace",
+            "Ships for the navy of Tharshish"
           ]
         },
         {
@@ -7269,10 +7269,10 @@
           "reference": "1Kings 10:1",
           "difficulty": 1,
           "choices": [
-            "Jehu",
             "To prove him with hard questions",
-            "Rehoboam",
-            "Pharaoh"
+            "To bring him gifts from the king of Egypt",
+            "To make a trade covenant with Israel",
+            "To seek wisdom for her own people"
           ]
         },
         {
@@ -7282,10 +7282,10 @@
           "reference": "1Kings 10:19-20",
           "difficulty": 1,
           "choices": [
-            "Jehu",
-            "Ahab",
-            "Nebuchadnezzar",
-            "Lions"
+            "Lions",
+            "Eagles",
+            "Oxen",
+            "Cherubims"
           ]
         },
         {
@@ -7308,10 +7308,10 @@
           "reference": "1Kings 11:9",
           "difficulty": 1,
           "choices": [
-            "Hazael",
-            "Hezekiah",
             "Because his heart was turned from the Lord God of Israel",
-            "Rehoboam"
+            "Because he made Jeroboam ruler over Israel",
+            "Because he took the daughter of Pharaoh to wife",
+            "Because he built the high places for his foreign wives"
           ]
         },
         {
@@ -7412,10 +7412,10 @@
           "reference": "1Kings 12:28",
           "difficulty": 1,
           "choices": [
-            "Ahab",
             "Two calves of gold",
-            "Nebuchadnezzar",
-            "Rehoboam"
+            "A graven image of Baal",
+            "High places on every hill",
+            "Altars of incense in every city"
           ]
         },
         {
@@ -7505,7 +7505,7 @@
           "choices": [
             "Right",
             "Evil",
-            "Neither \u2014 his heart was divided",
+            "Neither — his heart was divided",
             "Right in some things but not all"
           ]
         },
@@ -7607,10 +7607,10 @@
           "reference": "1Kings 17:3",
           "difficulty": 1,
           "choices": [
-            "Troas",
-            "Nineveh",
             "The brook Cherith",
-            "Athens"
+            "The cave of Horeb",
+            "The house of the widow at Zarephath",
+            "The wilderness of Beersheba"
           ]
         },
         {
@@ -7673,9 +7673,9 @@
           "difficulty": 1,
           "choices": [
             "In a cave",
-            "Jordan River",
-            "Nazareth",
-            "Shiloh"
+            "In a dry riverbed",
+            "In a deep valley",
+            "Under the city walls"
           ]
         },
         {
@@ -7685,10 +7685,10 @@
           "reference": "1Kings 18:19",
           "difficulty": 1,
           "choices": [
-            "Shiloh",
-            "Jericho",
             "Mount Carmel",
-            "Troas"
+            "Mount Horeb",
+            "The plain of Jezreel",
+            "Mount Hermon"
           ]
         },
         {
@@ -7750,10 +7750,10 @@
           "reference": "1Kings 19:5",
           "difficulty": 1,
           "choices": [
-            "Bethel",
-            "Troas",
-            "Egypt",
-            "Under a juniper tree"
+            "Under a juniper tree",
+            "In a cave on Mount Horeb",
+            "By the brook Cherith",
+            "Beside a spring of water"
           ]
         },
         {
@@ -7855,9 +7855,9 @@
           "difficulty": 1,
           "choices": [
             "Work wickedness in the sight of the Lord",
-            "Jehu",
-            "Darius",
-            "Josiah"
+            "Build the high places for Baal",
+            "Take the vineyard of Naboth by force",
+            "Turn Israel away from the commandments of God"
           ]
         },
         {
@@ -7909,7 +7909,7 @@
             "Right",
             "Evil",
             "Both right and evil in different periods",
-            "Neither \u2014 he was like his father Asa"
+            "Neither — he was like his father Asa"
           ]
         }
       ]
@@ -8004,7 +8004,7 @@
           "difficulty": 1,
           "choices": [
             "Yes",
-            "No \u2014 the waters did not part",
+            "No — the waters did not part",
             "They parted only briefly then closed",
             "They divided and turned to blood"
           ]
@@ -8725,7 +8725,26 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0063",
+          "id": "the_book_of_2_kings_0097",
+          "prompt": "What hath he poured out unto death?",
+          "answer": "his soul (Isaiah 53:12",
+          "reference": "",
+          "difficulty": 1,
+          "choices": [
+            "his soul (Isaiah 53:12",
+            "his blood",
+            "his spirit",
+            "his strength"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the_book_of_isaiah_53",
+      "title": "The Book of Isaiah 53",
+      "questions": [
+        {
+          "id": "the_book_of_isaiah_53_0063",
           "prompt": "Fill in the blanks: \"Who hath believed our ____?",
           "answer": "and to whom is the ____ of the Lord _____?\" report; arm; revealed",
           "reference": "Isaiah 53:1",
@@ -8738,7 +8757,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0064",
+          "id": "the_book_of_isaiah_53_0064",
           "prompt": "What will he grow up before him as?",
           "answer": "A tender plant and as a root out of a dry ground",
           "reference": "Isaiah 53:2",
@@ -8751,7 +8770,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0065",
+          "id": "the_book_of_isaiah_53_0065",
           "prompt": "What three things does he not have?",
           "answer": "form, comliness, or beauty",
           "reference": "Isaiah 53:2",
@@ -8764,7 +8783,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0066",
+          "id": "the_book_of_isaiah_53_0066",
           "prompt": "Who despised and rejected him?",
           "answer": "men",
           "reference": "Isaiah 53:3",
@@ -8777,7 +8796,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0067",
+          "id": "the_book_of_isaiah_53_0067",
           "prompt": "What is he acquainted with?",
           "answer": "grief",
           "reference": "Isaiah 53:3",
@@ -8790,7 +8809,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0068",
+          "id": "the_book_of_isaiah_53_0068",
           "prompt": "What did we hide from him?",
           "answer": "our faces",
           "reference": "Isaiah 53:3",
@@ -8803,7 +8822,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0069",
+          "id": "the_book_of_isaiah_53_0069",
           "prompt": "When he was despised what did we do?",
           "answer": "esteemed him not",
           "reference": "Isaiah 53:3",
@@ -8816,7 +8835,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0070",
+          "id": "the_book_of_isaiah_53_0070",
           "prompt": "What hath he borne?",
           "answer": "our griefs",
           "reference": "Isaiah 53:4",
@@ -8829,7 +8848,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0071",
+          "id": "the_book_of_isaiah_53_0071",
           "prompt": "What hath he carried?",
           "answer": "our sorrows",
           "reference": "Isaiah 53:4",
@@ -8842,7 +8861,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0072",
+          "id": "the_book_of_isaiah_53_0072",
           "prompt": "How did we esteem him?",
           "answer": "stricken, smitten of God and afflicted",
           "reference": "Isaiah 53:4",
@@ -8855,7 +8874,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0073",
+          "id": "the_book_of_isaiah_53_0073",
           "prompt": "Why was he wounded?",
           "answer": "for our transgressions",
           "reference": "Isaiah 53:5",
@@ -8868,7 +8887,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0074",
+          "id": "the_book_of_isaiah_53_0074",
           "prompt": "Why was he bruised?",
           "answer": "for our iniquities",
           "reference": "Isaiah 53:5",
@@ -8881,7 +8900,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0075",
+          "id": "the_book_of_isaiah_53_0075",
           "prompt": "What was upon him?",
           "answer": "the chastisement of our peace",
           "reference": "Isaiah 53:5",
@@ -8894,7 +8913,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0076",
+          "id": "the_book_of_isaiah_53_0076",
           "prompt": "With what are we healed?",
           "answer": "his stripes",
           "reference": "Isaiah 53:5",
@@ -8907,7 +8926,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0077",
+          "id": "the_book_of_isaiah_53_0077",
           "prompt": "What two things have we done like sheep?",
           "answer": "gone astray and turned every one to his own way",
           "reference": "Isaiah 53:6",
@@ -8920,7 +8939,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0078",
+          "id": "the_book_of_isaiah_53_0078",
           "prompt": "What hath the Lord laid on him?",
           "answer": "the iniquity of us all",
           "reference": "Isaiah 53:6",
@@ -8933,7 +8952,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0079",
+          "id": "the_book_of_isaiah_53_0079",
           "prompt": "When he was oppressed and afflicted what did he not do?",
           "answer": "open his mouth",
           "reference": "Isaiah 53:7",
@@ -8946,7 +8965,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0080",
+          "id": "the_book_of_isaiah_53_0080",
           "prompt": "What is he brought as?",
           "answer": "a lamb to the slaughter",
           "reference": "Isaiah 53:7",
@@ -8959,7 +8978,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0081",
+          "id": "the_book_of_isaiah_53_0081",
           "prompt": "What is a sheep before her shearers?",
           "answer": "dumb",
           "reference": "Isaiah 53:7",
@@ -8972,7 +8991,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0082",
+          "id": "the_book_of_isaiah_53_0082",
           "prompt": "Where was he taken from?",
           "answer": "prison and judgment",
           "reference": "Isaiah 53:8",
@@ -8985,7 +9004,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0083",
+          "id": "the_book_of_isaiah_53_0083",
           "prompt": "Fill in the blank: \"and who shall declare his ____?",
           "answer": "generation",
           "reference": "Isaiah 53:8",
@@ -8998,7 +9017,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0084",
+          "id": "the_book_of_isaiah_53_0084",
           "prompt": "From where was he cut off?",
           "answer": "the land of the living",
           "reference": "Isaiah 53:8",
@@ -9011,7 +9030,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0085",
+          "id": "the_book_of_isaiah_53_0085",
           "prompt": "Why was he stricken?",
           "answer": "for the transgression of my people",
           "reference": "Isaiah 53:8",
@@ -9024,7 +9043,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0086",
+          "id": "the_book_of_isaiah_53_0086",
           "prompt": "Where did he make his grave?",
           "answer": "with the wicked and with the rich",
           "reference": "Isaiah 53:9",
@@ -9037,7 +9056,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0087",
+          "id": "the_book_of_isaiah_53_0087",
           "prompt": "What had he not done?",
           "answer": "violence",
           "reference": "Isaiah 53:9",
@@ -9050,7 +9069,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0088",
+          "id": "the_book_of_isaiah_53_0088",
           "prompt": "There was no deceit where?",
           "answer": "in his mouth",
           "reference": "Isaiah 53:9",
@@ -9063,7 +9082,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0089",
+          "id": "the_book_of_isaiah_53_0089",
           "prompt": "What did it please the Lord to do to him?",
           "answer": "to bruise him",
           "reference": "Isaiah 53:10",
@@ -9076,7 +9095,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0090",
+          "id": "the_book_of_isaiah_53_0090",
           "prompt": "When his soul is made an offering for sin, what is the first thing that will happen?",
           "answer": "he shall see his seed",
           "reference": "Isaiah 53:10",
@@ -9089,7 +9108,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0091",
+          "id": "the_book_of_isaiah_53_0091",
           "prompt": "When his soul is made an offering for sin, what is the second thing that will happen?",
           "answer": "He shall prolong his days",
           "reference": "Isaiah 53:10",
@@ -9102,7 +9121,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0092",
+          "id": "the_book_of_isaiah_53_0092",
           "prompt": "When his soul is made an offering for sin, what is the third thing that will happen?",
           "answer": "the pleasure of the Lord shall prosper in his hand",
           "reference": "Isaiah 53:10",
@@ -9115,7 +9134,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0093",
+          "id": "the_book_of_isaiah_53_0093",
           "prompt": "When shall he be satisfied?",
           "answer": "when he sees the travail of his soul",
           "reference": "Isaiah 53:11",
@@ -9128,7 +9147,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0094",
+          "id": "the_book_of_isaiah_53_0094",
           "prompt": "He shall bear what?",
           "answer": "their iniquities",
           "reference": "Isaiah 53:11",
@@ -9141,7 +9160,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0095",
+          "id": "the_book_of_isaiah_53_0095",
           "prompt": "What will he divide him?",
           "answer": "a portion with the great",
           "reference": "Isaiah 53:12",
@@ -9154,7 +9173,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0096",
+          "id": "the_book_of_isaiah_53_0096",
           "prompt": "Who will he divide the spoil with?",
           "answer": "the strong",
           "reference": "Isaiah 53:12",
@@ -9167,20 +9186,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0097",
-          "prompt": "What hath he poured out unto death?",
-          "answer": "his soul (Isaiah 53:12",
-          "reference": "",
-          "difficulty": 1,
-          "choices": [
-            "his soul (Isaiah 53:12",
-            "his blood",
-            "his life",
-            "his strength"
-          ]
-        },
-        {
-          "id": "the_book_of_2_kings_0098",
+          "id": "the_book_of_isaiah_53_0098",
           "prompt": "Who was he numbered with?",
           "answer": "the transgressors",
           "reference": "Isaiah 53:12",
@@ -9193,7 +9199,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0099",
+          "id": "the_book_of_isaiah_53_0099",
           "prompt": "He bore what of many?",
           "answer": "the sin",
           "reference": "Isaiah 53:12",
@@ -9206,7 +9212,7 @@
           ]
         },
         {
-          "id": "the_book_of_2_kings_0100",
+          "id": "the_book_of_isaiah_53_0100",
           "prompt": "What did he make for the transgressors?",
           "answer": "Intercession",
           "reference": "Isaiah 53:12",
@@ -9387,10 +9393,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Athens",
             "In the house of his gods",
-            "Caesarea",
-            "Shiloh"
+            "In the palace treasury at Babylon",
+            "In the royal storehouse of Susa",
+            "In the temple of Marduk"
           ]
         },
         {
@@ -10064,9 +10070,9 @@
           "difficulty": 1,
           "choices": [
             "The book of the records of the ancestors",
-            "Crete",
-            "Jerusalem",
-            "Mount Sinai"
+            "The royal treasury at Susa",
+            "The archives of Babylon",
+            "The house of the scribes"
           ]
         },
         {
@@ -10090,9 +10096,9 @@
           "difficulty": 1,
           "choices": [
             "Hurt and caused rebellion",
-            "Bethel",
-            "Jordan River",
-            "Jerusalem"
+            "Paid tribute faithfully to all kings",
+            "Built walls of peace and goodwill",
+            "Submitted willingly to royal authority"
           ]
         },
         {
@@ -10115,10 +10121,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Nineveh",
-            "Crete",
             "The king would have no more possession beyond the river",
-            "Bethlehem"
+            "The people would rebel throughout the whole kingdom",
+            "No more tribute would be paid to the king",
+            "The wall would be used as a fortress against Persia"
           ]
         },
         {
@@ -10180,10 +10186,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Hebron",
-            "Bethlehem",
-            "Troas",
-            "That the work should stop"
+            "That the work should stop",
+            "That only the temple should be built",
+            "That royal inspectors be sent first",
+            "That a new decree be written and sent to Judah"
           ]
         },
         {
@@ -10479,10 +10485,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Crete",
             "In Judah",
-            "Egypt",
-            "Mount Sinai"
+            "In Samaria",
+            "In the province beyond the river",
+            "In the land of Benjamin"
           ]
         },
         {
@@ -10622,10 +10628,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Athens",
-            "Shiloh",
             "From the temple in Jerusalem",
-            "Rome"
+            "From the treasury of the king of Judah",
+            "From the house of God in Bethel",
+            "From the high places throughout Israel"
           ]
         },
         {
@@ -10700,10 +10706,10 @@
           "reference": "records",
           "difficulty": 1,
           "choices": [
-            "Corinth",
-            "Shiloh",
-            "Nazareth",
-            "In the house of the rolls"
+            "In the house of the rolls",
+            "In the royal treasury at Susa",
+            "In the archives at Persepolis",
+            "In the palace records of Babylon"
           ]
         },
         {
@@ -10713,10 +10719,10 @@
           "reference": "Ecbatana",
           "difficulty": 1,
           "choices": [
-            "Colossae",
-            "Athens",
-            "Crete",
-            "Achmetha"
+            "Achmetha",
+            "Susa",
+            "Babylon",
+            "Persepolis"
           ]
         },
         {
@@ -10739,10 +10745,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Samaria",
-            "Rome",
-            "Corinth",
-            "In Jerusalem"
+            "In Jerusalem",
+            "In Samaria",
+            "In Bethel",
+            "In the province beyond the river"
           ]
         },
         {
@@ -11467,10 +11473,10 @@
           "reference": "the temple",
           "difficulty": 1,
           "choices": [
-            "Colossae",
             "In His holy place",
-            "Bethel",
-            "Caesarea"
+            "In the land of promise",
+            "In the tents of their fathers",
+            "Among the remnant of the nations"
           ]
         },
         {
@@ -11502,14 +11508,14 @@
         {
           "id": "the_book_of_ezra_0176",
           "prompt": "Did Ezra say they deserved God's kindness?",
-          "answer": "No \u2014 he said they were unworthy",
+          "answer": "No — he said they were unworthy",
           "reference": "",
           "difficulty": 1,
           "choices": [
             "Mordecai",
             "Zerubbabel",
             "Nehemiah",
-            "No \u2014 he said they were unworthy"
+            "No — he said they were unworthy"
           ]
         },
         {
@@ -11649,10 +11655,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Caesarea",
-            "Thessalonica",
             "The chamber of Johanan the son of Eliashib",
-            "Nazareth"
+            "The court of the house of God",
+            "The room of the priests near the altar",
+            "The gate of the temple at the east side"
           ]
         },
         {
@@ -11689,9 +11695,9 @@
           "difficulty": 1,
           "choices": [
             "Jerusalem",
-            "Nazareth",
+            "Bethel",
             "Hebron",
-            "Antioch"
+            "Jericho"
           ]
         },
         {
@@ -11740,10 +11746,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Antioch",
-            "Bethlehem",
             "In the open place before the house of God",
-            "Babylon"
+            "At the water gate of the city",
+            "In the street before the temple",
+            "In the court of the priests"
           ]
         },
         {
@@ -11789,7 +11795,7 @@
     },
     {
       "id": "pauls_journeys",
-      "title": "Paul\u2019s Journeys",
+      "title": "Paul’s Journeys",
       "questions": [
         {
           "id": "pauls_journeys_0001",
@@ -11824,10 +11830,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Nineveh",
-            "Jerusalem",
             "Seleucia",
-            "Galilee"
+            "Salamis",
+            "Paphos",
+            "Antioch in Pisidia"
           ]
         },
         {
@@ -12136,10 +12142,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Bethlehem",
             "Lystra and Derbe",
-            "Nineveh",
-            "Troas"
+            "Iconium and Antioch",
+            "Troas and Philippi",
+            "Thessalonica and Berea"
           ]
         },
         {

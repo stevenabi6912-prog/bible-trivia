@@ -62,6 +62,9 @@ if (mode === 'daily') {
   }
 }
 
+// Start music as soon as the play page loads (user already gave a gesture on the start screen)
+unlockAudio().then(() => startMusic()).catch(() => {});
+
 let round = [];
 try {
   if (mode === 'daily') {

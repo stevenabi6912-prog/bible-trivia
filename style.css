@@ -619,6 +619,14 @@ input, select{ font-size: 1.05rem; }
   margin-top:10px;
 }
 
+/* Pill groups: space pills apart */
+.kv{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
 /* Make brand title readable everywhere (keep fun, but legible) */
 .brandText{
   font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;

@@ -10,7 +10,6 @@ initAudioUI();
 
 const modeDaily = document.getElementById('modeDaily');
 const modePractice = document.getElementById('modePractice');
-const agreeDaily = document.getElementById('agreeDaily');
 const dailyDisclaimer = document.getElementById('dailyDisclaimer');
 const categoryWrap = document.getElementById('categoryWrap');
 const catHelp = document.getElementById('catHelp');
@@ -28,7 +27,7 @@ function setMode(next) {
   modeDaily.setAttribute('aria-checked', String(daily));
   modePractice.setAttribute('aria-checked', String(!daily));
 
-  dailyDisclaimer.style.display = daily ? 'block' : 'none';catHelp.textContent = daily
+  if (dailyDisclaimer) dailyDisclaimer.style.display = daily ? 'block' : 'none';catHelp.textContent = daily
     ? 'Daily Challenge uses the same 10 questions for everyone today (from ANY category).'
     : 'Practice lets you pick a category to train up.';
 
@@ -94,11 +93,6 @@ startBtn.addEventListener('click', async () => {
   const seasonId = seasonIdFor(now);
 
   if (mode === 'daily') {
-    if (!agreeDaily.checked) {
-      alert('Before you start: Daily Challenge is ONE attempt per day. Check the box to confirm.');
-      return;
-    }
-
     // Enforce 1 daily attempt per player name per day (best-effort, without login)
     const playerKey = normalizePlayerKey(name);
     const dailyKey = `${dayId}_${playerKey}`; // single-field lookup (no composite index needed)
