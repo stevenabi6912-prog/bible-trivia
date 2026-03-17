@@ -24,16 +24,32 @@
     </header>
 
     <main class="card">
+
+      <!-- ── Winner Banners ───────────────────────────────────── -->
+      <div class="winnerBanners">
+        <div class="winnerBanner winnerBanner--kids">
+          <div class="winnerBannerIcon">🎁</div>
+          <div class="winnerBannerBody">
+            <div class="winnerBannerLabel">Weekly Kids Prize Leader (12 &amp; under)</div>
+            <div class="winnerBannerName" id="kidsWeeklyWinner">—</div>
+            <div class="winnerBannerRange" id="kidsWeeklyRange"></div>
+          </div>
+        </div>
+        <div class="winnerBanner winnerBanner--adults">
+          <div class="winnerBannerIcon">🏆</div>
+          <div class="winnerBannerBody">
+            <div class="winnerBannerLabel">Last Week's Top Adult</div>
+            <div class="winnerBannerName" id="adultsLastWinner">—</div>
+            <div class="winnerBannerRange" id="adultsLastRange"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Controls ────────────────────────────────────────── -->
       <div class="lbControls">
         <div>
           <label>Challenge</label>
           <div class="pill">All Categories</div>
-        </div>
-
-        <div>
-          <label>Last Week Winner</label>
-          <div class="pill" id="lastWeekWinner">—</div>
-          <div class="helper" id="lastWeekRange"></div>
         </div>
 
         <div>
@@ -55,9 +71,19 @@
         </div>
       </div>
 
+      <!-- ── Age Group Tabs ──────────────────────────────────── -->
+      <div class="lbTabs" role="tablist" aria-label="Age group">
+        <button class="lbTab selected" id="tabAll" role="tab" aria-selected="true"
+                aria-controls="lbPanel">🌐 All Players</button>
+        <button class="lbTab" id="tabKids" role="tab" aria-selected="false"
+                aria-controls="lbPanel">👦 Kids (12 &amp; under)</button>
+        <button class="lbTab" id="tabAdults" role="tab" aria-selected="false"
+                aria-controls="lbPanel">👨 Adults (13+)</button>
+      </div>
+
       <div class="statusText" id="status"></div>
 
-      <div class="tableWrap">
+      <div class="tableWrap" id="lbPanel" role="tabpanel">
         <table class="table">
           <thead>
             <tr>

@@ -3,15 +3,27 @@ import { subscribeLeaderboard } from './scores.js';
 
 initAudioUI();
 
-const viewEl = document.getElementById('view');
-const limitEl = document.getElementById('limit');
-const rowsEl = document.getElementById('rows');
-const statusEl = document.getElementById('status');
-const labelEl = document.getElementById('seasonLabel');
+const viewEl    = document.getElementById('view');
+const limitEl   = document.getElementById('limit');
+const rowsEl    = document.getElementById('rows');
+const statusEl  = document.getElementById('status');
+const labelEl   = document.getElementById('seasonLabel');
 
-const lastWeekWinnerEl = document.getElementById('lastWeekWinner');
-const lastWeekRangeEl = document.getElementById('lastWeekRange');
+// Winner banners
+const kidsWeeklyWinnerEl = document.getElementById('kidsWeeklyWinner');
+const kidsWeeklyRangeEl  = document.getElementById('kidsWeeklyRange');
+const adultsLastWinnerEl = document.getElementById('adultsLastWinner');
+const adultsLastRangeEl  = document.getElementById('adultsLastRange');
 
+// Age group tabs
+const tabAll    = document.getElementById('tabAll');
+const tabKids   = document.getElementById('tabKids');
+const tabAdults = document.getElementById('tabAdults');
+
+let activeTab = 'all'; // 'all' | 'kid' | 'adult'
+let rawDaily  = [];
+
+// ── Date helpers ──────────────────────────────────────────────
 function pad2(n) { return String(n).padStart(2, '0'); }
 
 function dayIdFor(d) {
@@ -21,29 +33,21 @@ function dayIdFor(d) {
 function parseDayId(dayId) {
   const m = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/.exec(String(dayId || ''));
   if (!m) return null;
-  const y = Number(m[1]), mo = Number(m[2]) - 1, da = Number(m[3]);
-  const d = new Date(y, mo, da);
+  const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
   return isNaN(d.getTime()) ? null : d;
 }
 
-// Sunday 12:00 AM local time
 function weekStartSunday(d) {
   const x = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-  const dow = x.getDay(); // Sunday=0
-  x.setDate(x.getDate() - dow);
+  x.setDate(x.getDate() - x.getDay());
   x.setHours(0, 0, 0, 0);
   return x;
 }
 
 function scoreLocalDate(s) {
-  // Prefer dayId (stable and doesn't depend on Timestamp precision)
-  if (s?.dayId) {
-    const d = parseDayId(s.dayId);
-    if (d) return d;
-  }
-  // Fall back to createdAt Timestamp/date/millis
+  if (s?.dayId) { const d = parseDayId(s.dayId); if (d) return d; }
   const v = s?.createdAt || s?.date;
-  if (v?.toDate && typeof v.toDate === 'function') return v.toDate();
+  if (v?.toDate) return v.toDate();
   const d = (v instanceof Date) ? v : new Date(v);
   return isNaN(d.getTime()) ? null : d;
 }
@@ -55,26 +59,30 @@ function fmtDate(val) {
   return isNaN(d.getTime()) ? '' : d.toLocaleDateString();
 }
 
-function sortScores(scores) {
-  scores.sort((a, b) => {
-    const sa = Number(a.score) || 0;
-    const sb = Number(b.score) || 0;
-    if (sb !== sa) return sb - sa;
-
-    const ca = Number(a.correct) || 0;
-    const cb = Number(b.correct) || 0;
-    if (cb !== ca) return cb - ca;
-
-    const ma = Number(a.ms) || Number(a.time) || 0;
-    const mb = Number(b.ms) || Number(b.time) || 0;
-    return ma - mb;
+// ── Sorting ───────────────────────────────────────────────────
+function sortScores(arr) {
+  return arr.slice().sort((a, b) => {
+    const sd = (Number(b.score) || 0) - (Number(a.score) || 0);
+    if (sd !== 0) return sd;
+    const cd = (Number(b.correct) || 0) - (Number(a.correct) || 0);
+    if (cd !== 0) return cd;
+    return (Number(a.ms) || Number(a.time) || 0) - (Number(b.ms) || Number(b.time) || 0);
   });
+}
+
+// ── Age-group filter ──────────────────────────────────────────
+// Scores without an ageGroup field are treated as 'adult' for legacy compatibility
+function filterByTab(scores, tab) {
+  if (tab === 'all')   return scores;
+  if (tab === 'kid')   return scores.filter(s => s.ageGroup === 'kid');
+  if (tab === 'adult') return scores.filter(s => s.ageGroup === 'adult' || !s.ageGroup);
   return scores;
 }
 
+// ── Render table ──────────────────────────────────────────────
 function render(scores, limit) {
   rowsEl.innerHTML = '';
-  const list = (scores || []).slice(0, limit);
+  const list = sortScores(scores).slice(0, limit);
 
   if (list.length === 0) {
     statusEl.textContent = 'No scores yet.';
@@ -83,7 +91,6 @@ function render(scores, limit) {
   statusEl.textContent = '';
 
   const frag = document.createDocumentFragment();
-
   list.forEach((s, i) => {
     const tr = document.createElement('tr');
 
@@ -91,7 +98,17 @@ function render(scores, limit) {
     rank.textContent = String(i + 1);
 
     const name = document.createElement('td');
-    name.textContent = s.playerName || s.name || 'Anonymous';
+    const displayName = s.playerName || s.name || 'Anonymous';
+    // On the "All" tab, add a small emoji badge so the group is visible at a glance
+    if (activeTab === 'all' && s.ageGroup) {
+      const badge = document.createElement('span');
+      badge.className = `agePill agePill--${s.ageGroup}`;
+      badge.textContent = s.ageGroup === 'kid' ? ' 👦' : ' 👨';
+      name.textContent = displayName;
+      name.appendChild(badge);
+    } else {
+      name.textContent = displayName;
+    }
 
     const score = document.createElement('td');
     score.className = 'num';
@@ -107,91 +124,107 @@ function render(scores, limit) {
     tr.append(rank, name, score, correct, date);
     frag.appendChild(tr);
   });
-
   rowsEl.appendChild(frag);
 }
 
-let unsub = null;
-let rawDaily = [];
-
-function updateLastWeekWinner() {
-  if (!lastWeekWinnerEl) return;
-
-  const now = new Date();
+// ── Winner banners ────────────────────────────────────────────
+function updateWinnerBanners() {
+  const now           = new Date();
   const thisWeekStart = weekStartSunday(now);
   const lastWeekStart = new Date(thisWeekStart);
   lastWeekStart.setDate(lastWeekStart.getDate() - 7);
+  const lastWeekEnd   = new Date(thisWeekStart);
+  lastWeekEnd.setDate(lastWeekEnd.getDate() - 1);
+  const nextWeekStart = new Date(thisWeekStart);
+  nextWeekStart.setDate(nextWeekStart.getDate() + 7);
 
-  if (lastWeekRangeEl) {
-    const end = new Date(thisWeekStart);
-    end.setDate(end.getDate() - 1);
-    lastWeekRangeEl.textContent = `${lastWeekStart.toLocaleDateString()} – ${end.toLocaleDateString()}`;
+  const fmt = (d) => d.toLocaleDateString();
+
+  // Kids — current week leader (prize is awarded at end of the week)
+  const kidsThisWeek = rawDaily.filter(s => {
+    if (s.ageGroup !== 'kid') return false;
+    const d = scoreLocalDate(s);
+    return d && d >= thisWeekStart && d < nextWeekStart;
+  });
+  const kidsTop = sortScores(kidsThisWeek)[0];
+  if (kidsWeeklyWinnerEl) {
+    kidsWeeklyWinnerEl.textContent = kidsTop
+      ? `${kidsTop.playerName || kidsTop.name || 'Anonymous'} — ${Number(kidsTop.score) || 0} pts (${Number(kidsTop.correct) || 0} correct)`
+      : 'No kids scores yet this week';
   }
+  if (kidsWeeklyRangeEl) kidsWeeklyRangeEl.textContent = `${fmt(thisWeekStart)} – ${fmt(lastWeekEnd < thisWeekStart ? thisWeekStart : now)}`;
 
-  const lastWeekScores = rawDaily.filter(s => {
+  // Adults — last week's top player
+  const adultsLastWeek = rawDaily.filter(s => {
+    if (s.ageGroup === 'kid') return false; // exclude kids
     const d = scoreLocalDate(s);
     return d && d >= lastWeekStart && d < thisWeekStart;
   });
-
-  sortScores(lastWeekScores);
-
-  const w = lastWeekScores[0];
-  if (!w) {
-    lastWeekWinnerEl.textContent = '—';
-    return;
+  const adultsTop = sortScores(adultsLastWeek)[0];
+  if (adultsLastWinnerEl) {
+    adultsLastWinnerEl.textContent = adultsTop
+      ? `${adultsTop.playerName || adultsTop.name || 'Anonymous'} — ${Number(adultsTop.score) || 0} pts (${Number(adultsTop.correct) || 0} correct)`
+      : '—';
   }
-
-  const name = w.playerName || w.name || 'Anonymous';
-  const score = Number(w.score) || 0;
-  const correct = Number(w.correct) || 0;
-  lastWeekWinnerEl.textContent = `${name} — ${score} pts (${correct} correct)`;
+  if (adultsLastRangeEl) adultsLastRangeEl.textContent = `${fmt(lastWeekStart)} – ${fmt(lastWeekEnd)}`;
 }
 
+// ── Apply view / tab / limit ──────────────────────────────────
 function applyView() {
-  const now = new Date();
+  const now   = new Date();
   const limit = Number(limitEl.value) || 20;
 
-  // Weekly leaderboard is the “real” daily leaderboard
+  let baseScores;
+
   if (viewEl.value === 'today') {
     const todayId = dayIdFor(now);
-    const todayScores = rawDaily.filter(s => {
+    baseScores = rawDaily.filter(s => {
       if (s.dayId) return s.dayId === todayId;
       const d = scoreLocalDate(s);
       return d && dayIdFor(d) === todayId;
     });
-    sortScores(todayScores);
     labelEl.textContent = `Today: ${todayId}`;
-    render(todayScores, limit);
-    return;
+  } else {
+    const start = weekStartSunday(now);
+    const end   = new Date(start);
+    end.setDate(end.getDate() + 7);
+    baseScores = rawDaily.filter(s => {
+      const d = scoreLocalDate(s);
+      return d && d >= start && d < end;
+    });
+    labelEl.textContent = `Week of ${dayIdFor(start)}`;
   }
 
-  // This Week: Sunday 00:00 → next Sunday 00:00
-  const start = weekStartSunday(now);
-  const end = new Date(start);
-  end.setDate(end.getDate() + 7);
-
-  const weekScores = rawDaily.filter(s => {
-    const d = scoreLocalDate(s);
-    return d && d >= start && d < end;
-  });
-
-  sortScores(weekScores);
-  labelEl.textContent = `Week of ${dayIdFor(start)}`;
-  render(weekScores, limit);
+  render(filterByTab(baseScores, activeTab), limit);
 }
+
+// ── Tab switching ─────────────────────────────────────────────
+function setTab(tab) {
+  activeTab = tab;
+  [tabAll, tabKids, tabAdults].forEach((btn, i) => {
+    const t = ['all', 'kid', 'adult'][i];
+    btn.classList.toggle('selected', tab === t);
+    btn.setAttribute('aria-selected', String(tab === t));
+  });
+  applyView();
+}
+
+tabAll.addEventListener('click',    () => setTab('all'));
+tabKids.addEventListener('click',   () => setTab('kid'));
+tabAdults.addEventListener('click', () => setTab('adult'));
+
+// ── Firebase subscription ─────────────────────────────────────
+let unsub = null;
 
 function resub() {
   if (typeof unsub === 'function') unsub();
-
-  // Pull recent Daily scores and do all the “week” logic client-side.
-  // This avoids Firestore composite index requirements and keeps behavior consistent.
   unsub = subscribeLeaderboard({
     mode: 'daily',
     category: '__ALL__',
     limit: 200,
     onData: (scores) => {
       rawDaily = scores || [];
-      updateLastWeekWinner();
+      updateWinnerBanners();
       applyView();
     },
     onError: (e) => {

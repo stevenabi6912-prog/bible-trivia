@@ -8,14 +8,21 @@ const startBtn = document.getElementById('start');
 
 initAudioUI();
 
-const modeDaily = document.getElementById('modeDaily');
+const modeDaily    = document.getElementById('modeDaily');
 const modePractice = document.getElementById('modePractice');
 const dailyDisclaimer = document.getElementById('dailyDisclaimer');
 const categoryWrap = document.getElementById('categoryWrap');
-const catHelp = document.getElementById('catHelp');
+const catHelp      = document.getElementById('catHelp');
+
+// Age group modal elements
+const ageOverlay  = document.getElementById('ageOverlay');
+const ageModal    = document.getElementById('ageModal');
+const pickKidBtn  = document.getElementById('pickKid');
+const pickAdultBtn = document.getElementById('pickAdult');
 
 let mode = 'daily'; // default
 
+// ── Mode selection ────────────────────────────────────────────
 function setMode(next) {
   try { sfx.click(); } catch (_) {}
   mode = next;
@@ -27,14 +34,14 @@ function setMode(next) {
   modeDaily.setAttribute('aria-checked', String(daily));
   modePractice.setAttribute('aria-checked', String(!daily));
 
-  if (dailyDisclaimer) dailyDisclaimer.style.display = daily ? 'block' : 'none';catHelp.textContent = daily
+  if (dailyDisclaimer) dailyDisclaimer.style.display = daily ? 'block' : 'none';
+  catHelp.textContent = daily
     ? 'Daily Challenge uses the same 10 questions for everyone today (from ANY category).'
     : 'Practice lets you pick a category to train up.';
 
   // Category is only selectable in Practice
   catEl.disabled = daily;
   if (daily) catEl.value = '__ALL__';
-  // Hide the whole category section in Daily to reduce confusion
   if (categoryWrap) categoryWrap.style.display = daily ? 'none' : 'block';
 }
 
@@ -63,7 +70,6 @@ const { categories } = await loadCategories();
   for (const c of cats) catEl.append(new Option(c.title, c.id));
   if (!cats.length) {
     console.warn('No categories found in questions.json');
-    // Practice mode will have nothing to pick if categories are empty
   }
 
 function seasonIdFor(d) {
@@ -72,19 +78,27 @@ function seasonIdFor(d) {
   return `${y}Q${q}`;
 }
 
-startBtn.addEventListener('click', async () => {
-  await unlockAudio();
-  try { await sfx.click(); } catch (_) {}
-  startMusic();
-  const name = (nameEl.value || '').trim();
-  if (!name) { alert('Enter a player name (first name + last initial works great).'); return; }
+// ── Age Group Modal ───────────────────────────────────────────
+function openAgeModal() {
+  ageOverlay.classList.add('open');
+  ageModal.classList.add('open');
+}
 
+function closeAgeModal() {
+  ageOverlay.classList.remove('open');
+  ageModal.classList.remove('open');
+}
+
+ageOverlay.addEventListener('click', closeAgeModal);
+
+// ── Launch game (called after age group is confirmed or for practice) ──
+async function launchGame(ageGroup) {
+  const name = (nameEl.value || '').trim();
   localStorage.setItem('bt_name', name);
 
   let categoryId = catEl.value || '__ALL__';
   if (mode === 'daily') categoryId = '__ALL__';
 
-  // Locked competition settings
   const count = 10;
   const seconds = 15;
 
@@ -93,14 +107,13 @@ startBtn.addEventListener('click', async () => {
   const seasonId = seasonIdFor(now);
 
   if (mode === 'daily') {
-    // Enforce 1 daily attempt per player name per day (best-effort, without login)
     const playerKey = normalizePlayerKey(name);
-    const dailyKey = `${dayId}_${playerKey}`; // single-field lookup (no composite index needed)
+    const dailyKey = `${dayId}_${playerKey}`;
 
     try {
       const already = await hasDailyAttempt(dailyKey);
       if (already) {
-        alert('Looks like you already played today’s Daily Challenge with this name. Come back tomorrow!');
+        alert('Looks like you already played today\u2019s Daily Challenge with this name. Come back tomorrow!');
         return;
       }
     } catch (e) {
@@ -115,8 +128,41 @@ startBtn.addEventListener('click', async () => {
     category: (mode === 'daily' ? '__ALL__' : categoryId),
     count: String(count),
     seconds: String(seconds),
-    mode
+    mode,
+    ...(mode === 'daily' ? { ageGroup } : {})
   });
 
   location.href = `play.html?${params.toString()}`;
+}
+
+// Age pick buttons inside the modal
+pickKidBtn.addEventListener('click', async () => {
+  try { sfx.click(); } catch (_) {}
+  localStorage.setItem('bt_ageGroup', 'kid');
+  closeAgeModal();
+  await launchGame('kid');
+});
+
+pickAdultBtn.addEventListener('click', async () => {
+  try { sfx.click(); } catch (_) {}
+  localStorage.setItem('bt_ageGroup', 'adult');
+  closeAgeModal();
+  await launchGame('adult');
+});
+
+// ── Start button ──────────────────────────────────────────────
+startBtn.addEventListener('click', async () => {
+  await unlockAudio();
+  try { await sfx.click(); } catch (_) {}
+  startMusic();
+  const name = (nameEl.value || '').trim();
+  if (!name) { alert('Enter a player name (first name + last initial works great).'); return; }
+
+  if (mode === 'daily') {
+    // Show the age group modal — game launches after user picks
+    openAgeModal();
+  } else {
+    // Practice mode: skip the modal, launch directly
+    await launchGame('');
+  }
 });

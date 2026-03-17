@@ -31,7 +31,8 @@ export async function saveScore({
   name, category, categoryId,
   score, correct, total, ms,
   seasonId, dayId, mode,
-  playerKey, dailyKey
+  playerKey, dailyKey,
+  ageGroup
 }) {
   const clean = {
     name: String(name).slice(0, 18),
@@ -51,6 +52,11 @@ export async function saveScore({
 
     // For Daily Challenge: single-field lookup to enforce “one attempt”
     dailyKey: dailyKey ? String(dailyKey).slice(0, 64) : '',
+
+    // Age group — only stored on daily scores ('kid' | 'adult')
+    ageGroup: (mode === 'daily' && (ageGroup === 'kid' || ageGroup === 'adult'))
+      ? ageGroup
+      : '',
 
     createdAt: serverTimestamp()
   };

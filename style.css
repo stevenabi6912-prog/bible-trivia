@@ -633,3 +633,205 @@ input, select{ font-size: 1.05rem; }
   font-weight: 800 !important;
   letter-spacing: 0.2px;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   AGE GROUP — home page selector
+   ═══════════════════════════════════════════════════════════════ */
+.ageGroupNote{
+  font-size:12px;
+  opacity:0.65;
+  font-weight:400;
+}
+
+.ageGroupBtns{
+  display:flex;
+  gap:10px;
+  margin-top:6px;
+  flex-wrap:wrap;
+}
+
+.ageBtn{
+  flex:1;
+  min-width:130px;
+  padding:10px 14px;
+  border-radius:12px;
+  border:2px solid rgba(255,255,255,0.18);
+  background:rgba(0,0,0,0.18);
+  color:#fff;
+  font-family:inherit;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+  transition:background 0.15s, border-color 0.15s, transform 0.1s;
+  text-align:center;
+}
+.ageBtn:hover{
+  background:rgba(255,255,255,0.12);
+  border-color:rgba(255,255,255,0.35);
+}
+.ageBtn.selected{
+  background:rgba(255,200,50,0.22);
+  border-color:#f5c842;
+  box-shadow:0 0 0 3px rgba(245,200,66,0.25);
+}
+.ageSub{
+  display:block;
+  font-size:11px;
+  font-weight:400;
+  opacity:0.75;
+  margin-top:2px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   AGE GROUP PICK MODAL
+   ═══════════════════════════════════════════════════════════════ */
+.ageModal{
+  max-width:420px;
+}
+
+.ageModalQuestion{
+  text-align:center;
+  font-size:18px;
+  font-weight:700;
+  margin:0 0 20px;
+  color:var(--text);
+}
+
+.agePickBtns{
+  display:flex;
+  gap:16px;
+}
+
+.agePickBtn{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+  padding:22px 14px;
+  border-radius:16px;
+  border:2px solid rgba(255,255,255,0.18);
+  background:rgba(0,0,0,0.22);
+  color:#fff;
+  font-family:inherit;
+  cursor:pointer;
+  transition:background 0.15s, border-color 0.15s, transform 0.1s;
+}
+.agePickBtn:hover{
+  background:rgba(255,255,255,0.12);
+  border-color:rgba(255,255,255,0.40);
+  transform:translateY(-2px);
+}
+.agePickBtn:active{
+  transform:translateY(0);
+}
+
+.agePickIcon{
+  font-size:40px;
+  line-height:1;
+}
+.agePickLabel{
+  font-size:18px;
+  font-weight:800;
+}
+.agePickSub{
+  font-size:12px;
+  opacity:0.70;
+  font-weight:400;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   WINNER BANNERS — daily leaderboard
+   ═══════════════════════════════════════════════════════════════ */
+.winnerBanners{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-bottom:18px;
+}
+@media(max-width:540px){
+  .winnerBanners{ grid-template-columns:1fr; }
+}
+
+.winnerBanner{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 18px;
+  border-radius:16px;
+  border:2px solid rgba(255,255,255,0.15);
+  background:rgba(0,0,0,0.22);
+}
+.winnerBanner--kids{
+  border-color:rgba(80,200,120,0.45);
+  background:rgba(40,140,80,0.18);
+}
+.winnerBanner--adults{
+  border-color:rgba(245,200,66,0.40);
+  background:rgba(180,130,20,0.18);
+}
+
+.winnerBannerIcon{
+  font-size:28px;
+  flex-shrink:0;
+}
+.winnerBannerLabel{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.6px;
+  opacity:0.72;
+  font-weight:700;
+  margin-bottom:3px;
+}
+.winnerBannerName{
+  font-size:15px;
+  font-weight:800;
+  line-height:1.3;
+}
+.winnerBannerRange{
+  font-size:11px;
+  opacity:0.6;
+  margin-top:2px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   AGE GROUP TABS — daily leaderboard
+   ═══════════════════════════════════════════════════════════════ */
+.lbTabs{
+  display:flex;
+  gap:6px;
+  margin:16px 0 10px;
+  flex-wrap:wrap;
+}
+
+.lbTab{
+  padding:8px 18px;
+  border-radius:999px;
+  border:2px solid rgba(255,255,255,0.18);
+  background:rgba(0,0,0,0.18);
+  color:#fff;
+  font-family:inherit;
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+  transition:background 0.15s, border-color 0.15s;
+  white-space:nowrap;
+}
+.lbTab:hover{
+  background:rgba(255,255,255,0.1);
+  border-color:rgba(255,255,255,0.3);
+}
+.lbTab.selected{
+  background:rgba(255,200,50,0.22);
+  border-color:#f5c842;
+  box-shadow:0 0 0 3px rgba(245,200,66,0.2);
+}
+
+/* ── Age pill in table rows (All tab) ── */
+.agePill{
+  display:inline-block;
+  font-size:13px;
+  margin-left:4px;
+  vertical-align:middle;
+  opacity:0.85;
+}

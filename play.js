@@ -9,6 +9,10 @@ const categoryIdParam = qs.get('category') || '__ALL__';
 const mode = (qs.get('mode') || 'daily').toLowerCase() === 'practice' ? 'practice' : 'daily';
 const categoryId = (mode === 'daily') ? '__ALL__' : categoryIdParam;
 
+// Age group (daily only) — read from URL param, fall back to localStorage
+const rawAgeGroup = qs.get('ageGroup') || localStorage.getItem('bt_ageGroup') || 'adult';
+const ageGroup = (rawAgeGroup === 'kid') ? 'kid' : 'adult';
+
 // Locked competitive settings
 const QUESTION_COUNT = 10;
 const SECONDS_PER = 15;
@@ -178,7 +182,8 @@ async function finish(totalMs) {
       ms: totalMs,
       seasonId,
       dayId,
-      mode
+      mode,
+      ageGroup: mode === 'daily' ? ageGroup : ''
     }) || '';
   } catch (e) {
     console.error(e);
