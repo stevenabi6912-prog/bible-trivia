@@ -234,24 +234,31 @@ input:focus, select:focus{
   display:grid;
   grid-template-columns: 1.2fr 1fr 0.7fr;
   gap:14px;
-  align-items:end;
+  align-items:start;
+}
+.lbControls--2col{
+  grid-template-columns: 1fr 0.7fr;
 }
 @media (max-width: 860px){
-  .lbControls{grid-template-columns:1fr}
+  .lbControls, .lbControls--2col{grid-template-columns:1fr}
+}
+
+/* Season read-only display — matches input-lg visually */
+.seasonDisplay{
+  width:100%;
+  padding:14px 14px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.16);
+  background:rgba(0,0,0,0.18);
+  font-size:18px;
+  font-weight:900;
+  box-sizing:border-box;
 }
 .tableWrap{margin-top:10px; overflow:auto; border-radius:14px; border:1px solid rgba(255,255,255,0.12)}
 table{width:100%; border-collapse:collapse; min-width:680px; background:rgba(0,0,0,0.14)}
 th,td{padding:12px 12px; border-bottom:1px solid rgba(255,255,255,0.08); text-align:left; font-size:14px}
 th{position:sticky; top:0; background:rgba(0,0,0,0.22); font-weight:900}
 tr:hover td{background:rgba(255,255,255,0.04)}
-.seasonChip{
-  display:inline-flex;
-  padding:12px 14px;
-  border-radius:14px;
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.14);
-  font-weight:900;
-}
 
 /* Shared UI primitives */
 .pillRow{display:flex; gap:8px; flex-wrap:wrap; align-items:center;}
