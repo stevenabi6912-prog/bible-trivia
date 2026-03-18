@@ -93,7 +93,7 @@
             "Camel",
             "Sheep",
             "Lion",
-            "Wolf"
+            "Horse"
           ]
         },
         {
@@ -129,7 +129,7 @@
           "reference": "Matthew 12:40",
           "difficulty": 1,
           "choices": [
-            "Whale",
+            "Sea Creature",
             "Leviathan",
             "Serpent",
             "Great fish"
@@ -170,8 +170,8 @@
           "choices": [
             "Horse",
             "Camel",
-            "Young donkey",
-            "Colt of an ass"
+            "Lion",
+            "Colt"
           ]
         },
         {
@@ -246,8 +246,8 @@
           "reference": "Gen 3:1",
           "difficulty": 1,
           "choices": [
-            "Horse",
-            "Bull",
+            "Lion",
+            "Bird",
             "Serpent",
             "Hare"
           ]
@@ -288,7 +288,7 @@
             "A pair of turtledoves or two young pigeons",
             "A young lamb without blemish",
             "A ram and a dove",
-            "Two turtledoves and a grain offering"
+            "A grain offering"
           ]
         },
         {
@@ -340,7 +340,7 @@
             "A young lion",
             "A young bull",
             "A young eagle",
-            "A roe or a young hart"
+            "A young hart"
           ]
         },
         {
@@ -371,7 +371,7 @@
         },
         {
           "id": "animals_in_the_bible_0029",
-          "prompt": "What two animals will pose no threat to a very young child?",
+          "prompt": "What two animals will eventually pose no threat to a very young child?",
           "answer": "Asp & Cockatrice",
           "reference": "Isaiah 11:8",
           "difficulty": 1,
@@ -469,11 +469,11 @@
         {
           "id": "battles_of_the_bible_0006",
           "prompt": "Which other kings were with the kings of Sodom & Gomorrah?",
-          "answer": "Shinab of Admah, Shemeber of Zeboiim, and Zoar of Bela",
+          "answer": "Shinab, Shemeber, and Zoar",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Shinab of Admah, Shemeber of Zeboiim, and Zoar of Bela",
+            "Shinab, Shemeber, and Zoar",
             "Tidal, Amraphel, and Arioch",
             "Chedorlaomer, Tidal, and Amraphel",
             "Amraphel, Arioch, and Bera"
@@ -528,7 +528,7 @@
             "The rod of God",
             "A stone tablet",
             "A sword",
-            "A cedar staff"
+            "A book"
           ]
         },
         {
@@ -643,7 +643,7 @@
           "difficulty": 1,
           "choices": [
             "Seven",
-            "Three times",
+            "Three",
             "Once",
             "Twice"
           ]
@@ -871,7 +871,7 @@
         },
         {
           "id": "battles_of_the_bible_0037",
-          "prompt": "Why did God say this was too many?",
+          "prompt": "Why did God say Gideon had too many men?",
           "answer": "Israel might vaunt themselves and think they had won on their own",
           "reference": "",
           "difficulty": 1,
@@ -915,7 +915,7 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "He took them to the water to drink, and whoever lapped like a dog, he",
+            "He took them to the water to drink, and whoever lapped like a dog",
             "He tested their skill with a sword",
             "He had them run and chose the fastest",
             "He asked which men had crossed the Jordan"
@@ -1001,7 +1001,7 @@
         },
         {
           "id": "battles_of_the_bible_0047",
-          "prompt": "What two princes of the Midianites did they capture and behead?",
+          "prompt": "What two princes of the Midianites were captured and beheaded?",
           "answer": "Oreb and Zeeb",
           "reference": "",
           "difficulty": 1,
@@ -1015,11 +1015,11 @@
         {
           "id": "battles_of_the_bible_0048",
           "prompt": "When Israel went out to battle the Philistines, where did they pitch?",
-          "answer": "By Ebenezer",
+          "answer": "Ebenezer",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "By Ebenezer",
+            "Ebenezer",
             "Mizpah",
             "Gilgal",
             "Shiloh"
@@ -1028,11 +1028,11 @@
         {
           "id": "battles_of_the_bible_0049",
           "prompt": "In the battle where the ark of God was captured by the Philistines (1 Samuel 4), where did the Philistines pitch their camp?",
-          "answer": "In Aphek",
+          "answer": "Aphek",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "In Aphek",
+            "Aphek",
             "Caesarea",
             "Shiloh",
             "Galilee"
@@ -1054,11 +1054,11 @@
         {
           "id": "battles_of_the_bible_0051",
           "prompt": "In the battle at Ebenezer, from where did they fetch the ark?",
-          "answer": "Out of Shiloh",
+          "answer": "Shiloh",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Out of Shiloh",
+            "Shiloh",
             "Hebron",
             "Gilgal",
             "Bethel"
@@ -1287,7 +1287,7 @@
         },
         {
           "id": "battles_of_the_bible_0069",
-          "prompt": "In the story of David and Goliath, who was David's father?",
+          "prompt": "Who was David's father?",
           "answer": "Jesse",
           "reference": "",
           "difficulty": 1,
@@ -1300,7 +1300,7 @@
         },
         {
           "id": "battles_of_the_bible_0070",
-          "prompt": "In the story of David and Goliath, which of Jesse's sons followed Saul to the battle?",
+          "prompt": "Which of Jesse's sons followed Saul to the battle?",
           "answer": "The three oldest",
           "reference": "Eliab, Abinadab, and Shammah",
           "difficulty": 1,
@@ -1443,7 +1443,7 @@
         },
         {
           "id": "battles_of_the_bible_0081",
-          "prompt": "Why did David not want to use this armor?",
+          "prompt": "Why did David not want to use Saul's armor?",
           "answer": "He had not proved it",
           "reference": "",
           "difficulty": 1,
@@ -1547,7 +1547,7 @@
         },
         {
           "id": "battles_of_the_bible_0089",
-          "prompt": "Where did the stone hit Goliath?",
+          "prompt": "Where did David's stone hit Goliath?",
           "answer": "In the forehead",
           "reference": "",
           "difficulty": 1,
@@ -1568,7 +1568,7 @@
             "Goliath's",
             "Saul's",
             "Jonathan's",
-            "His own"
+            "David's"
           ]
         }
       ]
@@ -8741,7 +8741,7 @@
     },
     {
       "id": "the_book_of_isaiah_53",
-      "title": "The Book of Isaiah 53",
+      "title": "Isaiah 53",
       "questions": [
         {
           "id": "the_book_of_isaiah_53_0063",
