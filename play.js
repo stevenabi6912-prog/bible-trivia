@@ -191,6 +191,18 @@ async function finish(totalMs) {
     docId = '';
   }
 
+  // Save review data for the result page
+  try {
+    const reviewData = round.map((q, i) => ({
+      num: i + 1,
+      prompt: q.prompt,
+      answer: q.answer,
+      playerAnswer: q.__playerAnswer ?? null,
+      correct: !!q.__correct,
+    }));
+    sessionStorage.setItem('bb_review', JSON.stringify(reviewData));
+  } catch (_) {}
+
   const params = new URLSearchParams({
     name: playerName,
     category: catTitle,
@@ -223,6 +235,7 @@ function handleAnswer(choice, btnEl) {
   const q = round[idx];
   const ok = choice !== null && answerMatches(q.answer, choice);
   q.__correct = ok;
+  q.__playerAnswer = choice; // null = timeout
 
   // Sounds
   try {

@@ -238,15 +238,15 @@ tr:hover td{background:rgba(255,255,255,0.04)}
   font-weight:900;
 }
 
-/* Back-compat classes (from earlier UI) */
-.header,.nav,.badge,.row,.col,.pillRow,.pill,.small{ /* keep old pages from looking broken */ }
-.badge{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; border:1px solid rgba(255,255,255,0.16); background:rgba(255,255,255,0.06); color:var(--text); text-decoration:none}
-.badge:hover{background:rgba(255,255,255,0.10)}
+/* Shared UI primitives */
+.pillRow{display:flex; gap:8px; flex-wrap:wrap; align-items:center;}
+.pill{padding:7px 13px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); background:rgba(0,0,0,0.20); font-size:13px; font-weight:600; white-space:nowrap;}
 .small{font-size:14px; color:var(--muted)}
-.row{display:flex; gap:14px}
-.col{flex:1}
-.pillRow{display:flex; gap:10px; flex-wrap:wrap}
-.pill{padding:10px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); background:rgba(0,0,0,0.16); font-size:14px}
+.hr{height:1px; background:rgba(255,255,255,0.10); margin:16px 0;}
+.num{text-align:right;}
+
+/* Horizontal rule divider */
+.static-pill{display:inline-block;padding:10px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);font-weight:800;}
 
 .static-pill{display:inline-block;padding:10px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);font-weight:800;}
 
@@ -392,64 +392,7 @@ input, select{ font-size: 1.05rem; }
 }
 
 
-/* Play page tweaks */
-.header { margin-bottom: 18px; }
-#quit { display: none !important; }
-
-
-/* ===== Bible Battle overrides: header spacing + nav gaps ===== */
-.header{
-  display:flex;
-  align-items:center;
-  gap:52px;
-  flex-wrap:wrap;
-  margin-bottom:18px;
-}
-.header .nav{
-  display:flex;
-  gap:24px;
-}
-
-
 /* Play answers */
-.choices{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap:18px;
-  margin-top:16px;
-}
-@media (max-width: 820px){
-  .choices{ grid-template-columns: 1fr; }
-}
-.choice{
-  appearance:none;
-  -webkit-appearance:none;
-  width:100%;
-  text-align:left;
-  font-family:'Nunito',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  font-weight:700;
-  font-size:1.05rem;
-  line-height:1.35;
-  padding:16px 18px;
-  border-radius:16px;
-  border:1px solid rgba(255,255,255,0.14);
-  background:rgba(255,255,255,0.06);
-  color:rgba(255,255,255,0.96);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-  cursor:pointer;
-  transition: transform .12s ease, background .15s ease, border-color .15s ease;
-}
-.choice:hover{
-  background:rgba(255,255,255,0.11);
-  border-color:rgba(255,255,255,0.22);
-  transform: translateY(-1px);
-}
-.choice:active{ transform: translateY(0px) scale(0.99); }
-.choice.correct{ background: rgba(46, 204, 113, 0.18); border-color: rgba(46,204,113,0.45); }
-.choice.wrong{ background: rgba(231, 76, 60, 0.18); border-color: rgba(231,76,60,0.45); }
-
-
-/* ===== Play answers: match Bible Battle style ===== */
 .choices{
   display:grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -496,29 +439,9 @@ input, select{ font-size: 1.05rem; }
 }
 
 
-/* ===== v5 play spacing tweaks ===== */
-.pillRow{margin-bottom:14px;}
-.qPrompt{margin-top:10px;}
-
-
-/* ====== v6 tweaks: header spacing + question breathing room ====== */
-.header{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:24px;
-  margin-bottom:22px;
-}
-.header .nav{
-  display:flex;
-  gap:18px;
-}
-.pillRow{
-  margin-bottom:16px;
-}
-#question{
-  margin-top:6px;
-}
+/* Play page question spacing */
+.qPrompt{ margin-top:12px; }
+#question{ margin-top:6px; }
 
 
 /* ===== Audio Settings Modal ===== */
@@ -594,32 +517,7 @@ input, select{ font-size: 1.05rem; }
 }
 .toggleRow input{ transform:scale(1.1); }
 
-/* ===== Play header spacing + settings button ===== */
-.header{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:18px;
-  margin-bottom:22px; /* More space before question card */
-}
-.header .nav{
-  display:flex;
-  align-items:center;
-  gap:14px; /* Space between Daily/Practice/Settings */
-}
-.badge-btn{
-  cursor:pointer;
-}
-
-/* More breathing room between pills and question */
-.pillRow{
-  margin-bottom:14px;
-}
-#question{
-  margin-top:10px;
-}
-
-/* Pill groups: space pills apart */
+/* Pill groups in play header */
 .kv{
   display:flex;
   gap:8px;
@@ -834,4 +732,158 @@ input, select{ font-size: 1.05rem; }
   margin-left:4px;
   vertical-align:middle;
   opacity:0.85;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESULT PAGE — score display
+   ═══════════════════════════════════════════════════════════════ */
+.scoreDisplay{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  padding:24px 0 20px;
+}
+
+.statBlock{
+  text-align:center;
+}
+
+.statLabel{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.3px;
+  color:var(--muted);
+  margin-bottom:6px;
+  font-weight:700;
+}
+
+.statVal{
+  font-size:2.8rem;
+  font-weight:900;
+  line-height:1;
+  letter-spacing:-1px;
+}
+
+.statDivider{
+  width:1px;
+  height:64px;
+  background:rgba(255,255,255,0.13);
+  flex-shrink:0;
+}
+
+/* Pill row bottom margin */
+.pillRow{
+  margin-bottom:4px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   REVIEW ANSWERS MODAL
+   ═══════════════════════════════════════════════════════════════ */
+.reviewModal{
+  width: min(680px, calc(100vw - 28px));
+  max-height: 80vh;
+  display: none;
+  flex-direction: column;
+}
+.reviewModal.open{
+  display: flex;
+}
+
+.reviewModalBody{
+  overflow-y: auto;
+  padding: 6px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual review item */
+.reviewItem{
+  display: flex;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  align-items: flex-start;
+}
+.reviewItem--correct{
+  border-color: rgba(56,220,120,0.28);
+  background: rgba(30,100,60,0.18);
+}
+.reviewItem--wrong{
+  border-color: rgba(255,80,80,0.28);
+  background: rgba(90,20,30,0.18);
+}
+.reviewItem--timeout{
+  border-color: rgba(245,158,11,0.28);
+  background: rgba(100,70,10,0.18);
+}
+
+.reviewItemIcon{
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.reviewItemBody{
+  flex: 1;
+  min-width: 0;
+}
+
+.reviewItemMeta{
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  color: var(--muted);
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviewOutcomeLabel{
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2px;
+}
+.reviewOutcomeLabel--correct{ background: rgba(56,220,120,0.20); color: #5fe0a0; }
+.reviewOutcomeLabel--wrong  { background: rgba(255,80,80,0.20);  color: #ff9090; }
+.reviewOutcomeLabel--timeout{ background: rgba(245,158,11,0.20); color: #f5c842; }
+
+.reviewItemPrompt{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.reviewAnswerLine{
+  font-size: 13px;
+  line-height: 1.35;
+  margin-top: 3px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.reviewAnswerLine--correct{
+  background: rgba(56,220,120,0.12);
+  color: #70e8b0;
+  font-weight: 700;
+}
+.reviewAnswerLine--wrong{
+  background: rgba(255,80,80,0.12);
+  color: #ff9090;
+  font-weight: 600;
+}
+.reviewAnswerLine--timeout{
+  background: rgba(245,158,11,0.12);
+  color: #f5c842;
+  font-weight: 600;
 }

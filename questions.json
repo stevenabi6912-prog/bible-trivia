@@ -416,7 +416,7 @@
         },
         {
           "id": "battles_of_the_bible_0002",
-          "prompt": "The valley of Siddim was full of what?",
+          "prompt": "In the battle of the kings at the valley of Siddim (Genesis 14), the valley was full of what?",
           "answer": "Slimepits",
           "reference": "",
           "difficulty": 1,
@@ -650,7 +650,7 @@
         },
         {
           "id": "battles_of_the_bible_0020",
-          "prompt": "What were the priests carrying?",
+          "prompt": "When Israel marched around Jericho (Joshua 6), what were the priests carrying?",
           "answer": "Trumpets of rams' horns",
           "reference": "",
           "difficulty": 1,
@@ -663,7 +663,7 @@
         },
         {
           "id": "battles_of_the_bible_0021",
-          "prompt": "Who was spared and why?",
+          "prompt": "When Jericho fell (Joshua 6), who was spared from destruction and why?",
           "answer": "Rahab, because she hid the spies and everyone that was with her",
           "reference": "",
           "difficulty": 1,
@@ -1027,7 +1027,7 @@
         },
         {
           "id": "battles_of_the_bible_0049",
-          "prompt": "Where did the Philistines pitch?",
+          "prompt": "In the battle where the ark of God was captured by the Philistines (1 Samuel 4), where did the Philistines pitch their camp?",
           "answer": "In Aphek",
           "reference": "",
           "difficulty": 1,
@@ -1209,7 +1209,7 @@
         },
         {
           "id": "battles_of_the_bible_0063",
-          "prompt": "What name was given to the baby?",
+          "prompt": "When Phinehas's wife died giving birth after hearing the ark was captured (1 Samuel 4), what name was given to the baby?",
           "answer": "Ichabod",
           "reference": "",
           "difficulty": 1,
@@ -1274,7 +1274,7 @@
         },
         {
           "id": "battles_of_the_bible_0068",
-          "prompt": "What was the reaction of Saul and all Israel?",
+          "prompt": "When Goliath came out and challenged the armies of Israel (1 Samuel 17), what was the reaction of Saul and all Israel?",
           "answer": "They were dismayed and afraid",
           "reference": "",
           "difficulty": 1,
@@ -1696,7 +1696,7 @@
         },
         {
           "id": "the_church_in_acts_0010",
-          "prompt": "What Old Testament prophet did he say prophesied about the day of Pentecost?",
+          "prompt": "What Old Testament prophet did Peter say had prophesied about the day of Pentecost (Acts 2)?",
           "answer": "Joel",
           "reference": "",
           "difficulty": 1,
@@ -4262,7 +4262,7 @@
         },
         {
           "id": "the_book_of_1_thessalonians_0021",
-          "prompt": "What does a father do to his children?",
+          "prompt": "According to Paul in 1 Thessalonians 2, how does a father minister to his children — what three things does Paul say he did?",
           "answer": "Exhorts, comforts, and charges them",
           "reference": "",
           "difficulty": 1,
@@ -4301,7 +4301,7 @@
         },
         {
           "id": "the_book_of_1_thessalonians_0024",
-          "prompt": "Who did the Jews kill?",
+          "prompt": "According to 1 Thessalonians 2:15, who did the Jews kill?",
           "answer": "The Lord Jesus and their own prophets",
           "reference": "",
           "difficulty": 1,
@@ -4996,7 +4996,7 @@
         },
         {
           "id": "the_book_of_judges_0004",
-          "prompt": "Whom did the Lord raise up to deliver the Israelites?",
+          "prompt": "When Israel was oppressed under Cushan-rishathaim (Judges 3), whom did the Lord raise up to deliver the Israelites?",
           "answer": "Othniel",
           "reference": "",
           "difficulty": 1,
@@ -5295,7 +5295,7 @@
         },
         {
           "id": "the_book_of_judges_0027",
-          "prompt": "How many men and from which tribes did God command them to take?",
+          "prompt": "When God commanded Barak through Deborah to fight Sisera (Judges 4), how many men and from which tribes were commanded?",
           "answer": "10 thousand men from the tribes of Naphtali & Zebulun",
           "reference": "",
           "difficulty": 1,
@@ -6127,7 +6127,7 @@
         },
         {
           "id": "the_book_of_judges_0091",
-          "prompt": "Who did God tell Israel to cry unto?",
+          "prompt": "When the Ammonites and Philistines oppressed Israel and they cried to God (Judges 10), which gods did God tell Israel to cry to instead?",
           "answer": "The gods they chose",
           "reference": "",
           "difficulty": 1,
@@ -6140,7 +6140,7 @@
         },
         {
           "id": "the_book_of_judges_0092",
-          "prompt": "What was the Lord's soul grieved for?",
+          "prompt": "In Judges 10, despite Israel's ongoing sin, what was the Lord's soul grieved for?",
           "answer": "The misery of Israel",
           "reference": "",
           "difficulty": 1,
@@ -7420,7 +7420,7 @@
         },
         {
           "id": "the_book_of_1_kings_0041",
-          "prompt": "What did the Lord tell the prophet not to eat or drink in that place?",
+          "prompt": "What did the Lord tell the man of God from Judah not to eat or drink when sent to Bethel to prophesy (1 Kings 13)?",
           "answer": "Bread or water",
           "reference": "1Kings 13:9",
           "difficulty": 1,
@@ -7433,7 +7433,7 @@
         },
         {
           "id": "the_book_of_1_kings_0042",
-          "prompt": "Who did the old prophet say spoke to him?",
+          "prompt": "When the old prophet of Bethel deceived the man of God from Judah (1 Kings 13), who did the old prophet claim had spoken to him?",
           "answer": "An angel",
           "reference": "1Kings 13:18",
           "difficulty": 1,
@@ -7446,7 +7446,7 @@
         },
         {
           "id": "the_book_of_1_kings_0043",
-          "prompt": "What slew the prophet?",
+          "prompt": "What slew the man of God from Judah after he disobeyed God and ate with the old prophet of Bethel (1 Kings 13)?",
           "answer": "A lion",
           "reference": "1Kings 13:24",
           "difficulty": 1,
@@ -8063,7 +8063,7 @@
         },
         {
           "id": "the_book_of_2_kings_0012",
-          "prompt": "What did Elisha tell the three kings to do?",
+          "prompt": "When the kings of Israel, Judah, and Edom came to Elisha in the wilderness for help (2 Kings 3), what did Elisha tell them to do?",
           "answer": "Make this valley full of ditches",
           "reference": "2Kings 3:16",
           "difficulty": 1,
@@ -8745,7 +8745,7 @@
       "questions": [
         {
           "id": "the_book_of_isaiah_53_0063",
-          "prompt": "Fill in the blanks: \"Who hath believed our ____?",
+          "prompt": "Fill in the blank from Isaiah 53:1: \"Who hath believed our ____?\"",
           "answer": "and to whom is the ____ of the Lord _____?\" report; arm; revealed",
           "reference": "Isaiah 53:1",
           "difficulty": 1,
@@ -8758,7 +8758,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0064",
-          "prompt": "What will he grow up before him as?",
+          "prompt": "In Isaiah 53:2, what will the Suffering Servant grow up before God as?",
           "answer": "A tender plant and as a root out of a dry ground",
           "reference": "Isaiah 53:2",
           "difficulty": 1,
@@ -8771,7 +8771,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0065",
-          "prompt": "What three things does he not have?",
+          "prompt": "In Isaiah 53:2, what three things does the Suffering Servant not have?",
           "answer": "form, comliness, or beauty",
           "reference": "Isaiah 53:2",
           "difficulty": 1,
@@ -8784,7 +8784,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0066",
-          "prompt": "Who despised and rejected him?",
+          "prompt": "In Isaiah 53:3, who despised and rejected the Suffering Servant?",
           "answer": "men",
           "reference": "Isaiah 53:3",
           "difficulty": 1,
@@ -8797,7 +8797,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0067",
-          "prompt": "What is he acquainted with?",
+          "prompt": "In Isaiah 53:3, what is the Suffering Servant acquainted with?",
           "answer": "grief",
           "reference": "Isaiah 53:3",
           "difficulty": 1,
@@ -8810,7 +8810,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0068",
-          "prompt": "What did we hide from him?",
+          "prompt": "In Isaiah 53:3, what did we hide from the Suffering Servant?",
           "answer": "our faces",
           "reference": "Isaiah 53:3",
           "difficulty": 1,
@@ -8823,7 +8823,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0069",
-          "prompt": "When he was despised what did we do?",
+          "prompt": "In Isaiah 53:3, when the Suffering Servant was despised, what did we do?",
           "answer": "esteemed him not",
           "reference": "Isaiah 53:3",
           "difficulty": 1,
@@ -8836,7 +8836,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0070",
-          "prompt": "What hath he borne?",
+          "prompt": "In Isaiah 53:4, what hath the Suffering Servant borne?",
           "answer": "our griefs",
           "reference": "Isaiah 53:4",
           "difficulty": 1,
@@ -8849,7 +8849,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0071",
-          "prompt": "What hath he carried?",
+          "prompt": "In Isaiah 53:4, what hath the Suffering Servant carried?",
           "answer": "our sorrows",
           "reference": "Isaiah 53:4",
           "difficulty": 1,
@@ -8862,7 +8862,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0072",
-          "prompt": "How did we esteem him?",
+          "prompt": "In Isaiah 53:4, how did we esteem the Suffering Servant?",
           "answer": "stricken, smitten of God and afflicted",
           "reference": "Isaiah 53:4",
           "difficulty": 1,
@@ -8875,7 +8875,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0073",
-          "prompt": "Why was he wounded?",
+          "prompt": "In Isaiah 53:5, why was the Suffering Servant wounded?",
           "answer": "for our transgressions",
           "reference": "Isaiah 53:5",
           "difficulty": 1,
@@ -8888,7 +8888,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0074",
-          "prompt": "Why was he bruised?",
+          "prompt": "In Isaiah 53:5, why was the Suffering Servant bruised?",
           "answer": "for our iniquities",
           "reference": "Isaiah 53:5",
           "difficulty": 1,
@@ -8901,7 +8901,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0075",
-          "prompt": "What was upon him?",
+          "prompt": "In Isaiah 53:5, what chastisement was upon the Suffering Servant?",
           "answer": "the chastisement of our peace",
           "reference": "Isaiah 53:5",
           "difficulty": 1,
@@ -8914,7 +8914,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0076",
-          "prompt": "With what are we healed?",
+          "prompt": "In Isaiah 53:5, with what are we healed?",
           "answer": "his stripes",
           "reference": "Isaiah 53:5",
           "difficulty": 1,
@@ -8927,7 +8927,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0077",
-          "prompt": "What two things have we done like sheep?",
+          "prompt": "In Isaiah 53:6, what two things have we done like sheep?",
           "answer": "gone astray and turned every one to his own way",
           "reference": "Isaiah 53:6",
           "difficulty": 1,
@@ -8940,7 +8940,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0078",
-          "prompt": "What hath the Lord laid on him?",
+          "prompt": "In Isaiah 53:6, what hath the Lord laid on the Suffering Servant?",
           "answer": "the iniquity of us all",
           "reference": "Isaiah 53:6",
           "difficulty": 1,
@@ -8953,7 +8953,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0079",
-          "prompt": "When he was oppressed and afflicted what did he not do?",
+          "prompt": "In Isaiah 53:7, when the Suffering Servant was oppressed and afflicted, what did he not do?",
           "answer": "open his mouth",
           "reference": "Isaiah 53:7",
           "difficulty": 1,
@@ -8966,7 +8966,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0080",
-          "prompt": "What is he brought as?",
+          "prompt": "In Isaiah 53:7, what is the Suffering Servant brought as to the slaughter?",
           "answer": "a lamb to the slaughter",
           "reference": "Isaiah 53:7",
           "difficulty": 1,
@@ -8979,7 +8979,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0081",
-          "prompt": "What is a sheep before her shearers?",
+          "prompt": "In Isaiah 53:7, like what is a sheep before her shearers — silent or loud?",
           "answer": "dumb",
           "reference": "Isaiah 53:7",
           "difficulty": 1,
@@ -8992,7 +8992,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0082",
-          "prompt": "Where was he taken from?",
+          "prompt": "In Isaiah 53:8, from what place was the Suffering Servant taken?",
           "answer": "prison and judgment",
           "reference": "Isaiah 53:8",
           "difficulty": 1,
@@ -9005,7 +9005,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0083",
-          "prompt": "Fill in the blank: \"and who shall declare his ____?",
+          "prompt": "Fill in the blank from Isaiah 53:8: \"And who shall declare his ____?\"",
           "answer": "generation",
           "reference": "Isaiah 53:8",
           "difficulty": 1,
@@ -9018,7 +9018,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0084",
-          "prompt": "From where was he cut off?",
+          "prompt": "In Isaiah 53:8, from where was the Suffering Servant cut off?",
           "answer": "the land of the living",
           "reference": "Isaiah 53:8",
           "difficulty": 1,
@@ -9031,7 +9031,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0085",
-          "prompt": "Why was he stricken?",
+          "prompt": "In Isaiah 53:8, for whose transgression was the Suffering Servant stricken?",
           "answer": "for the transgression of my people",
           "reference": "Isaiah 53:8",
           "difficulty": 1,
@@ -9044,7 +9044,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0086",
-          "prompt": "Where did he make his grave?",
+          "prompt": "In Isaiah 53:9, where did the Suffering Servant make his grave?",
           "answer": "with the wicked and with the rich",
           "reference": "Isaiah 53:9",
           "difficulty": 1,
@@ -9057,7 +9057,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0087",
-          "prompt": "What had he not done?",
+          "prompt": "In Isaiah 53:9, what had the Suffering Servant not done?",
           "answer": "violence",
           "reference": "Isaiah 53:9",
           "difficulty": 1,
@@ -9070,7 +9070,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0088",
-          "prompt": "There was no deceit where?",
+          "prompt": "In Isaiah 53:9, there was no deceit found where?",
           "answer": "in his mouth",
           "reference": "Isaiah 53:9",
           "difficulty": 1,
@@ -9083,7 +9083,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0089",
-          "prompt": "What did it please the Lord to do to him?",
+          "prompt": "In Isaiah 53:10, what did it please the Lord to do to the Suffering Servant?",
           "answer": "to bruise him",
           "reference": "Isaiah 53:10",
           "difficulty": 1,
@@ -9096,7 +9096,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0090",
-          "prompt": "When his soul is made an offering for sin, what is the first thing that will happen?",
+          "prompt": "In Isaiah 53:10, when the Suffering Servant's soul is made an offering for sin, what is the first thing that will happen?",
           "answer": "he shall see his seed",
           "reference": "Isaiah 53:10",
           "difficulty": 1,
@@ -9109,7 +9109,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0091",
-          "prompt": "When his soul is made an offering for sin, what is the second thing that will happen?",
+          "prompt": "In Isaiah 53:10, when the Suffering Servant's soul is made an offering for sin, what is the second thing that will happen?",
           "answer": "He shall prolong his days",
           "reference": "Isaiah 53:10",
           "difficulty": 1,
@@ -9122,7 +9122,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0092",
-          "prompt": "When his soul is made an offering for sin, what is the third thing that will happen?",
+          "prompt": "In Isaiah 53:10, when the Suffering Servant's soul is made an offering for sin, what is the third thing that will happen?",
           "answer": "the pleasure of the Lord shall prosper in his hand",
           "reference": "Isaiah 53:10",
           "difficulty": 1,
@@ -9135,7 +9135,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0093",
-          "prompt": "When shall he be satisfied?",
+          "prompt": "In Isaiah 53:11, when shall the Suffering Servant be satisfied?",
           "answer": "when he sees the travail of his soul",
           "reference": "Isaiah 53:11",
           "difficulty": 1,
@@ -9148,7 +9148,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0094",
-          "prompt": "He shall bear what?",
+          "prompt": "In Isaiah 53:11, what shall the Suffering Servant bear?",
           "answer": "their iniquities",
           "reference": "Isaiah 53:11",
           "difficulty": 1,
@@ -9161,7 +9161,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0095",
-          "prompt": "What will he divide him?",
+          "prompt": "In Isaiah 53:12, what will the Suffering Servant divide?",
           "answer": "a portion with the great",
           "reference": "Isaiah 53:12",
           "difficulty": 1,
@@ -9174,7 +9174,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0096",
-          "prompt": "Who will he divide the spoil with?",
+          "prompt": "In Isaiah 53:12, who will the Suffering Servant divide the spoil with?",
           "answer": "the strong",
           "reference": "Isaiah 53:12",
           "difficulty": 1,
@@ -9187,7 +9187,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0098",
-          "prompt": "Who was he numbered with?",
+          "prompt": "In Isaiah 53:12, who was the Suffering Servant numbered with?",
           "answer": "the transgressors",
           "reference": "Isaiah 53:12",
           "difficulty": 1,
@@ -9200,7 +9200,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0099",
-          "prompt": "He bore what of many?",
+          "prompt": "In Isaiah 53:12, the Suffering Servant bore the sins of how many?",
           "answer": "the sin",
           "reference": "Isaiah 53:12",
           "difficulty": 1,
@@ -9213,7 +9213,7 @@
         },
         {
           "id": "the_book_of_isaiah_53_0100",
-          "prompt": "What did he make for the transgressors?",
+          "prompt": "In Isaiah 53:12, what did the Suffering Servant make for the transgressors?",
           "answer": "Intercession",
           "reference": "Isaiah 53:12",
           "difficulty": 1,
@@ -10805,7 +10805,7 @@
         },
         {
           "id": "the_book_of_ezra_0122",
-          "prompt": "What were the Persian officials told not to do?",
+          "prompt": "According to Darius's decree in Ezra 6, what were the Persian officials (Tatnai and companions) told not to do?",
           "answer": "Don't stop or interfere with the work",
           "reference": "",
           "difficulty": 1,
@@ -11026,7 +11026,7 @@
         },
         {
           "id": "the_book_of_ezra_0139",
-          "prompt": "Who came up from Babylon in this chapter?",
+          "prompt": "Who came up from Babylon to Jerusalem in Ezra chapter 7?",
           "answer": "Ezra",
           "reference": "",
           "difficulty": 1,
@@ -11312,14 +11312,14 @@
         },
         {
           "id": "the_book_of_ezra_0161",
-          "prompt": "What had the people of Israel and priests done wrong?",
-          "answer": "Taken wives from the foreign nations Name one of the nations the Israe",
+          "prompt": "According to the report brought to Ezra in Ezra 9, what wrong had the people of Israel and priests done?",
+          "answer": "Taken wives from the foreign nations",
           "reference": "",
           "difficulty": 1,
           "choices": [
+            "Taken wives from the foreign nations",
             "Nehemiah",
             "Mordecai",
-            "Taken wives from the foreign nations Name one of the nations the Israe",
             "Ezra"
           ]
         },
@@ -11903,7 +11903,7 @@
         },
         {
           "id": "pauls_journeys_0009",
-          "prompt": "Where did John return to?",
+          "prompt": "When Paul and Barnabas set sail from Perga on the first missionary journey (Acts 13:13), where did John Mark return to?",
           "answer": "Jerusalem",
           "reference": "",
           "difficulty": 1,
@@ -11968,7 +11968,7 @@
         },
         {
           "id": "pauls_journeys_0014",
-          "prompt": "Who saw no corruption?",
+          "prompt": "In Paul's sermon at Antioch in Pisidia (Acts 13), about whom did he say God's promise was fulfilled — who saw no corruption?",
           "answer": "He, whom God raised again",
           "reference": "",
           "difficulty": 1,
@@ -12098,7 +12098,7 @@
         },
         {
           "id": "pauls_journeys_0024",
-          "prompt": "What were the disciples filled with?",
+          "prompt": "When Paul and Barnabas were expelled from Antioch in Pisidia (Acts 13:52), what were the disciples left behind filled with?",
           "answer": "Joy and the Holy Ghost",
           "reference": "",
           "difficulty": 1,

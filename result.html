@@ -11,12 +11,19 @@
 </head>
 <body class="theme-bible-battle">
   <div class="container">
-    <div class="header">
-      <a class="badge" href="index.html">← Home</a>
-      <div class="brand">🎉 Results</div>
-    </div>
+    <header class="topbar">
+      <a class="btn btn-ghost" href="index.html">← Home</a>
+      <div class="brand">
+        <img class="brandLogo" src="assets/bible-battle-logo.png" alt="Bible Battle"/>
+        <span class="brandText">Bible Battle</span>
+      </div>
+      <nav class="topnav">
+        <button class="btn btn-ghost" id="settingsBtn" type="button">⚙️ Settings</button>
+      </nav>
+    </header>
 
     <div class="card">
+      <!-- Info pills -->
       <div class="pillRow">
         <span class="pill" id="name"></span>
         <span class="pill" id="mode"></span>
@@ -25,19 +32,19 @@
 
       <div class="hr"></div>
 
+      <!-- Rank line (appears after score is saved) -->
       <div id="rankLine" class="rankLine fade-section fade-hidden"></div>
 
-      <div class="row">
-        <div class="col" style="text-align:right;">
-          <button class="btn btn-ghost" id="settingsBtn" type="button">⚙️ Settings</button>
+      <!-- Score display -->
+      <div class="scoreDisplay">
+        <div class="statBlock">
+          <div class="statLabel">Score</div>
+          <div class="statVal" id="score"></div>
         </div>
-        <div class="col">
-          <div class="small">Score</div>
-          <div style="font-size:2.2rem; font-weight:900;" id="score"></div>
-        </div>
-        <div class="col">
-          <div class="small">Correct</div>
-          <div style="font-size:2.2rem; font-weight:900;">
+        <div class="statDivider"></div>
+        <div class="statBlock">
+          <div class="statLabel">Correct</div>
+          <div class="statVal">
             <span id="correct"></span>/<span id="total"></span>
           </div>
         </div>
@@ -45,25 +52,98 @@
 
       <div class="hr"></div>
 
-      <div class="row" style="align-items:center;">
-        <div class="col">
-          <a class="badge" id="lbLink" href="leaderboard-daily.html">View Leaderboard</a>
-        </div>
-        <div class="col" style="text-align:right;">
-          <a class="btn btn-primary" href="index.html">Play Again</a>
+      <!-- Actions -->
+      <div class="footerRow">
+        <a class="btn btn-ghost" id="lbLink" href="leaderboard-daily.html">🏆 View Leaderboard</a>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;">
+          <button class="btn btn-ghost" id="reviewBtn" type="button">📖 Review Answers</button>
+          <a class="btn btn-primary btn-big" href="index.html">🔁 Play Again</a>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Review Modal -->
+  <div id="reviewOverlay" class="modalOverlay"></div>
+  <div id="reviewModal" class="modal reviewModal">
+    <div class="modalHeader">
+      <div class="modalTitle">📖 Review Answers</div>
+      <button id="reviewClose" class="iconBtn" type="button" aria-label="Close">✕</button>
+    </div>
+    <div class="modalBody reviewModalBody" id="reviewList">
+      <!-- Populated by result.js -->
+    </div>
+  </div>
+
   <script type="module" src="result.js"></script>
+
+  <!-- Review Answers — plain script (not a module) so it always runs fresh -->
+  <script>
+  (function() {
+    var btn      = document.getElementById('reviewBtn');
+    var modal    = document.getElementById('reviewModal');
+    var overlay  = document.getElementById('reviewOverlay');
+    var closeBtn = document.getElementById('reviewClose');
+    var list     = document.getElementById('reviewList');
+    if (!btn || !modal || !overlay || !closeBtn || !list) return;
+
+    function esc(s) {
+      if (s == null) return '';
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    var built = false;
+    function buildList() {
+      if (built) return;
+      built = true;
+      var items = null;
+      try { items = JSON.parse(sessionStorage.getItem('bb_review') || 'null'); } catch(e) {}
+      if (!items || !items.length) {
+        list.innerHTML = '<p style="color:rgba(243,246,255,0.6);text-align:center;padding:24px 0">No review data — complete a game to see your answers here.</p>';
+        return;
+      }
+      var icons  = { correct:'✅', wrong:'❌', timeout:'⏱️' };
+      var labels = { correct:'Correct', wrong:'Wrong', timeout:'Time ran out' };
+      items.forEach(function(item) {
+        var outcome = item.correct ? 'correct' : (item.playerAnswer === null ? 'timeout' : 'wrong');
+        var ans = '';
+        if (outcome === 'correct') {
+          ans = '<div class="reviewAnswerLine reviewAnswerLine--correct">Your answer: ' + esc(item.playerAnswer) + '</div>';
+        } else if (outcome === 'wrong') {
+          ans = '<div class="reviewAnswerLine reviewAnswerLine--wrong">Your answer: ' + esc(item.playerAnswer) + '</div>'
+              + '<div class="reviewAnswerLine reviewAnswerLine--correct">✓ Correct: ' + esc(item.answer) + '</div>';
+        } else {
+          ans = '<div class="reviewAnswerLine reviewAnswerLine--timeout">Time ran out</div>'
+              + '<div class="reviewAnswerLine reviewAnswerLine--correct">✓ Correct: ' + esc(item.answer) + '</div>';
+        }
+        var div = document.createElement('div');
+        div.className = 'reviewItem reviewItem--' + outcome;
+        div.innerHTML = '<div class="reviewItemIcon">' + icons[outcome] + '</div>'
+          + '<div class="reviewItemBody">'
+          +   '<div class="reviewItemMeta">Q' + item.num + ' <span class="reviewOutcomeLabel reviewOutcomeLabel--' + outcome + '">' + labels[outcome] + '</span></div>'
+          +   '<div class="reviewItemPrompt">' + esc(item.prompt) + '</div>'
+          +   ans
+          + '</div>';
+        list.appendChild(div);
+      });
+    }
+
+    function openModal()  { buildList(); modal.classList.add('open'); overlay.classList.add('open'); }
+    function closeModal() { modal.classList.remove('open'); overlay.classList.remove('open'); }
+
+    btn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', closeModal);
+    window.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+  })();
+  </script>
+
   <div id="settingsOverlay" class="modalOverlay"></div>
   <div id="settingsModal" class="modal">
     <div class="modalHeader">
       <div class="modalTitle">Settings</div>
       <button id="settingsClose" class="iconBtn" type="button" aria-label="Close">✕</button>
     </div>
-
     <div class="modalBody">
       <div class="settingRow">
         <div class="settingLabel">Music</div>
@@ -72,7 +152,6 @@
           <div class="settingVal" id="musicVal">18%</div>
         </div>
       </div>
-
       <div class="settingRow">
         <div class="settingLabel">Sound effects</div>
         <div class="settingControl">
@@ -80,14 +159,12 @@
           <div class="settingVal" id="sfxVal">60%</div>
         </div>
       </div>
-
       <label class="toggleRow">
         <input id="muteToggle" type="checkbox" />
         <span>Mute all audio</span>
       </label>
-
       <div class="fineprint">
-        Audio starts after your first click (browser rule). Placeholder sounds included.
+        Audio starts after your first click (browser rule).
       </div>
     </div>
   </div>

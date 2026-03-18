@@ -93,3 +93,6 @@ async function computeRank() {
 computeRank().catch(() => {
   // If rank can't be computed, fail silently (score may still be saved).
 });
+
+// Review Answers UI is initialised by an inline <script> in result.html
+// (kept outside the module to avoid ES-module caching issues)
