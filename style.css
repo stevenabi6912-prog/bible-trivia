@@ -212,6 +212,21 @@ input:focus, select:focus{
   margin-top:14px;
   flex-wrap:wrap;
 }
+
+/* Result page action buttons */
+.resultActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.resultActionsSecondary {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .statusText{font-size:14px; color:rgba(243,246,255,0.80)}
 
 /* Table styles (leaderboards) */
