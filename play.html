@@ -8,6 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Boot music NOW — inline non-module script runs synchronously during HTML
+       parsing, inside the browser's user-activation window from the navigation.
+       Module scripts are deferred and may miss that window entirely. -->
+  <script>
+  (function(){
+    try {
+      var vol  = parseFloat(localStorage.getItem('bb_musicVol') || '0.18');
+      var mute = (localStorage.getItem('bb_muted') || '0') === '1';
+      var pos  = parseFloat(sessionStorage.getItem('bb_musicPos') || '0') || 0;
+      var a = new Audio('assets/music/bg-loop.wav');
+      a.loop   = true;
+      a.volume = mute ? 0 : Math.min(1, Math.max(0, vol));
+      if (pos > 0) a.currentTime = pos;
+      window.__bbBg = a;          // audio.js will reuse this element
+      a.play().catch(function(){}); // silent fail if still blocked
+    } catch(e) {}
+  })();
+  </script>
 </head>
 <body class="theme-bible-battle">
   <div class="container">

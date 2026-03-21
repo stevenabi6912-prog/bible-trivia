@@ -21,11 +21,15 @@ let muted = (localStorage.getItem(LS_MUTED) ?? '0') === '1';
 let unlocked = false;
 let ctx = null;
 
-const bg = new Audio('assets/music/bg-loop.wav');
+// Reuse any element pre-started by the inline boot script (play.html).
+// That script runs during HTML parsing — before modules — and may already
+// have music playing. Sharing the element avoids a double-audio glitch.
+const bg = (window.__bbBg instanceof Audio) ? window.__bbBg : new Audio('assets/music/bg-loop.wav');
 bg.loop = true;
-bg.preload = 'auto';
+if (!(window.__bbBg instanceof Audio)) bg.preload = 'auto';
+window.__bbBg = bg; // always expose so other scripts can reach it
 
-// Small pools so rapid clicks don’t cut off.
+// Small pools so rapid clicks don't cut off.
 const POOL_SIZE = 4;
 const sfxPool = {
   click: makePool('assets/sfx/click.wav'),
@@ -117,13 +121,18 @@ export function getAudioSettings() {
   return { musicVol, sfxVol, muted };
 }
 
+export function getMusicTime() {
+  try { return bg.currentTime; } catch(e) { return 0; }
+}
+
 export async function startMusic() {
   applyVolumes();
   if (muted) return;
+  if (!bg.paused) return; // already playing (boot script succeeded) — don't interrupt
   try {
     await bg.play();
   } catch (e) {
-    // Usually means not unlocked yet. That's okay.
+    // Usually means not unlocked yet. That's okay — click fallback handles it.
     console.warn('Music play blocked (needs user gesture):', e);
   }
 }

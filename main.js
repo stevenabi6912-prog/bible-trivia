@@ -1,4 +1,4 @@
-import { initAudioUI, unlockAudio, startMusic, sfx } from './audio.js';
+import { initAudioUI, unlockAudio, startMusic, getMusicTime, sfx } from './audio.js';
 import { loadCategories } from './trivia.js';
 import { hasDailyAttempt, normalizePlayerKey } from './scores.js';
 
@@ -132,6 +132,8 @@ async function launchGame(ageGroup) {
     ...(mode === 'daily' ? { ageGroup } : {})
   });
 
+  // Save music playback position so play.html can resume from the same spot
+  try { sessionStorage.setItem('bb_musicPos', String(getMusicTime())); } catch(e) {}
   location.href = `play.html?${params.toString()}`;
 }
 

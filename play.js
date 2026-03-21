@@ -92,12 +92,15 @@ if (mode === 'daily') {
   }
 }
 
-// Fallback: start music on first interaction if page-load autoplay was blocked
+// Fallback: if the inline boot script was blocked, start music on first touch/click
 const _musicOnFirst = () => {
   unlockAudio().then(() => startMusic()).catch(() => {});
-  document.removeEventListener('click', _musicOnFirst, true);
+  document.removeEventListener('pointerdown', _musicOnFirst, true);
+  document.removeEventListener('click',       _musicOnFirst, true);
 };
-document.addEventListener('click', _musicOnFirst, true);
+// pointerdown fires at finger-touch (before click), minimising the perceived gap
+document.addEventListener('pointerdown', _musicOnFirst, { capture: true, once: true });
+document.addEventListener('click',       _musicOnFirst, { capture: true, once: true });
 
 let round = [];
 try {
