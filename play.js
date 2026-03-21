@@ -4,6 +4,10 @@ import { saveScore, hasDailyAttempt, normalizePlayerKey } from './scores.js';
 
 const qs = new URLSearchParams(location.search);
 initAudioUI();
+
+// Start music immediately — MUST happen before any await so we're still inside
+// the browser's user-gesture window carried over from the "Start Game" click.
+unlockAudio().then(() => startMusic()).catch(() => {});
 const playerName = qs.get('name') || 'Player';
 const categoryIdParam = qs.get('category') || '__ALL__';
 const mode = (qs.get('mode') || 'daily').toLowerCase() === 'practice' ? 'practice' : 'daily';
@@ -87,9 +91,6 @@ if (mode === 'daily') {
     console.warn('Could not lock daily attempt:', e);
   }
 }
-
-// Start music as soon as the play page loads (user already gave a gesture on the start screen)
-unlockAudio().then(() => startMusic()).catch(() => {});
 
 // Fallback: start music on first interaction if page-load autoplay was blocked
 const _musicOnFirst = () => {
