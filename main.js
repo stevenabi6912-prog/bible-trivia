@@ -111,16 +111,18 @@ function launchGame(ageGroup) {
   location.href = `play.html?${params.toString()}`;
 }
 
-// Age pick buttons — fully synchronous click handlers preserve user-activation
+// Age pick buttons — NO sfx.click() here intentionally.
+// HTMLMediaElement.play() is an activation-consuming API: calling it spends the
+// browser's transient user-activation token, so the subsequent location.href
+// navigation would arrive at play.html without activation and audio.play()
+// would be blocked. We skip the click sound to keep the token alive.
 pickKidBtn.addEventListener('click', () => {
-  try { sfx.click(); } catch (_) {}
   localStorage.setItem('bt_ageGroup', 'kid');
   closeAgeModal();
   launchGame('kid');
 });
 
 pickAdultBtn.addEventListener('click', () => {
-  try { sfx.click(); } catch (_) {}
   localStorage.setItem('bt_ageGroup', 'adult');
   closeAgeModal();
   launchGame('adult');
@@ -128,17 +130,19 @@ pickAdultBtn.addEventListener('click', () => {
 
 // ── Start button ──────────────────────────────────────────────────────────────
 startBtn.addEventListener('click', () => {
-  // Fire audio unlock without awaiting — awaiting kills the user-activation token
-  unlockAudio()
-    .then(() => { startMusic(); try { sfx.click(); } catch(_){} })
-    .catch(() => {});
-
   const name = (nameEl.value || '').trim();
   if (!name) { alert('Enter a player name (first name + last initial works great).'); return; }
 
   if (mode === 'daily') {
-    openAgeModal();   // age buttons handle navigation
+    // Open modal — age button will navigate. Unlock audio after opening so we
+    // don't consume the activation token before the eventual navigation.
+    openAgeModal();
+    unlockAudio().then(() => startMusic()).catch(() => {});
   } else {
-    launchGame('');   // synchronous navigate
+    // Practice: navigate immediately (keeps activation token alive for play.html).
+    // Unlock audio fire-and-forget AFTER setting location.href — the async part
+    // (AudioContext.resume) runs in a microtask after the navigation is queued.
+    launchGame('');
+    unlockAudio().then(() => {}).catch(() => {});
   }
 });
