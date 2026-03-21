@@ -136,7 +136,7 @@ function looksLikeName(s) {
   const words = t.split(/\s+/);
   if (words.length > 3) return false;
   // Accept "Paul", "King Saul", "John the Baptist" (3 words)
-  return words.every(w => /^[A-Z][A-Za-z'’\-\.]*$/.test(w));
+  return words.every(w => /^[A-Z][A-Za-z''\-\.]*$/.test(w));
 }
 
 function looksLikePlace(s) {
@@ -147,7 +147,7 @@ function looksLikePlace(s) {
   // Often places are single/two-word capitalized
   const words = t.split(/\s+/);
   if (words.length > 3) return false;
-  return words.every(w => /^[A-Z][A-Za-z'’\-\.]*$/.test(w));
+  return words.every(w => /^[A-Z][A-Za-z''\-\.]*$/.test(w));
 }
 
 function inferLabelType(prompt, label) {

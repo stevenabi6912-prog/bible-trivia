@@ -50,19 +50,19 @@ const catTitle = categoryId === '__ALL__'
 el('pillCat').textContent = catTitle;
 el('pillMode').textContent = mode === 'daily' ? 'Daily Challenge' : 'Practice';
 
-if (mode === ‘daily’) {
+if (mode === 'daily') {
   try {
     const already = await hasDailyAttempt(dailyKey);
     if (already) {
-      alert(‘You already played today\u2019s Daily Challenge with this name. Come back tomorrow!’);
-      location.href = ‘index.html’;
-      throw new Error(‘Daily already played’);
+      alert('You already played today\u2019s Daily Challenge with this name. Come back tomorrow!');
+      location.href = 'index.html';
+      throw new Error('Daily already played');
     }
   } catch (e) {
     // if we redirected, stop; otherwise let the error surface
-    if (location.href.endsWith(‘index.html’)) throw e;
+    if (location.href.endsWith('index.html')) throw e;
     console.error(e);
-    alert(‘Could not verify daily attempt. Check Firebase rules / config.’);
+    alert('Could not verify daily attempt. Check Firebase rules / config.');
   }
 
   // Lock the daily slot immediately — quitting mid-game counts as an attempt
@@ -84,7 +84,7 @@ if (mode === ‘daily’) {
       partial: true,
     });
   } catch (e) {
-    console.warn(‘Could not lock daily attempt:’, e);
+    console.warn('Could not lock daily attempt:', e);
   }
 }
 
