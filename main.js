@@ -1,6 +1,7 @@
 import { initAudioUI, unlockAudio, startMusic, getMusicTime, sfx } from './audio.js';
 import { loadCategories } from './trivia.js';
-import { hasDailyAttempt, normalizePlayerKey } from './scores.js';
+// NOTE: daily-attempt check is intentionally done in play.js, not here,
+// so that we can navigate synchronously and preserve browser user-activation.
 
 const nameEl = document.getElementById('name');
 const catEl = document.getElementById('category');
@@ -91,80 +92,53 @@ function closeAgeModal() {
 
 ageOverlay.addEventListener('click', closeAgeModal);
 
-// ── Launch game (called after age group is confirmed or for practice) ──
-async function launchGame(ageGroup) {
+// ── Launch game — SYNCHRONOUS so user-activation is never lost ──────────────
+// play.js handles the daily-attempt Firebase check after the page loads.
+function launchGame(ageGroup) {
   const name = (nameEl.value || '').trim();
   localStorage.setItem('bt_name', name);
-
-  let categoryId = catEl.value || '__ALL__';
-  if (mode === 'daily') categoryId = '__ALL__';
-
-  const count = 10;
-  const seconds = 15;
-
-  const now = new Date();
-  const dayId = now.toISOString().slice(0, 10);
-  const seasonId = seasonIdFor(now);
-
-  if (mode === 'daily') {
-    const playerKey = normalizePlayerKey(name);
-    const dailyKey = `${dayId}_${playerKey}`;
-
-    try {
-      const already = await hasDailyAttempt(dailyKey);
-      if (already) {
-        alert('Looks like you already played today\u2019s Daily Challenge with this name. Come back tomorrow!');
-        return;
-      }
-    } catch (e) {
-      console.error(e);
-      alert('Could not verify daily attempt. Check Firebase rules / config.');
-      return;
-    }
-  }
+  const categoryId = (mode === 'daily') ? '__ALL__' : (catEl.value || '__ALL__');
 
   const params = new URLSearchParams({
     name,
-    category: (mode === 'daily' ? '__ALL__' : categoryId),
-    count: String(count),
-    seconds: String(seconds),
+    category: categoryId,
     mode,
-    ...(mode === 'daily' ? { ageGroup } : {})
+    ...(mode === 'daily' ? { ageGroup } : {}),
   });
 
-  // Save music playback position so play.html can resume from the same spot
+  // Snapshot playback position so play.html boot script can resume seamlessly
   try { sessionStorage.setItem('bb_musicPos', String(getMusicTime())); } catch(e) {}
   location.href = `play.html?${params.toString()}`;
 }
 
-// Age pick buttons inside the modal
-pickKidBtn.addEventListener('click', async () => {
+// Age pick buttons — fully synchronous click handlers preserve user-activation
+pickKidBtn.addEventListener('click', () => {
   try { sfx.click(); } catch (_) {}
   localStorage.setItem('bt_ageGroup', 'kid');
   closeAgeModal();
-  await launchGame('kid');
+  launchGame('kid');
 });
 
-pickAdultBtn.addEventListener('click', async () => {
+pickAdultBtn.addEventListener('click', () => {
   try { sfx.click(); } catch (_) {}
   localStorage.setItem('bt_ageGroup', 'adult');
   closeAgeModal();
-  await launchGame('adult');
+  launchGame('adult');
 });
 
-// ── Start button ──────────────────────────────────────────────
-startBtn.addEventListener('click', async () => {
-  await unlockAudio();
-  try { await sfx.click(); } catch (_) {}
-  startMusic();
+// ── Start button ──────────────────────────────────────────────────────────────
+startBtn.addEventListener('click', () => {
+  // Fire audio unlock without awaiting — awaiting kills the user-activation token
+  unlockAudio()
+    .then(() => { startMusic(); try { sfx.click(); } catch(_){} })
+    .catch(() => {});
+
   const name = (nameEl.value || '').trim();
   if (!name) { alert('Enter a player name (first name + last initial works great).'); return; }
 
   if (mode === 'daily') {
-    // Show the age group modal — game launches after user picks
-    openAgeModal();
+    openAgeModal();   // age buttons handle navigation
   } else {
-    // Practice mode: skip the modal, launch directly
-    await launchGame('');
+    launchGame('');   // synchronous navigate
   }
 });
