@@ -5,8 +5,9 @@ import { saveScore, hasDailyAttempt, normalizePlayerKey } from './scores.js';
 const qs = new URLSearchParams(location.search);
 initAudioUI();
 
-// Start music immediately — MUST happen before any await so we're still inside
-// the browser's user-gesture window carried over from the "Start Game" click.
+// When launched via the in-page swap in main.js, audio is already playing
+// (same audio.js module instance). startMusic() checks !bg.paused and skips.
+// When play.html is loaded directly (e.g. refresh), this handles the cold start.
 unlockAudio().then(() => startMusic()).catch(() => {});
 const playerName = qs.get('name') || 'Player';
 const categoryIdParam = qs.get('category') || '__ALL__';
