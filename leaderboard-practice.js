@@ -46,10 +46,10 @@ function render(list) {
     tr.innerHTML = `
       <td>${i + 1}</td>
       <td>${escapeHtml(s.name || '')}</td>
-      <td>${escapeHtml(s.category || '')}</td>
+      <td class="col-cat">${escapeHtml(s.category || '')}</td>
       <td><b>${Number(s.score || 0)}</b></td>
       <td>${Number(s.correct || 0)}/${Number(s.total || 0)}</td>
-      <td>${fmtDate(s.createdAt)}</td>
+      <td class="col-date">${fmtDate(s.createdAt)}</td>
     `;
     rowsEl.appendChild(tr);
   });

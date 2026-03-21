@@ -32,7 +32,7 @@ export async function saveScore({
   score, correct, total, ms,
   seasonId, dayId, mode,
   playerKey, dailyKey,
-  ageGroup
+  ageGroup, partial
 }) {
   const clean = {
     name: String(name).slice(0, 18),
@@ -57,6 +57,9 @@ export async function saveScore({
     ageGroup: (mode === 'daily' && (ageGroup === 'kid' || ageGroup === 'adult'))
       ? ageGroup
       : '',
+
+    // partial=true means the game was started but not finished (anti-cheat lock)
+    partial: partial ? true : false,
 
     createdAt: serverTimestamp()
   };
@@ -94,6 +97,9 @@ function subscribeLeaderboard({ category, limit, seasonId, dayId, mode, onData, 
 
   return onSnapshot(q, (snap) => {
     let scores = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+
+    // Never show partial (abandoned) attempts on the leaderboard
+    scores = scores.filter(s => !s.partial);
 
     // Client-side filters
     if (mode) scores = scores.filter(s => (s.mode || '').toLowerCase() === mode);
@@ -144,5 +150,5 @@ export async function fetchLeaderboardOnce({ category, limit, seasonId, dayId, m
   clauses.push(qLimit(limit||50));
   const q = query(...clauses);
   const snap = await getDocs(q);
-  return snap.docs.map(d => ({ id: d.id, ...d.data() }));
+  return snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(s => !s.partial);
 }

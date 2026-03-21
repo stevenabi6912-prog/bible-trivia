@@ -243,16 +243,20 @@ input:focus, select:focus{
   .lbControls, .lbControls--2col{grid-template-columns:1fr}
 }
 
-/* Season read-only display — matches input-lg visually */
-.seasonDisplay{
-  width:100%;
-  padding:14px 14px;
-  border-radius:14px;
-  border:1px solid rgba(255,255,255,0.16);
-  background:rgba(0,0,0,0.18);
-  font-size:18px;
+/* Season value — large centered text in practice leaderboard */
+.seasonVal{
+  font-size:26px;
   font-weight:900;
-  box-sizing:border-box;
+  padding:10px 0 4px;
+  letter-spacing:1px;
+}
+
+/* Read-only leaderboard control cell (e.g. "All Categories" on daily) */
+.lbFixed{
+  color: var(--muted);
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
 }
 .tableWrap{margin-top:10px; overflow:auto; border-radius:14px; border:1px solid rgba(255,255,255,0.12)}
 table{width:100%; border-collapse:collapse; min-width:680px; background:rgba(0,0,0,0.14)}
@@ -908,4 +912,141 @@ input, select{ font-size: 1.05rem; }
   background: rgba(245,158,11,0.12);
   color: #f5c842;
   font-weight: 600;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE — touch / tap friendliness
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Eliminate 300ms tap delay everywhere */
+button, a, input, select, .choice, .modeCard, .lbTab, .agePickBtn {
+  touch-action: manipulation;
+}
+
+/* iOS safe-area padding so content clears the home bar */
+body {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ── Game pill row stacks vertically on narrow screens ── */
+.pillRow--game {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pillRow--game .kv--right {
+  margin-left: auto;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE — phones up to 640 px wide
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  /* Container tighter on small screens */
+  .container { padding: 10px 10px 24px; }
+
+  /* ── Topbar ── */
+  .topbar { gap: 6px; margin-bottom: 10px; }
+  .brandLogo { width: 26px; height: 26px; margin-right: 4px; }
+  .brandText { font-size: 1rem !important; }
+  .topnav { gap: 5px; }
+  .topnav .btn { padding: 7px 9px; font-size: 0.85rem; }
+
+  /* ── Card ── */
+  .card { padding: 14px 12px; }
+
+  /* ── Pills (play page header) ── */
+  .pill { font-size: 11px; padding: 5px 9px; }
+  .pillRow { gap: 5px; }
+  .kv { gap: 5px; }
+
+  /* ── Game pill rows: left group on top, right group below ── */
+  .pillRow--game {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+  .pillRow--game .kv {
+    flex-wrap: wrap;
+  }
+  .pillRow--game .kv--right {
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+
+  /* ── Choice buttons: full-width, thumb-friendly ── */
+  .choices { gap: 10px; margin-top: 12px; }
+  .choice {
+    padding: 18px 14px;
+    min-height: 58px;
+    font-size: 1rem;
+  }
+
+  /* ── Question text ── */
+  .qPrompt, #question { font-size: 1rem; }
+
+  /* ── Score display ── */
+  .scoreDisplay { gap: 20px; padding: 16px 0 12px; }
+  .statVal { font-size: 2.2rem; }
+  .statDivider { height: 44px; }
+
+  /* ── Result page: stack all action buttons full-width ── */
+  .resultActions { gap: 10px; }
+  .resultActionsSecondary {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .resultActionsSecondary .btn { justify-content: center; }
+  .btn-big { width: 100%; min-width: unset; }
+
+  /* ── Leaderboard table: ditch the desktop min-width, hide less-critical columns ── */
+  table { min-width: 0; }
+  th, td { padding: 10px 8px; font-size: 12px; }
+  .tableWrap { border-radius: 10px; }
+  /* Hide Date on daily, hide Category+Date on practice to avoid horizontal scroll */
+  .col-date, .col-cat { display: none; }
+
+  /* ── Leaderboard age tabs ── */
+  .lbTab { padding: 7px 12px; font-size: 13px; }
+  .lbTabs { gap: 5px; }
+
+  /* ── Winner banners ── */
+  .winnerBannerName { font-size: 14px; }
+  .winnerBannerIcon { font-size: 22px; }
+
+  /* ── Season display ── */
+  .seasonVal { font-size: 20px; padding: 6px 0 2px; }
+
+  /* ── Modal slider control ── */
+  .settingControl { width: min(260px, 60vw); }
+
+  /* ── Mode cards ── */
+  .modeTitle { font-size: 18px; }
+  .modeDesc  { font-size: 14px; }
+  .modeBullets { font-size: 13px; }
+  .modeCard { padding: 14px; }
+
+  /* ── Rule strip pills ── */
+  .rulePill { font-size: 13px; padding: 8px 10px; }
+  .rulesStrip { gap: 7px; }
+
+  /* ── Footer row: stack buttons ── */
+  .footerRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .footerRow > * { justify-content: center; text-align: center; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE — very small phones (≤ 390 px, e.g. iPhone SE)
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 390px) {
+  .container { padding: 8px 8px 20px; }
+  .brandText { font-size: 0.9rem !important; }
+  .topnav .btn { padding: 6px 8px; font-size: 0.8rem; }
+  .statVal { font-size: 1.9rem; }
+  .scoreDisplay { gap: 14px; }
+  .statDivider { height: 38px; }
+  .pill { font-size: 10px; padding: 4px 7px; }
 }

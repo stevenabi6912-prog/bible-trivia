@@ -15,7 +15,7 @@ const ageGroup = (rawAgeGroup === 'kid') ? 'kid' : 'adult';
 
 // Locked competitive settings
 const QUESTION_COUNT = 10;
-const SECONDS_PER = 15;
+const SECONDS_PER = 20;
 
 const el = (id) => document.getElementById(id);
 
@@ -50,24 +50,53 @@ const catTitle = categoryId === '__ALL__'
 el('pillCat').textContent = catTitle;
 el('pillMode').textContent = mode === 'daily' ? 'Daily Challenge' : 'Practice';
 
-if (mode === 'daily') {
+if (mode === ‘daily’) {
   try {
     const already = await hasDailyAttempt(dailyKey);
     if (already) {
-      alert('You already played today’s Daily Challenge with this name. Come back tomorrow!');
-      location.href = 'index.html';
-      throw new Error('Daily already played');
+      alert(‘You already played today\u2019s Daily Challenge with this name. Come back tomorrow!’);
+      location.href = ‘index.html’;
+      throw new Error(‘Daily already played’);
     }
   } catch (e) {
     // if we redirected, stop; otherwise let the error surface
-    if (location.href.endsWith('index.html')) throw e;
+    if (location.href.endsWith(‘index.html’)) throw e;
     console.error(e);
-    alert('Could not verify daily attempt. Check Firebase rules / config.');
+    alert(‘Could not verify daily attempt. Check Firebase rules / config.’);
+  }
+
+  // Lock the daily slot immediately — quitting mid-game counts as an attempt
+  try {
+    await saveScore({
+      name: playerName,
+      playerKey,
+      dailyKey,
+      category: catTitle,
+      categoryId,
+      score: 0,
+      correct: 0,
+      total: QUESTION_COUNT,
+      ms: 0,
+      seasonId,
+      dayId,
+      mode,
+      ageGroup,
+      partial: true,
+    });
+  } catch (e) {
+    console.warn(‘Could not lock daily attempt:’, e);
   }
 }
 
 // Start music as soon as the play page loads (user already gave a gesture on the start screen)
 unlockAudio().then(() => startMusic()).catch(() => {});
+
+// Fallback: start music on first interaction if page-load autoplay was blocked
+const _musicOnFirst = () => {
+  unlockAudio().then(() => startMusic()).catch(() => {});
+  document.removeEventListener('click', _musicOnFirst, true);
+};
+document.addEventListener('click', _musicOnFirst, true);
 
 let round = [];
 try {

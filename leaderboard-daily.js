@@ -119,6 +119,7 @@ function render(scores, limit) {
     correct.textContent = String(Number(s.correct) || 0);
 
     const date = document.createElement('td');
+    date.className = 'col-date';
     date.textContent = fmtDate(s.createdAt || s.date);
 
     tr.append(rank, name, score, correct, date);

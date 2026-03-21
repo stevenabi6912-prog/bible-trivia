@@ -14,7 +14,8 @@
     <header class="topbar">
       <a class="btn btn-ghost" href="index.html">← Home</a>
       <div class="brand">
-        <span class="brandText">🏆 Daily Leaderboard</span>
+        <img class="brandLogo" src="assets/bible-battle-logo.png" alt="Bible Battle"/>
+        <span class="brandText">Daily Leaderboard</span>
       </div>
       <nav class="topnav">
         <button id="settingsBtn" class="btn btn-ghost" type="button">⚙️ Settings</button>
@@ -45,13 +46,19 @@
       </div>
 
       <!-- ── Controls ────────────────────────────────────────── -->
-      <div class="lbControls lbControls--2col">
+      <div class="lbControls">
+        <div>
+          <label>Challenge</label>
+          <div class="input-lg lbFixed">All Categories</div>
+        </div>
+
         <div>
           <label for="view">View</label>
           <select id="view" class="input-lg">
             <option value="week" selected>This Week</option>
             <option value="today">Today</option>
           </select>
+          <div class="helper" id="seasonLabel"></div>
         </div>
 
         <div>
@@ -63,7 +70,6 @@
           </select>
         </div>
       </div>
-      <div class="helper" id="seasonLabel"></div>
 
       <!-- ── Age Group Tabs ──────────────────────────────────── -->
       <div class="lbTabs" role="tablist" aria-label="Age group">
@@ -78,14 +84,14 @@
       <div class="statusText" id="status"></div>
 
       <div class="tableWrap" id="lbPanel" role="tabpanel">
-        <table class="table">
+        <table class="table lbTable--daily">
           <thead>
             <tr>
               <th>#</th>
               <th>Name</th>
               <th class="num">Score</th>
               <th class="num">Correct</th>
-              <th>Date</th>
+              <th class="col-date">Date</th>
             </tr>
           </thead>
           <tbody id="rows"></tbody>
