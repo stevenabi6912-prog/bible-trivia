@@ -141,19 +141,19 @@ function updateWinnerBanners() {
 
   const fmt = (d) => d.toLocaleDateString();
 
-  // Kids — current week leader (prize is awarded at end of the week)
-  const kidsThisWeek = rawDaily.filter(s => {
+  // Kids — last week's top kid (mirrors the adults banner)
+  const kidsLastWeek = rawDaily.filter(s => {
     if (s.ageGroup !== 'kid') return false;
     const d = scoreLocalDate(s);
-    return d && d >= thisWeekStart && d < nextWeekStart;
+    return d && d >= lastWeekStart && d < thisWeekStart;
   });
-  const kidsTop = sortScores(kidsThisWeek)[0];
+  const kidsTop = sortScores(kidsLastWeek)[0];
   if (kidsWeeklyWinnerEl) {
     kidsWeeklyWinnerEl.textContent = kidsTop
       ? `${kidsTop.playerName || kidsTop.name || 'Anonymous'} — ${Number(kidsTop.score) || 0} pts (${Number(kidsTop.correct) || 0} correct)`
-      : 'No kids scores yet this week';
+      : '—';
   }
-  if (kidsWeeklyRangeEl) kidsWeeklyRangeEl.textContent = `${fmt(thisWeekStart)} – ${fmt(lastWeekEnd < thisWeekStart ? thisWeekStart : now)}`;
+  if (kidsWeeklyRangeEl) kidsWeeklyRangeEl.textContent = `${fmt(lastWeekStart)} – ${fmt(lastWeekEnd)}`;
 
   // Adults — last week's top player
   const adultsLastWeek = rawDaily.filter(s => {
