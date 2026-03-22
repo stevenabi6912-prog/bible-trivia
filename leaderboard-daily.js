@@ -177,14 +177,17 @@ function applyView() {
 
   let baseScores;
 
-  if (viewEl.value === 'today') {
-    const todayId = dayIdFor(now);
+  if (viewEl.value === 'lastweek') {
+    const thisWeekStart = weekStartSunday(now);
+    const lastWeekStart = new Date(thisWeekStart);
+    lastWeekStart.setDate(lastWeekStart.getDate() - 7);
     baseScores = rawDaily.filter(s => {
-      if (s.dayId) return s.dayId === todayId;
       const d = scoreLocalDate(s);
-      return d && dayIdFor(d) === todayId;
+      return d && d >= lastWeekStart && d < thisWeekStart;
     });
-    labelEl.textContent = `Today: ${todayId}`;
+    const lastWeekEnd = new Date(thisWeekStart);
+    lastWeekEnd.setDate(lastWeekEnd.getDate() - 1);
+    labelEl.textContent = `Week of ${dayIdFor(lastWeekStart)}`;
   } else {
     const start = weekStartSunday(now);
     const end   = new Date(start);
