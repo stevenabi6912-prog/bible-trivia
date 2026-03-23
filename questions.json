@@ -171,7 +171,7 @@
             "Horse",
             "Camel",
             "Lion",
-            "Colt"
+            "Colt of an ass"
           ]
         },
         {
@@ -911,11 +911,11 @@
         {
           "id": "battles_of_the_bible_0040",
           "prompt": "What was the second way in which Gideon reduced his army?",
-          "answer": "He took them to the water to drink, and whoever lapped like a dog, he",
+          "answer": "He took them to the water to drink, and whoever lapped like a dog was chosen",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "He took them to the water to drink, and whoever lapped like a dog",
+            "He took them to the water to drink, and whoever lapped like a dog was chosen",
             "He tested their skill with a sword",
             "He had them run and chose the fastest",
             "He asked which men had crossed the Jordan"
@@ -1593,11 +1593,11 @@
         {
           "id": "the_church_in_acts_0002",
           "prompt": "From which mount did Jesus ascend to heaven?",
-          "answer": "Mount of Olives / Olivette",
+          "answer": "Mount of Olives / Olivet",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Mount of Olives / Olivette",
+            "Mount of Olives / Olivet",
             "Mount Sinai",
             "Mount Zion",
             "Mount Moriah"
@@ -1632,11 +1632,11 @@
         {
           "id": "the_church_in_acts_0005",
           "prompt": "What Apostles were present in the upper room?",
-          "answer": "Peter, James, john, Andrew, Philip, Thomas, Bartholomew, Matthew, Jame",
+          "answer": "Peter, James, John, Andrew, Philip, Thomas, Bartholomew, Matthew, James the son of Alphaeus, Simon Zelotes, and Judas the brother of James",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Peter, James, john, Andrew, Philip, Thomas, Bartholomew, Matthew, Jame",
+            "Peter, James, John, Andrew, Philip, Thomas, Bartholomew, Matthew, James the son of Alphaeus, Simon Zelotes, and Judas the brother of James",
             "Peter, Paul, John, Barnabas, Philip, Thomas, Mark, Matthew, Luke",
             "Peter, James, John, Silas, Philip, Titus, Bartholomew, Matthew, James",
             "Andrew, Peter, James, John, Judas Iscariot, Philip, Thomas, Bartholomew, Matthew"
@@ -1774,7 +1774,7 @@
         },
         {
           "id": "the_church_in_acts_0016",
-          "prompt": "When the Jews asked the Jews what they should do, what did Peter tell them?",
+          "prompt": "When the Jews asked Peter and the other apostles what they should do, what did Peter tell them?",
           "answer": "Repent and be baptized",
           "reference": "",
           "difficulty": 1,
@@ -1814,11 +1814,11 @@
         {
           "id": "the_church_in_acts_0019",
           "prompt": "The people that were saved on the day of Pentecost continued steadfastly in what?",
-          "answer": "The apostle's doctrine and fellowship, and in breaking of breads and in prayers",
+          "answer": "The apostle's doctrine and fellowship, and in breaking of bread and in prayers",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "The apostle's doctrine and fellowship, and in breaking of breads and in prayers",
+            "The apostle's doctrine and fellowship, and in breaking of bread and in prayers",
             "The temple worship and giving of alms",
             "Fasting, prayer, and service to the poor",
             "Scripture reading, singing, and tithing"
@@ -2294,14 +2294,14 @@
         {
           "id": "the_book_of_galatians_0015",
           "prompt": "How many days did Paul stay with Peter in Jerusalem?",
-          "answer": "15 Days 1:19-24",
-          "reference": "",
+          "answer": "15 days",
+          "reference": "Galatians 1:18",
           "difficulty": 1,
           "choices": [
-            "100",
-            "14",
+            "3",
             "7",
-            "15 Days 1:19-24"
+            "14",
+            "15 days"
           ]
         },
         {
@@ -2527,7 +2527,7 @@
         },
         {
           "id": "the_book_of_galatians_0033",
-          "prompt": "According to Galatians 2:12, who did James eat with before certain men came?",
+          "prompt": "According to Galatians 2:12, who did Peter (Cephas) eat with before certain men came from James?",
           "answer": "The Gentiles",
           "reference": "",
           "difficulty": 1,
@@ -4010,7 +4010,7 @@
             "Timotheus and Sylvanus",
             "Barnabas and Titus",
             "Luke and Titus",
-            "Silas and Timothy"
+            "Aquila and Priscilla"
           ]
         },
         {
@@ -4989,9 +4989,9 @@
           "difficulty": 1,
           "choices": [
             "8 years",
-            "5",
-            "30",
-            "120"
+            "5 years",
+            "30 years",
+            "10 years"
           ]
         },
         {
@@ -5132,8 +5132,8 @@
           "difficulty": 1,
           "choices": [
             "About 10,000",
-            "1",
-            "318",
+            "500",
+            "3,000",
             "50"
           ]
         },
@@ -5352,9 +5352,9 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Ibzan",
-            "Saul",
-            "Elon",
+            "On a horse",
+            "By chariot",
+            "By camel",
             "By foot"
           ]
         },
@@ -5808,9 +5808,9 @@
           "difficulty": 1,
           "choices": [
             "Oreb & Zeeb",
-            "Othniel",
-            "Ehud",
-            "Abdon"
+            "Zebah and Zalmunna",
+            "Sisera and Jabin",
+            "Abimelech and Tola"
           ]
         },
         {
@@ -5924,10 +5924,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Abdon",
-            "He hid himself",
-            "Jephthah"
+            "He ran to Beer",
+            "He was protected by the elders",
+            "Abimelech spared him",
+            "He hid himself"
           ]
         },
         {
@@ -6044,7 +6044,7 @@
             "Hebron",
             "Gibeon",
             "Thebez",
-            "Jordan River"
+            "Penuel"
           ]
         },
         {
@@ -6055,9 +6055,9 @@
           "difficulty": 1,
           "choices": [
             "All the men and woman of the city",
-            "Ehud",
-            "Jephthah",
-            "Elon"
+            "The priests and elders",
+            "The garrison of soldiers",
+            "The Israelite women"
           ]
         },
         {
@@ -6080,9 +6080,9 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Micah",
-            "Othniel",
-            "Ibzan",
+            "A woman of Thebez",
+            "Jotham",
+            "Gaal son of Ebed",
             "His armourbearer"
           ]
         },
@@ -6275,10 +6275,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "300",
-            "4",
+            "10 years",
+            "4 years",
             "6 years",
-            "120"
+            "20 years"
           ]
         },
         {
@@ -6289,9 +6289,9 @@
           "difficulty": 1,
           "choices": [
             "30 sons and 30 daughters",
-            "70",
-            "7",
-            "40"
+            "20 sons and 20 daughters",
+            "40 sons and 40 daughters",
+            "7 sons and 7 daughters"
           ]
         },
         {
@@ -6718,7 +6718,7 @@
           "difficulty": 1,
           "choices": [
             "7",
-            "318",
+            "12",
             "5 men",
             "600"
           ]
@@ -6983,9 +6983,9 @@
           "reference": "1 Kings 1:52",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Artaxerxes",
-            "Micaiah",
+            "He would be cast into prison",
+            "He would be exiled from the land",
+            "He would be put in chains",
             "Not an hair of him would fall to the earth"
           ]
         },
@@ -6996,9 +6996,9 @@
           "reference": "1Kings 1:52",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Elisha",
-            "Ben-hadad",
+            "He would be exiled",
+            "He would lose his throne",
+            "He would be imprisoned",
             "He would die"
           ]
         },
@@ -7178,9 +7178,9 @@
           "reference": "1Kings 6:21-22",
           "difficulty": 1,
           "choices": [
-            "Naaman",
-            "Herod",
-            "Jehu",
+            "Cedar wood",
+            "Bronze",
+            "Silver",
             "Pure Gold"
           ]
         },
@@ -7334,10 +7334,10 @@
           "reference": "1Kings 11:40",
           "difficulty": 1,
           "choices": [
-            "Naaman",
+            "Moab",
             "Egypt",
-            "Herod",
-            "Cyrus"
+            "Syria",
+            "Philistia"
           ]
         },
         {
@@ -7477,10 +7477,10 @@
           "reference": "1Kings 14:30",
           "difficulty": 1,
           "choices": [
-            "Herod Agrippa",
-            "Darius",
+            "Peace",
             "War",
-            "Jeroboam"
+            "A covenant",
+            "An alliance"
           ]
         },
         {
@@ -7491,9 +7491,9 @@
           "difficulty": 1,
           "choices": [
             "Judah",
-            "Belshazzar",
-            "Nebuchadnezzar",
-            "Cyrus"
+            "Israel",
+            "Edom",
+            "Moab"
           ]
         },
         {
@@ -7551,14 +7551,14 @@
         {
           "id": "the_book_of_1_kings_0051",
           "prompt": "When Israel divided who were the two leaders, and which one prevailed?",
-          "answer": "Tibni and and Omri. Omri prevailed",
+          "answer": "Tibni and Omri. Omri prevailed",
           "reference": "1Kings 16:21",
           "difficulty": 1,
           "choices": [
-            "Tibni and and Omri. Omri prevailed",
-            "Hazael",
-            "David",
-            "Herod"
+            "Tibni and Omri. Omri prevailed",
+            "Baasha and Zimri. Baasha prevailed",
+            "Nadab and Asa. Asa prevailed",
+            "Jeroboam and Elah. Elah prevailed"
           ]
         },
         {
@@ -7582,9 +7582,9 @@
           "difficulty": 1,
           "choices": [
             "Jezebel",
-            "Cyrus",
-            "Elisha",
-            "Herod Agrippa"
+            "Bathsheba",
+            "Michal",
+            "Delilah"
           ]
         },
         {
@@ -7594,9 +7594,9 @@
           "reference": "1Kings 16:31",
           "difficulty": 1,
           "choices": [
-            "David",
-            "Pharaoh",
-            "Artaxerxes",
+            "Moloch",
+            "Ashtoreth",
+            "Dagon",
             "Baal"
           ]
         },
@@ -7642,14 +7642,14 @@
         {
           "id": "the_book_of_1_kings_0058",
           "prompt": "What would happen if the widow gave Elijah a cake first?",
-          "answer": "The barrel of meal would not waste, neither would the cruse of oil fai",
+          "answer": "The barrel of meal would not waste, neither would the cruse of oil fail",
           "reference": "1Kings 17:14",
           "difficulty": 1,
           "choices": [
-            "The barrel of meal would not waste, neither would the cruse of oil fai",
-            "Ben-hadad",
-            "Josiah",
-            "Darius"
+            "The barrel of meal would not waste, neither would the cruse of oil fail",
+            "Her son would be raised from the dead",
+            "She would never go hungry again",
+            "She would be healed of all sickness"
           ]
         },
         {
@@ -7694,14 +7694,14 @@
         {
           "id": "the_book_of_1_kings_0062",
           "prompt": "How would Elijah or the prophets of Baal prove who was God?",
-          "answer": "Elijah would call unto God and the prophets of Baal would call unto Ba",
+          "answer": "The god who answered by fire would be God",
           "reference": "1Kings 18:24",
           "difficulty": 1,
           "choices": [
-            "Ahab",
-            "Herod",
-            "Solomon",
-            "Elijah would call unto God and the prophets of Baal would call unto Ba"
+            "The god who answered by fire would be God",
+            "The god who sent rain would be God",
+            "The god whose sacrifice was consumed first would win",
+            "The god who could make the sun stand still would win"
           ]
         },
         {
@@ -7763,23 +7763,23 @@
           "reference": "1Kings 19:20",
           "difficulty": 1,
           "choices": [
-            "Jehu",
-            "Ben-hadad",
-            "Saul",
+            "Sell his oxen",
+            "Offer a sacrifice first",
+            "Say farewell to his servants",
             "Kiss his father and mother"
           ]
         },
         {
           "id": "the_book_of_1_kings_0068",
           "prompt": "Why did the servants if the king of Syria say they lost the battle?",
-          "answer": "They said Israel's god's are god's of the hills and that was where the",
+          "answer": "They said Israel's gods are gods of the hills and not of the plains",
           "reference": "1Kings 20:23",
           "difficulty": 1,
           "choices": [
-            "Saul",
-            "They said Israel's god's are god's of the hills and that was where the",
-            "Hazael",
-            "David"
+            "They said Israel's gods are gods of the hills and not of the plains",
+            "They said Israel had no true god",
+            "They said Israel was weakened by famine",
+            "They said Israel's warriors had better weapons"
           ]
         },
         {
@@ -7789,10 +7789,10 @@
           "reference": "1Kings 20:29",
           "difficulty": 1,
           "choices": [
-            "Micaiah",
+            "Lose",
             "Win",
-            "Josiah",
-            "Saul"
+            "Draw",
+            "Surrender"
           ]
         },
         {
@@ -7802,10 +7802,10 @@
           "reference": "1Kings 21:1",
           "difficulty": 1,
           "choices": [
-            "Herod Agrippa",
-            "Ahab",
-            "Herod",
-            "Naboth"
+            "Elijah",
+            "Naboth",
+            "Jehu",
+            "Omri"
           ]
         },
         {
@@ -7815,9 +7815,9 @@
           "reference": "1Kings 21:3",
           "difficulty": 1,
           "choices": [
-            "Zedekiah",
-            "Darius",
-            "Naaman",
+            "He was saving it for his sons",
+            "He wanted a higher price",
+            "He refused to deal with Ahab",
             "He said the Lord told him not to"
           ]
         },
@@ -7828,10 +7828,10 @@
           "reference": "1Kings 21:4",
           "difficulty": 1,
           "choices": [
-            "Solomon",
+            "He went to Jezebel immediately",
             "Laid on his bed, turned away his face, and would not eat",
-            "Rehoboam",
-            "Artaxerxes"
+            "He called his council of elders",
+            "He fasted and prayed to Baal"
           ]
         },
         {
@@ -7868,9 +7868,9 @@
           "difficulty": 1,
           "choices": [
             "He humbled himself before God",
-            "Darius",
-            "Jeroboam",
-            "Pharaoh"
+            "He refused to believe the prophecy",
+            "He offered sacrifices to Baal",
+            "He fled to another city"
           ]
         },
         {
@@ -7880,10 +7880,10 @@
           "reference": "1Kings 22:4,29",
           "difficulty": 1,
           "choices": [
-            "Pharaoh",
+            "Asa",
             "Jehoshaphat",
-            "Rehoboam",
-            "Hazael"
+            "Joash",
+            "Amaziah"
           ]
         },
         {
@@ -7938,10 +7938,10 @@
           "reference": "2Kings 1:2",
           "difficulty": 1,
           "choices": [
+            "A window",
+            "A rooftop",
             "A lattice",
-            "Elijah",
-            "Jehu",
-            "Josiah"
+            "A staircase"
           ]
         },
         {
@@ -7951,10 +7951,10 @@
           "reference": "2Kings 1:8",
           "difficulty": 1,
           "choices": [
-            "Artaxerxes",
-            "Ahab",
             "A hairy man and girt with a girdle of leather about his loins",
-            "David"
+            "A young man clothed in white linen",
+            "A tall man dressed in royal robes",
+            "A man wearing sackcloth and ashes"
           ]
         },
         {
@@ -7964,10 +7964,10 @@
           "reference": "2Kings 2:9",
           "difficulty": 1,
           "choices": [
-            "Solomon",
-            "Hezekiah",
             "A double portion of his spirit",
-            "Jehu"
+            "A mantle and a staff",
+            "The spirit of prophecy",
+            "His chariot and horses"
           ]
         },
         {
@@ -7977,10 +7977,10 @@
           "reference": "2Kings 2:11",
           "difficulty": 1,
           "choices": [
-            "Darius",
-            "Artaxerxes",
-            "Hazael",
-            "A chariot of fire and horses of fire"
+            "A chariot of fire and horses of fire",
+            "A whirlwind and a great cloud",
+            "Angels with drawn swords",
+            "A great flash of lightning"
           ]
         },
         {
@@ -7990,10 +7990,10 @@
           "reference": "2Kings 2:11",
           "difficulty": 1,
           "choices": [
-            "Herod",
-            "Ben-hadad",
+            "A chariot of fire",
             "A whirlwind",
-            "Herod Agrippa"
+            "A pillar of cloud",
+            "A great rushing wind"
           ]
         },
         {
@@ -8029,10 +8029,10 @@
           "reference": "2Kings 2:23",
           "difficulty": 1,
           "choices": [
-            "Elijah",
+            "Flee from us, old man",
+            "Stop and speak to us",
             "Go up, thou bald head",
-            "Pharaoh",
-            "Cyrus"
+            "Come down and help us"
           ]
         },
         {
@@ -8055,10 +8055,10 @@
           "reference": "2Kings 3:4",
           "difficulty": 1,
           "choices": [
-            "Solomon",
-            "Herod Agrippa",
+            "A potter",
             "A sheepmaster",
-            "Jehu"
+            "A silversmith",
+            "A farmer"
           ]
         },
         {
@@ -8068,10 +8068,10 @@
           "reference": "2Kings 3:16",
           "difficulty": 1,
           "choices": [
-            "Solomon",
             "Make this valley full of ditches",
-            "Cyrus",
-            "Ahab"
+            "Fill the valley with stones",
+            "Cut down the trees of the valley",
+            "Build a wall across the valley"
           ]
         },
         {
@@ -8081,10 +8081,10 @@
           "reference": "2Kings 3:22",
           "difficulty": 1,
           "choices": [
-            "Cyrus",
+            "Clear water",
             "Red blood",
-            "Hazael",
-            "Darius"
+            "A rushing river",
+            "Dark mud"
           ]
         },
         {
@@ -8094,10 +8094,10 @@
           "reference": "2Kings 3:27",
           "difficulty": 1,
           "choices": [
-            "Zedekiah",
-            "Micaiah",
-            "Cyrus",
-            "His eldest son"
+            "His servants",
+            "Three of his captains",
+            "His eldest son",
+            "His army commanders"
           ]
         },
         {
@@ -8107,10 +8107,10 @@
           "reference": "2Kings 4:7",
           "difficulty": 1,
           "choices": [
-            "Pharaoh",
-            "Hazael",
+            "Pour it out as an offering",
+            "Give it to the poor",
             "Sell it",
-            "Herod Agrippa"
+            "Use it to anoint your sons"
           ]
         },
         {
@@ -8120,10 +8120,10 @@
           "reference": "2Kings 4:10",
           "difficulty": 1,
           "choices": [
-            "Solomon",
-            "Rehoboam",
             "A bed, a table, a stool, and a candlestick",
-            "Belshazzar"
+            "A bed, a lamp, and a pitcher of water",
+            "A table, two chairs, and a window",
+            "A stool, a basin, and a lamp stand"
           ]
         },
         {
@@ -8133,10 +8133,10 @@
           "reference": "2Kings 4:26",
           "difficulty": 1,
           "choices": [
+            "The child is dead",
             "It is well",
-            "Hazael",
-            "Hezekiah",
-            "Cyrus"
+            "He is very ill",
+            "All is not well"
           ]
         },
         {
@@ -8185,10 +8185,10 @@
           "reference": "2Kings 5:22",
           "difficulty": 1,
           "choices": [
-            "Nebuchadnezzar",
             "A talent and two changes of garments",
-            "Solomon",
-            "Hazael"
+            "A bag of silver and bread",
+            "Ten pieces of gold",
+            "A garment and a ring"
           ]
         },
         {
@@ -8198,10 +8198,10 @@
           "reference": "2Kings 5:27",
           "difficulty": 1,
           "choices": [
-            "Belshazzar",
             "A leper as white as snow",
-            "Ben-hadad",
-            "Rehoboam"
+            "Blind in both eyes",
+            "Lame in his feet",
+            "Deaf and unable to speak"
           ]
         },
         {
@@ -8211,10 +8211,10 @@
           "reference": "2Kings 6:5",
           "difficulty": 1,
           "choices": [
+            "A sword",
+            "A spear",
             "An axe head",
-            "Elisha",
-            "Rehoboam",
-            "Elijah"
+            "An iron plow"
           ]
         },
         {
@@ -8224,10 +8224,10 @@
           "reference": "2Kings 6:17",
           "difficulty": 1,
           "choices": [
-            "David",
             "The mountain full of horses and chariots of fire around Elisha",
-            "Jeroboam",
-            "Hazael"
+            "The enemy army surrounding the city",
+            "A great flood covering the valley",
+            "Angels standing at the city gates"
           ]
         },
         {
@@ -8237,10 +8237,10 @@
           "reference": "2Kings 6:18",
           "difficulty": 1,
           "choices": [
-            "Artaxerxes",
-            "Herod Agrippa",
+            "Strike them dead",
+            "Send fire from heaven",
             "Smite them with blindness",
-            "Hezekiah"
+            "Cause them to flee"
           ]
         },
         {
@@ -8250,10 +8250,10 @@
           "reference": "2Kings 6:25",
           "difficulty": 1,
           "choices": [
-            "Darius",
-            "Cyrus",
             "A cab of dove's dung",
-            "Saul"
+            "A measure of barley",
+            "A handful of flour",
+            "A piece of bread"
           ]
         },
         {
@@ -8276,10 +8276,10 @@
           "reference": "2Kings 6:6",
           "difficulty": 1,
           "choices": [
-            "Nebuchadnezzar",
-            "Darius",
             "Chariots, horses, and a great host",
-            "Jehu"
+            "Swords, spears, and a battering ram",
+            "Fire, cloud, and a strong wind",
+            "A siege wall and a great army"
           ]
         },
         {
@@ -8289,10 +8289,10 @@
           "reference": "2Kings 7:16",
           "difficulty": 1,
           "choices": [
-            "Josiah",
-            "Pharaoh",
+            "A shekel of silver and a loaf of bread",
             "2 measures of barley and a measure of fine flour",
-            "David"
+            "A measure of oil and two measures of wheat",
+            "Three measures of barley and a skin of wine"
           ]
         },
         {
@@ -8354,10 +8354,10 @@
           "reference": "2Kings 9:24",
           "difficulty": 1,
           "choices": [
+            "A spear",
+            "A sword",
             "A bow",
-            "Nebuchadnezzar",
-            "David",
-            "Darius"
+            "A sling"
           ]
         },
         {
@@ -8367,10 +8367,10 @@
           "reference": "2Kings 9:36",
           "difficulty": 1,
           "choices": [
-            "Zedekiah",
+            "She was buried in the field",
             "Dogs ate it",
-            "Ahab",
-            "Artaxerxes"
+            "She was thrown into the river",
+            "She was burned with fire"
           ]
         },
         {
@@ -8406,10 +8406,10 @@
           "reference": "2Kings 10:36",
           "difficulty": 1,
           "choices": [
-            "Hazael",
-            "Artaxerxes",
-            "Herod Agrippa",
-            "28 years"
+            "16 years",
+            "40 years",
+            "28 years",
+            "12 years"
           ]
         },
         {
@@ -8419,10 +8419,10 @@
           "reference": "2Kings 11:3",
           "difficulty": 1,
           "choices": [
-            "Josiah",
+            "10 years",
+            "4 years",
             "6 years",
-            "Ben-hadad",
-            "Artaxerxes"
+            "2 years"
           ]
         },
         {
@@ -8432,10 +8432,10 @@
           "reference": "2Kings 11:10",
           "difficulty": 1,
           "choices": [
-            "Herod",
-            "Micaiah",
-            "Hezekiah",
-            "King David's spears and shields"
+            "King David's spears and shields",
+            "Gold from the treasury",
+            "Silver candlesticks from the temple",
+            "Bronze pillars from the temple"
           ]
         },
         {
@@ -8445,10 +8445,10 @@
           "reference": "2Kings 11:21",
           "difficulty": 1,
           "choices": [
-            "Artaxerxes",
-            "Jeroboam",
+            "12 years old",
+            "5 years old",
             "7 years old",
-            "Belshazzar"
+            "10 years old"
           ]
         },
         {
@@ -8458,10 +8458,10 @@
           "reference": "2Kings 12:5",
           "difficulty": 1,
           "choices": [
-            "Saul",
             "Repair the Breaches of the house",
-            "Ahab",
-            "Darius"
+            "Build a new altar in the temple",
+            "Restore the ark to its place",
+            "Buy new vessels for the priests"
           ]
         },
         {
@@ -8471,10 +8471,10 @@
           "reference": "2Kings 12:20",
           "difficulty": 1,
           "choices": [
+            "The priests of the temple",
+            "The soldiers of the guard",
             "His servants",
-            "Micaiah",
-            "Hazael",
-            "Herod"
+            "The elders of the city"
           ]
         },
         {
@@ -8485,9 +8485,9 @@
           "difficulty": 1,
           "choices": [
             "Hazael king of Syria",
-            "Josiah",
-            "Herod",
-            "Solomon"
+            "Shalmaneser king of Assyria",
+            "Pharaoh Necho of Egypt",
+            "Mesha king of Moab"
           ]
         },
         {
@@ -8497,10 +8497,10 @@
           "reference": "2Kings 14:4",
           "difficulty": 1,
           "choices": [
+            "Imprisoned them",
+            "Sent them into exile",
             "Slew them",
-            "Zedekiah",
-            "Hazael",
-            "Micaiah"
+            "Made them servants"
           ]
         },
         {
@@ -8510,10 +8510,10 @@
           "reference": "2Kings 14:6",
           "difficulty": 1,
           "choices": [
-            "Hazael",
-            "Jehu",
+            "For the sins of his fathers",
             "For his own sin",
-            "Saul"
+            "Because the people sinned",
+            "For breaking the covenant"
           ]
         },
         {
@@ -8523,10 +8523,10 @@
           "reference": "2Kings 14:8",
           "difficulty": 1,
           "choices": [
-            "Naaman",
-            "Zedekiah",
-            "Pharaoh",
-            "Come let us look one another in the face"
+            "Come let us look one another in the face",
+            "Let us make a treaty of peace",
+            "Let us settle this by combat",
+            "Let us divide the land between us"
           ]
         },
         {
@@ -8536,10 +8536,10 @@
           "reference": "2Kings 15:13",
           "difficulty": 1,
           "choices": [
-            "Darius",
-            "Jehu",
+            "Three days",
+            "Seven days",
             "A full month",
-            "Josiah"
+            "Forty days"
           ]
         },
         {
@@ -8549,10 +8549,10 @@
           "reference": "2Kings 17:14",
           "difficulty": 1,
           "choices": [
-            "Herod",
+            "The LORD's statutes",
+            "The king's commands",
             "Their father's",
-            "Elisha",
-            "Naaman"
+            "The priests' instructions"
           ]
         },
         {
@@ -8562,10 +8562,10 @@
           "reference": "2Kings 19:15",
           "difficulty": 1,
           "choices": [
-            "Herod",
-            "Pharaoh",
-            "Nebuchadnezzar",
-            "Between the cherubims"
+            "Above the mercy seat",
+            "Between the cherubims",
+            "Before the altar of incense",
+            "At the door of the tabernacle"
           ]
         },
         {
@@ -8575,10 +8575,10 @@
           "reference": "2Kings 19:35",
           "difficulty": 1,
           "choices": [
-            "David",
+            "Ten thousand",
             "An hundred fourscore and five thousand",
-            "Elisha",
-            "Cyrus"
+            "Three hundred thousand",
+            "Fifty thousand"
           ]
         },
         {
@@ -8588,10 +8588,10 @@
           "reference": "2Kings 19:37",
           "difficulty": 1,
           "choices": [
+            "His servants",
             "His sons Adremmelech and Sharezer",
-            "Josiah",
-            "Cyrus",
-            "Jehu"
+            "The commanders of his army",
+            "The priests of Nisroch"
           ]
         },
         {
@@ -8628,9 +8628,9 @@
           "difficulty": 1,
           "choices": [
             "Everything that was in his house and his sons would be taken captive by Babylon",
-            "Darius",
-            "Hazael",
-            "Artaxerxes"
+            "His kingdom would be destroyed in battle",
+            "He would be taken prisoner to Nineveh",
+            "A famine would strike his land for seven years"
           ]
         },
         {
@@ -8640,10 +8640,10 @@
           "reference": "2Kings 21:13",
           "difficulty": 1,
           "choices": [
-            "Darius",
-            "Rehoboam",
-            "Hezekiah",
-            "As a man wipeth a dish"
+            "As a fire consumeth the forest",
+            "As a man wipeth a dish",
+            "As wind scattereth the chaff",
+            "As the rain washeth away the earth"
           ]
         },
         {
@@ -8653,10 +8653,10 @@
           "reference": "2Kings 22:1",
           "difficulty": 1,
           "choices": [
-            "David",
+            "12 years old",
+            "6 years old",
             "8 years old",
-            "Ahab",
-            "Herod"
+            "15 years old"
           ]
         },
         {
@@ -8666,10 +8666,10 @@
           "reference": "2Kings 22:8",
           "difficulty": 1,
           "choices": [
-            "Herod",
-            "Hezekiah",
-            "Hazael",
-            "The book of the law"
+            "A scroll of the prophets",
+            "The ark of the covenant",
+            "The book of the law",
+            "A letter from the king"
           ]
         },
         {
@@ -8679,9 +8679,9 @@
           "reference": "2Kings 22:11",
           "difficulty": 1,
           "choices": [
-            "Cyrus",
-            "Ben-hadad",
-            "David",
+            "He fell to his knees and wept",
+            "He covered himself with sackcloth",
+            "He went into the temple and prayed",
             "He rent his clothes"
           ]
         },
@@ -8692,10 +8692,10 @@
           "reference": "2Kings 22:19-20",
           "difficulty": 1,
           "choices": [
-            "Herod Agrippa",
-            "Ben-hadad",
-            "Hazael",
-            "Because his heart was tender and he humbled himself before the Lord"
+            "Because he had kept all the commandments of Moses",
+            "Because he had rebuilt the temple",
+            "Because his heart was tender and he humbled himself before the Lord",
+            "Because he had destroyed all the high places"
           ]
         },
         {
@@ -8803,7 +8803,7 @@
           "difficulty": 1,
           "choices": [
             "grief",
-            "sorrow",
+            "pride",
             "suffering",
             "loneliness"
           ]
@@ -8843,7 +8843,7 @@
           "choices": [
             "our griefs",
             "our sins",
-            "our sorrows",
+            "our burdens",
             "our iniquities"
           ]
         },
@@ -8979,15 +8979,15 @@
         },
         {
           "id": "the_book_of_isaiah_53_0081",
-          "prompt": "In Isaiah 53:7, like what is a sheep before her shearers — silent or loud?",
+          "prompt": "In Isaiah 53:7, like a sheep before her shearers, the Suffering Servant was _____?",
           "answer": "dumb",
           "reference": "Isaiah 53:7",
           "difficulty": 1,
           "choices": [
             "dumb",
-            "silent",
+            "crying out",
             "afraid",
-            "willing"
+            "boasting"
           ]
         },
         {
@@ -10286,14 +10286,14 @@
         {
           "id": "the_book_of_ezra_0082",
           "prompt": "Until when did the building of the temple stop?",
-          "answer": "Until the second year of the reign of Darius king of Persia True or Fa",
+          "answer": "Until the second year of the reign of Darius king of Persia",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Mordecai",
-            "Cyrus",
-            "Until the second year of the reign of Darius king of Persia True or Fa",
-            "Ezra"
+            "Until the reign of Artaxerxes",
+            "Until the Israelites completed their own houses",
+            "Until the second year of the reign of Darius king of Persia",
+            "Until Nehemiah came to Jerusalem"
           ]
         },
         {
@@ -10598,11 +10598,11 @@
         {
           "id": "the_book_of_ezra_0106",
           "prompt": "Who gave the command to rebuild the temple?",
-          "answer": "Cyrus, king of Babylon",
-          "reference": "Persia",
+          "answer": "Cyrus, king of Persia",
+          "reference": "Ezra 1:1-2",
           "difficulty": 1,
           "choices": [
-            "Cyrus, king of Babylon",
+            "Cyrus, king of Persia",
             "Nehemiah",
             "Joshua the high priest",
             "Artaxerxes"
@@ -11057,10 +11057,10 @@
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "Mordecai",
-            "Nehemiah",
+            "Judah",
+            "Benjamin",
             "Levi",
-            "Ezra"
+            "Manasseh"
           ]
         },
         {
@@ -11709,7 +11709,7 @@
           "choices": [
             "30",
             "Three days",
-            "318",
+            "7",
             "4"
           ]
         },
@@ -11734,9 +11734,9 @@
           "difficulty": 1,
           "choices": [
             "The ninth month",
-            "Mordecai",
-            "Cyrus",
-            "Nehemiah"
+            "The third month",
+            "The seventh month",
+            "The twelfth month"
           ]
         },
         {
@@ -11943,11 +11943,11 @@
         {
           "id": "pauls_journeys_0012",
           "prompt": "Who was a man after God's own heart and would fulfill all of God's will?",
-          "answer": "David John said \"whose shoes of his feet I am not worthy to _____.\" loose",
+          "answer": "David",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "David John said \"whose shoes of his feet I am not worthy to _____.\" loose",
+            "David",
             "Abraham",
             "Moses",
             "Solomon"
@@ -12021,11 +12021,11 @@
         {
           "id": "pauls_journeys_0018",
           "prompt": "What happened when the Jews saw the multitudes?",
-          "answer": "They were filled with envy, and spake against those things which were",
+          "answer": "They were filled with envy, and spake against those things which were spoken by Paul",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They were filled with envy, and spake against those things which were",
+            "They were filled with envy, and spake against those things which were spoken by Paul",
             "They sought to take Paul and Barnabas by force",
             "They drove the crowds away",
             "They called for the magistrates"
@@ -12255,11 +12255,11 @@
         {
           "id": "pauls_journeys_0036",
           "prompt": "What did Paul and Barnabas do when they gathered the church together in Antioch?",
-          "answer": "They rehearsed all that God had done with them, and how he had opened",
+          "answer": "They rehearsed all that God had done with them, and how he had opened the door of faith unto the Gentiles",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They rehearsed all that God had done with them, and how he had opened",
+            "They rehearsed all that God had done with them, and how he had opened the door of faith unto the Gentiles",
             "They read the letter from the Jerusalem council",
             "They appointed elders and gave thanks",
             "They baptized the new believers and prayed"
@@ -12710,11 +12710,11 @@
         {
           "id": "pauls_journeys_0071",
           "prompt": "How were the Jews in Berea more noble than the Jews in Thessalonica?",
-          "answer": "They received the word with all readiness of mind, and searched the sc",
+          "answer": "They received the word with all readiness of mind, and searched the scriptures daily",
           "reference": "",
           "difficulty": 1,
           "choices": [
-            "They received the word with all readiness of mind, and searched the sc",
+            "They received the word with all readiness of mind, and searched the scriptures daily",
             "They welcomed Paul and Silas into their homes",
             "They did not oppose the preaching of the gospel",
             "They sent gifts to support Paul's ministry"
